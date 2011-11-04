@@ -1,0 +1,19 @@
+01.05.2003|u|RB1.dpr||1.04 internal release
+01.05.2003|u|uTrackProperties.pas|TFormTrackProperties.bDefineWallsClick()|Stations-Knopf aus Gleiseigenschaftsdialog entfernt, hatte dort keinen Sinn
+01.05.2003|u|uEditorFrame.pas|TFrmEditor.cbTrackTypeChange()|Icons für cs fixed curves hinzugefügt
+01.05.2003|u|uEditorFrame.pas|TFrmEditor.tbGridsClick()|grids icon hinzugefügt
+01.05.2003|u|tmain.pas|TFormMain.MenuGridsClick()|Menüpunkt Grids hinzugefügt
+01.05.2003|u|uRBProject.pas||Grid zum RBProjekt hinzugefügt
+01.05.2003|u|uRBGrid.pas||TRBGrid und TRBGridItem eingeführt
+01.05.2003|u|uRBGridsForm.pas||FormGrids zum Managen von Grids hinzugefügt
+01.05.2003|u|uRBProject.pas||TRBproject.streets entfernt, obsolet
+19.05.2003|u|uRBGridsForm.pas|TFormGrids.FormShow()|FormGrid hinzugefügt
+19.05.2003|u|uRBProject.pas|TRBProject.SnapToGrid()|Implementiert und getestet
+19.05.2003|u|uEditorFrame.pas|TFrmEditor.addtogrid1Click()|implementiert und getestet
+19.05.2003|u|uEditorFrame.pas|TFrmEditor.PaintConnection()|Zeichnen des Grids implementiert. Es gibt hier eine Debug-Funktionalität, die die Grid-Koordinaten ausgibt, und ist auskommentiert
+19.05.2003|u|uTools.pas|AddDoublePoints()|implementiert
+19.05.2003|u|uTools.pas|SubDoublePoints()|implementiert
+19.05.2003|u|uRBGrid.pas|TRBGrid.GetGridPoint()|implementiert, korrigiert
+19.05.2003|u|tmain.pas|TFormMain.OpenClick()|FormGrids.close eingefügt
+19.05.2003|u|uRBProject.pas|TRBProject.LoadFromFile()|grids werden mit geladen
+19.05.2003|u|uRBProject.pas|TRBProject.SaveToFile()|grids werden mit gespeichert

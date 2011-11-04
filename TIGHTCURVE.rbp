@@ -1,0 +1,40 @@
+projectname=tight curve`
+application=RouteBuilder 1.2.0 (2004-03-17)
+author=smace
+gauge=1435
+developerid=0
+nexttrackid=1
+BackgroundMapScale=0
+defaultobjects=stopsign=signs\ne5.b3d,signalpost=signals\signal_post.b3d,stationmarkerstop=marker\stationmarker_stop.bmp,stationmarkerpass=marker\stationmarker_pass.bmp
+ParallelTrackDist=4.0000000000
+ParallelTrackDistPlatform=15.0000000000
+Objectlibrary=lib
+point1=1,798.4000000000,594.3000000000
+point2=2,823.4000000000,594.3000000000
+point3=5,1223.4000000000,596.3000000000
+point4=6,1248.4000000000,592.3000000000
+point5=7,1273.4000000000,594.3000000000
+point6=8,1298.4000000000,594.3000000000
+point7=10,1299.4000000000,669.3000000000
+point8=11,1301.7333330000,779.9666667000
+point9=12,1301.4000000000,819.3000000000
+point10=13,1301.4000000000,844.3000000000
+point11=14,1303.5666670000,644.8000000000
+conn1=1,1,2,1,70,0.0000000000,255,1,"sky3.bmp","grass2.b3d",0,"",0,"",0,"",0,2,"","","","",0,"",0,""
+conn2=4,5,6,1,70,0.0000000000,255,1,"sky3.bmp","grass2.b3d",0,"",0,"",0,"",0,2,"","","","",0,"",0,""
+conn3=5,2,5,1,70,0.0000000000,255,1,"sky3.bmp","grass2.b3d",0,"",0,"",0,"",0,2,"","","","",0,"",0,""
+conn4=6,7,8,1,70,0.0000000000,255,1,"","",0,"",0,"",0,"",0,2,"","","","",0,"",0,""
+conn5=9,10,11,1,70,0.0000000000,255,1,"sky3.bmp","grass2.b3d",0,"",0,"",0,"",0,2,"","","","",0,"",0,""
+conn6=10,12,13,1,70,0.0000000000,255,1,"sky3.bmp","grass2.b3d",0,"",0,"",0,"",0,2,"","","","",0,"",0,""
+conn7=11,11,12,1,70,0.0000000000,255,1,"sky3.bmp","grass2.b3d",0,"",0,"",0,"",0,2,"","","","",0,"",0,""
+conn8=12,14,10,1,70,0.0000000000,255,1,"","",0,"",0,"",0,"",0,2,"","","","",0,"",0,""
+conn9=13,6,14,1,70,0.0000000000,255,1,"","",0,"",0,"",0,"",0,1,"","","","",0,"",0,""
+routedefinition1id=2
+routedefinition1name=tight
+routedefinition1=10,11,9,4,5,1,12,13
+station1="start|1|-1|100|20||",1=1
+station2="end|1|-1|100|20||",1=10
+Timetable1="TIGHTTEST","103trm","start","end","9:00:00 AM","start;30;end;30","0",tight
+grid1="left",1,1,0,0,4,0,17
+grid2="up",6,10,7,9
+grid3="45",1,1,0,0

@@ -1,0 +1,288 @@
+unit uRBObject;
+
+interface
+
+uses sysutils, classes, uGlobaldef, uTools, uRBObjSizeCache;
+
+type
+
+  TRBObject = class (TStringlist)
+                   private
+                    FFolder: string;
+                    FMaxCube: TDoubleCube;
+                   public
+                    point: TDoublePoint;
+                    angle: integer;
+                    yoffset: double;
+                    locked: boolean;
+                    FObjectfilename: string;
+                    constructor Create(const folder,objectfilename: string); overload;
+                    constructor Create(const src: TRBObject); overload;
+                    constructor Create(const folderandobjectfilename: string); overload;
+                    constructor CreateFromString(const s: string);
+                    function NightVersionAvailable: boolean;
+                    function NightVersionObjectFilename(): string;
+                    function GetAuthorName: string;
+                    procedure AddAuthors(sl: TStringlist);
+                    function GetDescription: string;
+                    function GetCopyright: string;
+                    function GetDefaultID(): string;
+                    function GetType(): string;
+                    procedure GetBitmaplist(bitmaps: TStringlist);
+                    procedure CalcMaxCube();
+                    function GetPath(): string;
+                    function GetPathNightVersion(): string;
+                    procedure Reload();
+                    function GetAsString(): string;
+                    property Folder: string read FFolder write FFolder;
+                    property MaxCube: TDoubleCube read FMaxCube;
+                    procedure MaxCubeRotated(var p1,p2,p3,p4: TDoublePoint; differentlength: integer=0);
+                    property Objectfilename: string read FObjectfilename write FObjectfilename;
+                    procedure Move(xoff,yoff,vert: double);
+                    procedure Scale(f: double);
+                  end;
+
+var
+  ObjectBasePath: string;
+
+implementation{>>GpProfile U} uses GpProf; {GpProfile U>>}
+
+constructor TRBObject.Create(const folder,objectfilename: string);
+var s: string;
+begin{>>GpProfile} ProfilerEnterProc(1); try {GpProfile>>}
+  inherited create;
+  angle := 0;
+  yoffset := 0;
+  locked := false;
+  FObjectfilename:='';
+  s := ObjectBasePath + folder+'\'+objectfilename;
+  if not fileexists(s) then exit;
+  FFolder := folder;
+  FObjectfilename := Objectfilename;
+  loadfromfile(s);
+  CalcMaxCube();
+{>>GpProfile} finally ProfilerExitProc(1); end; {GpProfile>>}end;
+
+constructor TRBObject.Create(const folderandobjectfilename: string);
+var s: string;
+begin{>>GpProfile} ProfilerEnterProc(2); try {GpProfile>>}
+  inherited create;
+  angle := 0;
+  yoffset := 0;
+  locked := false;
+  FObjectfilename:='';
+  s := ObjectBasePath + folderandobjectfilename;
+  if not fileexists(s) then exit;
+  FFolder := strgettoken(folderandobjectfilename,'\',1);
+  FObjectfilename := strgettoken(folderandobjectfilename,'\',2);
+  loadfromfile(s);
+  CalcMaxCube();
+{>>GpProfile} finally ProfilerExitProc(2); end; {GpProfile>>}end;
+
+constructor TRBObject.Create(const src: TRBObject);
+begin{>>GpProfile} ProfilerEnterProc(3); try {GpProfile>>}
+  Create(src.Folder,src.Objectfilename);
+  angle := src.angle;
+  yoffset := src.yoffset;
+  CalcMaxCube();
+{>>GpProfile} finally ProfilerExitProc(3); end; {GpProfile>>}end;
+
+// Funktion: CreateFromString
+// Autor   : up
+// Datum   : 5.12.02
+// Beschr. : erzeugt aus Kommastring ein Objekt. Format: folder,object.b3d,x,y,a,h,locked
+constructor TRBObject.CreateFromString(const s: string);
+var f,o: string;
+    x,y,a,h: double;
+begin{>>GpProfile} ProfilerEnterProc(4); try {GpProfile>>}
+  f := StripQuotes(StrGetToken(s,',',1));
+  o := StripQuotes(StrGetToken(s,',',2));
+  x := strtofloat1(StrGetToken(s,',',3));
+  y := strtofloat1(StrGetToken(s,',',4));
+  a := strtofloat1(StrGetToken(s,',',5));
+  h := strtofloat1(StrGetToken(s,',',6));
+  locked := boolean(strtointdef(StrGetToken(s,',',7),0));
+  if (f='')and(o='') then
+  begin
+    f := 'misc';
+    o := 'kuh1.b3d';
+  end;
+  create(f,o);
+  point := doublepoint(x,y);
+  angle := round(a);
+  yoffset := h;
+{>>GpProfile} finally ProfilerExitProc(4); end; {GpProfile>>}end;
+
+
+procedure  TRBObject.Reload();
+var s: string;
+begin{>>GpProfile} ProfilerEnterProc(5); try {GpProfile>>}
+  s := ObjectBasePath + Ffolder+'\'+Fobjectfilename;
+  if not fileexists(s) then exit;
+  loadfromfile(s);
+  CalcMaxCube();
+{>>GpProfile} finally ProfilerExitProc(5); end; {GpProfile>>}end;
+
+function TRBObject.GetAsString: string;
+begin{>>GpProfile} ProfilerEnterProc(6); try {GpProfile>>}
+  result := '"'+FFolder+'","'+FObjectfilename+'",'
+     +floattostrpoint(point.x)+','+floattostrPoint(point.y)+','
+     +floattostrpoint(angle)+','+floattostrpoint(yoffset)+','
+     +inttostr(integer(locked));
+{>>GpProfile} finally ProfilerExitProc(6); end; {GpProfile>>}end;
+
+function TRBObject.GetAuthorName: string;
+begin{>>GpProfile} ProfilerEnterProc(7); try {GpProfile>>}
+  result := values[';author'];
+{>>GpProfile} finally ProfilerExitProc(7); end; {GpProfile>>}end;
+function TRBObject.GetDescription: string;
+begin{>>GpProfile} ProfilerEnterProc(8); try {GpProfile>>}
+  result := values[';description'];
+{>>GpProfile} finally ProfilerExitProc(8); end; {GpProfile>>}end;
+function TRBObject.GetCopyright: string;
+begin{>>GpProfile} ProfilerEnterProc(9); try {GpProfile>>}
+  result := values[';copyright'];
+{>>GpProfile} finally ProfilerExitProc(9); end; {GpProfile>>}end;
+function TRBObject.GetDefaultID: string;
+begin{>>GpProfile} ProfilerEnterProc(10); try {GpProfile>>}
+  result := values[';id'];
+{>>GpProfile} finally ProfilerExitProc(10); end; {GpProfile>>}end;
+function TRBObject.GetType: string;
+begin{>>GpProfile} ProfilerEnterProc(11); try {GpProfile>>}
+  result := values[';type'];
+{>>GpProfile} finally ProfilerExitProc(11); end; {GpProfile>>}end;
+
+procedure TRBObject.GetBitmaplist(bitmaps: TStringlist);
+var i: integer;
+begin{>>GpProfile} ProfilerEnterProc(12); try {GpProfile>>}
+  bitmaps.clear;
+  bitmaps.Sorted := true;
+  bitmaps.Duplicates := dupIgnore;
+  for i:=0 to count-1 do
+  begin
+    if lowercase(copy(strings[i],1,4))='load' then
+    begin
+      bitmaps.add(StrGetToken(strings[i],' ',2));
+    end;
+  end;
+{>>GpProfile} finally ProfilerExitProc(12); end; {GpProfile>>}end;
+
+procedure TRBObject.CalcMaxCube();
+var i: integer;
+    x,y,z: double;
+    ks: string;
+begin{>>GpProfile} ProfilerEnterProc(13); try {GpProfile>>}
+  // use cache
+  if not RBObjSizeCache.GetObjSize(FFolder+'|'+FObjectfilename,FMaxCube) then
+  begin
+    FMaxCube.x1 := -999;
+    FMaxCube.y1 := -999;
+    FMaxCube.z1 := -999;
+    FMaxCube.x2 := 999;
+    FMaxCube.y2 := 999;
+    FMaxCube.z2 := 999;
+    for i:=0 to count-1 do
+    begin
+      if lowercase(copy(strings[i],1,6))='vertex' then
+      with FMaxCube do
+      begin
+        ks := trim(copy(strings[i],7,maxint));
+        x := strtofloat1(trim(strgettoken(ks,',',1)));
+        if x<x2 then x2 := x;
+        if x>x1 then x1 := x;
+        y := strtofloat1(trim(strgettoken(ks,',',2)));
+        if y<y2 then y2 := y;
+        if y>y1 then y1 := y;
+        z := strtofloat1(trim(strgettoken(ks,',',3)));
+        if z<z2 then z2 := z;
+        if z>z1 then z1 := z;
+      end;
+    end;
+    with FMaxCube do
+    begin
+      if abs(x1-x2)<1 then x2 := x1-1;
+      if abs(z1-z2)<1 then z2 := z1-1;
+    end;
+    RBObjSizeCache.AddObjSize(FFolder+'|'+FObjectfilename,FMaxCube);
+  end;
+{>>GpProfile} finally ProfilerExitProc(13); end; {GpProfile>>}end;
+
+function TRBObject.GetPath: string;
+begin{>>GpProfile} ProfilerEnterProc(14); try {GpProfile>>}
+  result := FFolder+'\'+FObjectfilename;
+{>>GpProfile} finally ProfilerExitProc(14); end; {GpProfile>>}end;
+
+function TRBObject.GetPathNightVersion: string;
+begin{>>GpProfile} ProfilerEnterProc(15); try {GpProfile>>}
+  if NightVersionAvailable then
+    result := FFolder+'\'+NightVersionObjectFilename
+  else
+    result := GetPath;
+{>>GpProfile} finally ProfilerExitProc(15); end; {GpProfile>>}end;
+
+
+procedure TRBObject.MaxCubeRotated(var p1,p2,p3,p4: TDoublePoint; differentlength: integer);
+var matrix: array[1..2,1..2] of double;
+begin{>>GpProfile} ProfilerEnterProc(16); try {GpProfile>>}
+  if differentlength<>0 then
+  begin
+    FMaxCube.z1 := 0;
+    FMaxCube.z2 := differentLength;
+  end;
+  matrix[1,1] := cos(pi*(angle)/180);
+  matrix[2,2] := matrix[1,1];
+  matrix[2,1] := sin(pi*(angle)/180);
+  matrix[1,2] := -matrix[2,1];
+  p1.x := FMaxCube.x1*matrix[1,1]+FMaxCube.z1*matrix[1,2];
+  p2.x := FMaxCube.x2*matrix[1,1]+FMaxCube.z1*matrix[1,2];
+  p3.x := FMaxCube.x2*matrix[1,1]+FMaxCube.z2*matrix[1,2];
+  p4.x := FMaxCube.x1*matrix[1,1]+FMaxCube.z2*matrix[1,2];
+  p1.y := FMaxCube.x1*matrix[2,1]+FMaxCube.z1*matrix[2,2];
+  p2.y := FMaxCube.x2*matrix[2,1]+FMaxCube.z1*matrix[2,2];
+  p3.y := FMaxCube.x2*matrix[2,1]+FMaxCube.z2*matrix[2,2];
+  p4.y := FMaxCube.x1*matrix[2,1]+FMaxCube.z2*matrix[2,2];
+{>>GpProfile} finally ProfilerExitProc(16); end; {GpProfile>>}end;
+
+procedure TRBObject.AddAuthors(sl: TStringlist);
+var s,a: string;
+    i: integer;
+begin{>>GpProfile} ProfilerEnterProc(17); try {GpProfile>>}
+  s := GetAuthorName();
+  i := 1;
+  repeat
+    a := StripQuotes(StrGetToken(s,',',i));
+    if (a<>'') and (sl.IndexOf(a)<0) then sl.Add(a);
+    inc(i);
+  until a='';
+{>>GpProfile} finally ProfilerExitProc(17); end; {GpProfile>>}end;
+
+// Funktion: Move
+// Autor   : up
+// Datum   : 11.1.03
+// Beschr. : verschiebt den Ursprung des Objekts (nicht das Objekt in sich!). 
+procedure TRBObject.Move(xoff,yoff,vert: double);
+begin{>>GpProfile} ProfilerEnterProc(18); try {GpProfile>>}
+  point.x := point.x + xoff;
+  point.y := point.y + yoff;
+  yoffset := yoffset + vert;
+{>>GpProfile} finally ProfilerExitProc(18); end; {GpProfile>>}end;
+
+procedure TRBObject.Scale(f: double);
+begin{>>GpProfile} ProfilerEnterProc(19); try {GpProfile>>}
+  point.x := point.x * f;
+  point.y := point.y * f;
+{>>GpProfile} finally ProfilerExitProc(19); end; {GpProfile>>}end;
+
+function TRBObject.NightVersionObjectFilename(): string;
+begin{>>GpProfile} ProfilerEnterProc(20); try {GpProfile>>}
+  result :=  StringReplace(lowercase(objectfilename),'.b3d','_night.b3d',[rfReplaceall]);
+{>>GpProfile} finally ProfilerExitProc(20); end; {GpProfile>>}end;
+
+function TRBObject.NightVersionAvailable: boolean;
+var s: string;
+begin{>>GpProfile} ProfilerEnterProc(21); try {GpProfile>>}
+  s := ObjectBasePath + folder+'\'+NightVersionObjectFilename;
+  result :=  fileexists(s);
+{>>GpProfile} finally ProfilerExitProc(21); end; {GpProfile>>}end;
+
+end.

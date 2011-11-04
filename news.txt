@@ -1,0 +1,41 @@
+Welcome to RouteBuilder 1.1.5!
+
+Changes from the last release (1.1):
+
+- point sounds are back
+- some small export improvements 
+- 3D preview crash fixes 
+- corrected tutorial files 
+- corrected frensh language file
+- missing crack1.b3d file
+- awareness of available night versions of objects (objectname.b3d, objectname_night.b3d)
+- Change Properties: Form to change fog, speedlimit etc for the world or area
+- Track properties dialog non modal
+- move everything handles height and scale
+- overview map filename and scale can be set in project properties
+- bugfix in timetable
+- RBAStationsigns can do "hanging" signs
+- deleting grid root connection not possible anymore (messagebox, todo: language)
+- improved secondary curve export (curve radius = primary radius when parallel)
+- undo (Ctl+Z, limited to editor actions like moving, adding, deleting)
+- auto-button in Trackdef for max curve radii
+- editor and export using alternate curve algorithm (experimental!)
+- paste all doesn't paste special track type anymore
+- cursor cannot be set at positions x<0 or y<0. Move everything to >0 if needed.
+- night export (experimental, and you need objects with night versions, 
+  currently there is only one, the misc\lampstand1.b3d)
+
+There are also many new objects in the lib, for example third rail tracks (types ugl and ugr).
+Some textures had been in 24bit color depth, this has been changed to 8bit.
+To use certain objects (platforms etc), you have to add them to the definition list.
+We also added some howto projects. Please have a close look at them. They explain
+how to do certain layouts.
+Not all language files have been updated. If you want to contribute, contact us.
+
+Remember to visit our forum at bve-tools.com if you have questions.
+
+Have fun.
+
+Uwe
+Thomas
+RB dev team

@@ -1,0 +1,11 @@
+projectname=tutorial1
+author=Uwe Post
+description=simple beginner tutorial
+gauge=1435
+developerid=0
+nexttrackid=1
+BackgroundMapScale=0
+defaultobjects=stopsign=signs\ne5.b3d
+point1=1,328.00000,88.00000
+point2=2,123.00000,45.00000
+conn1=1,1,2,1,0,0,100,1,1,1,0,"",0,"",0,0,0,1

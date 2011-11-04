@@ -1,0 +1,19 @@
+projectname=test curve
+application=RouteBuilder 1.2.0b2 (2004-03-02)
+author=up
+gauge=1435
+developerid=0
+nexttrackid=1
+Routefilessubdir=test
+BackgroundMapScale=0
+defaultobjects=stopsign=signs\ne5.b3d,signalpost=signals\signal_post.b3d,stationmarkerstop=marker\stationmarker_stop.bmp,stationmarkerpass=marker\stationmarker_pass.bmp
+ParallelTrackDist=4.0000000000
+ParallelTrackDistPlatform=15.0000000000
+Objectlibrary=lib
+point1=1,648.0000000000,351.0000000000
+point2=2,686.0000000000,257.0000000000
+point3=3,969.0000000000,90.0000000000
+point4=4,1047.0000000000,107.0000000000
+conn1=1,2,1,1,0,0.0000000000,255,1,"","",0,"",0,"",0,"",0,2,"","","","",0,"",0,""
+conn2=2,2,3,1,0,0.0000000000,255,1,"","",0,"",0,"",0,"",0,1,"","","","",0,"",0,""
+conn3=3,4,3,1,0,0.0000000000,255,1,"","",0,"",0,"",0,"",0,2,"","","","",0,"",0,""

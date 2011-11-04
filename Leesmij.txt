@@ -1,0 +1,9 @@
+Nederlandse vertaling RB v1.0
+----------------------------
+(c) 2003 by Davy Gijbels
+----------------------------
+Install
+*Unzip
+*Place both files in your Route Builder Directory
+*Open RB, pick language and then dutch
+*Done :)

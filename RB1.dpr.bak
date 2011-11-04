@@ -1,0 +1,45 @@
+program RB1;
+
+uses
+  Forms,
+  tmain in 'tmain.pas' {FormMain},
+  tWizard_CreateProject in 'tWizard_CreateProject.pas' {CreateProj_Wizard},
+  tSetBveFolder in 'tSetBveFolder.pas' {Dlg_SetBveFolder},
+  toptions in 'toptions.pas' {Dlg_Options},
+  taddonManager in 'taddonManager.pas' {Dlg_Addons},
+  tabout in 'tabout.pas' {Dlg_About},
+  tfahrplanmanager in 'tfahrplanmanager.pas' {FormTimetable},
+  uTrackProperties in 'uTrackProperties.pas' {FormTrackProperties},
+  uGlobalDef in 'uGlobalDef.pas',
+  uRBConnectable in 'uRBConnectable.pas',
+  uRBProject in 'uRBProject.pas',
+  uRBTrack in 'uRBTrack.pas',
+  uEditorFrame in 'uEditorFrame.pas' {FrmEditor: TFrame},
+  uRBSwitch in 'uRBSwitch.pas',
+  uCurrentSituation in 'uCurrentSituation.pas',
+  uTools in 'uTools.pas',
+  uRouteDefinitionsForm in 'uRouteDefinitionsForm.pas' {FormRouteDefinitions},
+  uRBRouteDefinition in 'uRBRouteDefinition.pas',
+  ttrain in 'ttrain.pas' {Dlg_Train},
+  uObjectsFrame in 'uObjectsFrame.pas' {FrmObjects: TFrame},
+  uObjectsForm in 'uObjectsForm.pas' {FormObjects},
+  uRBObject in 'uRBObject.pas',
+  texport in 'texport.pas' {FormExport};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFormMain, FormMain);
+  Application.CreateForm(TDlg_Options, Dlg_Options);
+  Application.CreateForm(TCreateProj_Wizard, CreateProj_Wizard);
+  Application.CreateForm(TDlg_Addons, Dlg_Addons);
+  Application.CreateForm(TDlg_About, Dlg_About);
+  Application.CreateForm(TFormTimetable, FormTimetable);
+  Application.CreateForm(TFormTrackProperties, FormTrackProperties);
+  Application.CreateForm(TFormRouteDefinitions, FormRouteDefinitions);
+  Application.CreateForm(TDlg_Train, Dlg_Train);
+  Application.CreateForm(TFormObjects, FormObjects);
+  Application.CreateForm(TFormExport, FormExport);
+  Application.Run;
+end.
