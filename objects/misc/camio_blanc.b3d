@@ -1,0 +1,132 @@
+[Meshbuilder]
+Vertex -1,4,-0
+Vertex -1,4,-10.2
+Vertex -1,0,-10.2
+Vertex -1,0,-0
+Face2 0,1,2,3
+
+[Texture]
+Load camiolat1.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 4, 2, 252
+
+[Meshbuilder]
+Vertex 1,4,-0
+Vertex 1,4,-10.2
+Vertex 1,0,-10.2
+Vertex 1,0,-0
+
+Face2 3,2,1,0
+[Texture]
+Load camiolat1.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 4,2,252
+
+[Meshbuilder]
+Vertex  -1.2,4,-9.85
+Vertex   1.2,4,-9.85
+Vertex   1.2,0.1,-9.85
+Vertex  -1.2,0.1,-9.85
+Face2 0,1,2,3
+
+[Texture]
+Load camiofb1.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 4, 2, 252
+
+;==============================================
+[Meshbuilder]
+Vertex  -1.22,3.5,-9.83
+Vertex   1.22,3.5,-9.83
+Vertex   1.22,0.5,-9.83
+Vertex  -1.22,0.5,-9.83
+Face2 0,1,2,3
+
+[Texture]
+Load camiofm1.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 4, 2, 252
+;=========================================
+[Meshbuilder]
+Vertex  -1.2,3.9,-8.55
+Vertex   1.2,3.9,-8.55
+Vertex   1.2,2.88,-9.84
+Vertex  -1.2,2.88,-9.84
+Face2 0,1,2,3
+
+[Texture]
+Load camiofm21.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 4, 2, 252
+
+;==================================================sostre
+[Meshbuilder]
+Vertex  -1,4,-8.1
+Vertex   1,4,-8.1
+Vertex   1,4,-0
+Vertex  -1,4,-0
+Face2 0,1,2,3
+
+[Texture]
+Load camioroof1.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+;==================================================portes
+[Meshbuilder]
+Vertex  -1,4,-8.1
+Vertex   1,4,-8.1
+Vertex   1,2,-8.1
+Vertex  -1,2,-8.1
+Face2 0,1,2,3
+
+[Texture]
+Load camioroof1.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+
+[Meshbuilder]
+Vertex  -1,4,0
+Vertex   1,4,0
+Vertex   1,1.2,0
+Vertex  -1,1.2,0
+Face2 0,1,2,3
+
+[Texture]
+Load camioroof1.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+
+[Meshbuilder]
+Vertex  -1,1.2,-8.1
+Vertex   1,1.2,-8.1
+Vertex   1,1.2,0
+Vertex  -1,1.2,0
+Face2 0,1,2,3
+
+[Texture]
+Load camioroof1.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1

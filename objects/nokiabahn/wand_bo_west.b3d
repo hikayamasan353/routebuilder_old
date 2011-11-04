@@ -1,0 +1,16 @@
+;author=Uwe Post
+
+[MeshBuilder]
+Vertex 5.51,5.2,0
+Vertex 5.51,0,0
+Vertex 5.51,0,25
+Vertex 5.51,5.2,25
+Face2 0,1,2,3
+
+[Texture]
+Load wand_bo_west.bmp
+Coordinates 0,0,0
+Coordinates 1,0,2
+Coordinates 2,10,2
+Coordinates 3,10,0
+

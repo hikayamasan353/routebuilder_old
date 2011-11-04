@@ -1,0 +1,13 @@
+;description=black ground (for underground routes)
+;author=Uwe Post
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -120, -0.40, 26
+Vertex 120, -0.40, 26
+Vertex 120, -0.401, -1
+Vertex -120, -0.401, -1
+Face 0, 1, 2, 3
+color 0,0,0
+
+

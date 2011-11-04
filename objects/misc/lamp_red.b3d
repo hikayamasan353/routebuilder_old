@@ -1,0 +1,73 @@
+;author=Uwe Post
+;description=Lamp with red stand
+
+
+[MeshBuilder] 
+Vertex -0.2,0,-0.45
+Vertex -0.2,10,-0.45
+Vertex -0.0,10,-0.45
+Vertex -0.0,0,-0.45
+Face 0,1,2,3
+Face 3,2,1,0
+Color 150,40,35
+
+[MeshBuilder] 
+Vertex -0.1,0,-0.4
+Vertex -0.1,10,-0.4
+Vertex -0.1,10,-0.5
+Vertex -0.1,0,-0.5
+Face 0,1,2,3
+Face 3,2,1,0
+Color 150,40,35
+
+[Meshbuilder]
+Vertex -0.2,10,-0.1
+Vertex 0.7,10,-0.1
+Vertex 0.7,10,-0.8
+Vertex -0.2,10,-0.8
+Face 3,2,1,0
+Color 255,255,255
+
+[Meshbuilder]
+Vertex -0.2,10.3,-0.1
+Vertex 0.7,10.3,-0.1
+Vertex 0.7,10.3,-0.8
+Vertex -0.2,10.3,-0.8
+Face 0,1,2,3
+Color 120,120,120
+
+[Meshbuilder]
+Vertex -0.2,10.3,-0.8
+Vertex 0.7,10.3,-0.8
+Vertex 0.7,10,-0.8
+Vertex -0.2,10,-0.8
+Face 0,1,2,3
+Color 120,120,120
+
+
+[Meshbuilder]
+Vertex -0.2,10.3,-0.1
+Vertex 0.7,10.3,-0.1
+Vertex 0.7,10,-0.1
+Vertex -0.2,10,-0.1
+Face 3,2,1,0
+Color 120,120,120
+
+
+[Meshbuilder]
+Vertex -0.2,10.3,-0.1
+Vertex -0.2,10,-0.1
+Vertex -0.2,10,-0.8
+Vertex -0.2,10.3,-0.8
+Face 3,2,1,0
+Color 120,120,120
+
+[Meshbuilder]
+Vertex 0.7,10.3,-0.1
+Vertex 0.7,10,-0.1
+Vertex 0.7,10,-0.8
+Vertex 0.7,10.3,-0.8
+Face 0,1,2,3
+Color 120,120,120
+
+

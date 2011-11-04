@@ -1,0 +1,84 @@
+;author=Uwe Post
+;description=S-Bahn Schild
+;copyright=RB Library License
+
+
+[MeshBuilder]  
+Vertex -0, -1, -0.4
+Vertex -0, 4, -0.4
+Vertex -0.2, 4, -0.4
+Vertex -0.2, -1, -0.4
+Face2 0,1,2,3
+color 150,150,150
+[MeshBuilder]  
+Vertex -0.1, -1, -0.4
+Vertex -0.1, 4, -0.4
+Vertex -0.1, 4, -0.5
+Vertex -0.1, -1, -0.5
+Face2 0,1,2,3
+color 150,150,150
+
+
+[MeshBuilder]
+Vertex -0.6,4,0.05
+Vertex  0.4,4,0.05
+Vertex  0.4,5,0.05
+Vertex -0.6,5,0.05
+Face 0,1,2,3
+[texture]
+Load sbahn.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+[MeshBuilder]
+Vertex -0.6,4,-0.95
+Vertex  0.4,4,-0.95
+Vertex  0.4,5,-0.95
+Vertex -0.6,5,-0.95
+Face 3,2,1,0
+[texture]
+Load sbahn.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 0, 0
+Coordinates 2, 0, 1
+Coordinates 3, 1, 1
+[MeshBuilder]
+Vertex -0.6,4,0.05
+Vertex -0.6,4,-0.95
+Vertex -0.6,5,-0.95
+Vertex -0.6,5,0.05
+Face 3,2,1,0
+[texture]
+Load sbahn.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 0, 0
+Coordinates 2, 0, 1
+Coordinates 3, 1, 1
+[MeshBuilder]
+Vertex 0.4,4,0.05
+Vertex 0.4,4,-0.95
+Vertex 0.4,5,-0.95
+Vertex 0.4,5,0.05
+Face 0,1,2,3
+[texture]
+Load sbahn.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+[MeshBuilder]
+Vertex 0.4,4,0.05
+Vertex 0.4,4,-0.95
+Vertex -0.6,4,-0.95
+Vertex -0.6,4,0.05
+Face 3,2,1,0
+color 100,100,100
+[MeshBuilder]
+Vertex 0.4,5,0.05
+Vertex 0.4,5,-0.95
+Vertex -0.6,5,-0.95
+Vertex -0.6,5,0.05
+Face 0,1,2,3
+color 100,100,100
+

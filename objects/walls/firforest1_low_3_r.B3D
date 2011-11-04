@@ -1,0 +1,168 @@
+;author=Uwe Post
+;description=fir forest low  3m
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex 2.3, -0.3, -1
+Vertex 2.3, -0.3, 26
+Vertex 3.7, -0.3, 26
+Vertex 3.7, -0.3, -1
+Face 0,1,2,3
+
+
+[Texture]
+Load ..\grounds\forestfloor1.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 1, 5
+Coordinates 2, 0, 5
+Coordinates 3, 0, 0
+
+
+[MeshBuilder]
+Vertex 3.7, -0.3, -1
+Vertex 3.7, -0.3, 26
+Vertex 25  , -3  , 26
+Vertex 25  , -3  , -1
+Face 0,1,2,3
+
+[Texture]
+Load ..\grounds\forestfloor1.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 1, 1
+Coordinates 2, 0, 1
+Coordinates 3, 0, 0
+
+
+
+
+
+
+
+
+
+
+;trees
+
+[MeshBuilder]
+Vertex 10, 21, 13
+Vertex 10, -1, 13
+Vertex 4, -1, 13
+Vertex 4, 21, 13
+Face2 0,1,2,3
+
+
+
+[Texture]
+Load ..\plants\fir1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 0
+
+
+[MeshBuilder]
+Vertex 9, 15, 4
+Vertex 9, -1, 4
+Vertex 3, -1, 4
+Vertex 3, 15, 4
+Face2 0,1,2,3
+
+
+[Texture]
+Load ..\plants\fir1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 0
+
+
+
+[MeshBuilder]
+Vertex 7, 6, 19
+Vertex 7, -1, 19
+Vertex 3, -1, 19
+Vertex 3, 6, 19
+Face2 0,1,2,3
+
+[Texture]
+Load ..\plants\fir1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 0
+
+
+
+[MeshBuilder]
+Vertex 9, 19, 24
+Vertex 9, -2, 24
+Vertex 16, -2, 24
+Vertex 16, 19, 24
+Face2 0,1,2,3
+
+
+[Texture]
+Load ..\plants\fir1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 0
+
+
+
+
+[MeshBuilder]
+Vertex 2, 12, 15
+Vertex 2, -0.5, 15
+Vertex 9, -0.5, 15
+Vertex 9, 12, 15
+Face2 0,1,2,3
+
+
+[Texture]
+Load ..\plants\fir1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 0
+
+
+[MeshBuilder]
+Vertex 2, 12, 12
+Vertex 2, -1, 12
+Vertex 9, -1, 12
+Vertex 9, 12, 12
+Face2 0,1,2,3
+
+
+[Texture]
+Load ..\plants\fir1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 0
+
+
+[MeshBuilder]
+Vertex 11, 24, 8
+Vertex 11, -2, 8
+Vertex 19, -2, 8
+Vertex 19, 24, 8
+Face2 0,1,2,3
+
+
+[Texture]
+Load ..\plants\fir1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 0
+
+

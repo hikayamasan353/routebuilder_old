@@ -1,0 +1,77 @@
+;description=shed
+;author=unknown
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+
+[Meshbuilder]
+Vertex -2,0,30
+Vertex -2,5,30
+Vertex -2,5,0
+Vertex -2,0,0
+Vertex -1.5,0,0
+Vertex -1.5,5,0
+Face 0,1,2,3
+Face 3,2,5,4
+[Texture]
+Load concrete.bmp
+Coordinates 0,0,0
+Coordinates 1,0,10
+Coordinates 2,10,10
+Coordinates 3,10,0
+Coordinates 5,10,10
+Coordinates 4,10,0
+[Meshbuilder]
+Vertex -1.5,0,30
+Vertex -1.5,5,30
+Vertex -1.5,5,0
+Vertex -1.5,0,0
+Face 0,1,2,3
+Face 3,2,1,0
+Color 70,70,70
+[meshbuilder]
+Vertex 15,0,0
+Vertex 15,5,0
+Vertex 15,5,30
+Vertex 15,0,30
+Vertex 14.5,0,0
+Vertex 14.5,5,0
+Face 0,1,2,3
+Face 4,5,1,0
+[Texture]
+Load concrete.bmp
+Coordinates 0,0,0
+Coordinates 1,0,10
+Coordinates 2,10,10
+Coordinates 3,10,0
+Coordinates 4,10,10
+Coordinates 5,10,0
+[meshbuilder]
+Vertex 14.5,0,0
+Vertex 14.5,5,0
+Vertex 14.5,5,30
+Vertex 14.5,0,30
+Face 0,1,2,3
+Face 3,2,1,0
+Color 70,70,70
+[Meshbuilder]
+Vertex -2,5,30
+vertex 6.5,6,30
+vertex 6.5,6,0
+vertex -2,5,0
+Vertex 15,5,30
+Vertex 15,5,0
+Face 0,1,2,3
+Face 1,4,5,2
+Color 100,100,100
+[Meshbuilder]
+Vertex -1.5,5,0
+Vertex -1.5,5,30
+Vertex 6.5,6,30
+Vertex 6.5,6,0
+Vertex 14.5,5,0
+Vertex 14.5,5,30
+Face 0,3,2,1
+Face 5,2,3,4
+Color 70,70,70
+
+

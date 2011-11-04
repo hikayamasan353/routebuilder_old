@@ -1,0 +1,21 @@
+;author=Uwe Post
+;description=cow
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -1, 2,0
+Vertex 1, 2,0
+Vertex 1, 0,0
+Vertex -1, 0,0
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load kuh1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+transparent 0,255,0
+
+

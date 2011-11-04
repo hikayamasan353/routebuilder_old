@@ -1,0 +1,68 @@
+;author=Uwe Post
+;description=grass6 TSO
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex 100,  -0.31, -1
+Vertex 100,  -0.31, 26
+Vertex 5.9  , -0.31  , 26
+Vertex 5.9  , -0.31  , -1
+Face 3,2,1,0
+
+
+[Texture]
+Load ..\grounds\grass6.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 2
+Coordinates 2, 8, 2
+Coordinates 3, 8, 0
+
+[MeshBuilder]
+Vertex 6,  -0.31, -1
+Vertex 6,  -0.31, 26
+Vertex 2.5  , -0.31  , 26
+Vertex 2.5  , -0.31  , -1
+Face 3,2,1,0
+
+
+[Texture]
+Load ..\grounds\grass6_cable.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 5, 0
+Coordinates 2, 5, 1
+Coordinates 3, 0, 1
+
+
+
+;querabhang
+[MeshBuilder]
+Vertex 100,  -7, -11
+Vertex 100,  -0.31, -1
+Vertex 0  , -0.31  , -1
+Vertex 0  , -7  , -11
+Face 3,2,1,0
+
+
+[Texture]
+Load ..\grounds\grass6.bmp
+Coordinates 0, 4, 0
+Coordinates 1, 4, 0.5
+Coordinates 2, 0, 0.5
+Coordinates 3, 0, 0
+
+
+[MeshBuilder]
+Vertex 100,  -7, 35
+Vertex 100,  -0.31, 26
+Vertex 0  , -0.31  , 26
+Vertex 0  , -7  , 35
+Face 0,1,2,3
+
+
+[Texture]
+Load ..\grounds\grass6.bmp
+Coordinates 0, 4, 0
+Coordinates 1, 4, 0.5
+Coordinates 2, 0, 0.5
+Coordinates 3, 0, 0
+

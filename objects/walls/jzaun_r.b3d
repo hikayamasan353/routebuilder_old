@@ -1,0 +1,19 @@
+;author=Rainer Hübner
+;description=Jägerzaun
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+;id=152
+
+[MeshBuilder]
+Vertex 2, 1, 25
+Vertex 2, 1, 0
+Vertex 2, -0.3, 0
+Vertex 2, -0.3, 25
+Face2 0,1,2,3
+
+[Texture]
+Load ..\fences\jzaun.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 25, 0
+Coordinates 2, 25, 1
+Coordinates 3, 0, 1
+Transparent 0,0,255

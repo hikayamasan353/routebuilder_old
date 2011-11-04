@@ -1,0 +1,45 @@
+;author=Lemontea,smace(his/her converter)
+;description=Simple lamp stand(day)
+;copyright=Open Source
+;base stand
+[MESHBUILDER]
+cylinder 8,0.1,0.15,0.3
+translate 0,0.15,0
+color 125,125,125
+;main pole
+[MESHBUILDER]
+cylinder 6,0.04,0.04,1.8
+translate 0,1.2,0
+color 125,125,125
+;base of the lamp
+[MESHBUILDER]
+cylinder 8,0.15,0.05,0.06
+translate 0,2.13,0
+color 125,125,125
+;lamp
+[MESHBUILDER]
+cylinder 8,0.15,0.1,0.3
+translate 0,2.31,0
+color 255,255,255,95
+;top of the lamp
+[MESHBUILDER]
+cylinder 8,0.11,0.19,0.08
+translate 0,2.5,0
+color 125,125,125
+;the top
+[MESHBUILDER]
+cylinder 6,0.03,0.07,0.05
+translate 0,2.565,0
+color 125,125,125
+;The following part are made by smace's converter
+;first convert to csv and then convert back to b3d again
+;Then cut down the last part of the code and paste back to the file
+; RB Bounding Box for Complex Objects
+; You may remove this section if you are not using RB
+[MeshBuilder]
+Vertex -0.19 , 0, -0.19 
+Vertex -0.19 , 0,  0.19 
+Vertex  0.19 , 0,  0.19 
+Vertex  0.19 , 0, -0.19 
+Face 0,1,2,3
+Color 0,0,0,1

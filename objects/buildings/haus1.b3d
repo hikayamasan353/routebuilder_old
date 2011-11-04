@@ -1,0 +1,92 @@
+;description=created for Route Builder
+;author=Thomas233
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[Meshbuilder]
+Vertex 0, 0, 0
+Vertex 0, 8, 0
+Vertex 5, 9, 0
+Vertex 10, 8, 0
+Vertex 10, 0, 0
+Face 0, 1, 2, 3, 4
+[Texture]
+Load haus1.bmp
+Coordinates 0, 0, 0.541016
+Coordinates 1, 0, 0.1875
+Coordinates 2, 0.175781, 0.136719
+Coordinates 3, 0.34375, 0.1875
+Coordinates 4, 0.34375, 0.541016
+[Meshbuilder]
+Vertex 10, 0, 15
+Vertex 10, 8, 15
+Vertex 5, 9, 15
+Vertex 0, 8, 15
+Vertex 0, 0, 15
+Face 0, 1, 2, 3, 4
+[Texture]
+Load haus1.bmp
+Coordinates 0, 0.001953, 0.523438
+Coordinates 1, 0, 0.173828
+Coordinates 2, 0.162109, 0.134766
+Coordinates 3, 0.324219, 0.173828
+Coordinates 4, 0.324219, 0.523438
+[Meshbuilder]
+Vertex 10, 0, 0
+Vertex 10, 8, 0
+Vertex 10, 8, 15
+Vertex 10, 0, 15
+Face 0, 1, 2, 3
+[Texture]
+Load haus1.bmp
+Coordinates 0, 0, 0.544922
+Coordinates 1, 0, 0
+Coordinates 2, 0.677734, 0
+Coordinates 3, 0.677734, 0.544922
+[Meshbuilder]
+Vertex 0, 0, 15
+Vertex 0, 8, 15
+Vertex 0, 8, 0
+Vertex 0, 0, 0
+Face 0, 1, 2, 3
+[Texture]
+Load haus1.bmp
+Coordinates 0, 0, 0.544922
+Coordinates 1, 0, 0
+Coordinates 2, 0.677734, 0.001953
+Coordinates 3, 0.673828, 0.544922
+[Meshbuilder]
+Vertex 10, 8, 0
+Vertex 5, 9, 0
+Vertex 5, 9, 15
+Vertex 10, 8, 15
+Face 0, 1, 2, 3
+[Texture]
+Load haus1.bmp
+Coordinates 0, 0.267578, 0.558594
+Coordinates 1, 0.273438, 0.548828
+Coordinates 2, 0.326172, 0.554688
+Coordinates 3, 0.322266, 0.558594
+[Meshbuilder]
+Vertex 0, 8, 15
+Vertex 5, 9, 15
+Vertex 5, 9, 0
+Vertex 0, 8, 0
+Face 0, 1, 2, 3
+[Texture]
+Load haus1.bmp
+Coordinates 0, 0.285156, 0.560547
+Coordinates 1, 0.28125, 0.550781
+Coordinates 2, 0.324219, 0.556641
+Coordinates 3, 0.328125, 0.564453
+[Meshbuilder]
+Vertex 10, 0, 15
+Vertex 10, 0, 0
+Vertex 0, 0, 0
+Vertex 0, 0, 15
+Face 0, 1, 2, 3
+[Texture]
+Load haus1.bmp
+Coordinates 0, 0.134766, 0.185547
+Coordinates 1, 0.140625, 0.027344
+Coordinates 2, 0.191406, 0.039063
+Coordinates 3, 0.195313, 0.195313

@@ -1,0 +1,20 @@
+;author=Uwe Post
+;description=Bohlengleisübergang
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -3, -0.05, 0
+Vertex -3, -0.05, 1.5
+Vertex 3, -0.05, 1.5
+Vertex 3, -0.05, 0
+Face 0,1,2,3
+
+[Texture]
+Load bohlenuebergang1.bmp
+Coordinates 0, 0.5, 0.5
+Coordinates 1, 0.5, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 0.5
+transparent 0,102,0
+
+

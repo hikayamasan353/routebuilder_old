@@ -1,0 +1,35 @@
+;author=Uwe Post
+;description=train timetable (German) 2
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex 0, 2,0.5
+Vertex 0, 2,-0.5
+Vertex 0, 0,-0.5
+Vertex 0, 0,0.5
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load abfahrtsplan2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+transparent 0,102,0
+
+[MeshBuilder]
+Vertex 0.01, 2,-0.5
+Vertex 0.01, 2,0.5
+Vertex 0.01, 0,0.5
+Vertex 0.01, 0,-0.5
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load abfahrtsplan2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+transparent 0,102,0

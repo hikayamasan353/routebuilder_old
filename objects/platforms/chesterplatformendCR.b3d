@@ -1,0 +1,31 @@
+;author=Peter Everett
+;Description=Chester Station - end left platform
+;Copyright=Peter Everett August 2003 (V 1.0)
+
+;platform deck
+[Meshbuilder]
+Vertex 7.6,0,25.5
+Vertex 2.6,0,25.5
+Vertex 1.6,1.1,0
+Vertex 9.6,1.1,0
+Face 3,2,1,0
+
+[Texture]
+Load chesterplatform.bmp
+Coordinates 0,0,-0.625
+Coordinates 1,0,0
+Coordinates 2,25,0
+Coordinates 3,25,-1
+
+;patform supports
+[Meshbuilder]
+Vertex 1.7,0,0
+Vertex 1.7,1.1,0
+Vertex 3.2,0,25.5
+Face 2,1,0
+
+[Texture]
+Load supports.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0

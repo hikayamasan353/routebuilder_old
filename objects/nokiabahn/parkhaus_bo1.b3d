@@ -1,0 +1,65 @@
+;author=Uwe Post
+;description=Parkhaus Bochum 1
+;copyright=open source
+
+
+[MeshBuilder]
+Vertex 0, 20, 0
+Vertex 25, 20, 0
+Vertex 25, 10, 0
+Vertex 0, 10, 0
+Face 0,1,2,3
+
+[Texture]
+Load parkhaus-bo-hbf-fassade1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex 0, 20, 10
+Vertex 25, 20,10
+Vertex 25, 10, 10
+Vertex 0, 10, 10
+Face 3,2,1,0
+
+[Texture]
+Load parkhaus-bo-hbf-fassade1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+
+
+[MeshBuilder]
+Vertex 0, 10, 0
+Vertex 25, 10, 0
+Vertex 25, 0, 0
+Vertex 0, 0, 0
+Face 0,1,2,3
+
+
+[Texture]
+Load parkhaus-bo-hbf-fassade2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 2, 0
+Coordinates 2, 2, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex 0, 10, 10
+Vertex 25, 10,10
+Vertex 25, 0, 10
+Vertex 0, 0, 10
+Face 3,2,1,0
+
+[Texture]
+Load parkhaus-bo-hbf-fassade2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 2, 0
+Coordinates 2, 2, 1
+Coordinates 3, 0, 1
+
+

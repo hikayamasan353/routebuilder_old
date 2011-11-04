@@ -1,0 +1,19 @@
+;author=Uwe Post
+;description=barbedwire fence
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex 0, 1, 25
+Vertex 0, 1, 0
+Vertex 0, 0, 0
+Vertex 0, 0, 25
+Face 0,1,2,3
+Face 1,0,3,2
+
+[Texture]
+Load barbedwirefence1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 8, 0
+Coordinates 2, 8, 1
+Coordinates 3, 0, 1
+transparent 0,0,255

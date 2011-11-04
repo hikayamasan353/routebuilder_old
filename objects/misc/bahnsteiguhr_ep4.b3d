@@ -1,0 +1,25 @@
+;description=Bahnsteiguhr Epoche IV DB
+;author=Uwe Post
+;copyright=Uwe Post 2004
+
+
+[MeshBuilder]
+Vertex -0.4, 4,   0
+Vertex -0.4, 4.8, 0
+Vertex  0.4, 4.8, 0
+Vertex  0.4, 4,   0
+Face2   0,1,2,3
+
+[Texture]
+Load bahnsteiguhr_ep4.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+transparent 0,0,255
+
+
+[MESHBUILDER]
+cylinder 6,0.07,0.07,5
+translate 0,1.55,0
+color 35,55,55

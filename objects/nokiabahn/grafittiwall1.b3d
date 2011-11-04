@@ -1,0 +1,23 @@
+;author=Uwe Post
+;description=brick wall with grafitti
+;copyright=the BVE RouteBuilder team 2002, goto routebuilder.bve-routes.com
+
+
+[MeshBuilder]
+Vertex 0, 1.5, 25
+Vertex 0, 1.5, 0
+Vertex 0, 0, 0
+Vertex 0, 0, 25
+translate 2,2,0
+Rotate 90,0
+Face 0,1,2,3
+Face 1,0,3,2
+
+[Texture]
+Load grafittiwall1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 2, 0
+Coordinates 2, 2, 1
+Coordinates 3, 0, 1
+
+

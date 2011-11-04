@@ -1,0 +1,97 @@
+;author=Rainer Hübner,Uwe Post
+;description=Wartehaus
+;copyright=the BVE RouteBuilder team 2004
+
+[MeshBuilder]
+Vertex 1.5,3.4,6
+Vertex 3,3.4,6
+Vertex 3,0.4,6
+Vertex 1.5,0.4,6
+Face2 0,1,2,3
+
+[Texture]
+Load whaus6.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex 1.5,3.4,0
+Vertex 3,3.4,0
+Vertex 3,0.4,0
+Vertex 1.5,0.4,0
+Face2 0, 1, 2, 3
+
+[Texture]
+Load whaus6.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+
+[MeshBuilder]
+Vertex 3,3.4,6
+Vertex 3,3.4,0
+Vertex 3,0.4,0
+Vertex 3,0.4,6
+Face2 0, 1, 2, 3
+
+
+[Texture]
+Load whaus6.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+
+[MeshBuilder]
+Vertex 3,3.4,6.1
+Vertex 0,3.4,6.1
+Vertex 0,3.1,6.1
+Vertex 3,3.1,6.1
+Face2 0,1,2,3
+Color 51,62,90
+
+[MeshBuilder]
+Vertex 3,3.4,6.1
+Vertex 3,3.4,-0.1
+Vertex 3,3.1,-0.1
+Vertex 3,3.1,6.1
+Face2 0,1,2,3
+Color 51,62,90
+
+[MeshBuilder]
+Vertex 0,3.4,6.1
+Vertex 0,3.4,-0.1
+Vertex 0,3.1,-0.1
+Vertex 0,3.1,6.1
+Face2 0,1,2,3
+Color 51,62,90
+
+[MeshBuilder]
+Vertex 3,3.4,-0.1
+Vertex 0,3.4,-0.1
+Vertex 0,3.1,-0.1
+Vertex 3,3.1,-0.1
+Face2 0,1,2,3
+Color 51,62,90
+
+[MeshBuilder]
+Vertex 0,3.1,6.1
+Vertex 3,3.1,6.1
+Vertex 3,3.1,-0.1
+Vertex 0,3.1,-0.1
+Face2 3,2,1,0
+Color 128,128,128
+
+[MeshBuilder]
+Vertex 0,3.4,6.1
+Vertex 3,3.4,6.1
+Vertex 3,3.4,-0.1
+Vertex 0,3.4,-0.1
+Face 3,2,1,0
+Face 0,1,2,3
+Color 128,128,128

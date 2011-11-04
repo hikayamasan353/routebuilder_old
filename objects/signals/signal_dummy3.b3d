@@ -1,0 +1,18 @@
+;author=Uwe Post
+;description=Signal dummy (signal6.bmp, stop)
+;copyright=the BVE RouteBuilder team 2004, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -0.3, 0, 0
+Vertex 0.3, 0, 0
+Vertex 0.3, -1.1, 0
+Vertex -0.3, -1.1, 0
+Face 0, 1, 2, 3
+[Texture]
+Load ..\..\..\..\signal6.BMP
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+transparent 0,0,255
+

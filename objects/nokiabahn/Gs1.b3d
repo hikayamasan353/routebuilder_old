@@ -1,0 +1,147 @@
+;description=Gs Cargo car
+;author=Rainer Huebner
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[Meshbuilder]
+Vertex -0.7, 0, 0
+Vertex -0.9, 1, 0
+Vertex 1.3, 1, 0
+Vertex 1.1, 0, 0
+Face 0, 1, 2, 3
+[Texture]
+Load Gs1.bmp
+Coordinates 0, 0.146484, 0.757813
+Coordinates 1, 0.142578, 0.644531
+Coordinates 2, 0.185547, 0.644531
+Coordinates 3, 0.181641, 0.757813
+Transparent 0, 0, 165
+[Meshbuilder]
+Vertex 1.1, 0, 8.4
+Vertex 1.3, 1, 8.4
+Vertex -0.9, 1, 8.4
+Vertex -0.7, 0, 8.4
+Face 0, 1, 2, 3
+[Texture]
+Load Gs1.bmp
+Coordinates 0, 0.146484, 0.757813
+Coordinates 1, 0.141602, 0.648438
+Coordinates 2, 0.183594, 0.648438
+Coordinates 3, 0.181641, 0.757813
+Transparent 0, 0, 165
+[Meshbuilder]
+Vertex 1.1, 0, 0
+Vertex 1.3, 1, 0
+Vertex 1.3, 1, 8.4
+Vertex 1.1, 0, 8.4
+Face 0, 1, 2, 3
+[Texture]
+Load Gs1.bmp
+Coordinates 0, 0.035156, 0.761719
+Coordinates 1, 0.033203, 0.589844
+Coordinates 2, 0.427734, 0.597656
+Coordinates 3, 0.427734, 0.761719
+Transparent 0, 0, 165
+[Meshbuilder]
+Vertex -0.7, 0, 8.4
+Vertex -0.9, 1, 8.4
+Vertex -0.9, 1, 0
+Vertex -0.7, 0, 0
+Face 0, 1, 2, 3
+[Texture]
+Load Gs1.bmp
+Coordinates 0, 0.035156, 0.761719
+Coordinates 1, 0.033203, 0.589844
+Coordinates 2, 0.427734, 0.597656
+Coordinates 3, 0.427734, 0.761719
+Transparent 0, 0, 165
+[Meshbuilder]
+Vertex -1.2, 3.9, -0.5
+Vertex 1.6, 3.9, -0.5
+Vertex 1.6, 0.9, -0.5
+Vertex -1.2, 0.9, -0.5
+Face 0, 1, 2, 3
+[Texture]
+Load Gs1.bmp
+Coordinates 0, 0.476563, 0.039063
+Coordinates 1, 0.595703, 0.039063
+Coordinates 2, 0.594727, 0.601563
+Coordinates 3, 0.476563, 0.601563
+Transparent 0, 0, 165
+[Meshbuilder]
+Vertex 1.6, 3.9, 8.9
+Vertex -1.2, 3.9, 8.9
+Vertex -1.2, 0.9, 8.9
+Vertex 1.6, 0.9, 8.9
+Face 0, 1, 2, 3
+[Texture]
+Load Gs1.bmp
+Coordinates 0, 0.476563, 0.039063
+Coordinates 1, 0.595703, 0.039063
+Coordinates 2, 0.595703, 0.601563
+Coordinates 3, 0.476563, 0.601563
+Transparent 0, 0, 165
+[Meshbuilder]
+Vertex 1.6, 0.9, -0.5
+Vertex 1.6, 3.4, -0.5
+Vertex 1.6, 3.4, 8.9
+Vertex 1.6, 0.9, 8.9
+Face 0, 1, 2, 3
+[Texture]
+Load Gs1.bmp
+Coordinates 0, 0.00293, 0.585938
+Coordinates 1, 0.001953, 0.101563
+Coordinates 2, 0.474609, 0.117188
+Coordinates 3, 0.469727, 0.605469
+Transparent 0, 0, 165
+[Meshbuilder]
+Vertex -1.2, 0.9, 8.9
+Vertex -1.2, 3.4, 8.9
+Vertex -1.2, 3.4, -0.5
+Vertex -1.2, 0.9, -0.5
+Face 0, 1, 2, 3
+[Texture]
+Load Gs1.bmp
+Coordinates 0, 0.00293, 0.585938
+Coordinates 1, 0.001953, 0.101563
+Coordinates 2, 0.474609, 0.117188
+Coordinates 3, 0.469727, 0.605469
+Transparent 0, 0, 165
+[Meshbuilder]
+Vertex 1.6, 3.4, -0.5
+Vertex 0.4, 3.9, -0.5
+Vertex 0.4, 3.9, 8.9
+Vertex 1.6, 3.4, 8.9
+Face 0, 1, 2, 3
+[Texture]
+Load Gs1.bmp
+Coordinates 0, 0.008789, 0.09375
+Coordinates 1, 0.008789, 0.023438
+Coordinates 2, 0.472656, 0.03125
+Coordinates 3, 0.472656, 0.097656
+Transparent 0, 0, 165
+[Meshbuilder]
+Vertex -1.2, 3.4, 8.9
+Vertex 0, 3.9, 8.9
+Vertex 0, 3.9, -0.5
+Vertex -1.2, 3.4, -0.5
+Face 0, 1, 2, 3
+[Texture]
+Load Gs1.bmp
+Coordinates 0, 0.009766, 0.09375
+Coordinates 1, 0.009766, 0.023438
+Coordinates 2, 0.470703, 0.03125
+Coordinates 3, 0.470703, 0.097656
+Transparent 0, 0, 165
+[Meshbuilder]
+Vertex 0, 3.9, -0.5
+Vertex 0, 3.9, 8.9
+Vertex 0.4, 3.9, 8.9
+Vertex 0.4, 3.9, -0.5
+Face 0, 1, 2, 3
+[Texture]
+Load Gs1.bmp
+Coordinates 0, 0.011719, 0.070313
+Coordinates 1, 0.012695, 0.027344
+Coordinates 2, 0.459961, 0.027344
+Coordinates 3, 0.459961, 0.070313
+Transparent 0, 0, 165

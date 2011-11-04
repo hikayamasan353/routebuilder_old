@@ -1,0 +1,91 @@
+;description=Corail-Wagen A9 1. Klasse SNCF, Ep. IV
+;author=Uwe Post
+;copyright=open source
+
+[Meshbuilder]
+Vertex 1.35,4.25,0.2
+Vertex 1.35,4.25,24.8
+Vertex 1.35,0,24.8
+Vertex 1.35,0,0.2
+Face 0,1,2,3
+
+[Texture]
+Load SNCF_Corail_A9_seite.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 0, 0, 256
+
+[Meshbuilder]
+Vertex -1.35,4.25,0.2
+Vertex -1.35,4.25,24.8
+Vertex -1.35,0,24.8
+Vertex -1.35,0,0.2
+Face 3,2,1,0
+
+[Texture]
+Load SNCF_Corail_A9_seite.bmp
+Coordinates 1,0,0
+Coordinates 0,1,0
+Coordinates 3,1,1
+Coordinates 2,0,1
+transparent 0, 0, 256
+
+[Meshbuilder]
+Vertex  -1.35,4 , 0.2
+Vertex   1.35,4 , 0.2
+Vertex   1.35,0   , 0.2
+Vertex  -1.35,0   , 0.2
+Face 0,1,2,3
+
+[Texture]
+Load SNCF_Corail_ende.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 0, 0, 256
+
+[Meshbuilder]
+Vertex  -1.35,4, 24.8
+Vertex   1.35,4, 24.8
+Vertex   1.35,0   , 24.8
+Vertex  -1.35,0   , 24.8
+Face 3,2,1,0
+
+[Texture]
+Load SNCF_Corail_ende.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 0, 0, 256
+
+[Meshbuilder]
+Vertex -1,4  ,0.2
+Vertex  1,4  ,0.2
+Vertex  1,4  ,24.8
+Vertex -1,4  ,24.8
+Face 3,2,1,0
+color 80,80,80
+
+[Meshbuilder]
+Vertex -1   ,4  ,0.2
+Vertex -1.35,3.5  ,0.2
+Vertex -1.35,3.5  ,24.8
+Vertex -1   ,4  ,24.8
+Face 0,1,2,3
+color 90,90,90
+
+
+[Meshbuilder]
+Vertex 1   ,4  ,0.2
+Vertex 1.35,3.5  ,0.2
+Vertex 1.35,3.5  ,24.8
+Vertex 1   ,4  ,24.8
+Face 3,2,1,0
+color 90,90,90
+
+
+

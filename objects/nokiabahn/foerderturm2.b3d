@@ -1,0 +1,37 @@
+;author=Uwe Post
+;description=Foerderturm Bergbaumuseum Bochum
+;copyright=open source
+
+
+[MeshBuilder]
+Vertex 0, 30, 0
+Vertex 18, 30, 0
+Vertex 18, 0, 0
+Vertex 0, 0, 0
+Face 0,1,2,3
+
+
+[Texture]
+Load foerderturm2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+transparent 0,0,255
+
+[MeshBuilder]
+Vertex 0, 30, 10
+Vertex 18, 30,10
+Vertex 18, 0, 10
+Vertex 0, 0, 10
+Face 3,2,1,0
+
+[Texture]
+Load foerderturm2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+transparent 0,0,255
+
+

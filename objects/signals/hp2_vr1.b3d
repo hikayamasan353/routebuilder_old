@@ -1,0 +1,91 @@
+;author=Rainer Hübner
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]	 ;Signalschirm
+Vertex -0.35, 6.6, 0
+Vertex  0.35, 6.6, 0
+Vertex  0.35, 4, 0
+Vertex -0.35, 4, 0
+Face 0, 1, 2, 3
+[Texture]
+Load \HP2.BMP
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+Transparent 0, 0, 255
+
+[MeshBuilder]	 ;Signalschirm
+Vertex -0.7, 4.45, 0
+Vertex  0.7, 4.45, 0
+Vertex  0.7, 2.95, 0
+Vertex -0.7, 2.95, 0
+Face 0, 1, 2, 3
+[Texture]
+Load \Vr_1.BMP
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+Transparent 0, 0, 255
+
+[MeshBuilder]	 ;Signalschirm Rückseite
+Vertex -0.35, 5.5, 0.01
+Vertex  0.35, 5.5, 0.01
+Vertex  0.35, 4, 0.01
+Vertex -0.35, 4, 0.01
+Face 3,2,1,0
+Color 0,0,0
+
+
+[MeshBuilder]	  ;Mastschild
+Vertex -0.28, 2.9, 0
+Vertex  0.28, 2.9, 0
+Vertex  0.28, 1.1, 0
+Vertex -0.28, 1.1, 0
+Face 0, 1, 2, 3
+[Texture]
+Load \mast_r.BMP
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+Transparent 0, 0, 255
+
+[MeshBuilder]      ;Mast des Signals 
+Vertex -0.1,5,0.1
+Vertex 0.1,5,0.1
+Vertex 0.1,5,0.4
+Vertex -0.1,5,0.4
+
+Vertex -0.1,0,0.1
+Vertex 0.1,0,0.1
+Vertex 0.1,0,0.4
+Vertex -0.1,0,0.4
+
+Face 0,1,5,4
+Face 1,2,6,5
+Face 2,3,7,6
+Face 3,0,4,7
+
+Color 128,128,128
+
+[MeshBuilder]      ;Schaltkasten
+Vertex -0.3,1.1,0.4
+Vertex 0.3,1.1,0.4
+Vertex 0.3,1.1,0.8
+Vertex -0.3,1.1,0.8
+
+Vertex -0.3,0,0.4
+Vertex 0.3,0,0.4
+Vertex 0.3,0,0.8
+Vertex -0.3,0,0.8
+
+Face 0,1,5,4
+Face 1,2,6,5
+Face 2,3,7,6
+Face 3,0,4,7
+Face 0,3,2,1
+
+Color 192,192,192
+

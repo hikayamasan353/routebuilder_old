@@ -1,0 +1,48 @@
+;author=Uwe Post
+;description=low Platform center left
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+;form=CL
+
+[MeshBuilder]
+Vertex -7.5, 0.4, 0
+Vertex -7.5, 0.4, 25.2
+Vertex -3.0, 0.4, 25.2
+Vertex -3.0, 0.4, 0
+Face 0,1,2,3
+
+[Texture]
+Load platform2tx1.bmp
+Coordinates 0, 1, 5
+Coordinates 1, 1, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 5
+
+
+
+[MeshBuilder]
+Vertex -3, -0.3, 0
+Vertex -7.5, -0.3, 0
+Vertex -7.5, 0.4, 0
+Vertex -3, 0.4, 0
+Face 0,1,2,3
+
+[Texture]
+Load platform2tx2.bmp
+Coordinates 0, 2, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0
+Coordinates 3, 2, 0
+
+[MeshBuilder]
+Vertex -3, -0.3, 25.2
+Vertex -7.5, -0.3, 25.2
+Vertex -7.5, 0.4, 25.2
+Vertex -3, 0.4, 25.2
+Face 3,2,1,0
+
+[Texture]
+Load platform2tx2.bmp
+Coordinates 0, 2, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0
+Coordinates 3, 2, 0

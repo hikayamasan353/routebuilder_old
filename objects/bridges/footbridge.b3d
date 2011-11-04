@@ -1,0 +1,480 @@
+;description=foot bridge
+;author=unknown
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[meshbuilder];LEFT SIDE Upper
+Vertex 0,0,0
+Vertex 0,4,0
+Vertex 0.2,4,0
+Vertex 0.2,0,0
+Vertex 0,0,0.2
+Vertex 0,4,0.2
+Vertex 0.2,4,0.2
+Vertex 0.2,0,0.2
+Face 0,1,2,3
+Face 7,6,5,4
+Face 3,2,6,7
+Face 4,5,1,0
+Color 180,180,180
+[meshbuilder]
+Vertex 1.5,0,0
+Vertex 1.5,4,0
+Vertex 1.7,4,0
+Vertex 1.7,0,0
+Vertex 1.5,0,0.2
+Vertex 1.5,4,0.2
+Vertex 1.7,4,0.2
+Vertex 1.7,0,0.2
+Face 0,1,2,3
+Face 7,6,5,4
+Face 3,2,6,7
+Face 4,5,1,0
+Color 180,180,180
+[meshbuilder]
+Vertex 0,0,1.5
+Vertex 0,4,1.5
+Vertex 0.2,4,1.5
+Vertex 0.2,0,1.5
+Vertex 0,0,1.7
+Vertex 0,4,1.7
+Vertex 0.2,4,1.7
+Vertex 0.2,0,1.7
+Face 0,1,2,3
+Face 7,6,5,4
+Face 3,2,6,7
+Face 4,5,1,0
+Color 180,180,180
+[meshbuilder]
+Vertex 1.5,0,1.5
+Vertex 1.5,4,1.5
+Vertex 1.7,4,1.5
+Vertex 1.7,0,1.5
+Vertex 1.5,0,1.7
+Vertex 1.5,4,1.7
+Vertex 1.7,4,1.7
+Vertex 1.7,0,1.7
+Face 0,1,2,3
+Face 7,6,5,4
+Face 3,2,6,7
+Face 4,5,1,0
+Color 180,180,180
+[meshbuilder];Left SIDE Lower
+Vertex 0,0,5
+Vertex 0,2,5
+Vertex 0.2,2,5
+Vertex 0.2,0,5
+Vertex 0,0,5.2
+Vertex 0,2,5.2
+Vertex 0.2,2,5.2
+Vertex 0.2,0,5.2
+Face 0,1,2,3
+Face 7,6,5,4
+Face 3,2,6,7
+Face 4,5,1,0
+Color 180,180,180
+[meshbuilder]
+Vertex 1.5,0,5
+Vertex 1.5,2,5
+Vertex 1.7,2,5
+Vertex 1.7,0,5
+Vertex 1.5,0,5.2
+Vertex 1.5,2,5.2
+Vertex 1.7,2,5.2
+Vertex 1.7,0,5.2
+Face 0,1,2,3
+Face 7,6,5,4
+Face 3,2,6,7
+Face 4,5,1,0
+Color 180,180,180
+[meshbuilder]
+Vertex 0,0,6.5
+Vertex 0,2,6.5
+Vertex 0.2,2,6.5
+Vertex 0.2,0,6.5
+Vertex 0,0,6.7
+Vertex 0,2,6.7
+Vertex 0.2,2,6.7
+Vertex 0.2,0,6.7
+Face 0,1,2,3
+Face 7,6,5,4
+Face 3,2,6,7
+Face 4,5,1,0
+Color 180,180,180
+[meshbuilder]
+Vertex 1.5,0,6.5
+Vertex 1.5,2,6.5
+Vertex 1.7,2,6.5
+Vertex 1.7,0,6.5
+Vertex 1.5,0,6.7
+Vertex 1.5,2,6.7
+Vertex 1.7,2,6.7
+Vertex 1.7,0,6.7
+Face 0,1,2,3
+Face 7,6,5,4
+Face 3,2,6,7
+Face 4,5,1,0
+Color 180,180,180
+[meshbuilder];base
+Vertex 0,4,0
+Vertex 0,4,1.7
+Vertex 1.7,4,1.7
+Vertex 1.7,4,0
+Vertex 0,2,5
+Vertex 0,2,6.7
+Vertex 1.7,2,6.7
+Vertex 1.7,2,5
+Vertex 0,0,10
+Vertex 1.7,0,10
+Face 3,2,1,0
+Face 7,6,5,4
+Face 2,7,4,1
+Face 8,5,6,9
+Face 0,1,2,3
+Face 4,5,6,7
+Face 1,4,7,2
+Face 9,6,5,8
+Color 100,100,100
+[meshbuilder];sides
+Vertex 1.7,4,1.7
+Vertex 1.7,5,1.7
+Vertex 1.7,3,5
+Vertex 1.7,3,6.7
+Vertex 1.7,2,6.7
+Vertex 1.7,2,5
+Vertex 1.7,1,10
+Vertex 1.7,0,10
+Vertex 0,4,1.7
+Vertex 0,5,1.7
+Vertex 0,3,5
+Vertex 0,3,6.7
+Vertex 0,2,6.7
+Vertex 0,2,5
+Vertex 0,1,10
+Vertex 0,0,10
+Vertex 0,4,0
+Vertex 0,5,0
+Vertex 1.7,5,0
+Vertex 1.7,4,0
+Face 0,1,2,5
+Face 2,3,4,5
+Face 4,3,6,7
+Face 8,9,10,13
+Face 10,11,12,13
+Face 12,11,14,15
+Face 16,17,18,19
+Face 19,18,17,16
+Face 15,14,11,12
+Face 13,12,11,10
+Face 13,10,9,8
+Face 7,6,3,4
+Face 5,4,3,2
+Face 5,2,1,0
+Face 8,9,17,16
+Face 16,17,9,8
+[texture]
+load concrete.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 10, 0
+Coordinates 2, 0, 10
+Coordinates 5, 10, 10
+Coordinates 2, 0, 0
+Coordinates 3, 10, 0
+Coordinates 4, 0, 10
+Coordinates 5, 10, 10
+Coordinates 4, 0, 0
+Coordinates 3, 10, 0
+Coordinates 6, 0, 10
+Coordinates 7, 10, 10
+Coordinates 8, 0, 0
+Coordinates 9, 10, 0
+Coordinates 10, 0, 10
+Coordinates 13, 10, 10
+Coordinates 10, 0, 0
+Coordinates 11, 10, 0
+Coordinates 12, 0, 10
+Coordinates 13, 10, 10
+Coordinates 12, 0, 0
+Coordinates 11, 10, 0
+Coordinates 14, 0, 10
+Coordinates 15, 10, 10
+Coordinates 16, 0, 0
+Coordinates 17, 10, 0
+Coordinates 18, 0, 10
+Coordinates 19, 10, 10
+;Right Side
+[meshbuilder];Right side Upper
+Vertex 15,0,0
+Vertex 15,4,0
+Vertex 15.2,4,0
+Vertex 15.2,0,0
+Vertex 15,0,0.2
+Vertex 15,4,0.2
+Vertex 15.2,4,0.2
+Vertex 15.2,0,0.2
+Face 0,1,2,3
+Face 7,6,5,4
+Face 3,2,6,7
+Face 4,5,1,0
+[texture]
+load concrete.bmp
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 0, 0, 1
+Coordinates 3, 1, 1
+[meshbuilder]
+Vertex 16.5,0,0
+Vertex 16.5,4,0
+Vertex 16.7,4,0
+Vertex 16.7,0,0
+Vertex 16.5,0,0.2
+Vertex 16.5,4,0.2
+Vertex 16.7,4,0.2
+Vertex 16.7,0,0.2
+Face 0,1,2,3
+Face 7,6,5,4
+Face 3,2,6,7
+Face 4,5,1,0
+Color 180,180,180
+[meshbuilder]
+Vertex 15,0,1.5
+Vertex 15,4,1.5
+Vertex 15.2,4,1.5
+Vertex 15.2,0,1.5
+Vertex 15,0,1.7
+Vertex 15,4,1.7
+Vertex 15.2,4,1.7
+Vertex 15.2,0,1.7
+Face 0,1,2,3
+Face 7,6,5,4
+Face 3,2,6,7
+Face 4,5,1,0
+Color 180,180,180
+[meshbuilder]
+Vertex 16.5,0,1.5
+Vertex 16.5,4,1.5
+Vertex 16.7,4,1.5
+Vertex 16.7,0,1.5
+Vertex 16.5,0,1.7
+Vertex 16.5,4,1.7
+Vertex 16.7,4,1.7
+Vertex 16.7,0,1.7
+Face 0,1,2,3
+Face 7,6,5,4
+Face 3,2,6,7
+Face 4,5,1,0
+Color 180,180,180
+[meshbuilder];right SIDE Lower
+Vertex 15,0,5
+Vertex 15,2,5
+Vertex 15.2,2,5
+Vertex 15.2,0,5
+Vertex 15,0,5.2
+Vertex 15,2,5.2
+Vertex 15.2,2,5.2
+Vertex 15.2,0,5.2
+Face 0,1,2,3
+Face 7,6,5,4
+Face 3,2,6,7
+Face 4,5,1,0
+Color 180,180,180
+[meshbuilder]
+Vertex 16.5,0,5
+Vertex 16.5,2,5
+Vertex 16.7,2,5
+Vertex 16.7,0,5
+Vertex 16.5,0,5.2
+Vertex 16.5,2,5.2
+Vertex 16.7,2,5.2
+Vertex 16.7,0,5.2
+Face 0,1,2,3
+Face 7,6,5,4
+Face 3,2,6,7
+Face 4,5,1,0
+Color 180,180,180
+[meshbuilder]
+Vertex 15,0,6.5
+Vertex 15,2,6.5
+Vertex 15.2,2,6.5
+Vertex 15.2,0,6.5
+Vertex 15,0,6.7
+Vertex 15,2,6.7
+Vertex 15.2,2,6.7
+Vertex 15.2,0,6.7
+Face 0,1,2,3
+Face 7,6,5,4
+Face 3,2,6,7
+Face 4,5,1,0
+Color 180,180,180
+[meshbuilder]
+Vertex 16.5,0,6.5
+Vertex 16.5,2,6.5
+Vertex 16.7,2,6.5
+Vertex 16.7,0,6.5
+Vertex 16.5,0,6.7
+Vertex 16.5,2,6.7
+Vertex 16.7,2,6.7
+Vertex 16.7,0,6.7
+Face 0,1,2,3
+Face 7,6,5,4
+Face 3,2,6,7
+Face 4,5,1,0
+Color 180,180,180
+[meshbuilder];base
+Vertex 15,4,0
+Vertex 15,4,1.7
+Vertex 16.7,4,1.7
+Vertex 16.7,4,0
+Vertex 15,2,5
+Vertex 15,2,6.7
+Vertex 16.7,2,6.7
+Vertex 16.7,2,5
+Vertex 15,0,10
+Vertex 16.7,0,10
+Face 3,2,1,0
+Face 7,6,5,4
+Face 2,7,4,1
+Face 8,5,6,9
+Face 0,1,2,3
+Face 4,5,6,7
+Face 1,4,7,2
+Face 9,6,5,8
+Color 100,100,100
+[meshbuilder];sides
+Vertex 16.7,4,1.7
+Vertex 16.7,5,1.7
+Vertex 16.7,3,5
+Vertex 16.7,3,6.7
+Vertex 16.7,2,6.7
+Vertex 16.7,2,5
+Vertex 16.7,1,10
+Vertex 16.7,0,10
+Vertex 15,4,1.7
+Vertex 15,5,1.7
+Vertex 15,3,5
+Vertex 15,3,6.7
+Vertex 15,2,6.7
+Vertex 15,2,5
+Vertex 15,1,10
+Vertex 15,0,10
+Vertex 15,4,0
+Vertex 15,5,0
+Vertex 16.7,5,0
+Vertex 16.7,4,0
+Face 0,1,2,5
+Face 2,3,4,5
+Face 4,3,6,7
+Face 8,9,10,13
+Face 10,11,12,13
+Face 12,11,14,15
+Face 16,17,18,19
+Face 19,18,17,16
+Face 15,14,11,12
+Face 13,12,11,10
+Face 13,10,9,8
+Face 7,6,3,4
+Face 5,4,3,2
+Face 5,2,1,0
+Face 19,18,1,0
+Face 0,1,18,19
+[texture]
+load concrete.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 0, 1
+Coordinates 5, 1, 1
+Coordinates 2, 0, 0
+Coordinates 3, 1, 0
+Coordinates 4, 0, 1
+Coordinates 5, 1, 1
+Coordinates 4, 0, 0
+Coordinates 3, 1, 0
+Coordinates 6, 0, 1
+Coordinates 7, 1, 1
+Coordinates 8, 0, 0
+Coordinates 9, 1, 0
+Coordinates 10, 0, 1
+Coordinates 13, 1, 1
+Coordinates 10, 0, 0
+Coordinates 11, 1, 0
+Coordinates 12, 0, 1
+Coordinates 13, 1, 1
+Coordinates 12, 0, 0
+Coordinates 11, 1, 0
+Coordinates 14, 0, 1
+Coordinates 15, 1, 1
+Coordinates 16, 0, 0
+Coordinates 17, 1, 0
+Coordinates 18, 0, 1
+Coordinates 19, 1, 1
+;span
+[Meshbuilder];base
+Vertex 1.7,4,0
+Vertex 1.7,4,1.7
+Vertex 4,5,1.7
+Vertex 4,5,0
+Vertex 12.7,5,0
+Vertex 12.7,5,1.7
+Vertex 15,4,1.7
+Vertex 15,4,0
+Face 0,1,2,3
+Face 3,2,1,0
+Face 4,5,6,7
+Face 7,6,5,4
+Face 3,2,5,4
+Face 4,5,2,3
+Color 100,100,100
+[Meshbuilder];Sides
+Vertex 1.7,4,0
+Vertex 1.7,5,0
+Vertex 4,6,0
+Vertex 4,5,0
+Vertex 12.7,5,0
+Vertex 12.7,6,0
+Vertex 15,5,0
+Vertex 15,4,0
+Vertex 1.7,4,1.7
+Vertex 1.7,5,1.7
+Vertex 4,6,1.7
+Vertex 4,5,1.7
+Vertex 12.7,5,1.7
+Vertex 12.7,6,1.7
+Vertex 15,5,1.7
+Vertex 15,4,1.7
+Face 0,1,2,3
+Face 3,2,1,0
+Face 3,2,5,4
+Face 4,5,2,3
+Face 4,5,6,7
+Face 7,6,5,4
+Face 8,9,10,11
+Face 11,10,9,8
+Face 11,10,13,12
+Face 12,13,10,11
+Face 12,13,14,15
+Face 15,14,13,12
+[texture]
+load concrete.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 0, 1
+Coordinates 3, 1, 1
+Coordinates 3, 0, 0
+Coordinates 2, 1, 0
+Coordinates 5, 0, 1
+Coordinates 4, 1, 1
+Coordinates 4, 0, 0
+Coordinates 5, 1, 0
+Coordinates 6, 0, 1
+Coordinates 7, 1, 1
+Coordinates 8, 0, 0
+Coordinates 9, 1, 0
+Coordinates 10, 0, 1
+Coordinates 11, 1, 1
+Coordinates 11, 0, 0
+Coordinates 10, 1, 0
+Coordinates 13, 0, 1
+Coordinates 12, 1, 1
+Coordinates 12, 0, 0
+Coordinates 13, 1, 0
+Coordinates 14, 0, 1
+Coordinates 15, 1, 1

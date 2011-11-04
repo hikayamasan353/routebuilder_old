@@ -1,0 +1,36 @@
+;description=Lamp
+;author=Thomas233
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[Meshbuilder]
+Vertex 0, 0, 0
+Vertex 0, 6, 0
+Vertex 3, 6, 0
+Vertex 3, 0, 0
+Face 0, 1, 2, 3
+[Texture]
+Load lampe_2.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+Transparent 0, 0, 0
+
+[Meshbuilder]
+Vertex 3, 0, 0.01
+Vertex 3, 6, 0.01
+Vertex 0, 6, 0.01
+Vertex 0, 0, 0.01
+Face 0,1,2,3
+[Texture]
+Load lampe_2.bmp
+Coordinates 0, 1, 1
+Coordinates 1, 1, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 1
+Transparent 0, 0, 0
+
+[MESHBUILDER]
+cylinder 10,1.4,6,5
+translate 1.4,3.2,0
+color 255,120,0,50

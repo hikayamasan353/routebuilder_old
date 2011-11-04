@@ -1,0 +1,150 @@
+;author=Uwe Post
+;description=Hamburg Hbf Haupthalle linker Hand
+;copyright=open source
+
+[MeshBuilder]
+Vertex -20,10,0
+Vertex 2.4,10,0
+Vertex 2.4,25,0
+Vertex -20,25,0
+Face2 0,1,2,3
+
+[Texture]
+Load hh_h_halle_innen3.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 1, 1
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+transparent 0,0,255
+
+
+
+;Fenster
+[MeshBuilder]
+Vertex 2.4,10,0
+Vertex 2.4,10,12.5
+Vertex 2,15,12.5
+Vertex 2,15,0
+Face2 0,1,2,3
+[Texture]
+Load hh_h_halle_innen4.bmp
+Coordinates 0, 1, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0.5
+Coordinates 3, 1, 0.5
+transparent 0,0,255
+[MeshBuilder]
+Vertex 2.15,15,0
+Vertex 2.15,15,12.5
+Vertex 1.8   ,18,12.5
+Vertex 1.8   ,18,0
+Face2 0,1,2,3
+[Texture]
+Load hh_h_halle_innen4.bmp
+Coordinates 0, 1, 0.5
+Coordinates 1, 0, 0.5
+Coordinates 2, 0, 0
+Coordinates 3, 1, 0
+transparent 0,0,255
+[MeshBuilder]
+Vertex -1  ,20,0
+Vertex -1  ,20,12.5
+Vertex 1.8   ,18,12.5
+Vertex 1.8   ,18,0
+Face2 0,1,2,3
+[Texture]
+Load hh_h_halle_innen4.bmp
+Coordinates 0, 1, 0.5
+Coordinates 1, 0, 0.5
+Coordinates 2, 0, 0
+Coordinates 3, 1, 0
+transparent 0,0,255
+;Dach
+[MeshBuilder]
+Vertex -1  ,20,0
+Vertex -1  ,20,12.5
+Vertex -20   ,25,12.5
+Vertex -20   ,25,0
+Face2 0,1,2,3
+[Texture]
+Load hh_h_halle_innen5.bmp
+Coordinates 0, 2, 5
+Coordinates 1, 0, 5
+Coordinates 2, 0, 0
+Coordinates 3, 2, 0
+
+
+;Fenster
+[MeshBuilder]
+Vertex 2.4,10,25
+Vertex 2.4,10,12.5
+Vertex 2,15,12.5
+Vertex 2,15,25
+Face2 0,1,2,3
+[Texture]
+Load hh_h_halle_innen4.bmp
+Coordinates 0, 1, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0.5
+Coordinates 3, 1, 0.5
+transparent 0,0,255
+[MeshBuilder]
+Vertex 2.15,15,25
+Vertex 2.15,15,12.5
+Vertex 1.8   ,18,12.5
+Vertex 1.8   ,18,25
+Face2 0,1,2,3
+[Texture]
+Load hh_h_halle_innen4.bmp
+Coordinates 0, 1, 0.5
+Coordinates 1, 0, 0.5
+Coordinates 2, 0, 0
+Coordinates 3, 1, 0
+transparent 0,0,255
+[MeshBuilder]
+Vertex -1  ,20,25
+Vertex -1  ,20,12.5
+Vertex 1.8   ,18,12.5
+Vertex 1.8   ,18,25
+Face2 0,1,2,3
+[Texture]
+Load hh_h_halle_innen4.bmp
+Coordinates 0, 1, 0.5
+Coordinates 1, 0, 0.5
+Coordinates 2, 0, 0
+Coordinates 3, 1, 0
+transparent 0,0,255
+;Dach
+[MeshBuilder]
+Vertex -1  ,20,25
+Vertex -1  ,20,12.5
+Vertex -20   ,25,12.5
+Vertex -20   ,25,25
+Face2 0,1,2,3
+[Texture]
+Load hh_h_halle_innen5.bmp
+Coordinates 0, 2, 5
+Coordinates 1, 0, 5
+Coordinates 2, 0, 0
+Coordinates 3, 2, 0
+
+
+
+
+
+
+[MeshBuilder]
+Vertex -20,10,12.5
+Vertex 2.4,10,12.5
+Vertex 2.4,25,12.5
+Vertex -20,25,12.5
+Face2 0,1,2,3
+
+[Texture]
+Load hh_h_halle_innen3.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 1, 1
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+transparent 0,0,255
+

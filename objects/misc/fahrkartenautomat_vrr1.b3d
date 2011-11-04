@@ -1,0 +1,78 @@
+;author=Uwe Post
+;description=Fahrkartenautomat DB VRR
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex 0, 1.8,1
+Vertex 0, 1.8,0
+Vertex 0, 0,0
+Vertex 0, 0,1
+Face 0,1,2,3
+
+
+[Texture]
+Load fahrkartenautomat_vrr1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex 0.5, 1.9,0
+Vertex 0.5, 1.9,1
+Vertex 0.5, 0,1
+Vertex 0.5, 0,0
+Face 0,1,2,3
+color 100,100,100
+
+[MeshBuilder]
+Vertex 0, 1.8,1
+Vertex 0.5, 1.8,1
+Vertex 0.5, 0,1
+Vertex 0, 0,1
+Face 3,2,1,0
+color 199,122,14
+
+[MeshBuilder]
+Vertex 0, 1.8,0
+Vertex 0.5, 1.8,0
+Vertex 0.5, 0,0
+Vertex 0, 0,0
+Face 0,1,2,3
+color 199,122,14
+
+
+[MeshBuilder]
+Vertex 0.5, 1.8,0
+Vertex 0.5, 1.8,1
+Vertex -0.1, 1.8,1
+Vertex -0.1, 1.8,0
+Vertex 0.5, 1.9,0
+Vertex 0.5, 1.9,1
+Vertex -0.1, 1.9,1
+Vertex -0.1, 1.9,0
+Face 0,1,2,3
+Face 7,6,5,4
+Face 3,7,4,0
+Face 2,6,7,3
+Face 5,6,2,1
+color 100,100,100
+
+
+
+[MeshBuilder]
+Vertex 0.5,0,0
+Vertex 0.5,0,1
+Vertex 0.5,-0.5,1
+Vertex 0.5,-0.5,0
+Vertex 0,0,0
+Vertex 0,0,1
+Vertex 0,-0.5,1
+Vertex 0,-0.5,0
+Face 0,1,2,3
+Face 7,6,5,4
+Face 3,7,4,0
+Face 2,1,5,6
+color 100,100,100
+
+

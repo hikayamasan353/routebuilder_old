@@ -1,0 +1,12 @@
+;author=Uwe Post
+;description=Signal back
+;copyright=the BVE RouteBuilder team 2004, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -0.3, 0, 0.1
+Vertex 0.3, 0, 0.1
+Vertex 0.3, -1.1, 0.1
+Vertex -0.3, -1.1, 0.1
+Face2 0, 1, 2, 3
+color 100,100,120
+

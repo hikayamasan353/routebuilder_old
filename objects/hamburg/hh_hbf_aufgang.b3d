@@ -1,0 +1,191 @@
+;author=Uwe Post
+;description=stairs Hamburg Hbf
+;copyright=open source
+
+
+
+
+
+;Stufen
+
+; stufen1
+[MeshBuilder]
+Vertex 2.8 , 1, 5
+Vertex 6.7  , 1, 5
+Vertex 6.7  , 6, 14
+Vertex 2.8 , 6, 14
+Face 3,2,1,0
+[Texture]
+Load ..\misc\stairs1.bmp
+Coordinates 0, 0, 2
+Coordinates 1, 1, 2
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+
+; stufen1
+[MeshBuilder]
+Vertex 2.8 , 1, 5
+Vertex 6.7  , 1, 5
+Vertex 6.7  , 6, 14
+Vertex 2.8 , 6, 14
+Face 0,1,2,3
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 2
+Coordinates 1, 1, 2
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+
+; säule
+[MeshBuilder]
+Vertex 2.8,1,14
+Vertex 6.7,1,14
+Vertex 6.7,6,14
+Vertex 2.8,6,14
+face2 0,1,2,3
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+[MeshBuilder]
+Vertex 2.8,1,16
+Vertex 6.7,1,16
+Vertex 6.7,6,16
+Vertex 2.8,6,16
+face2 0,1,2,3
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+[MeshBuilder]
+Vertex 2.8,1,14
+Vertex 2.8,1,16
+Vertex 2.8,6,16
+Vertex 2.8,6,14
+face2 0,1,2,3
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+[MeshBuilder]
+Vertex 6.7,1,14
+Vertex 6.7,1,16
+Vertex 6.7,6,16
+Vertex 6.7,6,14
+face2 0,1,2,3
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+[MeshBuilder]
+Vertex -2.8,6,14
+Vertex -2.8,6,16
+Vertex 10.7,6,16
+Vertex 10.7,6,14
+face2 0,1,2,3
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+
+
+; Zaun
+[MeshBuilder]
+Vertex -2.8,6,14
+Vertex -2.8,7,14
+Vertex 2.8,7,14
+Vertex 2.8,6,14
+face2 0,1,2,3
+[Texture]
+Load ..\fences\ironfence1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 4, 0
+Coordinates 3, 4, 1
+transparent 0,0,255
+[MeshBuilder]
+Vertex 6.7,6,14
+Vertex 6.7,7,14
+Vertex 10.7,7,14
+Vertex 10.7,6,14
+face2 0,1,2,3
+[Texture]
+Load ..\fences\ironfence1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 4, 0
+Coordinates 3, 4, 1
+transparent 0,0,255
+
+
+
+
+
+
+
+;rollstairs
+[MeshBuilder]
+Vertex 5.5 ,  1, 4
+Vertex 5.5  , 1, 15
+Vertex 5.5  , 8, 15
+Vertex 5.5 , 8,  4
+Face2 0, 1, 2, 3
+[Texture]
+Load ..\misc\rollstair1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 1, 1
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+transparent 0,0,255
+[MeshBuilder]
+Vertex 5.55 ,  1, 4
+Vertex 5.55  , 1, 15
+Vertex 5.55  , 8, 15
+Vertex 5.55 , 8,  4
+Face2 0, 1, 2, 3
+[Texture]
+Load ..\misc\rollstair1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 1, 1
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+transparent 0,0,255
+
+[MeshBuilder]
+Vertex 6.7,  1, 4
+Vertex 6.7 , 1, 15
+Vertex 6.7 , 8, 15
+Vertex 6.7, 8,  4
+Face2 0, 1, 2, 3
+[Texture]
+Load ..\misc\rollstair1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 1, 1
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+transparent 0,0,255
+
+[MeshBuilder]
+Vertex 2.8,  1, 4
+Vertex 2.8 , 1, 15
+Vertex 2.8 , 8, 15
+Vertex 2.8, 8,  4
+Face2 0, 1, 2, 3
+[Texture]
+Load ..\misc\rollstair1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 1, 1
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+transparent 0,0,255
+

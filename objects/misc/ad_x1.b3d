@@ -1,0 +1,49 @@
+;author=Uwe Post
+;description=Another ad panel (German)
+;copyright=open source
+
+[MeshBuilder]
+Vertex 0,4.7,2.5
+Vertex 0,4.7,-2.5
+Vertex 0,1.5,-2.5
+Vertex 0,1.5,2.5
+Face 0,1,2,3
+
+[Texture]
+Load ad_x1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+
+[MeshBuilder]
+Vertex 0.01,4.7,-2.5
+Vertex 0.01,4.7,2.5
+Vertex 0.01,1.5,2.5
+Vertex 0.01,1.5,-2.5
+Face 0,1,2,3
+
+[Texture]
+Load ad_x1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+
+[MeshBuilder]
+Vertex -0.1,0.2,2.51
+Vertex -0.1,4.7,2.51
+Vertex 0.1 ,4.7,2.51
+Vertex 0.1 ,0,2.51
+Face2 0,1,2,3
+Color 128,128,128
+
+[MeshBuilder]
+Vertex -0.1,0.2,-2.51
+Vertex -0.1,4.7,-2.51
+Vertex 0.1 ,4.7,-2.51
+Vertex 0.1 ,0,-2.51
+Face2 0,1,2,3
+Color 128,128,128

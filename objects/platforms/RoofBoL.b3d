@@ -1,0 +1,55 @@
+;author=Uwe Post
+;description=platform roof Bochum Hbf
+;copyright=open source
+
+
+[MeshBuilder]
+Vertex -1.5, 5, 25.3
+Vertex -1.5, 5, 0
+Vertex -2.7, 5, 0
+Vertex -2.7, 5, 25.3
+Face 0,1,2,3
+Color 100,100,100
+
+
+[MeshBuilder]
+Vertex -1.5, 4.8, 25.3
+Vertex -1.5, 4.8, 0
+Vertex -2.7, 4.8, 0
+Vertex -2.7, 4.8, 25.3
+Face 3,2,1,0
+
+[Texture]
+Load RoofBoD.bmp
+Coordinates 0, 0, 12
+Coordinates 1, 0, 0
+Coordinates 2, 0.4, 0
+Coordinates 3, 0.4, 12
+
+
+[MeshBuilder]
+Vertex -1.5, 5, 25.3
+Vertex -1.5, 5, 0
+Vertex -1.5, 4.8, 0
+Vertex -1.5, 4.8, 25.3
+Face 3,2,1,0
+Color 116,132,147
+
+[MeshBuilder]
+Vertex -1.5, 5, 0
+Vertex -1.5, 4.8, 0
+Vertex -2.7, 4.8, 0
+Vertex -2.7, 5, 0
+Face 0,1,2,3
+Color 116,132,147
+
+[MeshBuilder]
+Vertex -1.5, 5, 25.3
+Vertex -1.5, 4.8, 25.3
+Vertex -2.7, 4.8, 25.3
+Vertex -2.7, 5, 25.3
+Face 3,2,1,0
+Color 116,132,147
+
+
+

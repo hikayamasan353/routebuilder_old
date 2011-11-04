@@ -1,0 +1,244 @@
+;author=Uwe Post
+;description=viaduct
+;copyright=the BVE RouteBuilder team 2003, part of RB Object library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex 2.81, 0.3, -0.2
+Vertex 2.81, 0.3, 25.2
+Vertex 2.81, -12, 25.2
+Vertex 2.81, -12, -0.2
+Face 0,1,2,3
+
+[Texture]
+Load viaduct1.bmp
+Coordinates 0, 4, 0
+Coordinates 1, 0, 0
+Coordinates 2, 0, 1
+Coordinates 3, 4, 1
+transparent 0,0,247
+
+[MeshBuilder]
+Vertex 2.4, 0.3, -0.2
+Vertex 2.4, 0.3, 25.2
+Vertex 2.4, -0.3, 25.2
+Vertex 2.4, -0.3, -0.2
+Face 3,2,1,0
+
+[Texture]
+Load brickwall5.bmp
+Coordinates 0, 4, 0
+Coordinates 1, 0, 0
+Coordinates 2, 0, 0.5
+Coordinates 3, 4, 0.5
+
+[MeshBuilder]
+Vertex 2.4, 0.3, -0.2
+Vertex 2.4, 0.3, 25.2
+Vertex 2.81, 0.3, 25.2
+Vertex 2.81, 0.3, -0.2
+Face 0,1,2,3
+
+[Texture]
+Load brickwall5.bmp
+Coordinates 0, 4, 0
+Coordinates 1, 0, 0
+Coordinates 2, 0, 0.2
+Coordinates 3, 4, 0.2
+
+[MeshBuilder]
+Vertex 2.4, 0.3, -0.2
+Vertex 2.4, -0.3, -0.2
+Vertex 2.81, -0.3, -0.2
+Vertex 2.81, 0.3, -0.2
+Face 3,2,1,0
+
+[Texture]
+Load brickwall5.bmp
+Coordinates 0, 0.1, 0
+Coordinates 1, 0, 0
+Coordinates 2, 0, 0.2
+Coordinates 3, 0.1, 0.2
+
+[MeshBuilder]
+Vertex 2.4, 0.3, 25.2
+Vertex 2.4, -0.3, 25.2
+Vertex 2.81, -0.3, 25.2
+Vertex 2.81, 0.3, 25.2
+Face 0,1,2,3
+
+[Texture]
+Load brickwall5.bmp
+Coordinates 0, 0.1, 0
+Coordinates 1, 0, 0
+Coordinates 2, 0, 0.2
+Coordinates 3, 0.1, 0.2
+
+;
+
+[MeshBuilder]
+Vertex 0, -12, 0.6
+Vertex 0, -0.3, 0.6
+Vertex 2.81, -0.3, 0.6
+Vertex 2.81, -12, 0.6
+Face 3,2,1,0
+
+[Texture]
+Load brickwall5.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 1, 6
+Coordinates 2, 0, 6
+Coordinates 3, 0, 0
+
+[MeshBuilder]
+Vertex 0, -12, -0.2
+Vertex 0, -0.3, -0.2
+Vertex 2.81, -0.3, -0.2
+Vertex 2.81, -12, -0.2
+Face 0,1,2,3
+
+[Texture]
+Load brickwall5.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 1, 6
+Coordinates 2, 0, 6
+Coordinates 3, 0, 0
+
+
+
+[MeshBuilder]
+Vertex 0, -12, 25.2
+Vertex 0, -0.3, 25.2
+Vertex 2.81, -0.3, 25.2
+Vertex 2.81, -12, 25.2
+Face 3,2,1,0
+
+[Texture]
+Load brickwall5.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 1, 6
+Coordinates 2, 0, 6
+Coordinates 3, 0, 0
+
+[MeshBuilder]
+Vertex 0, -12, 24.5
+Vertex 0, -0.3, 24.5
+Vertex 2.81, -0.3, 24.5
+Vertex 2.81, -12, 24.5
+Face 0,1,2,3
+
+[Texture]
+Load brickwall5.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 1, 6
+Coordinates 2, 0, 6
+Coordinates 3, 0, 0
+
+
+
+
+
+[MeshBuilder]
+Vertex 0, -12, 11.8
+Vertex 0, -0.3, 11.8
+Vertex 2.81, -0.3, 11.8
+Vertex 2.81, -12, 11.8
+Face 0,1,2,3
+
+[Texture]
+Load brickwall5.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 1, 6
+Coordinates 2, 0, 6
+Coordinates 3, 0, 0
+
+[MeshBuilder]
+Vertex 0, -12, 13.2
+Vertex 0, -0.3, 13.2
+Vertex 2.81, -0.3, 13.2
+Vertex 2.81, -12, 13.2
+Face 3,2,1,0
+
+[Texture]
+Load brickwall5.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 1, 6
+Coordinates 2, 0, 6
+Coordinates 3, 0, 0
+
+
+
+[MeshBuilder]
+Vertex 0, -12, 5.45
+Vertex 0, -0.3, 5.45
+Vertex 2.81, -0.3, 5.45
+Vertex 2.81, -12, 5.45
+Face 0,1,2,3
+
+[Texture]
+Load brickwall5.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 1, 6
+Coordinates 2, 0, 6
+Coordinates 3, 0, 0
+
+[MeshBuilder]
+Vertex 0, -12, 6.85
+Vertex 0, -0.3, 6.85
+Vertex 2.81, -0.3, 6.85
+Vertex 2.81, -12, 6.85
+Face 3,2,1,0
+
+[Texture]
+Load brickwall5.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 1, 6
+Coordinates 2, 0, 6
+Coordinates 3, 0, 0
+
+
+
+[MeshBuilder]
+Vertex 0, -12, 18.1
+Vertex 0, -0.3, 18.1
+Vertex 2.81, -0.3, 18.1
+Vertex 2.81, -12, 18.1
+Face 0,1,2,3
+
+[Texture]
+Load brickwall5.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 1, 6
+Coordinates 2, 0, 6
+Coordinates 3, 0, 0
+
+[MeshBuilder]
+Vertex 0, -12, 19.55
+Vertex 0, -0.3, 19.55
+Vertex 2.81, -0.3, 19.55
+Vertex 2.81, -12, 19.55
+Face 3,2,1,0
+
+[Texture]
+Load brickwall5.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 1, 6
+Coordinates 2, 0, 6
+Coordinates 3, 0, 0
+
+
+
+;
+
+[MeshBuilder]
+Vertex 2.5, -0.3, -0.2
+Vertex 2.5, -0.3, 25.2
+Vertex 0, -0.3, 25.2
+Vertex 0, -0.3, -0.2
+Face2 3,2,1,0
+
+[Texture]
+Load walltopbrown.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 10, 1
+Coordinates 2, 10, 0
+Coordinates 3, 0, 0

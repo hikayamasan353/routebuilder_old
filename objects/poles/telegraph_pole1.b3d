@@ -1,0 +1,18 @@
+;author=Uwe Post
+;description=Telegraph Pole (not for overhead)
+;copyright=RouteBuilder Object Library License
+
+[MeshBuilder]
+Vertex 3  ,6.5,-0.1
+Vertex 4.5,6.5,-0.1
+Vertex 4.5,0,-0.1
+Vertex 3,0,-0.1
+Face2 0,1,2,3
+
+[Texture]
+Load telegraph_pole.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+Transparent 0, 0, 0

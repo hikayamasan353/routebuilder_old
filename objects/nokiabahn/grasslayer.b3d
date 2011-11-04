@@ -1,0 +1,17 @@
+;author=Uwe Post
+;description=Grass Layer
+
+[MeshBuilder]
+Vertex 1.8, 1.11, 0
+Vertex 1.8, 1.11, 25.2
+Vertex 3.0, 1.11, 25.2
+Vertex 3.0, 1.11, 0
+Face 0,1,2,3
+
+[Texture]
+Load grasslayer.bmp
+Coordinates 0, 0, 5
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 5
+transparent 0,0,255

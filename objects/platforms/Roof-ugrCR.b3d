@@ -1,0 +1,59 @@
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex 7.6, 4.9, 0
+Vertex 7.6, 4.9, 25.1
+Vertex 1.5, 4.9, 25.1
+Vertex 1.5, 4.9, 0
+Face 0,1,2,3
+
+[Texture]
+Load Roof-hh.bmp
+Coordinates 0, 0, 1.4
+Coordinates 1, 8, 1.4
+Coordinates 2, 8, 0
+Coordinates 3, 0, 0
+
+[MeshBuilder]
+Vertex 6.5, 4.9,12
+Vertex 7.6, 4.9,12
+Vertex 7.6, 0, 12
+Vertex 6.5, 0, 12
+Face 0,1,2,3
+
+[Texture]
+Load platfm_pill_ju.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 1
+Coordinates 2, 1, 1
+Coordinates 3, 1, 0
+
+
+[MeshBuilder]
+Vertex 6.5, 0, 13
+Vertex 6.5, 4.9,13
+Vertex 7.6, 4.9,13
+Vertex 7.6, 0, 13
+Face 3,2,1,0
+
+[Texture]
+Load platfm_pill_ju.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 1, 1
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+
+[MeshBuilder]
+Vertex 6.5, 0, 12
+Vertex 6.5, 4.9,12
+Vertex 6.5, 4.9,13
+Vertex 6.5, 0, 13
+Face 3,2,1,0
+
+[Texture]
+Load platfm_pill_ju.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 1, 1
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+

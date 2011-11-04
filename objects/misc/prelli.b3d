@@ -1,0 +1,50 @@
+;author=Rainer Hübner
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder];
+Vertex -1, 1.6, 0
+Vertex -1, 1.6, 4.5
+Vertex -1, -0.2, 4.5
+Vertex -1, -0.2, 0
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load prelli_1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+Transparent 0,0,255
+
+[MeshBuilder];
+Vertex 0.4, 1.6, 0
+Vertex 0.4, 1.6, 4.5
+Vertex 0.4, -0.2, 4.5
+Vertex 0.4, -0.2, 0
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load prelli_1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+Transparent 0,0,255
+
+[MeshBuilder]
+Vertex -1.3, 2.8, 1
+Vertex 0.7, 2.8, 1
+Vertex 0.7, 1, 1
+Vertex -1.3, 1, 1
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load prelli_2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+Transparent 0,0,255

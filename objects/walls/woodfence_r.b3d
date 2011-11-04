@@ -1,0 +1,19 @@
+;author=Uwe Post
+;description=wood fence
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+
+[MeshBuilder]
+Vertex 3.5, 1, 25
+Vertex 3.5, 1, 0
+Vertex 3.5, 0, 0
+Vertex 3.5, 0, 25
+Face2 0,1,2,3
+
+[Texture]
+Load ..\fences\woodfence1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 25, 0
+Coordinates 2, 25, 1
+Coordinates 3, 0, 1
+transparent 0,0,255

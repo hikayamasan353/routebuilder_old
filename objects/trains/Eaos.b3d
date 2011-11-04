@@ -1,0 +1,156 @@
+;author=Rainer Huebner,Uwe Post
+;description=cargo car Eaos (DB)
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+
+
+[Meshbuilder]
+Vertex -1.4, 0.78, 0
+Vertex -1.4, 3.18, 0
+Vertex 1.4, 3.18, 0
+Vertex 1.4, 0.78, 0
+Face2 0, 1, 2, 3
+
+[Texture]
+Load Eaos1.bmp
+Coordinates 0, 0.25,1
+Coordinates 1, 0.25,0
+Coordinates 2, 0.5,0
+Coordinates 3, 0.5,1
+
+[Meshbuilder]
+Vertex 1.4, 0.78, 14.6
+Vertex 1.4, 3.18, 14.6
+Vertex -1.4, 3.18, 14.6
+Vertex -1.4, 0.78, 14.6
+Face2 0, 1, 2, 3
+
+[Texture]
+Load Eaos1.bmp
+Coordinates 0, 0.25,1
+Coordinates 1, 0.25,0
+Coordinates 2, 0.5,0
+Coordinates 3, 0.5,1
+
+
+[Meshbuilder]
+Vertex 1.4, 0.78, 0
+Vertex 1.4, 3.18, 0
+Vertex 1.4, 3.18, 14.6
+Vertex 1.4, 0.78, 14.6
+Face2 0, 1, 2, 3
+
+[Texture]
+Load Eaos1.bmp
+Coordinates 0, 0,1
+Coordinates 1, 0,0
+Coordinates 2, 1,0
+Coordinates 3, 1,1
+
+
+[Meshbuilder]
+Vertex -1.4, 0.78, 14.6
+Vertex -1.4, 3.18, 14.6
+Vertex -1.4, 3.18, 0
+Vertex -1.4, 0.78, 0
+Face2 0, 1, 2, 3
+[Texture]
+Load Eaos1.bmp
+Coordinates 0, 0,1
+Coordinates 1, 0,0
+Coordinates 2, 1,0
+Coordinates 3, 1,1
+
+
+
+[Meshbuilder]
+Vertex 1.4, 0.78, 14.6
+Vertex 1.4, 0.78, 0
+Vertex -1.4, 0.78, 0
+Vertex -1.4, 0.78, 14.6
+Face2 0,1,2,3
+color 100,50,50
+
+
+
+[Meshbuilder]
+Vertex -0.8, 0, 0.5
+Vertex -0.9, 0.8, 0.5
+Vertex 0.9, 0.8, 0.5
+Vertex 0.8, 0, 0.5
+Face2 0, 1, 2, 3
+[Texture]
+Load Eaos2.bmp
+Coordinates 0, 0.4,1
+Coordinates 1, 0.4,0
+Coordinates 2, 0.5,0
+Coordinates 3, 0.5,1
+
+
+[Meshbuilder]
+Vertex 0.8, 0, 0.5
+Vertex 0.9, 0.8, 0.5
+Vertex 0.9, 0.8, 3.5
+Vertex 0.8, 0, 3.5
+Face2 0, 1, 2, 3
+[Texture]
+Load Eaos2.bmp
+Coordinates 0, 0,1
+Coordinates 1, 0,0
+Coordinates 2, 1,0
+Coordinates 3, 1,1
+
+[Meshbuilder]
+Vertex -0.8, 0, 0.5
+Vertex -0.9, 0.8, 0.5
+Vertex -0.9, 0.8, 3.5
+Vertex -0.8, 0, 3.5
+Face2 0, 1, 2, 3
+[Texture]
+Load Eaos2.bmp
+Coordinates 0, 0,1
+Coordinates 1, 0,0
+Coordinates 2, 1,0
+Coordinates 3, 1,1
+
+[Meshbuilder]
+Vertex -0.8, 0, 14.1
+Vertex -0.9, 0.8, 14.1
+Vertex 0.9, 0.8, 14.1
+Vertex 0.8, 0, 14.1
+Face2 0, 1, 2, 3
+[Texture]
+Load Eaos2.bmp
+Coordinates 0, 0.4,1
+Coordinates 1, 0.4,0
+Coordinates 2, 0.5,0
+Coordinates 3, 0.5,1
+
+[Meshbuilder]
+Vertex 0.8, 0, 11.1
+Vertex 0.9, 0.8, 11.1
+Vertex 0.9, 0.8, 14.1
+Vertex 0.8, 0, 14.1
+Face2 0, 1, 2, 3
+[Texture]
+Load Eaos2.bmp
+Coordinates 0, 0,1
+Coordinates 1, 0,0
+Coordinates 2, 1,0
+Coordinates 3, 1,1
+
+
+[Meshbuilder]
+Vertex -0.8, 0, 11.1
+Vertex -0.9, 0.8, 11.1
+Vertex -0.9, 0.8, 14.1
+Vertex -0.8, 0, 14.1
+Face2 0, 1, 2, 3
+[Texture]
+Load Eaos2.bmp
+Coordinates 0, 0,1
+Coordinates 1, 0,0
+Coordinates 2, 1,0
+Coordinates 3, 1,1
+
+

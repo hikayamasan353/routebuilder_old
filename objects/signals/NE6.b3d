@@ -1,0 +1,36 @@
+;author=Uwe Post
+;description=NE6 Haltepunkttafel (german)
+;copyright=the BVE RouteBuilder team 2004, part of RB Base library, goto routebuilder.bve-routes.com
+
+
+
+
+[MeshBuilder]
+Vertex -1, 1.6, 0
+Vertex  1, 1.6, 0
+Vertex  1, 0, 0
+Vertex -1, 0, 0
+Face 0, 1, 2, 3
+
+[Texture]
+Load ne6.BMP
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+transparent 0,0,255
+
+[MeshBuilder]
+Vertex -1, 1.6, 0.02
+Vertex  1, 1.6, 0.02
+Vertex  1, 0, 0.02
+Vertex -1, 0, 0.02
+Face 3,2,1,0
+
+[Texture]
+Load ne6b.BMP
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+transparent 0,0,255

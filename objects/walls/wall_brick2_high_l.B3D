@@ -1,0 +1,57 @@
+;author=Uwe Post
+;description=another brick wall
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -2.8, -0.3, 0
+Vertex -2.8, -0.3, 26
+Vertex -2.8, 7.5, 26
+Vertex -2.8, 7.5, 0
+Face 2.8,2,1,0
+Face 0,1,2,3
+
+[Texture]
+Load brickwall2.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 2, 1
+Coordinates 2, 2, 0
+Coordinates 3, 0, 0
+
+[MeshBuilder]
+Vertex -3.5, -0.3, 0
+Vertex -3.5, -0.3, 26
+Vertex -3.5, 7.5, 26
+Vertex -3.5, 7.5, 0
+Face 2.8,2,1,0
+Face 0,1,2,3
+
+[Texture]
+Load brickwall2.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 2, 1
+Coordinates 2, 2, 0
+Coordinates 3, 0, 0
+
+[MeshBuilder]
+Vertex -3.5, 7.5, 0
+Vertex -3.5, -0.3, 0
+Vertex -2.8, -0.3, 0
+Vertex -2.8, 7.5, 0
+Face2 0,1,2,3
+color 100,80,80
+
+[MeshBuilder]
+Vertex -3.5, 7.5, 26
+Vertex -3.5, -0.3, 26
+Vertex -2.8, -0.3, 26
+Vertex -2.8, 7.5, 26
+Face2 0,1,2,3
+color 100,80,80
+
+[MeshBuilder]
+Vertex -3.5, 7.5, 0
+Vertex -3.5, 7.5, 26
+Vertex -2.8, 7.5, 26
+Vertex -2.8, 7.5, 0
+Face2 0,1,2,3
+color 100,80,80

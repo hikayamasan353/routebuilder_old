@@ -1,0 +1,49 @@
+;author=Uwe Post
+;description=station sign
+
+
+[MeshBuilder]
+Vertex 0.1,2.9,-2
+Vertex 0.1,2.9,2
+Vertex 0.1,2.4,2
+Vertex 0.1,2.4,-2
+Face 0,1,2,3
+
+[Texture]
+Load stationsign_dahsen_hbf.BMP
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex 0.098,2.9,2
+Vertex 0.098,2.9,-2
+Vertex 0.098,2.4,-2
+Vertex 0.098,2.4,2
+Face 0,1,2,3
+
+[Texture]
+Load stationsign_dahsen_hbf.BMP
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]  
+Vertex 0.099,2.8,-1.7
+Vertex 0.099,2.8,-1.8
+Vertex 0.099,-0.1,-1.8
+Vertex 0.099,-0.1,-1.7
+Face 0,1,2,3
+Face 3,2,1,0
+Color 128,128,128
+
+[MeshBuilder]  
+Vertex 0.099,2.8,1.7
+Vertex 0.099,2.8,1.8
+Vertex 0.099,-0.1,1.8
+Vertex 0.099,-0.1,1.7
+Face 0,1,2,3
+Face 3,2,1,0
+Color 128,128,128

@@ -1,0 +1,188 @@
+;author=Uwe Post
+;description=tunnel for 2 tracks
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -20, 7.5, 25.5
+Vertex 14, 7.5, 25.5
+Vertex 14, 7.5, 0
+Vertex -20, 7.5, 0
+Face 0, 1, 2, 3
+
+[Texture]
+Load concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 2, 0
+Coordinates 2, 2, 1
+Coordinates 3, 0, 1
+
+; vordere Wand
+
+[MeshBuilder]
+Vertex 2, -0.5, 0
+Vertex 2, 7.5, 0
+Vertex 14, 7.5, 0
+Vertex 14, -0.5, 0
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 10
+Coordinates 3, 0, 10
+
+[MeshBuilder]
+Vertex -20, -0.5, 0
+Vertex -20, 7.5, 0
+Vertex -8, 7.5, 0
+Vertex -8, -0.5, 0
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 10
+Coordinates 3, 0, 10
+
+[MeshBuilder]
+Vertex -8, 5.5, 0
+Vertex -8, 7.5, 0
+Vertex 2, 7.5, 0
+Vertex 2, 5.5, 0
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 5
+Coordinates 3, 0, 5
+
+; innenwand
+[MeshBuilder]
+Vertex -8, -0.5, 0
+Vertex -8, 5.5, 0
+Vertex -8, 5.5, 25.5
+Vertex -8, -0.5, 25.5
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load concrete2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 3
+Coordinates 3, 0, 3
+
+[MeshBuilder]
+Vertex 2, -0.5, 0
+Vertex 2, 5.5, 0
+Vertex 2, 5.5, 25.5
+Vertex 2, -0.5, 25.5
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load concrete2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 3
+Coordinates 3, 0, 3
+
+; innendecke
+[MeshBuilder]
+Vertex -8, 5.5, 0
+Vertex -8, 5.5, 25.5
+Vertex 2, 5.5, 25.5
+Vertex 2, 5.5, 0
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load concrete2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 3
+Coordinates 3, 0, 3
+
+; innen boden
+[MeshBuilder]
+Vertex -8, -0.31, 0
+Vertex -8, -0.31, 25.5
+Vertex 2, -0.31, 25.5
+Vertex 2, -0.31, 0
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load concrete2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 3
+Coordinates 3, 0, 3
+
+; hintere Wand
+
+[MeshBuilder]
+Vertex 2, -0.5, 25.5
+Vertex 2, 7.5, 25.5
+Vertex 14, 7.5, 25.5
+Vertex 14, -0.5, 25.5
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 10
+Coordinates 3, 0, 10
+
+[MeshBuilder]
+Vertex -20, -0.5, 25.5
+Vertex -20, 7.5, 25.5
+Vertex -8, 7.5, 25.5
+Vertex -8, -0.5, 25.5
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 10
+Coordinates 3, 0, 10
+
+[MeshBuilder]
+Vertex -8, 5.5, 25.5
+Vertex -8, 7.5, 25.5
+Vertex 2, 7.5, 25.5
+Vertex 2, 5.5, 25.5
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 5
+Coordinates 3, 0, 5
+
+[MeshBuilder]
+Vertex -120, -0.40, 26
+Vertex 120, -0.40, 26
+Vertex 120, -0.401, -1
+Vertex -120, -0.401, -1
+Face 0, 1, 2, 3
+
+[Texture]
+Load concrete3.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 1, 8
+Coordinates 2, 0, 8
+Coordinates 3, 0, 0

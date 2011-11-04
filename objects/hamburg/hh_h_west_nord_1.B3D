@@ -1,0 +1,99 @@
+;author=Uwe Post
+;description=simple concrete wall with iron fence
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex 2.5, -1, 0
+Vertex 2.5, -1, 26
+Vertex 2.5, 7, 26
+Vertex 2.5, 7, 0
+Face 0,1,2,3
+translate 0,0.5,0
+rotate 1,0,0,3
+[Texture]
+Load hh_graffiti_wand1.bmp
+Coordinates 0, 1, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0
+Coordinates 3, 1, 0
+
+[MeshBuilder]
+Vertex 3, -1, 0
+Vertex 3, -1, 26
+Vertex 3, 7,26
+Vertex 3, 7,0
+Face 3,2,1,0
+translate 0,0.5,0
+rotate 1,0,0,3
+
+[Texture]
+Load ..\walls\Concrete.bmp
+Coordinates 0, 1, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0
+Coordinates 3, 1, 0
+
+[MeshBuilder]
+Vertex 3, 7,0
+Vertex 3, 7,26
+Vertex 2.5, 7, 26
+Vertex 2.5, 7, 0
+Face 3,2,1,0
+translate 0,0.5,0
+rotate 1,0,0,3
+
+[Texture]
+Load ..\walls\Concrete.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 1
+Coordinates 2, 1, 1
+Coordinates 3, 1, 0
+
+[MeshBuilder]
+Vertex 2.75, 8, 25
+Vertex 2.75, 8, 0
+Vertex 2.75, 7, 0
+Vertex 2.75, 7, 25
+Face2 0,1,2,3
+translate 0,0.5,0
+rotate 1,0,0,3
+[Texture]
+Load ..\fences\ironfence1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 15, 0
+Coordinates 2, 15, 1
+Coordinates 3, 0, 1
+transparent 0,0,255
+
+;Straﬂe
+
+
+[MeshBuilder]
+Vertex 3, 6.5,0
+Vertex 3, 6.5,26
+Vertex 15, 6.5, 26
+Vertex 15, 6.5, 0
+Face 0,1,2,3
+translate 0,0.5,0
+rotate 1,0,0,3
+[Texture]
+Load ..\walls\Concrete.bmp
+Coordinates 0, 1, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0
+Coordinates 3, 1, 0
+
+; Fassade
+[MeshBuilder]
+Vertex 15, 6, 0
+Vertex 15, 6, 26
+Vertex 15, 40, 26
+Vertex 15, 40, 0
+Face 0,1,2,3
+[Texture]
+Load hh_h_fass_west_nord1.bmp
+Coordinates 0, 1, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0
+Coordinates 3, 1, 0
+

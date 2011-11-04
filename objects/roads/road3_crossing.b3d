@@ -1,0 +1,108 @@
+;description=secondary road w/crossing (German)
+;author=Uwe Post
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -4, 0, -1
+Vertex 4, 0, -1
+Vertex 4, 0.01, 26
+Vertex -4, 0.01, 26
+Face 3,2,1,0
+
+[Texture]
+Load road3.bmp
+Coordinates 0, 1, 1
+Coordinates 1, 1, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex 5, -0.4, -1
+Vertex 4, 0, -1
+Vertex 4, 0.01, 26
+Vertex 5, -0.41, 26
+Face 0,1,2,3
+
+[Texture]
+Load road4.bmp
+Coordinates 0, 4, 0.5
+Coordinates 1, 4, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 0.5
+
+
+[MeshBuilder]
+Vertex 6, -0.4, -1
+Vertex 5, -0.4, -1
+Vertex 5, -0.41, 26
+Vertex 6, -0.41, 26
+Face 0,1,2,3
+
+[Texture]
+Load road4a.bmp
+Coordinates 0, 4, 0.5
+Coordinates 1, 4, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 0.5
+
+
+[MeshBuilder]
+Vertex -5, -0.4, -1
+Vertex -4, 0, -1
+Vertex -4, 0.01, 26
+Vertex -5, -0.41, 26
+Face 3,2,1,0
+
+[Texture]
+Load road4.bmp
+Coordinates 0, 4, 0.5
+Coordinates 1, 4, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 0.5
+
+
+[MeshBuilder]
+Vertex -6, -0.4, -1
+Vertex -5, -0.4, -1
+Vertex -5, -0.41, 26
+Vertex -6, -0.41, 26
+Face 3,2,1,0
+
+[Texture]
+Load road4a.bmp
+Coordinates 0, 4, 0.5
+Coordinates 1, 4, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 0.5
+
+;andreaskreuz
+[MeshBuilder]
+Vertex -4.5,-0.5,1
+Vertex -5.5,-0.5,1
+Vertex -5.5,3,1
+Vertex -4.5,3,1
+Face 0,1,2,3
+
+[Texture]
+Load andreaskreuz1r.bmp
+Coordinates 0, 1, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0
+Coordinates 3, 1, 0
+transparent 0,0,250
+
+[MeshBuilder]
+Vertex -4.5,-0.5,1
+Vertex -5.5,-0.5,1
+Vertex -5.5,3,1
+Vertex -4.5,3,1
+Face 3,2,1,0
+
+[Texture]
+Load andreaskreuz1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 1, 1
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+transparent 0,0,250
+

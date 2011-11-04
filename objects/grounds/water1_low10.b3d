@@ -1,0 +1,17 @@
+;description=water ground 1 (for crossing rivers)
+;author=Uwe Post
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -120, -10, 26
+Vertex 120, -10, 26
+Vertex 120, -10.01, -1
+Vertex -120, -10.01, -1
+Face 0, 1, 2, 3
+
+[Texture]
+Load water1.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 1, 4
+Coordinates 2, 0, 4
+Coordinates 3, 0, 0

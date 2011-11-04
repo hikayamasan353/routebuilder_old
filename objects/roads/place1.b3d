@@ -1,0 +1,18 @@
+;author=Uwe Post
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+
+[MeshBuilder]
+
+Vertex -12, 0.01, 0
+Vertex -12, 0, 25
+Vertex 12, 0, 25
+Vertex 12, 0.01, 0
+Face 0, 1, 2, 3
+
+[Texture]
+Load ..\platforms\platform5tx1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 25, 0
+Coordinates 2, 25, 25
+Coordinates 3, 0, 25

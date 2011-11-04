@@ -1,0 +1,89 @@
+;description=house5 (Fachwerkhaus)
+;author=Uwe Post
+;copyright=the BVE RouteBuilder team 2003, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -7.2,0,-5.1
+Vertex -7.2,7.5,-5.1
+Vertex 7.2,7.5,-5.1
+Vertex 7.2,0,-5.1
+Face 0,1,2,3
+[Texture]
+Load house5_side.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,2,0
+Coordinates 3,2,1
+
+;house side 1
+[MeshBuilder]
+Vertex 7.2,0,5.1
+Vertex 7.2,13,5.1
+Vertex 7.2,13,-5.1
+Vertex 7.2,0,-5.1
+Face 3,2,1,0
+[Texture]
+Load house5.bmp
+Coordinates 0,1,1
+Coordinates 1,1,0
+Coordinates 2,0,0
+Coordinates 3,0,1
+transparent 0,0,255
+
+;house back 
+[MeshBuilder]
+Vertex -7.2,0,5.1
+Vertex -7.2,7.5,5.1
+Vertex 7.2,7.5,5.1
+Vertex 7.2,0,5.1
+Face 3,2,1,0
+[Texture]
+Load house5_side.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,2,0
+Coordinates 3,2,1
+
+;House side 2
+[MeshBuilder]
+Vertex -7.2,0,5.1
+Vertex -7.2,13,5.1
+Vertex -7.2,13,-5.1
+Vertex -7.2,0,-5.1
+Face 0,1,2,3
+[Texture]
+Load house5.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+transparent 0,0,255
+
+;roof side 1
+[MeshBuilder]
+Vertex -7.6,7.1,-5.5
+Vertex  7.6,7.1,-5.5
+Vertex  7.6,13,0
+Vertex -7.6,13,0
+Face2 3,2,1,0
+[Texture]
+Load house3_roof.bmp
+Coordinates 0,0,0
+Coordinates 1,2,0
+Coordinates 2,2,2
+Coordinates 3,0,2
+
+
+;roof side 2
+[MeshBuilder]
+Vertex -7.6,7.1,5.5
+Vertex  7.6,7.1,5.5
+Vertex  7.6,13,0
+Vertex -7.6,13,0
+Face2 0,1,2,3
+[Texture]
+Load house3_roof.bmp
+Coordinates 0,0,2
+Coordinates 1,0,0
+Coordinates 2,2,0
+Coordinates 3,2,2

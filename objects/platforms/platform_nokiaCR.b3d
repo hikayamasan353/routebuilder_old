@@ -1,0 +1,65 @@
+;author=Uwe Post
+;description=Bahnsteig rechts (Nokia)
+;copyright=Uwe Post
+
+[MeshBuilder]
+Vertex 7.5, 0.4, 0
+Vertex 7.5, 0.4, 25.2
+Vertex 1.8, 0.4, 25.2
+Vertex 1.8, 0.4, 0
+Face 3,2,1,0
+
+[Texture]
+Load platformtx_nokia.bmp
+Coordinates 0, 1, 1
+Coordinates 1, 1, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 1
+
+
+
+[MeshBuilder]
+Vertex 1.8, -0.3, 0
+Vertex 7.5, -0.3, 0
+Vertex 7.5, 0.4, 0
+Vertex 1.8, 0.4, 0
+Face 3,2,1,0
+
+[Texture]
+Load platformtx_nokia.bmp
+Coordinates 0, 0.2, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0
+Coordinates 3, 0.2, 0
+
+[MeshBuilder]
+Vertex 1.8, -0.3, 25.2
+Vertex 7.5, -0.3, 25.2
+Vertex 7.5, 0.4, 25.2
+Vertex 1.8, 0.4, 25.2
+Face 0,1,2,3
+
+[Texture]
+Load platformtx_nokia.bmp
+Coordinates 0, 0.2, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0
+Coordinates 3, 0.2, 0
+
+
+
+[MeshBuilder]
+Vertex 1.8, -0.3, 0
+Vertex 1.8, -0.3, 25.2
+Vertex 1.8, 0.4, 25.2
+Vertex 1.8, 0.4, 0
+Face 0,1,2,3
+
+[Texture]
+Load platformtx_nokia.bmp
+Coordinates 0, 0.2, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0
+Coordinates 3, 0.2, 0
+
+

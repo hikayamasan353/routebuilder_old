@@ -1,0 +1,202 @@
+;author=Uwe Post
+;description=Catenary Pole DB (Germany) "Turmmast" (2m rechts)
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+;bigpole
+
+[MeshBuilder]
+Vertex 5.1, 10,-0.2
+Vertex 5.1, 10,0.2
+Vertex 5.4, 10,0.2
+Vertex 5.4, 10,-0.2
+Face 0,1,2,3
+Color 88,120,79
+
+[MeshBuilder]
+Vertex 5.1, 10, -0.2
+Vertex 5.4, 10, -0.2
+Vertex 5.5,0,-0.4
+vertex 5,0,-0.4
+Face 0,1,2,3
+
+[Texture]
+Load pole3.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 2
+Coordinates 3, 0, 2
+Transparent 0, 0, 255
+
+[MeshBuilder]
+Vertex 5.1, 10,0.2 
+Vertex 5.1, 10,-0.2
+Vertex 5,0,-0.4
+vertex 5,0,0.4
+Face 0,1,2,3
+
+[Texture]
+Load pole3.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 2
+Coordinates 3, 0, 2
+Transparent 0, 0, 255
+
+[MeshBuilder]
+Vertex 5.1, 10, 0.2
+Vertex 5.4, 10, 0.2
+Vertex 5.5,0,0.4
+vertex 5,0,0.4
+Face 3,2,1,0
+
+[Texture]
+Load pole3.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 2
+Coordinates 3, 0, 2
+Transparent 0, 0, 255
+
+[MeshBuilder]
+Vertex 5.4, 10,0.2 
+Vertex 5.4, 10,-0.2
+Vertex 5.5,0,-0.4
+vertex 5.5,0,0.4
+Face 3,2,1,0
+
+[Texture]
+Load pole3.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 2
+Coordinates 3, 0, 2
+Transparent 0, 0, 255
+
+
+; Quertragwerk
+; horizontal, mitte
+[MeshBuilder]
+Vertex 5.1, 7, 0.1
+Vertex -20, 7, 0.1
+Vertex -20, 7.05,0.1
+vertex 5.1,7.05, 0,1
+Face 0,1,2,3
+Face 3,2,1,0
+Color 0,0,0
+
+; unten
+[MeshBuilder]
+Vertex 5.1, 6.1, 0.1
+Vertex -20, 6.1, 0.1
+Vertex -20, 6.15,0.1
+Vertex 5.1, 6.15,0.1
+Face 0,1,2,3
+Face 3,2,1,0
+Color 0,0,0
+
+
+[MeshBuilder]
+Vertex 5.1, 9.9, 0.1
+Vertex 1,  8.5, 0.1
+Vertex 1,  8.55,  0.1
+Vertex 5.1, 9.85,  0.1
+Face 0,1,2,3
+Face 3,2,1,0
+Color 0,0,0
+
+[MeshBuilder]
+Vertex 1, 8.5, 0.1
+Vertex -3,  7.5, 0.1
+Vertex -3,  7.55,  0.1
+Vertex 1, 8.55,  0.1
+Face 0,1,2,3
+Face 3,2,1,0
+Color 0,0,0
+
+[MeshBuilder]
+Vertex -3, 7.5, 0.1
+Vertex -7, 7, 0.1
+Vertex -7, 7.05,  0.1
+Vertex -3, 7.55,  0.1
+Face 0,1,2,3
+Face 3,2,1,0
+Color 0,0,0
+
+[MeshBuilder]
+Vertex 1, 8.5, 0.1
+Vertex 1, 6.1, 0.1
+Vertex 1.05, 6.1,  0.1
+Vertex 1.05, 8.5,  0.1
+Face 0,1,2,3
+Face 3,2,1,0
+Color 0,0,0
+
+[MeshBuilder]
+Vertex -3, 7.5, 0.1
+Vertex -3, 6.1, 0.1
+Vertex -3.05, 6.1,  0.1
+Vertex -3.05, 7.5,  0.1
+Face 0,1,2,3
+Face 3,2,1,0
+Color 0,0,0
+
+[MeshBuilder]
+Vertex -7, 7, 0.1
+Vertex -7, 6.1, 0.1
+Vertex -7.05, 6.1,  0.1
+Vertex -7.05, 7,  0.1
+Face 0,1,2,3
+Face 3,2,1,0
+Color 0,0,0
+
+[MeshBuilder]
+Vertex 4.8, 0,-0.4
+Vertex 5.6, 0,-0.4
+Vertex 5.6,-1.2,-0.4
+Vertex 4.8,-1.2,-0.4
+Face 0,1,2,3
+Face 3,2,1,0
+Color 192,192,192
+
+[MeshBuilder]
+Vertex 4.8, 0,0.4
+Vertex 5.6, 0,0.4
+Vertex 5.6,-1.2,0.4
+Vertex 4.8,-1.2,0.4
+Face 0,1,2,3
+Face 3,2,1,0
+Color 192,192,192
+
+[MeshBuilder]
+Vertex 4.8, 0,-0.4
+Vertex 4.8, 0,0.4
+Vertex 4.8,-1.2,0.4
+Vertex 4.8,-1.2,-0.4
+Face 0,1,2,3
+Face 3,2,1,0
+Color 192,192,192
+
+[MeshBuilder]
+Vertex 5.6, 0,-0.4
+Vertex 5.6, 0,0.4
+Vertex 5.6,-1.2,0.4
+Vertex 5.6,-1.2,-0.4
+Face 0,1,2,3
+Face 3,2,1,0
+Color 192,192,192
+
+[MeshBuilder]
+Vertex 4.8, 0,-0.4
+Vertex 5.6, 0,-0.4
+Vertex 5.6, 0,0.4
+Vertex 4.8, 0,0.4
+Face 0,1,2,3
+Face 3,2,1,0
+Color 192,192,192
+
+[MeshBuilder]
+Vertex 4.8, 0,-0.4
+Vertex 4.8, 0,0.4
+Vertex 5.6, 0,0.4
+Vertex 5.6, 0,-0.4
+Face 0,1,2,3
+Color 128,128,128

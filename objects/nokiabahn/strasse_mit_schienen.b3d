@@ -1,0 +1,151 @@
+;author=Uwe Post
+;description=Straﬂe mit 1 Straﬂenbahnschiene und Fahrdraht
+
+;Straﬂe
+[MeshBuilder]
+Vertex -8, 0, 0
+Vertex -8, 0, 25.1
+Vertex -1, 0, 25.1
+Vertex -1, 0, 0
+Face 0, 1, 2, 3
+
+[Texture]
+Load asphalt1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 3, 0
+Coordinates 2, 3, 2
+Coordinates 3, 0, 2
+
+;rechts
+[MeshBuilder]
+Vertex 1, 0, 0
+Vertex 1, 0, 25.1
+Vertex 8, 0, 25.1
+Vertex 8, 0, 0
+Face 0, 1, 2, 3
+
+[Texture]
+Load asphalt1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 3, 0
+Coordinates 2, 3, 2
+Coordinates 3, 0, 2
+
+; Linien
+[MeshBuilder]
+Vertex 1, 0.01, 0
+Vertex 1, 0, 25.1
+Vertex 1.2, 0, 25.1
+Vertex 1.2, 0.01, 0
+Face 0, 1, 2, 3
+Color 224,224,224,150
+[MeshBuilder]
+Vertex -1, 0.01, 0
+Vertex -1, 0, 25.1
+Vertex -1.2, 0, 25.1
+Vertex -1.2, 0.01, 0
+Face 3,2,1,0
+Color 224,224,224,150
+
+; Pflaster um Schienen
+[MeshBuilder]
+Vertex -1, 0.01, 0
+Vertex -1, 0, 25.1
+Vertex -0.6, 0, 25.1
+Vertex -0.6, 0.01, 0
+Face 0, 1, 2, 3
+
+[Texture]
+Load pflaster1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 16, 0
+Coordinates 2, 16, 0.2
+Coordinates 3, 0, 0.2
+
+[MeshBuilder]
+Vertex -0.45, 0.01, 0
+Vertex -0.45, 0, 25.1
+Vertex  0.45, 0, 25.1
+Vertex  0.45, 0.01, 0
+Face 0, 1, 2, 3
+
+[Texture]
+Load pflaster1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 16, 0
+Coordinates 2, 16, 0.6
+Coordinates 3, 0, 0.6
+
+
+[MeshBuilder]
+Vertex 0.6, 0.01, 0
+Vertex 0.6, 0, 25.1
+Vertex 1, 0, 25.1
+Vertex 1, 0.01, 0
+Face 0, 1, 2, 3
+
+[Texture]
+Load pflaster1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 16, 0
+Coordinates 2, 16, 0.2
+Coordinates 3, 0, 0.2
+
+; Schienen
+
+; Schiene links
+[MeshBuilder]
+Vertex -0.58, 0, 0
+Vertex -0.58, 0, 25.5
+Vertex -0.55, 0, 25.5
+Vertex -0.55, 0, 0
+Face 0, 1, 2, 3
+Color 200,200,200
+[MeshBuilder]
+Vertex -0.602, -0.01, 0
+Vertex -0.602, -0.01, 25.5
+Vertex -0.534, -0.01, 25.5
+Vertex -0.534, -0.01, 0
+Face 0, 1, 2, 3
+Color 128,128,128
+[MeshBuilder]
+Vertex -0.6, -0.1, 0
+Vertex -0.6, -0.1, 25.5
+Vertex -0.45, -0.1, 25.5
+Vertex -0.45, -0.1, 0
+Face 0, 1, 2, 3
+Color 50,50,50
+
+; Schiene rechts
+[MeshBuilder]
+Vertex 0.58, 0, 0
+Vertex 0.58, 0, 25.5
+Vertex 0.55, 0, 25.5
+Vertex 0.55, 0, 0
+Face 3,2,1,0
+Color 200,200,200
+[MeshBuilder]
+Vertex 0.602, -0.01, 0
+Vertex 0.602, -0.01, 25.5
+Vertex 0.534, -0.01, 25.5
+Vertex 0.534, -0.01, 0
+Face 3,2,1,0
+Color 128,128,128
+[MeshBuilder]
+Vertex 0.6, -0.1, 0
+Vertex 0.6, -0.1, 25.5
+Vertex 0.45, -0.1, 25.5
+Vertex 0.45, -0.1, 0
+Face 3,2,1,0
+Color 50,50,50
+
+
+
+;Fahrdraht
+[meshbuilder]
+vertex -0.02, 6.000, 0
+vertex 0.02, 6.000, 0
+vertex 0.020, 6.000, 25
+vertex -0.020, 6.000, 25
+face 0,1,2,3
+color 0,0,0

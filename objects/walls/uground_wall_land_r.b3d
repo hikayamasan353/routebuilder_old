@@ -1,0 +1,49 @@
+;author=Uwe Post
+;description=underground station wall Hamburg, Landungsbrücken
+;copyright=open source
+
+[MeshBuilder]
+Vertex 2.5,5,-0.5
+Vertex -4,   5,-0.5
+Vertex -4,   5,25.5
+Vertex 2.5,5,25.5
+Face 3,2,1,0
+
+[Texture]
+Load ..\grounds\concrete4.bmp
+Coordinates 0, 0.2, 0
+Coordinates 1, 0.2, 2
+Coordinates 2, 0, 2
+Coordinates 3, 0, 0
+
+
+
+
+[MeshBuilder]
+Vertex 2.49,5,25.2
+Vertex 2.49,5,-0.2
+Vertex 2.49,-0.5,-0.2
+Vertex 2.49,-0.5,25.2
+Face 0,1,2,3
+
+[Texture]
+Load hh_s_land_w.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 4, 0
+Coordinates 2, 4, 1
+Coordinates 3, 0, 1
+
+
+[MeshBuilder]
+Vertex 2.42,-0.3,-1
+Vertex 2.42,-0.3,26
+Vertex -4,-0.3,26
+Vertex -4,-0.3,-1
+Face 3,2,1,0
+
+[Texture]
+Load ..\tracks\schotter5.bmp
+Coordinates 0, 4, 0
+Coordinates 1, 4, 10
+Coordinates 2, 0, 10
+Coordinates 3, 0, 0

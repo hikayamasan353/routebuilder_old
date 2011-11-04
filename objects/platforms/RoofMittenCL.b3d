@@ -1,0 +1,146 @@
+;author=Uwe Post
+;description=platform roof Mitten (small)
+;copyright=open source
+
+
+[MeshBuilder]
+Vertex -4.1, 4.4, 0
+Vertex -4.1, 4.4, 25.3
+Vertex -1.5, 4.7, 25.3
+Vertex -1.5, 4.7, 0
+Face 0,1,2,3
+
+[Texture]
+Load Roof4.bmp
+Coordinates 0, 0, 8
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 8
+
+[MeshBuilder]
+Vertex -4.0, 4, 0
+Vertex -4.0, 4, 25.3
+Vertex -1.5, 4.69, 25.3
+Vertex -1.5, 4.69, 0
+Face 3,2,1,0
+
+[Texture]
+Load chesterroofcentre.bmp
+Coordinates 0, 0, 16
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 16
+
+
+[MeshBuilder]
+Vertex -1.5, 4.7, 0
+Vertex -1.5, 4.7, 0
+Vertex -4.1, 4.4, 0
+Vertex -4.1, 3.9, 0
+Face 3,2,1,0
+color 100,100,100
+
+[MeshBuilder]
+Vertex -1.5, 4.7, 25.3
+Vertex -1.5, 4.7, 25.3
+Vertex -4.1, 4.4, 25.3
+Vertex -4.1, 3.9, 25.3
+Face 3,2,1,0
+color 100,100,100
+
+
+[MeshBuilder]
+Vertex -4.0, 4, 25.3
+Vertex -4.0, 4, 0
+Vertex -4.1, 4, 0
+Vertex -4.1, 4, 25.3
+Face 3,2,1,0
+color 100,100,100
+
+
+
+[MeshBuilder]
+Vertex -4.1,0,6
+Vertex -4.1,4,6
+Vertex -3.8,4,6
+Vertex -3.8,0,6
+Face 0,1,2,3
+
+[Texture]
+Load chesterstubgreen.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+
+[MeshBuilder]
+Vertex -3.8,0,5.75
+Vertex -3.8,4,5.75
+Vertex -3.8,4,6.25
+Vertex -3.8,0,6.25
+Face 0,1,2,3
+
+[Texture]
+Load chesterstubgreen.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+
+[MeshBuilder]
+Vertex -4.1,0,18
+Vertex -4.1,4,18
+Vertex -3.8,4,18
+Vertex -3.8,0,18
+Face 0,1,2,3
+
+[Texture]
+Load chesterstubgreen.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+
+[MeshBuilder]
+Vertex -3.8,0,17.75
+Vertex -3.8,4,17.75
+Vertex -3.8,4,18.25
+Vertex -3.8,0,18.25
+Face 0,1,2,3
+
+[Texture]
+Load chesterstubgreen.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+
+
+
+
+
+;schild
+
+[MeshBuilder]
+Vertex -3.79,4,10.5
+Vertex -3.79,4,14.5
+Vertex -3.79,3.5.0,14.5
+Vertex -3.79,3.5.0,10.5
+Face 0,1,2,3
+
+[Texture]
+Load ..\signs\stationsign_mitten_im_wald.BMP
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex -3.791,4,10.5
+Vertex -3.791,4,14.5
+Vertex -3.791,3.5,14.5
+Vertex -3.791,3.5,10.5
+Face 3,2,1,0
+color 180,180,180
+
+

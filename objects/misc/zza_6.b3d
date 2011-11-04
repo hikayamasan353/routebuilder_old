@@ -1,0 +1,64 @@
+;description=Zugzielanzeiger Gleis 6
+;author=Uwe Post
+;copyright=open source
+
+[MeshBuilder]
+Vertex -2.6,4,-0.2
+Vertex -2.6,4.7,-0.2
+Vertex -0.1,4.7,-0.2
+Vertex -0.1,4,-0.2
+Face 0,1,2,3
+
+[Texture]
+Load zza_6_l.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+
+[MeshBuilder]
+Vertex -2.6,4,0.2
+Vertex -2.6,4.7,0.2
+Vertex -0.1,4.7,0.2
+Vertex -0.1,4,0.2
+Face 3,2,1,0
+
+[Texture]
+Load zza_6_r.bmp
+Coordinates 0,1,1
+Coordinates 1,1,0
+Coordinates 2,0,0
+Coordinates 3,0,1
+
+[MeshBuilder]
+Vertex -2.6,4,-0.2
+Vertex -2.6,4.7,-0.2
+Vertex -0.1,4.7,-0.2
+Vertex -0.1,4,-0.2
+Vertex -2.6,4,0.2
+Vertex -2.6,4.7,0.2
+Vertex -0.1,4.7,0.2
+Vertex -0.1,4,0.2
+Face 4,5,1,0
+Face 5,6,2,1
+Face 0,3,7,4
+color 70,100,150
+
+[MeshBuilder]
+Vertex -0.1,4.7,-0.2
+Vertex 0  ,4.7,-0.2
+Vertex 0  ,0  ,-0.2
+Vertex -0.1,0  ,-0.2
+Vertex -0.1,4.7,0.2
+Vertex 0  ,4.7,0.2
+Vertex 0  ,0  ,0.2
+Vertex -0.1,0  ,0.2
+Face 0,1,2,3
+Face 7,6,5,4
+Face 0,3,7,4
+Face 5,6,2,1
+Face 4,5,1,0
+color 200,200,200
+
+

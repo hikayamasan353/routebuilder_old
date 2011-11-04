@@ -1,0 +1,320 @@
+;author=Uwe Post
+;copyright=RB object library license
+;description=staircase for underground stations
+
+
+[MeshBuilder]
+Vertex -4.5 , 1, 0
+Vertex 4.5  , 1, 0
+Vertex 4.5  , 5, 0
+Vertex -4.5 , 5, 0
+Face 3,2,1,0
+[Texture]
+Load uwall3.bmp
+Coordinates 0, 1, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0
+Coordinates 3, 1, 0
+[MeshBuilder]
+Vertex -4.5 , 3.5, -0.1
+Vertex 4.5  , 3.5, -0.1
+Vertex 4.5  , 4.5, -0.1
+Vertex -4.5 , 4.5, -0.1
+Face 3,2,1,0
+[Texture]
+Load ..\grounds\cable_3.bmp
+Coordinates 0, 6, 0
+Coordinates 1, 0, 0
+Coordinates 2, 0, 1
+Coordinates 3, 6, 1
+Transparent 0,0,0
+
+
+[MeshBuilder]
+Vertex 4.5 , 1, 0
+Vertex 4.5 , 1, 15
+Vertex 4.5 , 5, 15
+Vertex 4.5 , 5, 0
+Face 3,2,1,0
+[Texture]
+Load uwall3.bmp
+Coordinates 0, 2, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0
+Coordinates 3, 2, 0
+[MeshBuilder]
+Vertex 4.6 , 3.5, 0
+Vertex 4.6 , 3.5, 15
+Vertex 4.6 , 4.5, 15
+Vertex 4.6 , 4.5, 0
+Face 3,2,1,0
+[Texture]
+Load ..\grounds\cable_3.bmp
+Coordinates 0, 6, 0
+Coordinates 1, 0, 0
+Coordinates 2, 0, 1
+Coordinates 3, 6, 1
+Transparent 0,0,0
+
+[MeshBuilder]
+Vertex -4.5 , 1, 0
+Vertex -4.5 , 1, 15
+Vertex -4.5 , 5, 15
+Vertex -4.5 , 5, 0
+Face 0, 1, 2, 3
+[Texture]
+Load uwall3.bmp
+Coordinates 0, 2, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0
+Coordinates 3, 2, 0
+[MeshBuilder]
+Vertex -4.6 , 3.5, 0
+Vertex -4.6 , 3.5, 15
+Vertex -4.6 , 4.5, 15
+Vertex -4.6 , 4.5, 0
+Face 0, 1, 2, 3
+[Texture]
+Load ..\grounds\cable_3.bmp
+Coordinates 0, 6, 0
+Coordinates 1, 0, 0
+Coordinates 2, 0, 1
+Coordinates 3, 6, 1
+Transparent 0,0,0
+
+; seitlich
+[MeshBuilder]
+Vertex 3.3 , 0, 15
+Vertex 4.5  , 0, 15
+Vertex 4.5  , 5, 15
+Vertex 3.3 , 5, 15
+Face 0, 1, 2, 3
+[Texture]
+Load ..\grounds\concrete2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 1
+Coordinates 2, 1, 1
+Coordinates 3, 1, 0
+
+[MeshBuilder]
+Vertex -3.3 , 0, 15
+Vertex -4.5  , 0, 15
+Vertex -4.5  , 5, 15
+Vertex -3.3 , 5, 15
+Face 3,2,1,0
+[Texture]
+Load ..\grounds\concrete2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 1
+Coordinates 2, 1, 1
+Coordinates 3, 1, 0
+
+; oben
+[MeshBuilder]
+Vertex -3.3 , 4, 15
+Vertex 3.3  , 4, 15
+Vertex 3.3  , 5, 15
+Vertex -3.3 , 5, 15
+Face 0, 1, 2, 3
+[Texture]
+Load ..\grounds\concrete2.bmp
+Coordinates 0, 0.2, 0
+Coordinates 1, 0.2, 4
+Coordinates 2, 0, 4
+Coordinates 3, 0, 0
+
+;flaeche fuer beschriftung
+[MeshBuilder]
+Vertex -3 , 4.1, 15.01
+Vertex  3 , 4.1, 15.01
+Vertex  3 , 4.6, 15.01
+Vertex -3 , 4.6, 15.01
+Face 0, 1, 2, 3
+color 255,255,255
+
+;innen
+[MeshBuilder]
+Vertex 3.3 , 0, 15
+Vertex 3.3  , 0, 5
+Vertex 3.3  , 5, 5
+Vertex 3.3 , 5, 15
+Face 3,2,1,0
+[Texture]
+Load ..\grounds\concrete2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 1
+Coordinates 2, 1, 1
+Coordinates 3, 1, 0
+
+[MeshBuilder]
+Vertex -3.3 , 0, 15
+Vertex -3.3  , 0, 5
+Vertex -3.3  , 5, 5
+Vertex -3.3 , 5, 15
+Face 0, 1, 2, 3
+[Texture]
+Load ..\grounds\concrete2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 1
+Coordinates 2, 1, 1
+Coordinates 3, 1, 0
+
+[MeshBuilder]
+Vertex -3.3 , 4, 14
+Vertex 3.3  , 4, 14
+Vertex 3.3  , 4, 15
+Vertex -3.3 , 4, 15
+Face 0, 1, 2, 3
+[Texture]
+Load ..\grounds\concrete2.bmp
+Coordinates 0, 0.2, 0
+Coordinates 1, 0.2, 4
+Coordinates 2, 0.4, 4
+Coordinates 3, 0.4, 0
+
+; stufen1
+[MeshBuilder]
+Vertex -2 , 1.1, 15
+Vertex 2  , 1.1, 15
+Vertex 2  , 2.9, 11
+Vertex -2 , 2.9, 11
+Face 0, 1, 2, 3
+[Texture]
+Load stairs1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 1, 1
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+[MeshBuilder]
+Vertex -2 , 2.9, 10
+Vertex 2  , 2.9, 10
+Vertex 2  , 2.9, 11
+Vertex -2 , 2.9, 11
+Face 3,2,1,0
+color 100,100,100
+[MeshBuilder]
+Vertex -2 , 2.9, 10
+Vertex 2  , 2.9, 10
+Vertex 2  , 4.7, 6
+Vertex -2 , 4.7, 6
+Face 0, 1, 2, 3
+[Texture]
+Load stairs1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 1, 1
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+
+
+;rollstairs
+[MeshBuilder]
+Vertex 3.28 , 1.1, 15.5
+Vertex 3.28  , 1.1, 5
+Vertex 3.28  , 7, 5
+Vertex 3.28 , 7, 15.5
+Face2 0, 1, 2, 3
+[Texture]
+Load rollstair1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 1, 1
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+transparent 0,0,255
+[MeshBuilder]
+Vertex -3.28 , 1.1, 15.5
+Vertex -3.28  , 1.1, 5
+Vertex -3.28  , 7, 5
+Vertex -3.28 , 7, 15.5
+Face2 0, 1, 2, 3
+[Texture]
+Load rollstair1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 1, 1
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+transparent 0,0,255
+[MeshBuilder]
+Vertex 2 , 1.1, 15.5
+Vertex 2  , 1.1, 5
+Vertex 2  , 7, 5
+Vertex 2 , 7, 15.5
+Face2 0, 1, 2, 3
+[Texture]
+Load rollstair1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 1, 1
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+transparent 0,0,255
+[MeshBuilder]
+Vertex -2 , 1.1, 15.5
+Vertex -2  , 1.1, 5
+Vertex -2  , 7, 5
+Vertex -2 , 7, 15.5
+Face2 0, 1, 2, 3
+[Texture]
+Load rollstair1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 1, 1
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+transparent 0,0,255
+[MeshBuilder]
+Vertex -2 , 1.1, 14
+Vertex -3.28  , 1.1, 14
+Vertex -3.28  , 4.7, 7
+Vertex -2 , 4.7, 7
+Face 3,2,1,0
+[Texture]
+Load stairs1.bmp
+Coordinates 0, 0, 2
+Coordinates 1, 1, 2
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+[MeshBuilder]
+Vertex 2 , 1.1, 14
+Vertex 3.28  , 1.1, 14
+Vertex 3.28  , 4.7, 7
+Vertex 2 , 4.7, 7
+Face 0,1,2,3
+[Texture]
+Load stairs1.bmp
+Coordinates 0, 0, 2
+Coordinates 1, 1, 2
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+
+
+;stop
+[MeshBuilder]
+Vertex 5.3, 1.5, 14.5
+Vertex 4.5 , 1.5, 14.5
+Vertex 4.5 , 2.2, 14.5
+Vertex 5.3 , 2.2, 14.5
+Face2 0, 1, 2, 3
+[Texture]
+Load notrespass1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 1, 1
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+transparent 0,0,0
+[MeshBuilder]
+Vertex -5.3, 1.5, 14.5
+Vertex -4.5 , 1.5, 14.5
+Vertex -4.5 , 2.2, 14.5
+Vertex -5.3 , 2.2, 14.5
+Face2 0, 1, 2, 3
+[Texture]
+Load notrespass1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 1, 1
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+transparent 0,0,0
+
+
+
+
+
+

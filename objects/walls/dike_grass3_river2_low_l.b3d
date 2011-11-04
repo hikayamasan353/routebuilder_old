@@ -1,0 +1,335 @@
+;author=Uwe Post
+;description=simple grass3 dike low with river
+;copyright=RouteBuilder Object Library License
+
+[MeshBuilder]
+Vertex -2.3, -0.3, -1
+Vertex -2.3, -0.3, 26
+Vertex -6.7, -0.3, 26
+Vertex -6.7, -0.3, -1
+Face2 3,2,1,0
+
+[Texture]
+Load ..\grounds\grass3.bmp
+Coordinates 0, 0.5, 0
+Coordinates 1, 0.5, 1
+Coordinates 2, 0, 1
+Coordinates 3, 0, 0
+
+
+[MeshBuilder]
+Vertex -2.3, -0.3, -1
+Vertex -2.3, -5.1, -8
+Vertex -6.7, -5.1, -8
+Vertex -6.7, -0.3, -1
+Face2 3,2,1,0
+
+[Texture]
+Load ..\grounds\grass3.bmp
+Coordinates 0, 0.5, 0
+Coordinates 1, 0.5, 1
+Coordinates 2, 0, 1
+Coordinates 3, 0, 0
+
+
+[MeshBuilder]
+Vertex -2.3, -0.3, 26
+Vertex -2.3, -5.1, 32
+Vertex -6.7, -5.1, 32
+Vertex -6.7, -0.3, 26
+Face2 3,2,1,0
+
+[Texture]
+Load ..\grounds\grass3.bmp
+Coordinates 0, 0.5, 0
+Coordinates 1, 0.5, 1
+Coordinates 2, 0, 1
+Coordinates 3, 0, 0
+
+
+
+[MeshBuilder]
+Vertex -6.7, -0.3, -1
+Vertex -6.7, -0.3, 26
+Vertex -20 , -5.1  , 26
+Vertex -20  , -5.1  , -1
+Face2 3,2,1,0
+
+[Texture]
+Load ..\grounds\grass3.bmp
+Coordinates 0, 0.5, 0
+Coordinates 1, 0.5, 1
+Coordinates 2, 0, 1
+Coordinates 3, 0, 0
+
+
+[MeshBuilder]
+Vertex -6.7, -0.3, -1
+Vertex -6.7, -5.1, -8
+Vertex -20 , -5.1  , -1
+Vertex -20  , -5.1  , -1
+Face2 3,2,1,0
+
+[Texture]
+Load ..\grounds\grass3.bmp
+Coordinates 0, 0.5, 0
+Coordinates 1, 0.5, 1
+Coordinates 2, 0, 1
+Coordinates 3, 0, 0
+
+[MeshBuilder]
+Vertex -6.7, -0.3, 26
+Vertex -6.7, -5.1, 32
+Vertex -20 , -5.1  , 26
+Vertex -20  , -5.1  , 26
+Face2 3,2,1,0
+
+[Texture]
+Load ..\grounds\grass3.bmp
+Coordinates 0, 0.5, 0
+Coordinates 1, 0.5, 1
+Coordinates 2, 0, 1
+Coordinates 3, 0, 0
+
+
+
+
+
+[MeshBuilder]
+Vertex -60,  -5.1, -1
+Vertex -60,  -5.1, 26
+Vertex -20  , -5.1  , 26
+Vertex -20  , -5.1  , -1
+Face2 3,2,1,0
+
+[Texture]
+Load ..\grounds\water1.bmp
+Coordinates 0, 4, 0
+Coordinates 1, 4, 1
+Coordinates 2, 0, 1
+Coordinates 3, 0, 0
+
+
+
+
+[MeshBuilder]
+Vertex -80, -0.3, -1
+Vertex -80, -0.3, 26
+Vertex -60 , -5.1  , 26
+Vertex -60  , -5.1  , -1
+Face2 3,2,1,0
+
+[Texture]
+Load ..\grounds\grass3.bmp
+Coordinates 0, 0.5, 0
+Coordinates 1, 0.5, 1
+Coordinates 2, 0, 1
+Coordinates 3, 0, 0
+
+
+
+; trees VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVv
+
+
+[MeshBuilder]
+Vertex -74, 15, 10
+Vertex -74, -5.1, 10
+Vertex -66, -5.1, 10
+Vertex -66, 15, 10
+Face2 0,1,2,3
+
+[Texture]
+Load ..\plants\tree2.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+
+
+
+[MeshBuilder]
+Vertex -66, 14, 14
+Vertex -66, -5.1, 14
+Vertex -68, -5.1, 14
+Vertex -68, 14, 4
+Face2 0,1,2,3
+
+[Texture]
+Load ..\plants\tree1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+
+
+
+
+[MeshBuilder]
+Vertex -64, 18, 17
+Vertex -64, -5.1, 17
+Vertex -59, -5.1, 17
+Vertex -59, 18, 17
+Face2 0,1,2,3
+
+
+
+[Texture]
+Load ..\plants\tree2.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+
+
+
+[MeshBuilder]
+Vertex -74, 20, 10
+Vertex -74, -5.1, 10
+Vertex -68, -5.1, 10
+Vertex -68, 20, 10
+Face2 0,1,2,3
+
+
+[Texture]
+Load ..\plants\tree1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+
+
+
+[MeshBuilder]
+Vertex -72, 20, 14
+Vertex -72, -5.1, 14
+Vertex -66, -5.1, 14
+Vertex -66, 20, 14
+Face2 0,1,2,3
+
+[Texture]
+Load ..\plants\tree1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+
+[MeshBuilder]
+Vertex -13, 5, 2
+Vertex -13, -5.1, 2
+Vertex -19, -5.1, 2
+Vertex -19, 5, 2
+Face2 0,1,2,3
+
+[Texture]
+Load ..\plants\bush1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+[MeshBuilder]
+Vertex -6, 13, 16
+Vertex -6, -2.1, 16
+Vertex -12, -2.1, 16
+Vertex -12, 13, 16
+Face2 0,1,2,3
+
+[Texture]
+Load ..\plants\tree2.bmp
+Coordinates 0,1,0
+Coordinates 1,1,1
+Coordinates 2,0,1
+Coordinates 3,0,0
+Transparent 0, 0, 255
+
+
+
+[MeshBuilder]
+Vertex -3, 13, 4
+Vertex -3, -1.1, 4
+Vertex -10, -1.1, 4
+Vertex -10, 13, 4
+Face2 0,1,2,3
+
+[Texture]
+Load ..\plants\tree1.bmp
+Coordinates 0,1,0
+Coordinates 1,1,1
+Coordinates 2,0,1
+Coordinates 3,0,0
+Transparent 0, 0, 255
+
+
+
+
+
+
+[MeshBuilder]
+Vertex -12, 12, 24
+Vertex -12, -1.1, 24
+Vertex -6, -1.1, 24
+Vertex -6, 12, 24
+Face2 0,1,2,3
+
+[Texture]
+Load ..\plants\tree1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+
+
+
+;fence
+
+[MeshBuilder]
+Vertex -4, 1, 25
+Vertex -4, 1, 0
+Vertex -4, -0.2, 0
+Vertex -4, -0.2, 25
+Face 0,1,2,3
+Face 1,0,3,2
+
+[Texture]
+Load ..\fences\woodfence1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 25, 0
+Coordinates 2, 25, 1
+Coordinates 3, 0, 1
+transparent 0,0,255
+
+

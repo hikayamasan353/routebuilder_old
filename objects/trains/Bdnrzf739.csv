@@ -1,0 +1,214 @@
+;Nahverkehrswagen BDnrzf739
+;erstellt von Martin Finken
+;BVE-Train.de
+
+CreateMeshBuilder,
+AddVertex,1.40,3.30, 0.25
+AddVertex,1.40,3.30,24.75
+AddVertex,1.40,-0, 0.25
+AddVertex,1.40,-0,24.75
+AddFace,0,1,3,2
+GenerateNormals,
+LoadTexture, Bdnrzf739S.bmp
+SetTextureCoordinates, 0,1,0
+SetTextureCoordinates, 1,0,0
+SetTextureCoordinates, 2,1,1
+SetTextureCoordinates, 3,0,1
+SetDecalTransparentColor, 0,0,255
+CreateMeshBuilder,
+AddVertex,-1.40,3.30,24.75
+AddVertex,-1.40,3.30, 0.25
+AddVertex,-1.40,-0,24.75
+AddVertex,-1.40,-0,0.25
+AddFace,0,1,3,2
+GenerateNormals,
+LoadTexture, Bdnrzf739S.bmp
+SetTextureCoordinates, 0,0,0
+SetTextureCoordinates, 1,1,0
+SetTextureCoordinates, 2,0,1
+SetTextureCoordinates, 3,1,1
+SetDecalTransparentColor, 0,0,255
+CreateMeshBuilder,
+AddVertex,-0.718,2.422,0.75
+AddVertex,-0.718,2.422,24.25
+AddVertex,-0.718,0,0.75
+AddVertex,-0.718,0,24.25
+AddFace,0,1,3,2
+AddFace,2,3,1,0
+GenerateNormals,
+LoadTexture, BNFG.bmp
+SetTextureCoordinates, 0,0,0
+SetTextureCoordinates, 1,1,0
+SetTextureCoordinates, 2,0,1
+SetTextureCoordinates, 3,1,1
+SetDecalTransparentColor, 0,0,255
+CreateMeshBuilder,
+AddVertex,0.718,2.422,0.75
+AddVertex,0.718,2.422,24.25
+AddVertex,0.718,0,0.75
+AddVertex,0.718,0,24.25
+AddFace,0,1,3,2
+AddFace,2,3,1,0
+GenerateNormals,
+LoadTexture, BNFG.bmp
+SetTextureCoordinates, 0,0,0
+SetTextureCoordinates, 1,1,0
+SetTextureCoordinates, 2,0,1
+SetTextureCoordinates, 3,1,1
+SetDecalTransparentColor, 0,0,255
+CreateMeshBuilder,
+AddVertex,1.4,3.6,0.25
+AddVertex,-1.4,3.6,0.25
+AddVertex,1.4,0.0,0.25
+AddVertex,-1.4,0.0,0.25
+AddFace,2,3,1,0
+GenerateNormals,
+LoadTexture, Bdnrzf739f.bmp
+SetTextureCoordinates, 0,0,0
+SetTextureCoordinates, 1,1,0
+SetTextureCoordinates, 2,0,1
+SetTextureCoordinates, 3,1,1
+SetDecalTransparentColor, 0,0,255
+CreateMeshBuilder,
+AddVertex,1.4,3.6,24.75
+AddVertex,-1.4,3.6,24.75
+AddVertex,1.4,0.0,24.75
+AddVertex,-1.4,0.0,24.75
+AddFace,0,1,3,2
+GenerateNormals,
+LoadTexture, Bdnrzf739f1.bmp
+SetTextureCoordinates, 0,0,0
+SetTextureCoordinates, 1,1,0
+SetTextureCoordinates, 2,0,1
+SetTextureCoordinates, 3,1,1
+SetDecalTransparentColor, 0,0,255
+
+
+CreateMeshBuilder,
+AddVertex,-1.45, 3.25, 0.25
+AddVertex,-1.1, 3.25, 0.25
+AddVertex,-0.8, 3.25, 0.25
+AddVertex,-0.2, 3.55, 0.25
+AddVertex,0.2, 3.55, 0.25
+AddVertex,0.8, 3.25, 0.25
+AddVertex,1.1, 3.25, 0.25
+AddVertex,1.45, 3.25, 0.25
+
+AddVertex,-1.3, 3.45, 0.35
+AddVertex,-1, 3.65, 0.45
+AddVertex,-0.7, 3.8, 0.45
+AddVertex,-0.1, 3.9, 0.5
+AddVertex,0.1, 3.9, 0.5
+AddVertex,0.7, 3.8, 0.45
+AddVertex,1, 3.65, 0.45
+AddVertex,1.3, 3.45, 0.35
+
+AddVertex,0, 3.91, 0.55
+
+AddVertex,-1.45, 3.25, 24.75
+AddVertex,-1.1, 3.25, 24.75
+AddVertex,-0.8, 3.25, 24.75
+AddVertex,-0.2, 3.55, 24.75
+AddVertex,0.2, 3.55, 24.75
+AddVertex,0.8, 3.25, 24.75
+AddVertex,1.1, 3.25, 24.75
+AddVertex,1.45, 3.25, 24.75
+
+AddVertex,-1.3, 3.45, 24.65
+AddVertex,-1, 3.65, 24.6
+AddVertex,-0.7, 3.8, 24.55
+AddVertex,-0.1, 3.9, 24.5
+AddVertex,0.1, 3.9, 24.5
+AddVertex,0.7, 3.8, 24.55
+AddVertex,1, 3.65, 24.6
+AddVertex,1.3, 3.45, 24.65
+
+AddVertex,0, 3.91, 24.45
+
+AddFace, 8,9,1,0
+AddFace, 9,10,2,1
+AddFace, 10,11,3,2
+AddFace, 11,12,4,3
+AddFace, 12,13,5,4
+AddFace, 13,14,6,5
+AddFace, 14,15,7,6
+AddFace, 16,9,8
+AddFace, 16,10,9
+AddFace, 16,11,10
+AddFace, 16,12,11
+AddFace, 16,13,12
+AddFace, 16,14,13
+AddFace, 16,15,14
+AddFace, 17,18,26,25
+AddFace, 18,19,27,26
+AddFace, 19,20,28,27
+AddFace, 20,21,29,28
+AddFace, 21,22,30,29
+AddFace, 22,23,31,30
+AddFace, 23,24,32,31
+AddFace, 33,25,26
+AddFace, 33,26,27
+AddFace, 33,27,28
+AddFace, 33,28,29
+AddFace, 33,29,30
+AddFace, 33,30,31
+AddFace, 33,31,32
+AddFace, 25,8,0,17
+AddFace, 33,16,8,25
+AddFace, 16,33,32,15
+AddFace, 15,32,24,7
+
+Loadtexture, Dach.bmp
+SetTextureCoordinates, 0, 0.095, 0
+SetTextureCoordinates, 1, 0.047, 0.07
+SetTextureCoordinates, 2, 0.014, 0.234
+SetTextureCoordinates, 3, 0, 0.43
+SetTextureCoordinates, 4, 0, 0.57
+SetTextureCoordinates, 5, 0.014, 0.766
+SetTextureCoordinates, 6, 0.046, 0.93
+SetTextureCoordinates, 7, 0.095, 1
+
+SetTextureCoordinates, 8, 0.095, 0.141
+SetTextureCoordinates, 9, 0.066, 0.203
+SetTextureCoordinates, 10, 0.047, 0.299
+SetTextureCoordinates, 11, 0.035, 0.43
+SetTextureCoordinates, 12, 0.035, 0.57
+SetTextureCoordinates, 13, 0.047, 0.701
+SetTextureCoordinates, 14, 0.066, 0.797
+SetTextureCoordinates, 15, 0.085, 0.859
+
+SetTextureCoordinates, 16, 0.095, 0.5
+
+SetTextureCoordinates, 17, 0.905, 0
+SetTextureCoordinates, 18, 0.953, 0.07
+SetTextureCoordinates, 19, 0.986, 0.234
+SetTextureCoordinates, 20, 1, 0.43
+SetTextureCoordinates, 21, 1, 0.57
+SetTextureCoordinates, 22, 0.986, 0.766
+SetTextureCoordinates, 23, 0.953, 0.93
+SetTextureCoordinates, 24, 0.905, 1
+
+SetTextureCoordinates, 25, 0.905, 0.141
+SetTextureCoordinates, 26, 0.934, 0.203
+SetTextureCoordinates, 27, 0.953, 0.299
+SetTextureCoordinates, 28, 0.965, 0.43
+SetTextureCoordinates, 29, 0.965, 0.57
+SetTextureCoordinates, 30, 0.953, 0.701
+SetTextureCoordinates, 31, 0.934, 0.797
+SetTextureCoordinates, 32, 0.905, 0.859
+
+SetTextureCoordinates, 33, 0.905, 0.5
+
+CreateMeshBuilder,
+AddVertex,-0.225, 3.9, 0.3
+AddVertex,0.225, 3.9, 0.3
+AddVertex,0.225, 3.55, 0.3
+AddVertex,-0.225, 3.55, 0.3
+AddFace, 0,1,2,3
+GenerateNormals,
+LoadTexture, Lampe.bmp
+SetTextureCoordinates, 0, 0, 0
+SetTextureCoordinates, 1, 1, 0
+SetTextureCoordinates, 2, 1, 1
+SetTextureCoordinates, 3, 0, 1
+SetDecalTransparentColor, 0,0,255

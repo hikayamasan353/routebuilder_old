@@ -1,0 +1,180 @@
+;description=created for Route Builder
+;author=Thomas233
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[Meshbuilder]
+Vertex 0, 0, 0
+Vertex 0, 6, 0
+Vertex 5, 8, 0
+Vertex 10, 6, 0
+Vertex 10, 0, 0
+Face 0, 1, 2, 3, 4
+[Texture]
+Load haus2.bmp
+Coordinates 0, 0, 0.541016
+Coordinates 1, 0.001953, 0.443359
+Coordinates 2, 0.310547, 0.416016
+Coordinates 3, 0.589844, 0.447266
+Coordinates 4, 0.591797, 0.541016
+[Meshbuilder]
+Vertex 0, 0, 0
+Vertex 0, 6, 0
+Vertex 5, 8, 0
+Vertex 10, 6, 0
+Vertex 10, 0, 0
+Face 4, 3, 2, 1, 0
+[Texture]
+Load haus2.bmp
+Coordinates 0, 0, 0.541016
+Coordinates 1, 0.001953, 0.443359
+Coordinates 2, 0.310547, 0.416016
+Coordinates 3, 0.589844, 0.447266
+Coordinates 4, 0.591797, 0.541016
+[Meshbuilder]
+Vertex 10, 0, 15
+Vertex 10, 6, 15
+Vertex 5, 8, 15
+Vertex 0, 6, 15
+Vertex 0, 0, 15
+Face 0, 1, 2, 3, 4
+[Texture]
+Load haus2.bmp
+Coordinates 0, 0, 0.541016
+Coordinates 1, 0, 0.460938
+Coordinates 2, 0.320313, 0.417969
+Coordinates 3, 0.591797, 0.453125
+Coordinates 4, 0.591797, 0.541016
+[Meshbuilder]
+Vertex 10, 0, 15
+Vertex 10, 6, 15
+Vertex 5, 8, 15
+Vertex 0, 6, 15
+Vertex 0, 0, 15
+Face 4, 3, 2, 1, 0
+[Texture]
+Load haus2.bmp
+Coordinates 0, 0, 0.541016
+Coordinates 1, 0, 0.460938
+Coordinates 2, 0.320313, 0.417969
+Coordinates 3, 0.591797, 0.453125
+Coordinates 4, 0.591797, 0.541016
+[Meshbuilder]
+Vertex 10, 0, 0
+Vertex 10, 6, 0
+Vertex 10, 6, 15
+Vertex 10, 0, 15
+Face 0, 1, 2, 3
+[Texture]
+Load haus2.bmp
+Coordinates 0, 0, 0.414063
+Coordinates 1, 0, 0
+Coordinates 2, 0.714844, 0
+Coordinates 3, 0.716797, 0.414063
+[Meshbuilder]
+Vertex 10, 0, 0
+Vertex 10, 6, 0
+Vertex 10, 6, 15
+Vertex 10, 0, 15
+Face 3, 2, 1, 0
+[Texture]
+Load haus2.bmp
+Coordinates 0, 0, 0.414063
+Coordinates 1, 0, 0
+Coordinates 2, 0.714844, 0
+Coordinates 3, 0.716797, 0.414063
+[Meshbuilder]
+Vertex 0, 0, 15
+Vertex 0, 6, 15
+Vertex 0, 6, 0
+Vertex 0, 0, 0
+Face 0, 1, 2, 3
+[Texture]
+Load haus2.bmp
+Coordinates 0, 0.001953, 0.416016
+Coordinates 1, 0, 0
+Coordinates 2, 0.71875, 0
+Coordinates 3, 0.71875, 0.416016
+[Meshbuilder]
+Vertex 0, 0, 15
+Vertex 0, 6, 15
+Vertex 0, 6, 0
+Vertex 0, 0, 0
+Face 3, 2, 1, 0
+[Texture]
+Load haus2.bmp
+Coordinates 0, 0.001953, 0.416016
+Coordinates 1, 0, 0
+Coordinates 2, 0.71875, 0
+Coordinates 3, 0.71875, 0.416016
+[Meshbuilder]
+Vertex 10, 6, 0
+Vertex 10, 6, 15
+Vertex 5, 8, 15
+Vertex 5, 8, 0
+Face 0, 1, 2, 3
+[Texture]
+Load haus2.bmp
+Coordinates 0, 0.716797, 0.4375
+Coordinates 1, 0.650391, 0.435547
+Coordinates 2, 0.664063, 0.421875
+Coordinates 3, 0.707031, 0.417969
+[Meshbuilder]
+Vertex 10, 6, 0
+Vertex 10, 6, 15
+Vertex 5, 8, 15
+Vertex 5, 8, 0
+Face 3, 2, 1, 0
+[Texture]
+Load haus2.bmp
+Coordinates 0, 0.716797, 0.4375
+Coordinates 1, 0.650391, 0.435547
+Coordinates 2, 0.664063, 0.421875
+Coordinates 3, 0.707031, 0.417969
+[Meshbuilder]
+Vertex 0, 6, 15
+Vertex 5, 8, 15
+Vertex 5, 8, 0
+Vertex 0, 6, 0
+Face 0, 1, 2, 3
+[Texture]
+Load haus2.bmp
+Coordinates 0, 0.660156, 0.429688
+Coordinates 1, 0.650391, 0.419922
+Coordinates 2, 0.712891, 0.421875
+Coordinates 3, 0.707031, 0.4375
+[Meshbuilder]
+Vertex 0, 6, 15
+Vertex 5, 8, 15
+Vertex 5, 8, 0
+Vertex 0, 6, 0
+Face 3, 2, 1, 0
+[Texture]
+Load haus2.bmp
+Coordinates 0, 0.660156, 0.429688
+Coordinates 1, 0.650391, 0.419922
+Coordinates 2, 0.712891, 0.421875
+Coordinates 3, 0.707031, 0.4375
+[Meshbuilder]
+Vertex 10, 0, 15
+Vertex 10, 0, 0
+Vertex 0, 0, 0
+Vertex 0, 0, 15
+Face 0, 1, 2, 3
+[Texture]
+Load haus2.bmp
+Coordinates 0, 0.658203, 0.433594
+Coordinates 1, 0.652344, 0.425781
+Coordinates 2, 0.699219, 0.419922
+Coordinates 3, 0.710938, 0.435547
+[Meshbuilder]
+Vertex 10, 0, 15
+Vertex 10, 0, 0
+Vertex 0, 0, 0
+Vertex 0, 0, 15
+Face 3, 2, 1, 0
+[Texture]
+Load haus2.bmp
+Coordinates 0, 0.658203, 0.433594
+Coordinates 1, 0.652344, 0.425781
+Coordinates 2, 0.699219, 0.419922
+Coordinates 3, 0.710938, 0.435547

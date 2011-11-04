@@ -1,0 +1,55 @@
+;author=Uwe Post
+;description=default signal post (German)
+;copyright=the BVE RouteBuilder team 2004, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -0.08, 3.5, 0
+Vertex  0.08, 3.5, 0
+Vertex  0.08, 1.1, 0
+Vertex -0.08, 1.1, 0
+Face 0, 1, 2, 3
+[Texture]
+Load signal_post.BMP
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+
+[MeshBuilder]
+Vertex -0.1,5,0.1
+Vertex 0.1,5,0.1
+Vertex 0.1,5,0.4
+Vertex -0.1,5,0.4
+
+Vertex -0.1,0,0.1
+Vertex 0.1,0,0.1
+Vertex 0.1,0,0.4
+Vertex -0.1,0,0.4
+
+Face 0,1,5,4
+Face 1,2,6,5
+Face 2,3,7,6
+Face 3,0,4,7
+
+Color 20,20,20
+
+[MeshBuilder]
+Vertex -0.3,1.1,0.4
+Vertex 0.3,1.1,0.4
+Vertex 0.3,1.1,0.8
+Vertex -0.3,1.1,0.8
+
+Vertex -0.3,0,0.4
+Vertex 0.3,0,0.4
+Vertex 0.3,0,0.8
+Vertex -0.3,0,0.8
+
+Face 0,1,5,4
+Face 1,2,6,5
+Face 2,3,7,6
+Face 3,0,4,7
+Face 0,3,2,1
+
+Color 90,90,90
+

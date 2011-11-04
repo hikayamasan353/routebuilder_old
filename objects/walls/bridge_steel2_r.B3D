@@ -1,0 +1,49 @@
+;author=Uwe Post
+;description=steel bridge 2
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex 2.6, -0.3, 0
+Vertex 2.6, -0.3, 25
+Vertex 2.6, 6, 25
+Vertex 2.6, 6, 0
+Face 3,2,1,0
+Face 0,1,2,3
+
+[Texture]
+Load bridge_steel2.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 1, 1
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+transparent 0,64,63
+
+[MeshBuilder]
+Vertex 2.5, -0.3, 0
+Vertex 2.5, -0.3, 25
+Vertex 2.5, 6, 25
+Vertex 2.5, 6, 0
+Face 3,2,1,0
+Face 0,1,2,3
+
+[Texture]
+Load bridge_steel2.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 1, 1
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+transparent 0,64,63
+
+[MeshBuilder]
+Vertex 2.5, -0.3, -1
+Vertex 2.5, -0.3, 26
+Vertex 0, -0.3, 26
+Vertex 0, -0.3, -1
+Face2 3,2,1,0
+
+[Texture]
+Load blue_steel.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 10, 1
+Coordinates 2, 10, 0
+Coordinates 3, 0, 0

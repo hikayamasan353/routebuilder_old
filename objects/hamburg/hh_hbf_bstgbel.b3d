@@ -1,0 +1,107 @@
+;author=Uwe Post
+;description=Bahnsteigbel. Hamburg Hbf
+;copyright=open source
+
+
+[MeshBuilder]
+Cylinder 12,0.05,0.05,25
+rotate 1,0,0,90
+translate -1.85,6,12.5
+color 200,200,200
+
+[MeshBuilder]
+Cylinder 12,0.05,0.05,25
+rotate 1,0,0,90
+translate 1.85,6,12.5
+color 200,200,200
+
+[MeshBuilder]
+Cylinder 12,0.2,0.2,0.3
+translate 1.85,5.8,6.25
+color 200,200,200
+
+[MeshBuilder]
+Cylinder 12,0.2,0.2,0.3
+translate -1.85,5.8,6.25
+color 200,200,200
+
+[MeshBuilder]
+Cylinder 12,0.2,0.2,0.3
+translate 1.85,5.8,18.75
+color 200,200,200
+
+[MeshBuilder]
+Cylinder 12,0.2,0.2,0.3
+translate -1.85,5.8,18.75
+color 200,200,200
+
+
+;Mast
+[MeshBuilder]
+Cylinder 12,0.1,0.1,6
+translate 0,3,12.5
+color 200,200,200
+[MeshBuilder]
+Cylinder 12,0.1,0.1,4
+rotate 0,0,1,90
+translate 0,5,12.5
+color 200,200,200
+
+;Zugzielanzeiger
+[MeshBuilder]
+Vertex 2.2, 4, 12.5
+Vertex 2.2, 5, 12.5
+Vertex 0.2, 5, 12.5
+Vertex 0.2, 4, 12.5
+Face 0,1,2,3
+[Texture]
+Load ..\platforms\hh_s_zz2.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+transparent 0,0,255
+
+[MeshBuilder]
+Vertex 2.2, 4, 12.6
+Vertex 2.2, 5, 12.6
+Vertex 0.2, 5, 12.6
+Vertex 0.2, 4, 12.6
+Face 3,2,1,0
+[Texture]
+Load ..\platforms\hh_s_zz1.bmp
+Coordinates 0, 1, 1
+Coordinates 1, 1, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 1
+transparent 0,0,255
+
+;Zugzielanzeiger
+[MeshBuilder]
+Vertex -2.2, 4, 12.5
+Vertex -2.2, 5, 12.5
+Vertex -0.2, 5, 12.5
+Vertex -0.2, 4, 12.5
+Face 0,1,2,3
+[Texture]
+Load ..\platforms\hh_s_zz2.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+transparent 0,0,255
+
+[MeshBuilder]
+Vertex -2.2, 4, 12.6
+Vertex -2.2, 5, 12.6
+Vertex -0.2, 5, 12.6
+Vertex -0.2, 4, 12.6
+Face 3,2,1,0
+[Texture]
+Load ..\platforms\hh_s_zz1.bmp
+Coordinates 0, 1, 1
+Coordinates 1, 1, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 1
+transparent 0,0,255
+

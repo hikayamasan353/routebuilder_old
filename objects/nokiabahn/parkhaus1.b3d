@@ -1,0 +1,80 @@
+;author=Uwe Post
+;description=Langes Parkhaus für Nokiabahn
+
+[MeshBuilder]
+Vertex -8,0,0
+Vertex -8,16,0
+Vertex 8,16,0
+Vertex 8,0,0
+Face 0,1,2,3
+
+[Texture]
+Load ..\buildings\house_mod1.bmp
+Coordinates 0,0,8
+Coordinates 1,0,0
+Coordinates 2,-16,0
+Coordinates 3,-16,8
+
+
+[MeshBuilder]
+Vertex -8,0,25
+Vertex -8,16,25
+Vertex 8,16,25
+Vertex 8,0,25
+Face 3,2,1,0
+
+[Texture]
+Load ..\buildings\house_mod1.bmp
+Coordinates 0,0,8
+Coordinates 1,0,0
+Coordinates 2,-16,0
+Coordinates 3,-16,8
+
+
+[MeshBuilder]
+Vertex -8,0,25
+Vertex -8,16,25
+Vertex -8,16,0
+Vertex -8,0,0
+Face 0,1,2,3
+
+[Texture]
+Load ..\buildings\house_mod1.bmp
+Coordinates 0,0,8
+Coordinates 1,0,0
+Coordinates 2,-16,0
+Coordinates 3,-16,8
+
+
+[MeshBuilder]
+Vertex 8,0,25
+Vertex 8,16,25
+Vertex 8,16,0
+Vertex 8,0,0
+Face 3,2,1,0
+
+[Texture]
+Load ..\buildings\house_mod1.bmp
+Coordinates 0,0,8
+Coordinates 1,0,0
+Coordinates 2,-16,0
+Coordinates 3,-16,8
+
+; dach
+
+
+[MeshBuilder]
+Vertex -8,16,0
+Vertex 8,16,0
+Vertex 8,16,25
+Vertex -8,16,25
+Face 3,2,1,0
+
+[Texture]
+Load concrete2.bmp
+Coordinates 0,0,4
+Coordinates 1,0,0
+Coordinates 2,2,0
+Coordinates 3,2,4
+
+

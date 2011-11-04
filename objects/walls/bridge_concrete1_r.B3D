@@ -1,0 +1,161 @@
+;author=Uwe Post
+;description=simple concrete bridge
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex 3, -1, 0
+Vertex 3, -1, 25
+Vertex 3, 1.8, 25
+Vertex 3, 1.8, 0
+Face 3,2,1,0
+Face 0,1,2,3
+
+[Texture]
+Load Concrete.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 2, 1
+Coordinates 2, 2, 0
+Coordinates 3, 0, 0
+
+[MeshBuilder]
+Vertex 2.5, -0.4, 0
+Vertex 2.5, -0.4, 25
+Vertex 2.5, 1.8, 25
+Vertex 2.5, 1.8, 0
+Face 3,2,1,0
+Face 0,1,2,3
+
+[Texture]
+Load Concrete.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 2, 1
+Coordinates 2, 2, 0
+Coordinates 3, 0, 0
+
+[MeshBuilder]
+Vertex 2.5, 1.8, 0
+Vertex 2.5, 1.8, 25
+Vertex 3, 1.8, 25
+Vertex 3, 1.8, 0
+Face 0,1,2,3
+
+[Texture]
+Load Concrete.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 1
+Coordinates 2, 1, 1
+Coordinates 3, 1, 0
+
+[MeshBuilder]
+Vertex 2, -1, 0
+Vertex 2, -1, 25
+Vertex 3, -1, 25
+Vertex 3, -1, 0
+Face 3,2,1,0
+
+[Texture]
+Load Concrete.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 1
+Coordinates 2, 1, 1
+Coordinates 3, 1, 0
+
+[MeshBuilder]
+Vertex 2, -1, 0
+Vertex 2, -1, 25
+Vertex 2, -2, 25
+Vertex 2, -2, 0
+Face 0,1,2,3
+
+[Texture]
+Load Concrete.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 1
+Coordinates 2, 1, 1
+Coordinates 3, 1, 0
+
+[MeshBuilder]
+Vertex 0, -2, 0
+Vertex 0, -2, 25
+Vertex 2, -2, 25
+Vertex 2, -2, 0
+Face 3,2,1,0
+
+[Texture]
+Load Concrete.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 1
+Coordinates 2, 1, 1
+Coordinates 3, 1, 0
+
+[MeshBuilder]
+Vertex 0, -2, 1
+Vertex 0, -10, 1
+Vertex 2, -10, 1
+Vertex 2, -2, 1
+Face 0,1,2,3
+
+[Texture]
+Load Concrete.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 1
+Coordinates 2, 1, 1
+Coordinates 3, 1, 0
+
+[MeshBuilder]
+Vertex 2, -2, 1
+Vertex 2, -10, 1
+Vertex 2, -10, 0
+Vertex 2, -2, 0
+Face 0,1,2,3
+
+[Texture]
+Load Concrete.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 1
+Coordinates 2, 1, 1
+Coordinates 3, 1, 0
+
+
+[MeshBuilder]
+Vertex 0, -2, 24
+Vertex 0, -10, 24
+Vertex 2, -10, 24
+Vertex 2, -2, 24
+Face 3,2,1,0
+
+[Texture]
+Load Concrete.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 1
+Coordinates 2, 1, 1
+Coordinates 3, 1, 0
+
+[MeshBuilder]
+Vertex 2, -2, 24
+Vertex 2, -10, 24
+Vertex 2, -10, 25
+Vertex 2, -2, 25
+Face 3,2,1,0
+
+[Texture]
+Load Concrete.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 1
+Coordinates 2, 1, 1
+Coordinates 3, 1, 0
+
+
+[MeshBuilder]
+Vertex 2.5, -0.4, 0
+Vertex 2.5, -0.4, 25
+Vertex 0, -0.4, 25
+Vertex 0, -0.4, 0
+Face 3,2,1,0
+
+[Texture]
+Load Concrete.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 1
+Coordinates 2, 1, 1
+Coordinates 3, 1, 0

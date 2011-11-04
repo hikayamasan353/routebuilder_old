@@ -1,0 +1,103 @@
+;author=Uwe Post
+;description=simple concrete wall
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -10.5,5,-0.5
+Vertex 4,   5,-0.5
+Vertex 4,   5,25.5
+Vertex -10.5,5,25.5
+Face 0,1,2,3
+
+[Texture]
+Load ..\grounds\concrete4.bmp
+Coordinates 0, 0.2, 0
+Coordinates 1, 0.2, 2
+Coordinates 2, 0, 2
+Coordinates 3, 0, 0
+
+
+
+
+
+
+;Rand
+[MeshBuilder]
+Vertex -10.5,5,-0.5
+Vertex -10.5,5.3,-0.5
+Vertex -10.5,5.3,25.5
+Vertex -10.5,5,25.5
+Face 3,2,1,0
+color 80,80,80
+
+[MeshBuilder]
+Vertex -10.5,5,-0.5
+Vertex -10.5,5.3,-0.5
+Vertex 25,5.3,-0.5
+Vertex 25,5,-0.5
+Face 0,1,2,3
+color 80,80,80
+
+[MeshBuilder]
+Vertex -10.5,5,25.5
+Vertex -10.5,5.3,25.5
+Vertex 25,5.3,25.5
+Vertex 25,5,25.5
+Face 3,2,1,0
+color 80,80,80
+
+
+
+
+; ground left
+[MeshBuilder]
+Vertex -45,  -0.3, -1
+Vertex -45,  -0.3, 26
+Vertex -2  , -0.3  , 26
+Vertex -2  , -0.3  , -1
+Face2 3,2,1,0
+
+[Texture]
+Load ..\tracks\schotter5.bmp
+Coordinates 0, 60, 0
+Coordinates 1, 60, 10
+Coordinates 2, 0, 10
+Coordinates 3, 0, 0
+
+
+
+;parking
+[MeshBuilder]
+Vertex -10.5,  5.1, -0.5
+Vertex -10.5,  5.1, 25.5
+Vertex 25  , 5.1  , 25.5
+Vertex 25  , 5.1  , -0.5
+Face2 3,2,1,0
+
+[Texture]
+Load ..\roads\road4.bmp
+Coordinates 0, 5, 0
+Coordinates 1, 5, 2
+Coordinates 2, 0, 2
+Coordinates 3, 0, 0
+
+
+
+;fence
+
+[MeshBuilder]
+Vertex -10, 6.2, 25
+Vertex -10, 6.2, 0
+Vertex -10, 5.1, 0
+Vertex -10, 5.1, 25
+Face 0,1,2,3
+Face 1,0,3,2
+
+[Texture]
+Load ..\fences\ironfence1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 16, 0
+Coordinates 2, 16, 1
+Coordinates 3, 0, 1
+transparent 0,0,255
+

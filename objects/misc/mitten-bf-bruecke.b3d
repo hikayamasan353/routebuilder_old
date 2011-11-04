@@ -1,0 +1,717 @@
+;author=Uwe Post
+;description=Mitten im Wald Bahnhofsbrücke
+;copyright=2004
+
+
+
+[MeshBuilder]
+Vertex 1.8, -0.3, 0
+Vertex 1.8, -0.3, 25.3
+Vertex 1.8, 1.1, 25.3
+Vertex 1.8, 1.1, 0
+Face 0,1,2,3
+
+[Texture]
+Load ..\platforms\platform1tx2.bmp
+Coordinates 0, 12, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0
+Coordinates 3, 12, 0
+
+
+[MeshBuilder]
+Vertex 2.1, 1.1, 0
+Vertex 2.1, 1.1, 25.2
+Vertex 1.8, 1.1, 25.2
+Vertex 1.8, 1.1, 0
+Face 3,2,1,0
+
+[Texture]
+Load ..\platforms\platform_hh_1r.bmp
+Coordinates 0, 0.3, 10
+Coordinates 1, 0.3, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 10
+
+[MeshBuilder]
+Vertex 6.2, 1.1, 0
+Vertex 4.1, 1.1, 25.2
+Vertex 3.8, 1.1, 25.2
+Vertex 5.9, 1.1, 0
+Face 3,2,1,0
+
+[Texture]
+Load ..\platforms\platform_hh_1r.bmp
+Coordinates 0, 0.3, 10
+Coordinates 1, 0.3, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 10
+
+
+[MeshBuilder]
+Vertex 5.9, 1.1, 0
+Vertex 3.8, 1.1, 25.2
+Vertex 2.1, 1.1, 25.2
+Vertex 2.1, 1.1, 0
+Face 3,2,1,0
+
+[Texture]
+Load ..\platforms\platform3tx1.bmp
+Coordinates 0, 2, 15
+Coordinates 1, 2, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 15
+
+
+
+
+
+[MeshBuilder]
+Vertex 1.8, -0.3, 0
+Vertex 6.2, -0.3, 0
+Vertex 6.2, 1.1, 0
+Vertex 1.8, 1.1, 0
+Face 3,2,1,0
+
+[Texture]
+Load ..\platforms\platform1tx2.bmp
+Coordinates 0, 2.5, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0
+Coordinates 3, 2.5, 0
+
+[MeshBuilder]
+Vertex 1.8, -0.3, 25.2
+Vertex 4.1, -0.3, 25.2
+Vertex 4.1, 1.1, 25.2
+Vertex 1.8, 1.1, 25.2
+Face 0,1,2,3
+
+[Texture]
+Load ..\platforms\platform1tx2.bmp
+Coordinates 0, 2, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0
+Coordinates 3, 2, 0
+
+
+
+[MeshBuilder]
+Vertex 6.2, -0.3, 0
+Vertex 4.1, -0.3, 25.2
+Vertex 4.1, 1.1, 25.2
+Vertex 6.2, 1.1, 0
+Face 3,2,1,0
+
+[Texture]
+Load ..\platforms\platform1tx2.bmp
+Coordinates 0, 12, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0
+Coordinates 3, 12, 0
+
+
+;Träger senkrecht rechter Bahnsteig
+[MeshBuilder]
+Vertex 2.2, 1, 20
+Vertex 2.2, 10, 20
+Vertex 2.6, 10, 20
+Vertex 2.6, 1, 20
+Face2 0,1,2,3
+[Texture]
+Load ..\walls\nietentraeger1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 2
+Coordinates 2, 1, 2
+Coordinates 3, 1, 0
+[MeshBuilder]
+Vertex 2.2, 1, 15
+Vertex 2.2, 10, 15
+Vertex 2.6, 10, 15
+Vertex 2.6, 1, 15
+Face2 0,1,2,3
+[Texture]
+Load ..\walls\nietentraeger1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 2
+Coordinates 2, 1, 2
+Coordinates 3, 1, 0
+[MeshBuilder]
+Vertex 4.2, 1, 20
+Vertex 4.2, 10, 20
+Vertex 4.6, 10, 20
+Vertex 4.6, 1, 20
+Face2 0,1,2,3
+[Texture]
+Load ..\walls\nietentraeger1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 2
+Coordinates 2, 1, 2
+Coordinates 3, 1, 0
+[MeshBuilder]
+Vertex 4.2, 1, 15
+Vertex 4.2, 10, 15
+Vertex 4.6, 10, 15
+Vertex 4.6, 1, 15
+Face2 0,1,2,3
+[Texture]
+Load ..\walls\nietentraeger1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 2
+Coordinates 2, 1, 2
+Coordinates 3, 1, 0
+
+;Träger senkrecht linker  Bahnsteig
+[MeshBuilder]
+Vertex -6.2, 1, 20
+Vertex -6.2, 10, 20
+Vertex -6.6, 10, 20
+Vertex -6.6, 1, 20
+Face2 0,1,2,3
+[Texture]
+Load ..\walls\nietentraeger1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 2
+Coordinates 2, 1, 2
+Coordinates 3, 1, 0
+[MeshBuilder]
+Vertex -6.2, 1, 15
+Vertex -6.2, 10, 15
+Vertex -6.6, 10, 15
+Vertex -6.6, 1, 15
+Face2 0,1,2,3
+[Texture]
+Load ..\walls\nietentraeger1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 2
+Coordinates 2, 1, 2
+Coordinates 3, 1, 0
+[MeshBuilder]
+Vertex -8.2, 1, 20
+Vertex -8.2, 10, 20
+Vertex -8.6, 10, 20
+Vertex -8.6, 1, 20
+Face2 0,1,2,3
+[Texture]
+Load ..\walls\nietentraeger1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 2
+Coordinates 2, 1, 2
+Coordinates 3, 1, 0
+[MeshBuilder]
+Vertex -8.2, 1, 15
+Vertex -8.2, 10, 15
+Vertex -8.6, 10, 15
+Vertex -8.6, 1, 15
+Face2 0,1,2,3
+[Texture]
+Load ..\walls\nietentraeger1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 2
+Coordinates 2, 1, 2
+Coordinates 3, 1, 0
+
+; Träger horizontal
+[MeshBuilder]
+Vertex -14.2, 7.3, 15
+Vertex -14.2, 7.5, 15
+Vertex  10.6, 7.5, 15
+Vertex  10.6, 7.3, 15
+Face2 0,1,2,3
+[Texture]
+Load ..\walls\nietentraeger1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0.5, 0
+Coordinates 2, 0.5, 10
+Coordinates 3, 0, 10
+[MeshBuilder]
+Vertex -14.2, 7.3, 20
+Vertex -14.2, 7.5, 20
+Vertex  10.6, 7.5, 20
+Vertex  10.6, 7.3, 20
+Face2 0,1,2,3
+[Texture]
+Load ..\walls\nietentraeger1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0.5, 0
+Coordinates 2, 0.5, 10
+Coordinates 3, 0, 10
+
+;oben
+[MeshBuilder]
+Vertex -8.6, 9.8, 15
+Vertex -8.6, 10, 15
+Vertex  4.6, 10, 15
+Vertex  4.6, 9.8, 15
+Face2 0,1,2,3
+[Texture]
+Load ..\walls\nietentraeger1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0.5, 0
+Coordinates 2, 0.5, 5
+Coordinates 3, 0, 5
+[MeshBuilder]
+Vertex -8.6, 9.8, 20
+Vertex -8.6, 10, 20
+Vertex  4.6, 10, 20
+Vertex  4.6, 9.8, 20
+Face2 0,1,2,3
+[Texture]
+Load ..\walls\nietentraeger1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0.5, 0
+Coordinates 2, 0.5, 5
+Coordinates 3, 0, 5
+
+
+;Weg
+[MeshBuilder]
+Vertex -14.2, 7.4, 19.99
+Vertex -14.2, 7.4, 14.99
+Vertex  10.6, 7.4, 14.99
+Vertex  10.6, 7.4, 19.99
+Face 3,2,1,0
+[Texture]
+Load ..\platforms\platform4tx1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 6, 0
+Coordinates 2, 6, 30
+Coordinates 3, 0, 30
+[MeshBuilder]
+Vertex -14.2, 7.39, 19.99
+Vertex -14.2, 7.39, 14.99
+Vertex  10.6, 7.39, 14.99
+Vertex  10.6, 7.39, 19.99
+Face 0,1,2,3
+[Texture]
+Load ..\grounds\concrete4.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 2, 0
+Coordinates 2, 2, 10
+Coordinates 3, 0, 10
+
+
+;Seitenwände
+[MeshBuilder]
+Vertex -8.6, 7.39, 19.98
+Vertex -8.6, 8.59, 19.98
+Vertex  4.6, 8.59, 19.98
+Vertex  4.6, 7.39, 19.98
+Face2 0,1,2,3
+[Texture]
+Load ..\walls\brickwall2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 0.25
+Coordinates 2, 2, 0.25
+Coordinates 3, 2, 0
+[MeshBuilder]
+Vertex -6.2, 7.39, 15.01
+Vertex -6.2, 8.59, 15.01
+Vertex  2.2, 8.59, 15.01
+Vertex  2.2, 7.39, 15.01
+Face2 0,1,2,3
+[Texture]
+Load ..\walls\brickwall2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 0.25
+Coordinates 2, 1, 0.25
+Coordinates 3, 1, 0
+;Glas
+[MeshBuilder]
+Vertex -6.2, 8.59, 15.01
+Vertex -6.2, 10, 15.01
+Vertex 2.2, 10, 15.01
+Vertex 2.2, 8.59, 15.01
+Face2 0,1,2,3
+Color 120,100,100,180
+[MeshBuilder]
+Vertex -6.2, 8.59, 15.01
+Vertex -6.2, 10, 15.01
+Vertex 2.2, 10, 15.01
+Vertex 2.2, 8.59, 15.01
+Face2 0,1,2,3
+[Texture]
+Load ..\platforms\roof_t.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 2, 0
+Coordinates 2, 2, 10
+Coordinates 3, 0, 10
+transparent 0,0,255
+
+[MeshBuilder]
+Vertex -8.6, 8.59, 19.99
+Vertex -8.6, 10, 19.99
+Vertex 4.6, 10, 19.99
+Vertex 4.6, 8.59, 19.99
+Face2 0,1,2,3
+Color 120,100,100,180
+[MeshBuilder]
+Vertex -8.6, 8.59, 19.99
+Vertex -8.6, 10, 19.99
+Vertex 4.6, 10, 19.99
+Vertex 4.6, 8.59, 19.99
+Face2 0,1,2,3
+[Texture]
+Load ..\platforms\roof_t.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 2, 0
+Coordinates 2, 2, 12
+Coordinates 3, 0, 12
+transparent 0,0,255
+
+;Dach
+[MeshBuilder]
+Vertex -8.6, 9.95, 20.29
+Vertex -8.6, 10.5, 17.5
+Vertex  4.6, 10.5, 17.5
+Vertex  4.6, 9.95, 20.29
+Face 3,2,1,0
+[Texture]
+Load ..\buildings\dachziegel3.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 6, 0
+Coordinates 2, 6, 30
+Coordinates 3, 0, 30
+[MeshBuilder]
+Vertex -8.6, 9.95, 14.69
+Vertex -8.6, 10.5, 17.5
+Vertex  4.6, 10.5, 17.5
+Vertex  4.6, 9.95, 14.69
+Face 0,1,2,3
+[Texture]
+Load ..\buildings\dachziegel3.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 6, 0
+Coordinates 2, 6, 30
+Coordinates 3, 0, 30
+;Dach innen
+[MeshBuilder]
+Vertex -8.6, 10, 19.99
+Vertex -8.6, 10, 14.99
+Vertex  4.6, 10, 14.99
+Vertex  4.6, 10, 19.99
+Face 0,1,2,3
+[Texture]
+Load ..\grounds\concrete4.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 2, 0
+Coordinates 2, 2, 10
+Coordinates 3, 0, 10
+
+
+
+;Zaun
+[MeshBuilder]
+Vertex -8.6, 7.5, 15
+Vertex -8.6, 8.7, 15
+Vertex -14.2, 8.7, 15
+Vertex -14.2, 7.5, 15
+Face2 0,1,2,3
+[Texture]
+Load ..\fences\ironfence1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 8, 0
+Coordinates 3, 8, 1
+transparent 0,0,255
+[MeshBuilder]
+Vertex -8.6, 7.5, 20
+Vertex -8.6, 8.7, 20
+Vertex -14.2, 8.7, 20
+Vertex -14.2, 7.5, 20
+Face2 0,1,2,3
+[Texture]
+Load ..\fences\ironfence1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 8, 0
+Coordinates 3, 8, 1
+transparent 0,0,255
+
+[MeshBuilder]
+Vertex 4.6, 7.5, 15
+Vertex 4.6, 8.7, 15
+Vertex 10.6, 8.7, 15
+Vertex 10.6, 7.5, 15
+Face2 0,1,2,3
+[Texture]
+Load ..\fences\ironfence1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 8, 0
+Coordinates 3, 8, 1
+transparent 0,0,255
+[MeshBuilder]
+Vertex 4.6, 7.5, 20
+Vertex 4.6, 8.7, 20
+Vertex 10.6, 8.7, 20
+Vertex 10.6, 7.5, 20
+Face2 0,1,2,3
+[Texture]
+Load ..\fences\ironfence1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 8, 0
+Coordinates 3, 8, 1
+transparent 0,0,255
+
+;Treppe 1
+[MeshBuilder]
+Vertex 2.6,7.5,15
+Vertex 4.2,7.5,15
+Vertex 4.2,4.5,11
+Vertex 2.6,4.5,11
+Face2 0,1,2,3
+[Texture]
+Load ..\platforms\stair1.bmp
+Coordinates 0, 0, 0.8
+Coordinates 1, 0, 0.2
+Coordinates 2, 4, 0.2
+Coordinates 3, 4, 0.8
+[MeshBuilder]
+Vertex 2.6,4.5,11
+Vertex 4.2,4.5,11
+Vertex 4.2,4.5,9.5
+Vertex 2.6,4.5,9.5
+Face2 0,1,2,3
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 0.8
+Coordinates 1, 0, 0.2
+Coordinates 2, 1, 0.2
+Coordinates 3, 1, 0.8
+[MeshBuilder]
+Vertex 2.6,1,4.5
+Vertex 4.2,1,4.5
+Vertex 4.2,4.5,9.5
+Vertex 2.6,4.5,9.5
+Face2 0,1,2,3
+[Texture]
+Load ..\platforms\stair1.bmp
+Coordinates 0, 0, 0.8
+Coordinates 1, 0, 0.2
+Coordinates 2, 4, 0.2
+Coordinates 3, 4, 0.8
+
+[MeshBuilder]
+Vertex 4.2, 7.3, 15
+Vertex 4.2, 7.5, 15
+Vertex 4.2, 0.2, 4.5
+Vertex 4.2, 0, 4.5
+Face2 0,1,2,3
+[Texture]
+Load ..\walls\nietentraeger1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 10
+Coordinates 2, 1, 10
+Coordinates 3, 1, 0
+[MeshBuilder]
+Vertex 2.6, 7.3, 15
+Vertex 2.6, 7.5, 15
+Vertex 2.6, 0.2, 4.5
+Vertex 2.6, 0, 4.5
+Face2 0,1,2,3
+[Texture]
+Load ..\walls\nietentraeger1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 10
+Coordinates 2, 1, 10
+Coordinates 3, 1, 0
+
+[MeshBuilder]
+Vertex 2.6, 7.5, 15
+Vertex 2.6, 9, 15
+Vertex 2.6, 2, 4.5
+Vertex 2.6, 0, 4.5
+Face2 0,1,2,3
+[Texture]
+Load ..\walls\brickwall2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 10
+Coordinates 2, 1, 10
+Coordinates 3, 1, 0
+[MeshBuilder]
+Vertex 4.2, 7.5, 15
+Vertex 4.2, 9, 15
+Vertex 4.2, 2, 4.5
+Vertex 4.2, 0, 4.5
+Face2 0,1,2,3
+[Texture]
+Load ..\walls\brickwall2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 10
+Coordinates 2, 1, 10
+Coordinates 3, 1, 0
+[MeshBuilder]
+Vertex 4.2, 9, 15
+Vertex 4.2, 10, 15
+Vertex 4.2, 3.5, 4.5
+Vertex 4.2, 2, 4.5
+Face2 0,1,2,3
+Color 120,100,100,180
+
+[MeshBuilder]
+Vertex 2.6, 9, 15
+Vertex 2.6, 10, 15
+Vertex 2.6, 3.5, 4.5
+Vertex 2.6, 2, 4.5
+Face2 0,1,2,3
+Color 120,100,100,180
+
+[MeshBuilder]
+Vertex 2.6, 10, 15
+Vertex 4.2, 10, 15
+Vertex 4.2, 3.5, 4.5
+Vertex 2.6, 3.5, 4.5
+Face2 0,1,2,3
+[Texture]
+Load ..\grounds\concrete4.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 1
+Coordinates 2, 0.1, 1
+Coordinates 3, 0.1, 0
+
+[MeshBuilder]
+Vertex 2.6, 3.2, 4.5
+Vertex 4.2, 3.2, 4.5
+Vertex 4.2, 3.5, 4.5
+Vertex 2.6, 3.5, 4.5
+Face 3,2,1,0
+[Texture]
+Load ..\signs\signausgang1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 1, 1
+Coordinates 2, 1, 0
+Coordinates 3, 0, 0
+
+
+
+
+;Treppe 2
+[MeshBuilder]
+Vertex -6.6,7.5,15
+Vertex -8.2,7.5,15
+Vertex -8.2,4.5,11
+Vertex -6.6,4.5,11
+Face2 0,1,2,3
+[Texture]
+Load ..\platforms\stair1.bmp
+Coordinates 0, 0, 0.8
+Coordinates 1, 0, 0.2
+Coordinates 2, 4, 0.2
+Coordinates 3, 4, 0.8
+[MeshBuilder]
+Vertex -6.6,4.5,11
+Vertex -8.2,4.5,11
+Vertex -8.2,4.5,9.5
+Vertex -6.6,4.5,9.5
+Face2 0,1,2,3
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 0.8
+Coordinates 1, 0, 0.2
+Coordinates 2, 1, 0.2
+Coordinates 3, 1, 0.8
+[MeshBuilder]
+Vertex -6.6,1,4.5
+Vertex -8.2,1,4.5
+Vertex -8.2,4.5,9.5
+Vertex -6.6,4.5,9.5
+Face2 0,1,2,3
+[Texture]
+Load ..\platforms\stair1.bmp
+Coordinates 0, 0, 0.8
+Coordinates 1, 0, 0.2
+Coordinates 2, 4, 0.2
+Coordinates 3, 4, 0.8
+
+[MeshBuilder]
+Vertex -8.2, 7.3, 15
+Vertex -8.2, 7.5, 15
+Vertex -8.2, 0.2, 4.5
+Vertex -8.2, 0, 4.5
+Face2 0,1,2,3
+[Texture]
+Load ..\walls\nietentraeger1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 10
+Coordinates 2, 1, 10
+Coordinates 3, 1, 0
+[MeshBuilder]
+Vertex -6.6, 7.3, 15
+Vertex -6.6, 7.5, 15
+Vertex -6.6, 0.2, 4.5
+Vertex -6.6, 0, 4.5
+Face2 0,1,2,3
+[Texture]
+Load ..\walls\nietentraeger1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 10
+Coordinates 2, 1, 10
+Coordinates 3, 1, 0
+
+[MeshBuilder]
+Vertex -6.6, 7.5, 15
+Vertex -6.6, 9, 15
+Vertex -6.6, 2, 4.5
+Vertex -6.6, 0, 4.5
+Face2 0,1,2,3
+[Texture]
+Load ..\walls\brickwall2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 10
+Coordinates 2, 1, 10
+Coordinates 3, 1, 0
+[MeshBuilder]
+Vertex -8.2, 7.5, 15
+Vertex -8.2, 9, 15
+Vertex -8.2, 2, 4.5
+Vertex -8.2, 0, 4.5
+Face2 0,1,2,3
+[Texture]
+Load ..\walls\brickwall2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 10
+Coordinates 2, 1, 10
+Coordinates 3, 1, 0
+[MeshBuilder]
+Vertex -8.2, 9, 15
+Vertex -8.2, 10, 15
+Vertex -8.2, 3.5, 4.5
+Vertex -8.2, 2, 4.5
+Face2 0,1,2,3
+Color 120,100,100,180
+
+[MeshBuilder]
+Vertex -6.6, 9, 15
+Vertex -6.6, 10, 15
+Vertex -6.6, 3.5, 4.5
+Vertex -6.6, 2, 4.5
+Face2 0,1,2,3
+Color 120,100,100,180
+
+[MeshBuilder]
+Vertex -6.6, 10, 15
+Vertex -8.2, 10, 15
+Vertex -8.2, 3.5, 4.5
+Vertex -6.6, 3.5, 4.5
+Face2 0,1,2,3
+[Texture]
+Load ..\grounds\concrete4.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 1
+Coordinates 2, 0.1, 1
+Coordinates 3, 0.1, 0
+
+[MeshBuilder]
+Vertex -6.6, 3.2, 4.5
+Vertex -8.2, 3.2, 4.5
+Vertex -8.2, 3.5, 4.5
+Vertex -6.6, 3.5, 4.5
+Face 0,1,2,3
+[Texture]
+Load ..\signs\signausgang1.bmp
+Coordinates 0, 1, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0
+Coordinates 3, 1, 0

@@ -1,0 +1,121 @@
+;author=Uwe Post
+;description=platform roof Herne
+;copyright=open source
+
+
+[MeshBuilder]
+Vertex -7.2, 4.4, 0
+Vertex -7.2, 4.4, 25.3
+Vertex -1.5, 4.7, 25.3
+Vertex -1.5, 4.7, 0
+Face 0,1,2,3
+
+[Texture]
+Load Roof2.bmp
+Coordinates 0, 0, 8
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 8
+
+[MeshBuilder]
+Vertex -6.7, 4, 0
+Vertex -6.7, 4, 25.3
+Vertex -1.5, 4.69, 25.3
+Vertex -1.5, 4.69, 0
+Face 3,2,1,0
+
+[Texture]
+Load Roof_o1.bmp
+Coordinates 0, 0, 16
+Coordinates 1, 0, 0
+Coordinates 2, 2, 0
+Coordinates 3, 2, 16
+
+
+[MeshBuilder]
+Vertex -1.5, 4.7, 0
+Vertex -1.5, 4.7, 0
+Vertex -7.2, 4.4, 0
+Vertex -7.2, 3.8, 0
+Face 3,2,1,0
+color 124,100,100
+
+[MeshBuilder]
+Vertex -1.5, 4.7, 25.3
+Vertex -1.5, 4.7, 25.3
+Vertex -7.2, 4.4, 25.3
+Vertex -7.2, 3.8, 25.3
+Face 0,1,2,3
+color 124,100,100
+
+
+[MeshBuilder]
+Vertex -6.7, 4, 25.3
+Vertex -6.7, 4, 0
+Vertex -7.2, 4, 0
+Vertex -7.2, 4, 25.3
+Face 3,2,1,0
+color 124,100,100
+
+
+
+[MeshBuilder]
+Vertex -7.2,0,6
+Vertex -7.2,4,6
+Vertex -6.7,4,6
+Vertex -6.7,0,6
+Face 0,1,2,3
+
+[Texture]
+Load platform2tx1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+
+[MeshBuilder]
+Vertex -6.7,0,5.75
+Vertex -6.7,4,5.75
+Vertex -6.7,4,6.25
+Vertex -6.7,0,6.25
+Face 0,1,2,3
+
+[Texture]
+Load platform2tx1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+
+[MeshBuilder]
+Vertex -7.2,0,18
+Vertex -7.2,4,18
+Vertex -6.7,4,18
+Vertex -6.7,0,18
+Face 0,1,2,3
+
+[Texture]
+Load platform2tx1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+
+[MeshBuilder]
+Vertex -6.7,0,17.75
+Vertex -6.7,4,17.75
+Vertex -6.7,4,18.25
+Vertex -6.7,0,18.25
+Face 0,1,2,3
+
+[Texture]
+Load platform2tx1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+
+
+
+
+

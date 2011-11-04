@@ -1,0 +1,54 @@
+;author=Uwe Post
+;description=Fassage gegenueber Bochum Hbf, Hochhaus
+;copyright=open source
+
+
+[MeshBuilder]
+Vertex 0, 50, 0
+Vertex 15, 50, 0
+Vertex 15, 0, 0
+Vertex 0, 0, 0
+Face 0,1,2,3
+
+
+[Texture]
+Load bohbfl1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3,0,1
+Transparent 0,0,255
+
+[MeshBuilder]
+Vertex 15, 50, 0
+Vertex 15, 50, 15
+Vertex 15, 0, 15
+Vertex 15, 0, 0
+Face 0,1,2,3
+
+
+[Texture]
+Load bohbfl1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3,0,1
+Transparent 0,0,255
+
+
+[MeshBuilder]
+Vertex 0, 50, 15
+Vertex 0, 50, 0
+Vertex 0, 0, 0
+Vertex 0, 0, 15
+Face 0,1,2,3
+
+
+[Texture]
+Load bohbfl1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3,0,1
+Transparent 0,0,255
+

@@ -1,0 +1,196 @@
+;Converted from CSV by BVD FILE CONVERTER
+[MeshBuilder]
+Vertex 4, 0.01, -1
+Vertex 4, 0.01, 26
+Vertex 12, 0.01, 26
+Vertex 12, 0.01, -1
+Face 0,1,2,3
+
+
+
+[Texture]
+Load asphalt1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 5, 0
+Coordinates 2, 5, 2
+Coordinates 3, 0, 2
+
+[MeshBuilder]
+Vertex 12, 0.01, -1
+Vertex 12, 0.01, 26
+Vertex 14, 0.01, 26
+Vertex 14, 0.01, -1
+Face 0,1,2,3
+
+
+
+[Texture]
+Load ..\platforms\platform5tx1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 10, 0
+Coordinates 2, 10, 0.3
+Coordinates 3, 0, 0.3
+
+
+[MeshBuilder]
+Vertex 2, 0.01, -1
+Vertex 2, 0.01, 26
+Vertex 4, 0.01, 26
+Vertex 4, 0.01, -1
+Face 0,1,2,3
+
+
+
+[Texture]
+Load ..\platforms\platform5tx1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 10, 0
+Coordinates 2, 10, 0.3
+Coordinates 3, 0, 0.3
+
+
+
+
+
+[MeshBuilder]
+Vertex 14, 15, -1
+Vertex 14, 15, 12.5
+Vertex 14, 0, 12.5
+Vertex 14, 0, -1
+Face 3,2,1,0
+
+
+
+[Texture]
+Load hausfassade4.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex 24, 15, -1
+Vertex 24, 15, 12.5
+Vertex 24, 0, 12.5
+Vertex 24, 0, -1
+Face 0,1,2,3
+
+
+
+[Texture]
+Load hausfassade4.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex 14, 15, 12.5
+Vertex 14, 15, 26
+Vertex 14, 0, 26
+Vertex 14, 0, 12.5
+Face 3,2,1,0
+
+
+
+[Texture]
+Load hausfassade3.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex 24, 15, 12.5
+Vertex 24, 15, 26
+Vertex 24, 0, 26
+Vertex 24, 0, 12.5
+Face 0,1,2,3
+
+
+
+[Texture]
+Load hausfassade3.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+
+
+[MeshBuilder]
+Vertex 14, 15, -1
+Vertex 24, 15, -1
+Vertex 24, 0, -1
+Vertex 14, 0, -1
+Face 0,1,2,3
+Color 90,90,99
+
+
+
+[MeshBuilder]
+Vertex 14, 15, 26
+Vertex 24, 15, 26
+Vertex 24, 0, 26
+Vertex 14, 0, 26
+Face 3,2,1,0
+Color 90,90,99
+
+
+
+[MeshBuilder]
+Vertex 14, 15, 26
+Vertex 24, 15, 26
+Vertex 19, 18, 26
+Face 0,1,2
+Color 90,90,99
+
+
+
+[MeshBuilder]
+Vertex 14, 15, -1
+Vertex 24, 15, -1
+Vertex 19, 18, -1
+Face 2,1,0
+Color 90,90,99
+
+
+
+[MeshBuilder]
+Vertex 14, 15, 26
+Vertex 19, 18, 26
+Vertex 19, 18, -1
+Vertex 14, 15, -1
+Face 0,1,2,3
+;color 90,90,99
+
+
+
+[Texture]
+Load ..\buildings\dachziegel3.bmp
+Coordinates 0,0,30
+Coordinates 1,10,30
+Coordinates 2,10,0
+Coordinates 3,0,0
+
+[MeshBuilder]
+Vertex 24, 15, 26
+Vertex 19, 18, 26
+Vertex 19, 18, -1
+Vertex 24, 15, -1
+;Face 3,2,1,0
+Face 3,2,1,0
+;color 90,90,99
+
+
+
+[Texture]
+Load ..\buildings\dachziegel3.bmp
+Coordinates 0,0,30
+Coordinates 1,10,30
+Coordinates 2,10,0
+Coordinates 3,0,0
+
+
+
+

@@ -1,0 +1,75 @@
+;Author=Uwe Post
+;Description=Bus
+;copyright=opensource
+
+[MeshBuilder]
+Vertex 0, 0.26, 0
+Vertex 0, 3, 0
+Vertex 0, 3, 2.5
+Vertex 0, 0.26, 2.5
+Face 3, 2, 1, 0
+[Texture]
+Load bus01f.bmp
+Coordinates 0, 1, 1
+Coordinates 1, 1, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 1
+Transparent 0, 0, 255
+
+;right side
+[MeshBuilder]
+Vertex 11, 3, 0
+Vertex 11, 0, 0
+Vertex 0, 0, 0
+Vertex 0, 3, 0
+Face 0, 1, 2, 3
+[Texture]
+Load bus01s.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 1
+Coordinates 2, 1, 1
+Coordinates 3, 1, 0
+Transparent 0, 0, 255
+
+;left side
+[MeshBuilder]
+Vertex 11, 3, 2.5
+Vertex 11, 0, 2.5
+Vertex 0, 0, 2.5
+Vertex 0, 3, 2.5
+Face 3, 2, 1, 0
+[Texture]
+Load bus01s.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 1
+Coordinates 2, 1, 1
+Coordinates 3, 1, 0
+Transparent 0, 0, 255
+
+;back
+[meshbuilder]
+Vertex 11, 0, 0
+Vertex 11, 3, 0
+Vertex 11, 3, 2.5
+Vertex 11, 0, 2.5
+Face 0, 1, 2, 3
+color 180,180,180
+
+;bottom
+[meshbuilder]
+Vertex 11, 0.5, 0
+Vertex 11, 0.5, 2.5
+Vertex 0, 0.5, 2.5
+Vertex 0, 0.5, 0
+Face 0, 1, 2, 3
+Color 10, 10, 10, 255
+
+;top
+[meshbuilder]
+Vertex 11, 3, 0
+Vertex 11, 3, 2.5
+Vertex 0, 3, 2.5
+Vertex 0, 3, 0
+Face 3, 2, 1, 0
+color 140,140,140
+
