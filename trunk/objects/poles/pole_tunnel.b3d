@@ -1,0 +1,56 @@
+;author=Uwe Post
+;description=Catenary Pole for tunnel (dark track)
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex 1.5,5.5,-0.1
+Vertex 1.5,4.7,-0.1
+Vertex 1.5,4.7,0.1
+Vertex 1.5,5.5,0.1
+Face 0,1,2,3
+Color 88,142,79
+
+[MeshBuilder]
+Vertex 1.55,5.5,-0.1
+Vertex 1.55,4.7,-0.1
+Vertex 1.55,4.7,0.1
+Vertex 1.55,5.5,0.1
+Face 3,2,1,0
+Color 88,142,79
+
+[MeshBuilder]
+Vertex 1.55,5.5,0.1
+Vertex 1.55,4.7,0.1
+Vertex 1.5,4.7,0.1
+Vertex 1.5,5.5,0.1
+Face 3,2,1,0
+Color 88,142,79
+
+[MeshBuilder]
+Vertex 1.55,5.5,-0.1
+Vertex 1.55,4.7,-0.1
+Vertex 1.5,4.7,-0.1
+Vertex 1.5,5.5,-0.1
+Face 0,1,2,3
+Color 88,142,79
+
+[MeshBuilder]
+Vertex -0.475, 4.9, 0
+Vertex 2.55, 4.9, 0
+Vertex 2.55,3.9,0
+vertex -0.475,3.9,0
+Face2 0,1,2,3
+
+[Texture]
+Load pole4a.BMP
+Coordinates 0, 0, 0.5
+Coordinates 1, 1, 0.5
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+Transparent 0, 0, 255
+
+
+
+
+
+

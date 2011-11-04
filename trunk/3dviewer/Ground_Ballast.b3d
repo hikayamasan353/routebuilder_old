@@ -1,0 +1,31 @@
+;Object from the IslandLine
+;By Nathan Whitington
+
+[MeshBuilder]
+Vertex 10, -0.3, 0
+Vertex 10, -0.3, 30
+Vertex -10, -0.3, 30
+Vertex -10, -0.3, 0
+Color 180,180,180
+Face 3,2,1,0
+
+[Texture]
+Load Ballast.bmp
+Coordinates 0, 0, 8
+Coordinates 1, 0, 0
+Coordinates 2, 8, 0
+Coordinates 3, 8, 8
+
+[MeshBuilder]
+Vertex -10, -0.3, 0
+Vertex -10, -0.3, 30
+Vertex -50, -0.3, 30
+Vertex -50, -0.3, 0
+Face 3,2,1,0
+
+[Texture]
+Load Grass.bmp
+Coordinates 0, 0, 2
+Coordinates 1, 0, 0
+Coordinates 2, 5, 0
+Coordinates 3, 5, 2

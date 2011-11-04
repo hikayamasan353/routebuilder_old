@@ -1,0 +1,543 @@
+{
+program gleisbg;
+}
+
+unit bogen;
+interface
+
+var gleis: array[0..5,1..2]of real;
+var gleisr1: array[0..5,1..2]of real;
+var gleisr2: array[0..5,1..2]of real;
+var gleisl1: array[0..5,1..2]of real;
+var gleisl2: array[0..5,1..2]of real;
+var schottr: array[0..5,1..2]of real;
+var schottl: array[0..5,1..2]of real;
+var schwr1: array[0..5,1..2]of real;
+var schwr2: array[0..5,1..2]of real;
+var schwl1: array[0..5,1..2]of real;
+var schwl2: array[0..5,1..2]of real;
+var ddglr: array[0..5,1..2]of real;
+var ddgll: array[0..5,1..2]of real;
+var oberaufh: array[1..20] of real;
+var oberfahr, obertrag:real;
+var oberjn:char;
+
+var zaehl:integer;
+var a,i,j:integer;
+var winkel, radius, xdev, GleisBreite :real;
+var f:text;
+var kurve:integer;
+var filename:string;
+var language, winkeldreh:char;
+var drehwinkel:real;
+var nullschieb:real;
+var ireal:real;
+var texturc1,texturc2: string; // schotter,schwellen,weiche1b  (u)
+
+
+procedure curve;
+procedure drehung(var x,y:real);
+
+implementation
+
+
+procedure drehung(var x, y:real);
+  var sx,sy,c,winkel2,stg:real;
+  begin
+  c:=sqrt(sqr(x)+sqr(y));
+  if y>0 then c:=-c;
+  if (x<>0) and (y<>0) then
+    begin
+    stg:=x/y;
+    winkel2:=arctan(stg)*180/pi;
+    end
+    else
+    begin
+    if x=0 then winkel2:=0;
+    if y=0 then
+      if x<0 then
+      winkel2:=270
+      else
+      winkel2:=90;
+    end;
+  sx:=-sin((-winkel2+180+drehwinkel)*2*pi/360);
+  x:=c*sx;
+  sy:=sin((-winkel2+270+drehwinkel)*2*pi/360);
+  y:=c*sy;
+
+  end;
+
+
+procedure curve;
+begin
+{
+
+repeat;
+if language='d' then
+  begin
+  writeln('Welchen Parameter m”chten Sie fr die Erstellung des Bogens angeben?');
+  writeln;
+  writeln('1. Radius');
+  writeln('2. X-Abweichung');
+  end
+  else
+  begin
+  writeln('Which parameter would you like to enter for the creation of the curve?'); 
+  writeln;
+  writeln('1. Radius');
+  writeln('2. X-offset');
+  end;
+readln(kurve);
+writeln;
+until (kurve=1) or (kurve=2);
+
+if kurve=2 then
+  begin
+  if language='d' then
+    writeln('Bitte X-Abweichung eingeben:')
+    else
+    writeln('Please enter x-offset:');
+  readln(xdev);
+
+  winkel:=(arctan(xdev/25)*180/pi);
+  if xdev<>0 then
+  radius:=25*360/(winkel*4*pi)
+  else radius:=999999;
+  end;
+
+if kurve=1 then
+  begin
+  if language='d' then
+    writeln('Bitte Radius eingeben:')
+    else
+    writeln('Please enter radius:');
+  readln(radius);    }
+
+  winkel:=(25*360/(radius*4*pi));
+  xdev:=sin(winkel*pi/180)/cos(winkel*pi/180)*25;
+  {end;
+
+writeln;
+repeat;
+if language='d' then
+writeln('Soll der Bogen eine Oberleitung besitzen (j/n)?')
+else
+writeln('Shall the curve have an overhead line (y/n)?');
+readln(oberjn);
+if (oberjn<>'j') and (oberjn<>'y') and (oberjn<>'n') then
+  begin
+  writeln;
+  if language='d' then
+  writeln('Wie bitte? Ja oder nein?')
+  else
+  write('Pardon? Yes or no?');
+  writeln;
+  end;
+  until (oberjn='j') or (oberjn='y') or (oberjn='n');
+
+ writeln;
+
+if (oberjn='j') or (oberjn='y') then
+  begin
+  repeat;
+  if language='d' then
+  writeln('Geben Sie bitte die H”he des Fahrdrahtes ein (Standard 6m):')
+  else
+    writeln('Please enter the height of the contact wire (standard 6m):');
+  readln(oberfahr);
+  if oberfahr<4.5 then
+    if language='d' then
+    writeln('Das drfte ein wenig eng werden. Der Wert muss zwischen 4.5 und 7 m liegen.')
+    else
+    writeln('This might be a little low. The value has to bee between 4.5 and 7 meters.');
+
+  if oberfahr>7 then
+    if language='d' then
+    writeln('Das drfte zu hoch sein. Der Wert muss zwischen 4.5 und 7 m liegen.')
+    else
+   writeln('This might be too high. The value has to be between 4.5 and 7 meters.');
+
+  writeln;
+  until (oberfahr>4.5) and (oberfahr<7);
+
+  repeat;
+  if language='d' then
+  writeln('Geben Sie bitte die H”he des Tragseils ein (Standard 7m):')
+  else
+  writeln('Please enter the height of the carrying rope (standard 7m:');
+  readln(obertrag);
+  if obertrag<oberfahr then
+    if language='d' then
+    writeln('Das Tragseil muss oberhalb des Fahrdrahtes liegen.')
+    else
+    writeln('The carrying rope must be above the contact wire.');
+  writeln;
+  until oberfahr<obertrag;
+  end;
+            }
+  {
+repeat;
+if language='d' then
+  begin
+  writeln('Soll der Bogen um seinen eigenen Winkel nach auáen gedreht werden (j/n)?');
+  writeln('Dies ist fr die Verwendung als rail(x)-Typ erforderlich.');
+  end
+  else
+  begin
+  writeln('Shall the curve be turned its own angle to the outside (y/n)?');
+  writeln('This is required if you want to use the curve as a rail(x) type.');
+  end;
+readln(winkeldreh);
+if (winkeldreh<>'j') and(winkeldreh<>'y') and (winkeldreh<>'n') then
+  begin
+  writeln;
+  if language='d' then
+  writeln('Wie bitte? Ja oder nein?')
+  else
+  writeln('Pardon? Yes or no?');
+  writeln;
+  end;
+  until (winkeldreh='j') or (winkeldreh='y') or (winkeldreh='n');
+  writeln;
+  if winkeldreh='n' then drehwinkel:=0
+  else   }
+  drehwinkel:=winkel*0.985;
+
+     {
+if language='d' then
+writeln('Bitte geben Sie einen Dateinamen ein (max. 8 Zeichen, ohne Endung):')
+else
+writeln('Please enter a file name (max. 8 characters, without extension):');
+
+readln(filename);
+filename:=concat(filename,'.b3d');    }
+
+
+for i:=0 to 5 do
+  begin
+  nullschieb:=0;
+  if i=0 then nullschieb:=-0.1;
+  if i=5 then nullschieb:=0.1;
+
+  gleis[i,1]:=(sin(winkel*i/(5)*pi/180)/cos(winkel*i/(5)*pi/180))*i*5;
+  gleis[i,2]:=i*5+nullschieb;
+  gleisr1[i,1]:=gleis[i,1]+0.8;
+  gleisr1[i,2]:=i*5+nullschieb;
+  gleisr2[i,1]:=gleis[i,1]+0.72;
+  gleisr2[i,2]:=i*5+nullschieb;
+  gleisl1[i,1]:=gleis[i,1]-0.72;
+  gleisl1[i,2]:=i*5+nullschieb;
+  gleisl2[i,1]:=gleis[i,1]-0.8;
+  gleisl2[i,2]:=i*5+nullschieb;
+  ddglr[i,1]:=gleis[i,1]+0.76;
+  ddglr[i,2]:=i*5+nullschieb;
+  ddgll[i,1]:=gleis[i,1]-0.76;
+  ddgll[i,2]:=i*5+nullschieb;
+  schottr[i,1]:=gleis[i,1]+1.35;
+  schottr[i,2]:=i*5+nullschieb;
+  schottl[i,1]:=gleis[i,1]-1.35;
+  schottl[i,2]:=i*5+nullschieb;
+  schwr1[i,1]:=gleis[i,1]+GleisBreite/2;
+  schwr1[i,2]:=i*5+nullschieb;
+  schwr2[i,1]:=gleis[i,1]+1.35;
+  schwr2[i,2]:=i*5+nullschieb;
+  schwl1[i,1]:=gleis[i,1]-1.35;
+  schwl1[i,2]:=i*5+nullschieb;
+  schwl2[i,1]:=gleis[i,1]-GleisBreite/2;
+  schwl2[i,2]:=i*5+nullschieb;
+  end;
+
+
+
+for i:=5 downto 0 do
+  begin
+  drehung(gleis[i,1],gleis[i,2]);
+  drehung(gleisr1[i,1],gleisr1[i,2]);
+  drehung(gleisr2[i,1],gleisr2[i,2]);
+  drehung(gleisl1[i,1],gleisl1[i,2]);
+  drehung(gleisl2[i,1],gleisl2[i,2]);
+  drehung(ddglr[i,1],ddglr[i,2]);
+  drehung(ddgll[i,1],ddgll[i,2]);
+  drehung(schottr[i,1],schottr[i,2]);
+  drehung(schottl[i,1],schottl[i,2]);
+  drehung(schwr1[i,1],schwr1[i,2]);
+  drehung(schwr2[i,1],schwr2[i,2]);
+  drehung(schwl1[i,1],schwl1[i,2]);
+  drehung(schwl2[i,1],schwl2[i,2]);
+  end;
+
+{
+nullschieb:=0.1;
+schottr[0,2]:=schottr[0,2]-nullschieb;
+schottl[0,2]:=schottl[0,2]-nullschieb;
+schwr1[0,2]:=schwr1[0,2]-nullschieb;
+schwr2[0,2]:=schwr2[0,2]-nullschieb;
+schwl1[0,2]:=schwl1[0,2]-nullschieb;
+schwl2[0,2]:=schwl2[0,2]-nullschieb;
+schottr[5,2]:=schottr[5,2]+2*nullschieb;
+schottl[5,2]:=schottl[5,2]+2*nullschieb;
+
+  schwr1[5,2]:=schwr1[5,2]+2*nullschieb;
+  schwr2[5,2]:=schwr2[5,2]+2*nullschieb;
+  schwl1[5,2]:=schwl1[5,2]+2*nullschieb;
+  schwl2[5,2]:=schwl2[5,2]+2*nullschieb;
+} 
+
+
+  
+
+
+assign(f,filename);
+rewrite(f);
+if language='d' then
+  begin
+  writeln(f,';Datei automatisch erstellt von SWITCH - (C) 2002 Ruediger Huelsmann');
+  writeln(f,';RBASwitch (c) 2003 RouteBuilder Development Team and Ruediger Huelsmann');
+  writeln(f);
+  writeln(f,';Bogendaten:');
+  writeln(f,';Radius: ',radius:3:3);
+  writeln(f,';X-Abweichung: ',xdev:3:3);
+  writeln(f,';Winkel: ',winkel:3:3);
+//  writeln(f,';Rail(x)-Objekt: ',winkeldreh);
+  write(f,';Oberleitung: ');
+  if oberjn='n' then
+    writeln(f,'nein')
+    else
+    writeln(f,'ja');
+  if (oberjn<>'n') then
+    begin
+    writeln(f,';Hoehe Fahrdraht: ',oberfahr:3:3);
+    writeln(f,';Hoehe Tragseil: ',obertrag:3:3);
+    end;
+  end
+  else
+  begin
+  writeln(f,';File automatically generated by SWITCH - (C) 2002 Ruediger Huelsmann');
+  writeln(f,';RBASwitch (c) 2003 RouteBuilder Development Team and Ruediger Huelsmann');
+  writeln(f);
+  writeln(f,';Curve data:');
+  writeln(f,';Radius: ',radius:3:3);
+  writeln(f,';X-offset: ',xdev:3:3);
+  writeln(f,';Angle: ',winkel:3:3);
+  //writeln(f,';Rail(x) object: ',winkeldreh);
+  write(f,';Overhead line: ');
+  if oberjn='n' then
+    writeln(f,'no')
+    else
+    writeln(f,'yes');
+  if (oberjn<>'n') then
+    begin
+    writeln(f,';Height of contact wire: ',oberfahr:3:3);
+    writeln(f,';Height of carrying rope: ',obertrag:3:3);
+    end;
+  end;
+
+writeln(f);
+writeln(f,'[meshbuilder]');
+for i:=0 to 5 do
+  begin
+  writeln(f,'vertex ',gleisl2[i,1]:3:3,', 0, ',gleisl2[i,2]:3:3);
+  writeln(f,'vertex ',gleisl1[i,1]:3:3,', 0, ',gleisl1[i,2]:3:3);
+  end;
+zaehl:=0;
+for i:=0 to 4 do
+  begin
+  writeln(f,'face ',zaehl+2,', ',zaehl+3,', ',zaehl+1,', ',zaehl);
+  zaehl:=zaehl+2;
+  end;
+writeln(f,'color 180,190,200');
+writeln(f);
+
+writeln(f,'[meshbuilder]');
+for i:=0 to 5 do
+  begin
+  writeln(f,'vertex ',gleisr2[i,1]:3:3,', 0, ',gleisr2[i,2]:3:3);
+  writeln(f,'vertex ',gleisr1[i,1]:3:3,', 0, ',gleisr1[i,2]:3:3);
+  end;
+zaehl:=0;
+for i:=0 to 4 do
+  begin
+  writeln(f,'face ',zaehl+2,', ',zaehl+3,', ',zaehl+1,', ',zaehl);
+  zaehl:=zaehl+2;
+  end;
+writeln(f,'color 180,190,200');
+writeln(f);
+
+writeln(f,'[meshbuilder]');
+for i:=0 to 5 do
+  begin
+  writeln(f,'vertex ',ddgll[i,1]:3:3,', 0, ',ddgll[i,2]:3:3);
+  writeln(f,'vertex ',ddgll[i,1]:3:3,', -0.170, ',ddgll[i,2]:3:3);
+  end;
+zaehl:=0;
+for i:=0 to 4 do
+  begin
+  writeln(f,'face ',zaehl+2,', ',zaehl+3,', ',zaehl+1,', ',zaehl);
+  writeln(f,'face ',zaehl,', ',zaehl+1,', ',zaehl+3,', ',zaehl+2);
+  zaehl:=zaehl+2;
+  end;
+writeln(f,'color 85,50,50');
+writeln(f);
+
+writeln(f,'[meshbuilder]');
+for i:=0 to 5 do
+  begin
+  writeln(f,'vertex ',ddglr[i,1]:3:3,', 0, ',ddglr[i,2]:3:3);
+  writeln(f,'vertex ',ddglr[i,1]:3:3,', -0.170, ',ddglr[i,2]:3:3);
+  end;
+zaehl:=0;
+for i:=0 to 4 do
+  begin
+  writeln(f,'face ',zaehl+2,', ',zaehl+3,', ',zaehl+1,', ',zaehl);
+  writeln(f,'face ',zaehl,', ',zaehl+1,', ',zaehl+3,', ',zaehl+2);
+  zaehl:=zaehl+2;
+  end;
+writeln(f,'color 85,50,50');
+writeln(f);
+
+writeln(f,'[meshbuilder]');
+for i:=0 to 5 do
+  begin
+  writeln(f,'vertex ',schottl[i,1]:3:3,', -0.170, ',schottl[i,2]:3:3);
+  writeln(f,'vertex ',schottr[i,1]:3:3,', -0.170, ',schottr[i,2]:3:3);
+  end;
+zaehl:=0;
+for i:=0 to 4 do
+  begin
+  writeln(f,'face ',zaehl+2,', ',zaehl+3,', ',zaehl+1,', ',zaehl);
+  zaehl:=zaehl+2;
+  end;
+writeln(f,'[texture]');
+writeln(f,'load '+texturc2);
+zaehl:=0;
+j:=10;
+for i:=0 to 5 do
+  begin
+  writeln(f,'coordinates ',zaehl,', 1.02, ',j);
+  zaehl:=zaehl+1;
+  writeln(f,'coordinates ',zaehl,', -0.02, ',j);
+  j:=j-2;
+  zaehl:=zaehl+1;
+  end;
+writeln(f);
+
+writeln(f,'[meshbuilder]');
+for i:=0 to 5 do
+  begin
+  writeln(f,'vertex ',schwl2[i,1]:3:3,', -0.400, ',schwl2[i,2]:3:3);
+  writeln(f,'vertex ',schwl1[i,1]:3:3,', -0.170, ',schwl1[i,2]:3:3);
+  end;
+zaehl:=0;
+for i:=0 to 4 do
+  begin
+  writeln(f,'face ',zaehl+2,', ',zaehl+3,', ',zaehl+1,', ',zaehl);
+  zaehl:=zaehl+2;
+  end;
+writeln(f,'[texture]');
+writeln(f,'load '+texturc1);
+zaehl:=0;
+j:=10;
+for i:=0 to 5 do
+  begin
+  writeln(f,'coordinates ',zaehl,', 1, ',j);
+  zaehl:=zaehl+1;
+  writeln(f,'coordinates ',zaehl,', 0, ',j);
+  j:=j-2;
+  zaehl:=zaehl+1;
+  end;
+writeln(f);
+
+writeln(f,'[meshbuilder]');
+for i:=0 to 5 do
+  begin
+  writeln(f,'vertex ',schwr2[i,1]:3:3,', -0.170, ',schwr2[i,2]:3:3);
+  writeln(f,'vertex ',schwr1[i,1]:3:3,', -0.400, ',schwr1[i,2]:3:3);
+  end;
+zaehl:=0;
+for i:=0 to 4 do
+  begin
+  writeln(f,'face ',zaehl+2,', ',zaehl+3,', ',zaehl+1,', ',zaehl);
+  zaehl:=zaehl+2;
+  end;
+writeln(f,'[texture]');
+writeln(f,'load '+texturc1);
+zaehl:=0;
+j:=10;
+for i:=0 to 5 do
+  begin
+  writeln(f,'coordinates ',zaehl,', 0, ',j);
+  zaehl:=zaehl+1;
+  writeln(f,'coordinates ',zaehl,', 1, ',j);
+  j:=j-2;
+  zaehl:=zaehl+1;
+  end;
+writeln(f);
+
+
+  if language='d' then
+  writeln(f,';Oberleitung:')
+  else
+  writeln(f,';Overhead line:');
+  writeln(f);
+
+  
+
+if (oberjn='j') or (oberjn='y') then
+begin
+
+
+  writeln(f,'[MeshBuilder]');
+  writeln(f,'Cylinder 8,0.02,0.02,25');
+  writeln(f,'rotate 1,0,0,90');
+  writeln(f,'translate 0,', oberfahr:3:3, ',12.5');
+  writeln(f,'color 0,0,0');
+  writeln(f,'[MeshBuilder]');
+  writeln(f,'Cylinder 8,0.02,0.02,25');
+  writeln(f,'rotate 1,0,0,90');
+  writeln(f,'translate 0,', obertrag:3:3, ',12.5');
+  writeln(f,'color 0,0,0');
+
+ { writeln(f,'[meshbuilder]');
+  writeln(f,'vertex -0.02, ', oberfahr:3:3, ', 0');
+  writeln(f, 'vertex 0.02, ', oberfahr:3:3, ', 0');
+  writeln(f, 'vertex ',gleis[5,1]+0.02:3:3, ', ', oberfahr:3:3, ', 25');
+  writeln(f, 'vertex ',gleis[5,1]-0.02:3:3, ', ', oberfahr:3:3, ', 25');
+  writeln(f,'face 0,1,2,3');
+  writeln(f,'color 0,0,0');
+  writeln(f);
+  writeln(f,'[meshbuilder]');
+  writeln(f,'vertex -0.01, ', obertrag:3:3, ', 0');
+  writeln(f, 'vertex 0.01, ', obertrag:3:3, ', 0');
+  writeln(f, 'vertex ',gleis[5,1]+0.01:3:3, ', ', obertrag:3:3, ', 25');
+  writeln(f, 'vertex ',gleis[5,1]-0.01:3:3, ', ', obertrag:3:3, ', 25');
+  writeln(f,'face 0,1,2,3');
+  writeln(f,'color 0,0,0');}
+  writeln(f);
+
+  for i:=0 to 5 do
+  oberaufh[i]:=(gleis[5,1]/25)*i*5;
+
+  for i:=0 to 5 do
+    begin
+  writeln(f,'[MeshBuilder]');
+  writeln(f,'Cylinder 8,0.02,0.02,',(obertrag-oberfahr):3:3);
+//  writeln(f,'rotate 1,0,0,90');
+  writeln(f,'translate ',oberaufh[i]-0.01:3:3, ',', ((obertrag+oberfahr)/2):3:3, ',',i*5);
+  writeln(f,'color 0,0,0');
+
+{    writeln(f,'[meshbuilder]');
+    writeln(f, 'vertex ',oberaufh[i]-0.01:3:3, ', ', obertrag:3:3, ', ', i*5);
+    writeln(f, 'vertex ',oberaufh[i]+0.01:3:3, ', ', obertrag:3:3, ', ', i*5);
+    writeln(f, 'vertex ',oberaufh[i]+0.01:3:3, ', ', oberfahr:3:3, ', ', i*5);
+    writeln(f, 'vertex ',oberaufh[i]-0.01:3:3, ', ', oberfahr:3:3, ', ', i*5);
+    writeln(f, 'face 0,1,2,3');
+    writeln(f,'color 0,0,0');  }
+    end;
+end;
+
+
+
+close(f);
+end;
+
+end.

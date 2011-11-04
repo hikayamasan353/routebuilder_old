@@ -1,0 +1,34 @@
+;author=Rainer Hübner
+;description=Lf6_10
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -0.6, 2.2, 0
+Vertex 0.6, 2.2, 0
+Vertex 0.6, 0, 0
+Vertex -0.6, 0, 0
+Face 0, 1, 2, 3
+
+[Texture]
+Load Lf6_10.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+Transparent 66,66,66
+
+[MeshBuilder]
+Vertex -0.6, 2.2, 0.1
+Vertex 0.6, 2.2, 0.1
+Vertex 0.6, 0, 0.1
+Vertex -0.6, 0, 0.1
+Face 3,2,1,0
+
+[Texture]
+Load Lf6_r.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+Transparent 66,66,66
+

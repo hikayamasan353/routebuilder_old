@@ -1,0 +1,63 @@
+;author=Uwe Post
+;description=simple concrete wall with iron fence
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex 3, -10, 0
+Vertex 3, -10, 26
+Vertex 3, 0.2, 26
+Vertex 3, 0.2, 0
+Face 3,2,1,0
+Face 0,1,2,3
+
+[Texture]
+Load Concrete.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 2, 1
+Coordinates 2, 2, 0
+Coordinates 3, 0, 0
+
+[MeshBuilder]
+Vertex 2.5, -10, 0
+Vertex 2.5, -10, 26
+Vertex 2.5, 0.2, 26
+Vertex 2.5, 0.2, 0
+Face 3,2,1,0
+Face 0,1,2,3
+
+[Texture]
+Load Concrete.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 2, 1
+Coordinates 2, 2, 0
+Coordinates 3, 0, 0
+
+[MeshBuilder]
+Vertex 3, 0.2, 0
+Vertex 3, 0.2, 26
+Vertex 2.5, 0.2, 26
+Vertex 2.5, 0.2, 0
+Face 3,2,1,0
+
+[Texture]
+Load Concrete.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 1
+Coordinates 2, 1, 1
+Coordinates 3, 1, 0
+
+[MeshBuilder]
+Vertex 2.75, 1.2, 25
+Vertex 2.75, 1.2, 0
+Vertex 2.75, 0.2, 0
+Vertex 2.75, 0.2, 25
+Face 0,1,2,3
+Face 1,0,3,2
+
+[Texture]
+Load ..\fences\ironfence1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 4, 0
+Coordinates 2, 4, 1
+Coordinates 3, 0, 1
+transparent 0,0,255

@@ -1,0 +1,21 @@
+;author=Uwe Post
+;description=crack side
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -25,  -0.3, -1
+Vertex -25,  -0.3, 26
+Vertex 25  , -0.3  , 26
+Vertex 25  , -0.3  , -1
+Face2 3,2,1,0
+
+
+
+
+[Texture]
+Load ..\tracks\schotter1.bmp
+Coordinates 0, 2, 0
+Coordinates 1, 2, 1
+Coordinates 2, 0, 1
+Coordinates 3, 0, 0
+

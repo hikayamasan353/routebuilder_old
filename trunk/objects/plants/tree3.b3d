@@ -1,0 +1,34 @@
+;author=Uwe Post
+;description=another tree
+;copyright=the BVE RouteBuilder team 2003, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex 6, 24, 0
+Vertex 6, -0.1, 0
+Vertex -6, -0.1, 0
+Vertex -6, 24, 0
+Face2 0,1,2,3
+
+[Texture]
+Load tree3.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 0
+
+[MeshBuilder]
+Vertex 0, 24, -6
+Vertex 0, -0.1, -6
+Vertex 0, -0.1, 6
+Vertex 0, 24, 6
+Face2 0,1,2,3
+
+[Texture]
+Load tree3.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 0
+

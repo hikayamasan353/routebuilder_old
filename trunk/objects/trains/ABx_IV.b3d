@@ -1,0 +1,163 @@
+;description=S-Bahn-Wagen 1./2. Klasse der DB (Bx)
+;author=Uwe Post
+;copyright=open source
+
+[Meshbuilder]
+Vertex 1.35,3.7,0.2
+Vertex 1.35,3.7,24.8
+Vertex 1.35,0.5,24.8
+Vertex 1.35,0.5,0.2
+Face 0,1,2,3
+
+[Texture]
+Load ABx_seite.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 0, 255,0
+
+[Meshbuilder]
+Vertex -1.35,3.7,0.2
+Vertex -1.35,3.7,24.8
+Vertex -1.35,0.5,24.8
+Vertex -1.35,0.5,0.2
+Face 3,2,1,0
+
+[Texture]
+Load ABx_seite.bmp
+Coordinates 1,0,0
+Coordinates 0,1,0
+Coordinates 3,1,1
+Coordinates 2,0,1
+transparent 0, 255,0
+
+[Meshbuilder]
+Vertex  -1.35,4 , 0.2
+Vertex   1.35,4 , 0.2
+Vertex   1.35,0   , 0.2
+Vertex  -1.35,0   , 0.2
+Face 0,1,2,3
+
+[Texture]
+Load bx_ende.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 0, 0, 256
+
+[Meshbuilder]
+Vertex  -1.35,4, 24.8
+Vertex   1.35,4, 24.8
+Vertex   1.35,0   , 24.8
+Vertex  -1.35,0   , 24.8
+Face 3,2,1,0
+
+[Texture]
+Load bx_ende.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 0, 0, 256
+
+[Meshbuilder]
+Vertex -1,4  ,0.2
+Vertex  1,4  ,0.2
+Vertex  1,4  ,24.8
+Vertex -1,4  ,24.8
+Face 3,2,1,0
+color 120,120,120
+
+[Meshbuilder]
+Vertex -1   ,4  ,0.2
+Vertex -1.35,3.5  ,0.2
+Vertex -1.35,3.5  ,24.8
+Vertex -1   ,4  ,24.8
+Face 0,1,2,3
+color 150,150,150
+
+
+[Meshbuilder]
+Vertex 1   ,4  ,0.2
+Vertex 1.35,3.5  ,0.2
+Vertex 1.35,3.5  ,24.8
+Vertex 1   ,4  ,24.8
+Face 3,2,1,0
+color 150,150,150
+
+
+; drehgestell
+
+[Meshbuilder]
+Vertex 1,0.6,2
+Vertex 1,0.6,5.5
+Vertex 1,0,  5.5
+Vertex 1,0,  2
+Face2 0,1,2,3
+
+[Texture]
+Load drehgestell1.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 0, 255,0
+
+[Meshbuilder]
+Vertex -1,0.6,2
+Vertex -1,0.6,5.5
+Vertex -1,0,  5.5
+Vertex -1,0,  2
+Face2 3,2,1,0
+
+[Texture]
+Load drehgestell1.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 0, 255,0
+
+[Meshbuilder]
+Vertex 1,0.6,22.8
+Vertex 1,0.6,19.3
+Vertex 1,0,  19.3
+Vertex 1,0,  22.8
+Face2 3,2,1,0
+
+[Texture]
+Load drehgestell1.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 0, 255,0
+
+
+[Meshbuilder]
+Vertex -1,0.6,22.8
+Vertex -1,0.6,19.3
+Vertex -1,0,  19.3
+Vertex -1,0,  22.8
+Face2 0,1,2,3
+
+[Texture]
+Load drehgestell1.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 0, 255,0
+
+
+; Boden
+
+[Meshbuilder]
+Vertex -1.34,0.6  ,0.2
+Vertex  1.34,0.6 ,0.2
+Vertex  1.34,0.6  ,24.8
+Vertex -1.34,0.6  ,24.8
+Face 0,1,2,3
+color 0,0,0

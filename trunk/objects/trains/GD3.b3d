@@ -1,0 +1,401 @@
+;Gedekter Güterwagen der DB
+;erstellt von Hans-Martin Finken
+;BVE-Train.de
+
+[Meshbuilder]
+Vertex -0.1.0,4.0, 0.25
+Vertex -0.1,4.0,12.25
+Vertex 0.56,3.96, 0.25
+Vertex 0.56,3.96,12.25
+Vertex 1.4,3.6, 0.25
+Vertex 1.4,3.6,12.25
+Vertex 1.40,3.10, 0.25
+Vertex 1.40,3.10,12.25
+Vertex 1.40,-0, 0.25
+Vertex 1.40,-0,12.25
+Face 0,1,3,2
+Face 2,3,5,4
+Face 4,5,7,6
+Face 6,7,9,8
+[Texture]
+Load GD3s.bmp
+coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,0,0.04
+Coordinates 3,1,0.04
+Coordinates 4,0,0.08
+Coordinates 5,1,0.08
+Coordinates 6,0,0.14
+Coordinates 7,1,0.14
+Coordinates 8,0,1
+Coordinates 9,1,1
+Transparent 0,0,255
+[Meshbuilder]
+Vertex  0.1,4.0,12.25
+Vertex  0.1,4.0, 0.25
+Vertex -0.56,3.96,12.25
+Vertex -0.56,3.96, 0.25
+Vertex -1.4,3.6,12.25
+Vertex -1.4,3.6, 0.25
+Vertex -1.40,3.10,12.25
+Vertex -1.40,3.10, 0.25
+Vertex -1.40,-0,12.25
+Vertex -1.40,-0,0.25
+Face 0,1,3,2
+Face 2,3,5,4
+Face 4,5,7,6
+Face 6,7,9,8
+[Texture]
+Load GD3s.bmp
+coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,0,0.04
+Coordinates 3,1,0.04
+Coordinates 4,0,0.08
+Coordinates 5,1,0.08
+Coordinates 6,0,0.14
+Coordinates 7,1,0.14
+Coordinates 8,0,1
+Coordinates 9,1,1
+Transparent 0,0,255
+[Meshbuilder]
+Vertex -0.718,2.422,0.25
+Vertex -0.718,2.422,12.25
+Vertex -0.718,0,0.25
+Vertex -0.718,0,12.25
+Face 0,1,3,2
+Face 2,3,1,0
+[Texture]
+Load GD3FG.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,0,1
+Coordinates 3,1,1
+Transparent 0,0,255
+[Meshbuilder]
+Vertex 0.718,2.422,0.25
+Vertex 0.718,2.422,12.25
+Vertex 0.718,0,0.25
+Vertex 0.718,0,12.25
+Face 0,1,3,2
+Face 2,3,1,0
+[Texture]
+Load GD3FG.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,0,1
+Coordinates 3,1,1
+Transparent 0,0,255
+[Meshbuilder]
+Vertex 1.4,3.3,0.25
+Vertex -1.4,3.3,0.25
+Vertex 1.4,0.9,0.25
+Vertex -1.4,0.9,0.25
+Face 2,3,1,0
+[Texture]
+Load GD3f.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,0,1
+Coordinates 3,1,1
+Transparent 0,0,255
+[Meshbuilder]
+Vertex 1.4,3.3,12.25
+Vertex -1.4,3.3,12.25
+Vertex 1.4,0.9,12.25
+Vertex -1.4,0.9,12.25
+Face 0,1,3,2
+[Texture]
+Load GD3f.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,0,1
+Coordinates 3,1,1
+Transparent 0,0,255
+
+;
+[Meshbuilder]
+Vertex 1.4,3.28,12.25
+Vertex 1.4,3.6,12.25
+Vertex 1.4,3.28,12.25
+Vertex 1.40,3.28,12.25
+Face 0,1,3,2
+color 100,38,27
+[Meshbuilder]
+Vertex 1.4,3.6,12.25
+Vertex 0.56,3.96,12.25
+Vertex 1.4,3.28,12.25
+Vertex 0.56,3.28,12.25
+Face 0,1,3,2
+color 100,38,27
+[Meshbuilder]
+Vertex 0.56,3.96,12.25
+Vertex -0.05,4.0,12.25
+Vertex 0.56,3.28,12.25
+Vertex -0.05,3.28,12.25
+Face 0,1,3,2
+color 100,38,27
+[Meshbuilder]
+Vertex -1.4,3.30,12.25
+Vertex -1.4,3.6,12.25
+Vertex -1.4,3.28,12.25
+Vertex -1.40,3.28,12.25
+Face 2,3,1,0
+color 100,38,27
+[Meshbuilder]
+Vertex -1.4,3.6,12.25
+Vertex -0.56,3.96,12.25
+Vertex -1.4,3.28,12.25
+Vertex -0.56,3.28,12.25
+Face 2,3,1,0
+color 100,38,27
+[Meshbuilder]
+Vertex -0.56,3.96,12.25
+Vertex 0.05,4.0,12.25
+Vertex -0.56,3.28,12.25
+Vertex 0.05,3.28,12.25
+Face 2,3,1,0
+color 100,38,27
+;;;;;;;
+
+[Meshbuilder]
+Vertex 1.4,3.28,0.25
+Vertex 1.4,3.6,0.25
+Vertex 1.4,3.28,0.25
+Vertex 1.40,3.28,0.25
+Face 2,3,1,0
+color 100,38,27
+[Meshbuilder]
+Vertex 1.4,3.6,0.25
+Vertex 0.56,3.96,0.25
+Vertex 1.4,3.28,0.25
+Vertex 0.56,3.28,0.25
+Face 2,3,1,0
+color 100,38,27
+[Meshbuilder]
+Vertex 0.56,3.96,0.25
+Vertex -0.05,4.0,0.25
+Vertex 0.56,3.28,0.25
+Vertex -0.05,3.28,0.25
+Face 2,3,1,0
+color 100,38,27
+[Meshbuilder]
+Vertex -1.4,3.30,0.25
+Vertex -1.4,3.6,0.25
+Vertex -1.4,3.28,0.25
+Vertex -1.40,3.28,0.25
+Face 0,1,3,2
+color 100,38,27
+[Meshbuilder]
+Vertex -1.4,3.6,0.25
+Vertex -0.56,3.96,0.25
+Vertex -1.4,3.28,0.25
+Vertex -0.56,3.28,0.25
+Face 0,1,3,2
+color 100,38,27
+[Meshbuilder]
+Vertex -0.56,3.96,0.25
+Vertex 0.05,4.0,0.25
+Vertex -0.56,3.28,0.25
+Vertex 0.05,3.28,0.25
+Face 0,1,3,2
+color 100,38,27
+
+[Meshbuilder]
+Vertex -0.1.0,4.0, 12.5
+Vertex -0.1,4.0,24.75
+Vertex 0.56,3.96, 12.5
+Vertex 0.56,3.96,24.75
+Vertex 1.4,3.6, 12.5
+Vertex 1.4,3.6,24.75
+Vertex 1.40,3.10, 12.5
+Vertex 1.40,3.10,24.75
+Vertex 1.40,-0, 12.5
+Vertex 1.40,-0,24.75
+Face 0,1,3,2
+Face 2,3,5,4
+Face 4,5,7,6
+Face 6,7,9,8
+[Texture]
+Load GD3s.bmp
+coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,0,0.04
+Coordinates 3,1,0.04
+Coordinates 4,0,0.08
+Coordinates 5,1,0.08
+Coordinates 6,0,0.14
+Coordinates 7,1,0.14
+Coordinates 8,0,1
+Coordinates 9,1,1
+Transparent 0,0,255
+[Meshbuilder]
+Vertex  0.1,4.0,24.75
+Vertex  0.1,4.0, 12.5
+Vertex -0.56,3.96,24.75
+Vertex -0.56,3.96, 12.5
+Vertex -1.4,3.6,24.75
+Vertex -1.4,3.6, 12.5
+Vertex -1.40,3.10,24.75
+Vertex -1.40,3.10, 12.5
+Vertex -1.40,-0,24.75
+Vertex -1.40,-0,12.5
+Face 0,1,3,2
+Face 2,3,5,4
+Face 4,5,7,6
+Face 6,7,9,8
+[Texture]
+Load GD3s.bmp
+coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,0,0.04
+Coordinates 3,1,0.04
+Coordinates 4,0,0.08
+Coordinates 5,1,0.08
+Coordinates 6,0,0.14
+Coordinates 7,1,0.14
+Coordinates 8,0,1
+Coordinates 9,1,1
+Transparent 0,0,255
+[Meshbuilder]
+Vertex -0.718,2.422,12.5
+Vertex -0.718,2.422,24.75
+Vertex -0.718,0,12.5
+Vertex -0.718,0,24.75
+Face 0,1,3,2
+Face 2,3,1,0
+[Texture]
+Load GD3FG.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,0,1
+Coordinates 3,1,1
+Transparent 0,0,255
+[Meshbuilder]
+Vertex 0.718,2.422,12.5
+Vertex 0.718,2.422,24.75
+Vertex 0.718,0,12.5
+Vertex 0.718,0,24.75
+Face 0,1,3,2
+Face 2,3,1,0
+[Texture]
+Load GD3FG.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,0,1
+Coordinates 3,1,1
+Transparent 0,0,255
+[Meshbuilder]
+Vertex 1.4,3.3,12.5
+Vertex -1.4,3.3,12.5
+Vertex 1.4,0.9,12.5
+Vertex -1.4,0.9,12.5
+Face 2,3,1,0
+[Texture]
+Load GD3f.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,0,1
+Coordinates 3,1,1
+Transparent 0,0,255
+[Meshbuilder]
+Vertex 1.4,3.3,24.75
+Vertex -1.4,3.3,24.75
+Vertex 1.4,0.9,24.75
+Vertex -1.4,0.9,24.75
+Face 0,1,3,2
+[Texture]
+Load GD3f.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,0,1
+Coordinates 3,1,1
+Transparent 0,0,255
+
+;
+[Meshbuilder]
+Vertex 1.4,3.28,24.75
+Vertex 1.40,3.6,24.75
+Vertex 1.4,3.28,24.75
+Vertex 1.40,3.28,24.75
+Face 0,1,3,2
+color 100,38,27
+[Meshbuilder]
+Vertex 1.4,3.6,24.75
+Vertex 0.56,3.96,24.75
+Vertex 1.4,3.28,24.75
+Vertex 0.56,3.28,24.75
+Face 0,1,3,2
+color 100,38,27
+[Meshbuilder]
+Vertex 0.56,3.96,24.75
+Vertex -0.05,4.0,24.75
+Vertex 0.56,3.28,24.75
+Vertex -0.05,3.28,24.75
+Face 0,1,3,2
+color 100,38,27
+[Meshbuilder]
+Vertex -1.4,3.30,24.75
+Vertex -1.40,3.6,24.75
+Vertex -1.4,3.28,24.75
+Vertex -1.40,3.28,24.75
+Face 2,3,1,0
+color 100,38,27
+[Meshbuilder]
+Vertex -1.4,3.6,24.75
+Vertex -0.56,3.96,24.75
+Vertex -1.4,3.28,24.75
+Vertex -0.56,3.28,24.75
+Face 2,3,1,0
+color 100,38,27
+[Meshbuilder]
+Vertex -0.56,3.96,24.75
+Vertex 0.05,4.0,24.75
+Vertex -0.56,3.28,24.75
+Vertex 0.05,3.28,24.75
+Face 2,3,1,0
+color 100,38,27
+;;;;;;;
+
+[Meshbuilder]
+Vertex 1.4,3.28,12.5
+Vertex 1.40,3.6,12.5
+Vertex 1.4,3.28,12.5
+Vertex 1.40,3.28,12.5
+Face 2,3,1,0
+color 100,38,27
+[Meshbuilder]
+Vertex 1.4,3.6,12.5
+Vertex 0.56,3.96,12.5
+Vertex 1.4,3.28,12.5
+Vertex 0.56,3.28,12.5
+Face 2,3,1,0
+color 100,38,27
+[Meshbuilder]
+Vertex 0.56,3.96,12.5
+Vertex -0.05,4.0,12.5
+Vertex 0.56,3.28,12.5
+Vertex -0.05,3.28,12.5
+Face 2,3,1,0
+color 100,38,27
+[Meshbuilder]
+Vertex -1.4,3.30,12.5
+Vertex -1.40,3.6,12.5
+Vertex -1.4,3.28,12.5
+Vertex -1.40,3.28,12.5
+Face 0,1,3,2
+color 100,38,27
+[Meshbuilder]
+Vertex -1.4,3.6,12.5
+Vertex -0.56,3.96,12.5
+Vertex -1.4,3.28,12.5
+Vertex -0.56,3.28,12.5
+Face 0,1,3,2
+color 100,38,27
+[Meshbuilder]
+Vertex -0.56,3.96,12.5
+Vertex 0.05,4.0,12.5
+Vertex -0.56,3.28,12.5
+Vertex 0.05,3.28,12.5
+Face 0,1,3,2
+color 100,38,27

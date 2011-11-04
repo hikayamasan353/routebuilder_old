@@ -1,0 +1,75 @@
+;description=E-Lok Br. 141 der DB, blau-beige
+;author=Uwe Post
+;copyright=open source
+
+[Meshbuilder]
+Vertex -1.35,6,0
+Vertex -1.35,6,14.2
+Vertex -1.35,0,14.2
+Vertex -1.35,0,0
+Face 3,2,1,0
+
+[Texture]
+Load 141bb_seite.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 0, 0, 255
+
+[Meshbuilder]
+Vertex 1.35,6,0
+Vertex 1.35,6,14.2
+Vertex 1.35,0,14.2
+Vertex 1.35,0,0
+Face 0,1,2,3
+
+[Texture]
+Load 141bb_seite.bmp
+Coordinates 1,0,0
+Coordinates 0,1,0
+Coordinates 3,1,1
+Coordinates 2,0,1
+transparent 0, 0, 255
+
+[Meshbuilder]
+Vertex  -1.55,4.2, 1.2
+Vertex   1.55,4.2 , 1.2
+Vertex   1.55,0   , 0.7
+Vertex  -1.55,0   , 0.7
+Face 0,1,2,3
+
+[Texture]
+Load 141bb_vorn.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 0, 0, 255
+
+[Meshbuilder]
+Vertex  -1.55,4.2 , 13
+Vertex   1.55,4.2 , 13
+Vertex   1.55,0   , 13.5
+Vertex  -1.55,0   , 13.5
+Face 3,2,1,0
+
+[Texture]
+Load 141bb_vorn.bmp
+Coordinates 0,1,0
+Coordinates 1,0,0
+Coordinates 2,0,1
+Coordinates 3,1,1
+transparent 0, 0, 255
+
+[Meshbuilder]
+Vertex -1.35,3.5  ,1.2
+Vertex  1.35,3.5  ,1.2
+Vertex  1.35,3.5  ,13
+Vertex -1.35,3.5  ,13
+Face 3,2,1,0
+color 192,177,130
+
+
+
+

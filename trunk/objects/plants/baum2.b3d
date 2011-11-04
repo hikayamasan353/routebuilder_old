@@ -1,0 +1,30 @@
+;description=created for Route Builder
+;author=Thomas233
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[Meshbuilder]
+Vertex 0, 0, 0
+Vertex 0, 7, 0
+Vertex 9, 7, 0
+Vertex 9, 0, 0
+Face 0, 1, 2, 3
+[Texture]
+Load baum2.bmp
+Coordinates 0, 0, 0.9375
+Coordinates 1, 0, 0
+Coordinates 2, 0.691406, 0
+Coordinates 3, 0.691406, 0.9375
+Transparent 0, 0, 255
+[Meshbuilder]
+Vertex 9, 0, 0
+Vertex 9, 7, 0
+Vertex 0, 7, 0
+Vertex 0, 0, 0
+Face 0, 1, 2, 3
+[Texture]
+Load baum2.bmp
+Coordinates 0, 0.691406, 0.9375
+Coordinates 1, 0.691406, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 0.9375
+Transparent 0, 0, 255

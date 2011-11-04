@@ -1,0 +1,370 @@
+;author=Uwe Post
+;description=garden2
+;copyright=RouteBuilder Object Library License
+
+[MeshBuilder]
+Vertex -120,  -0.3, -1
+Vertex -120,  -0.3, 26
+Vertex -2.5  , -0.3  , 26
+Vertex -2.5  , -0.3  , -1
+Face2 3,2,1,0
+
+
+[Texture]
+Load ..\grounds\grass3.bmp
+Coordinates 0, 4, 0
+Coordinates 1, 4, 1
+Coordinates 2, 0, 1
+Coordinates 3, 0, 0
+
+
+
+[MeshBuilder]
+Vertex -3, 3, 25
+Vertex -3, 3, 0
+Vertex -3, -0.2, 0
+Vertex -3, -0.2, 25
+Face 0,1,2,3
+Face 1,0,3,2
+
+[Texture]
+Load ..\plants\grassh1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 5, 0
+Coordinates 2, 5, 1
+Coordinates 3, 0, 1
+transparent 0,0,255
+
+
+
+[MeshBuilder]
+Vertex -30, 1, 0
+Vertex -3, 1, 0
+Vertex -3, -0.2, 0
+Vertex -30, -0.2, 0
+Face 0,1,2,3
+Face 1,0,3,2
+
+[Texture]
+Load ..\fences\jzaun.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 27, 0
+Coordinates 2, 27, 1
+Coordinates 3, 0, 1
+transparent 0,0,255
+
+
+
+
+
+
+
+
+[MeshBuilder]
+Vertex -4, 1.5, 1
+Vertex -4, -0.1, 1
+Vertex -15, -0.1, 1
+Vertex -15, 1.5, 1
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load ..\plants\grass1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,10,1
+Coordinates 3,10,0
+Transparent 0,0,255
+
+[MeshBuilder]
+Vertex -4, 1.5, 2
+Vertex -4, -0.1, 2
+Vertex -15, -0.1, 2
+Vertex -15, 1.5, 2
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load ..\plants\grass1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,10,1
+Coordinates 3,10,0
+Transparent 0,0,255
+
+[MeshBuilder]
+Vertex -4, 1.5, 3
+Vertex -4, -0.1, 3
+Vertex -15, -0.1, 3
+Vertex -15, 1.5, 3
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load ..\plants\grass1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,10,1
+Coordinates 3,10,0
+Transparent 0,0,255
+
+[MeshBuilder]
+Vertex -4, 1.5, 4
+Vertex -4, -0.1, 4
+Vertex -15, -0.1, 4
+Vertex -15, 1.5, 4
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load ..\plants\grass1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,10,1
+Coordinates 3,10,0
+Transparent 0,0,255
+
+[MeshBuilder]
+Vertex -4, 1.5, 5
+Vertex -4, -0.1, 5
+Vertex -15, -0.1, 5
+Vertex -15, 1.5, 5
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load ..\plants\grass1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,10,1
+Coordinates 3,10,0
+Transparent 0,0,255
+
+[MeshBuilder]
+Vertex -4, 1.5, 6
+Vertex -4, -0.1, 6
+Vertex -15, -0.1, 6
+Vertex -15, 1.5, 6
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load ..\plants\grass1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,10,1
+Coordinates 3,10,0
+Transparent 0,0,255
+
+[MeshBuilder]
+Vertex -4, 1.5, 7
+Vertex -4, -0.1, 7
+Vertex -15, -0.1, 7
+Vertex -15, 1.5, 7
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load ..\plants\grass1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,10,1
+Coordinates 3,10,0
+Transparent 0,0,255
+
+[MeshBuilder]
+Vertex -4, 1.5, 8
+Vertex -4, -0.1, 8
+Vertex -15, -0.1, 8
+Vertex -15, 1.5, 8
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load ..\plants\grass1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,10,1
+Coordinates 3,10,0
+Transparent 0,0,255
+
+[MeshBuilder]
+Vertex -4, 1.5, 9
+Vertex -4, -0.1, 9
+Vertex -15, -0.1, 9
+Vertex -15, 1.5, 9
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load ..\plants\grass1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,10,1
+Coordinates 3,10,0
+Transparent 0,0,255
+
+[MeshBuilder]
+Vertex -4, 1.5, 10
+Vertex -4, -0.1, 10
+Vertex -15, -0.1, 10
+Vertex -15, 1.5, 10
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load ..\plants\grass1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,10,1
+Coordinates 3,10,0
+Transparent 0,0,255
+
+[MeshBuilder]
+Vertex -4, 1.5, 11
+Vertex -4, -0.1, 11
+Vertex -15, -0.1, 11
+Vertex -15, 1.5, 11
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load ..\plants\grass1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,10,1
+Coordinates 3,10,0
+Transparent 0,0,255
+
+[MeshBuilder]
+Vertex -4, 1.5, 12
+Vertex -4, -0.1, 12
+Vertex -15, -0.1, 12
+Vertex -15, 1.5, 12
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load ..\plants\grass1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,10,1
+Coordinates 3,10,0
+Transparent 0,0,255
+
+
+
+
+[Meshbuilder]
+Vertex -16, 0, 16
+Vertex -16, 6, 16
+Vertex -8, 6, 16
+Vertex -8, 0, 16
+Face2 0, 1, 2, 3
+[Texture]
+Load ..\plants\bush1.bmp
+Coordinates 0, 0, 01
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+Transparent 0, 0, 255
+
+
+
+
+
+[Meshbuilder]
+Vertex -30, 0, 0
+Vertex -30, 6, 0
+Vertex -25, 8, 0
+Vertex -20, 6, 0
+Vertex -20, 0, 0
+Face2 0, 1, 2, 3, 4
+[Texture]
+Load ..\buildings\haus2.bmp
+Coordinates 0, 0, 0.541016
+Coordinates 1, 0.001953, 0.443359
+Coordinates 2, 0.310547, 0.416016
+Coordinates 3, 0.589844, 0.447266
+Coordinates 4, 0.591797, 0.541016
+
+[Meshbuilder]
+Vertex -20, 0, 15
+Vertex -20, 6, 15
+Vertex -25, 8, 15
+Vertex -30, 6, 15
+Vertex -30, 0, 15
+Face2 0, 1, 2, 3, 4
+[Texture]
+Load ..\buildings\haus2.bmp
+Coordinates 0, 0, 0.541016
+Coordinates 1, 0, 0.460938
+Coordinates 2, 0.320313, 0.417969
+Coordinates 3, 0.591797, 0.453125
+Coordinates 4, 0.591797, 0.541016
+
+[Meshbuilder]
+Vertex -20, 0, 0
+Vertex -20, 6, 0
+Vertex -20, 6, 15
+Vertex -20, 0, 15
+Face2 0, 1, 2, 3
+[Texture]
+Load ..\buildings\haus2.bmp
+Coordinates 0, 0, 0.414063
+Coordinates 1, 0, 0
+Coordinates 2, 0.714844, 0
+Coordinates 3, 0.716797, 0.414063
+
+[Meshbuilder]
+Vertex -30, 0, 15
+Vertex -30, 6, 15
+Vertex -30, 6, 0
+Vertex -30, 0, 0
+Face2 0, 1, 2, 3
+[Texture]
+Load ..\buildings\haus2.bmp
+Coordinates 0, 0.001953, 0.416016
+Coordinates 1, 0, 0
+Coordinates 2, 0.71875, 0
+Coordinates 3, 0.71875, 0.416016
+
+[Meshbuilder]
+Vertex -20, 6, 0
+Vertex -20, 6, 15
+Vertex -25, 8, 15
+Vertex -25, 8, 0
+Face2 0, 1, 2, 3
+[Texture]
+Load ..\buildings\haus2.bmp
+Coordinates 0, 0.716797, 0.4375
+Coordinates 1, 0.650391, 0.435547
+Coordinates 2, 0.664063, 0.421875
+Coordinates 3, 0.707031, 0.417969
+
+[Meshbuilder]
+Vertex -20, 6, 15
+Vertex -25, 8, 15
+Vertex -25, 8, 0
+Vertex -20, 6, 0
+Face2 0, 1, 2, 3
+[Texture]
+Load ..\buildings\haus2.bmp
+Coordinates 0, 0.660156, 0.429688
+Coordinates 1, 0.650391, 0.419922
+Coordinates 2, 0.712891, 0.421875
+Coordinates 3, 0.707031, 0.4375
+
+[Meshbuilder]
+Vertex -20, 0, 15
+Vertex -20, 0, 0
+Vertex -30, 0, 0
+Vertex -30, 0, 15
+Face2 0, 1, 2, 3
+[Texture]
+Load ..\buildings\haus2.bmp
+Coordinates 0, 0.658203, 0.433594
+Coordinates 1, 0.652344, 0.425781
+Coordinates 2, 0.699219, 0.419922
+Coordinates 3, 0.710938, 0.435547
+

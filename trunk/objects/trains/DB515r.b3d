@@ -1,0 +1,71 @@
+;description=Akkutriebwagen Br 515 der DB
+;author=Uwe Post
+;copyright=open source
+
+[Meshbuilder]
+Vertex -1.35,3.645,11.1
+Vertex -1.35,3.645,-11.1
+Vertex -1.35,0,-11.1
+Vertex -1.35,0,11.1
+Face 0,1,2,3
+
+[Texture]
+Load 515a.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 0, 0, 255
+
+[Meshbuilder]
+Vertex 1.35,3.645,11.1
+Vertex 1.35,3.645,-11.1
+Vertex 1.35,0,-11.1
+Vertex 1.35,0,11.1
+Face 3,2,1,0
+
+[Texture]
+Load 515a.bmp
+Coordinates 1,0,0
+Coordinates 0,1,0
+Coordinates 3,1,1
+Coordinates 2,0,1
+transparent 0, 0, 255
+
+[Meshbuilder]
+Vertex  -1.35,3.645 , -11.1
+Vertex   1.35,3.645 , -11.1
+Vertex   1.35,0   , -11.1
+Vertex  -1.35,0   , -11.1
+Face 0,1,2,3
+
+[Texture]
+Load 515b.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 0, 0, 255
+
+[Meshbuilder]
+Vertex  -1.35,3.645 , 11.1
+Vertex   1.35,3.645 , 11.1
+Vertex   1.35,0   , 11.1
+Vertex  -1.35,0   , 11.1
+Face 3,2,1,0
+
+[Texture]
+Load 515b.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 0, 0, 255
+
+[Meshbuilder]
+Vertex -1.35,3.5,11.1
+Vertex 1.35,3.5,11.1
+Vertex 1.35,3.5,-11.1
+Vertex -1.35,3.5,-11.1
+Face 0,1,2,3
+Color 64,64,64

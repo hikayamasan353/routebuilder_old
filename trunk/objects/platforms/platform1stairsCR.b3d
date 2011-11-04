@@ -1,0 +1,684 @@
+;author=Uwe Post
+;description=Platform center left with stairs down
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+;form=CL
+
+; floor
+
+[MeshBuilder]
+Vertex 4.5, 1.1, 0
+Vertex 4.5, 1.1, 25.2
+Vertex 3.0, 1.1, 25.2
+Vertex 3.0, 1.1, 0
+Face2 0,1,2,3
+
+[Texture]
+Load platform1tx1.bmp
+Coordinates 0, 0.33, 5
+Coordinates 1, 0.33, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 5
+
+[MeshBuilder]
+Vertex 7.5, 1.1, 0
+Vertex 7.5, 1.1, 2.5
+Vertex 4.5, 1.1, 2.5
+Vertex 4.5, 1.1, 0
+Face2 0,1,2,3
+
+[Texture]
+Load platform1tx1.bmp
+Coordinates 0, 0.66, 0.5
+Coordinates 1, 0.66, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 0.5
+
+[MeshBuilder]
+Vertex 7.5, 1.1, 22.7
+Vertex 7.5, 1.1, 25.2
+Vertex 4.5, 1.1, 25.2
+Vertex 4.5, 1.1, 22.7
+Face2 0,1,2,3
+
+[Texture]
+Load platform1tx1.bmp
+Coordinates 0, 0.66, 0.5
+Coordinates 1, 0.66, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 0.5
+
+[MeshBuilder]
+Vertex 7.5, 1.1, 10
+Vertex 7.5, 1.1, 15
+Vertex 4.5, 1.1, 15
+Vertex 4.5, 1.1, 10
+Face2 0,1,2,3
+
+[Texture]
+Load platform1tx1.bmp
+Coordinates 0, 0.66, 1
+Coordinates 1, 0.66, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 1
+
+;walls
+[MeshBuilder]
+Vertex  4.5,2,10
+Vertex  4.5,-1,10
+Vertex  7.5,-1,10
+Vertex  7.5,2,10
+Face2 0,1,2,3
+color 200,200,200
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0,1,0
+Coordinates 1,0,0
+Coordinates 2,0,1
+Coordinates 3,1,1
+[MeshBuilder]
+Vertex  4.5,2,15
+Vertex  4.5,-1,15
+Vertex  7.5,-1,15
+Vertex  7.5,2,15
+Face2 0,1,2,3
+color 200,200,200
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0,1,0
+Coordinates 1,0,0
+Coordinates 2,0,1
+Coordinates 3,1,1
+[MeshBuilder]
+Vertex  4.5,2,10
+Vertex  4.5,-4,10
+Vertex  4.5,-4,2.5
+Vertex  4.5,2,2.5
+Face2 0,1,2,3
+color 200,200,200
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0,1,0
+Coordinates 1,0,0
+Coordinates 2,0,1
+Coordinates 3,1,1
+[MeshBuilder]
+Vertex  4.5,2,15
+Vertex  4.5,-4,15
+Vertex  4.5,-4,22.5
+Vertex  4.5,2,22.5
+Face2 0,1,2,3
+color 200,200,200
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0,1,0
+Coordinates 1,0,0
+Coordinates 2,0,1
+Coordinates 3,1,1
+
+;Unterführung Boden+Decke
+[MeshBuilder]
+Vertex 7.5,-4,10
+Vertex -4,-4,10
+Vertex -4,-4,15
+Vertex 7.5,-4,15
+Vertex 7.5,-1,10
+Vertex -4,-1,10
+Vertex -4,-1,15
+Vertex 7.5,-1,15
+Face2 0,1,2,3
+Face2 4,5,6,7
+color 150,150,150
+;Unterführung Wand
+[MeshBuilder]
+Vertex 4.5,-4,10
+Vertex -4,-4,10
+Vertex -4,-1,10
+Vertex 4.5,-1,10
+Vertex 4.5,-4,15
+Vertex -4,-4,15
+Vertex -4,-1,15
+Vertex 4.5,-1,15
+Face2 0,1,2,3
+Face2 4,5,6,7
+color 150,150,150
+
+; stairs
+[MeshBuilder]
+Vertex 4.5,1.10,2.50
+Vertex 7.5,1.10,2.50
+Vertex 7.5,0.90,2.50
+Vertex 4.5,0.90,2.50
+Vertex 4.5,0.90,2.80
+Vertex 7.5,0.90,2.80
+Vertex 7.5,0.90,2.50
+
+Vertex 4.5,0.90,2.80
+Vertex 7.5,0.90,2.80
+Vertex 7.5,0.70,2.80
+Vertex 4.5,0.70,2.80
+Vertex 4.5,0.70,3.10
+Vertex 7.5,0.70,3.10
+Vertex 7.5,0.70,2.80
+
+Vertex 4.5,0.70,3.10
+Vertex 7.5,0.70,3.10
+Vertex 7.5,0.50,3.10
+Vertex 4.5,0.50,3.10
+Vertex 4.5,0.50,3.40
+Vertex 7.5,0.50,3.40
+Vertex 7.5,0.50,3.10
+
+Vertex 4.5,0.50,3.40
+Vertex 7.5,0.50,3.40
+Vertex 7.5,0.30,3.40
+Vertex 4.5,0.30,3.40
+Vertex 4.5,0.30,3.70
+Vertex 7.5,0.30,3.70
+Vertex 7.5,0.30,3.40
+
+Vertex 4.5,0.30,3.70
+Vertex 7.5,0.30,3.70
+Vertex 7.5,0.10,3.70
+Vertex 4.5,0.10,3.70
+Vertex 4.5,0.10,4.00
+Vertex 7.5,0.10,4.00
+Vertex 7.5,0.10,3.70
+
+Vertex 4.5,0.10,4.00
+Vertex 7.5,0.10,4.00
+Vertex 7.5,-0.10,4.00
+Vertex 4.5,-0.10,4.00
+Vertex 4.5,-0.10,4.30
+Vertex 7.5,-0.10,4.30
+Vertex 7.5,-0.10,4.00
+
+Vertex 4.5,-0.10,4.30
+Vertex 7.5,-0.10,4.30
+Vertex 7.5,-0.30,4.30
+Vertex 4.5,-0.30,4.30
+Vertex 4.5,-0.30,4.60
+Vertex 7.5,-0.30,4.60
+Vertex 7.5,-0.30,4.30
+
+Vertex 4.5,-0.30,4.60
+Vertex 7.5,-0.30,4.60
+Vertex 7.5,-0.50,4.60
+Vertex 4.5,-0.50,4.60
+Vertex 4.5,-0.50,4.90
+Vertex 7.5,-0.50,4.90
+Vertex 7.5,-0.50,4.60
+
+Vertex 4.5,-0.50,4.90
+Vertex 7.5,-0.50,4.90
+Vertex 7.5,-0.70,4.90
+Vertex 4.5,-0.70,4.90
+Vertex 4.5,-0.70,5.20
+Vertex 7.5,-0.70,5.20
+Vertex 7.5,-0.70,4.90
+
+Vertex 4.5,-0.70,5.20
+Vertex 7.5,-0.70,5.20
+Vertex 7.5,-0.90,5.20
+Vertex 4.5,-0.90,5.20
+Vertex 4.5,-0.90,5.50
+Vertex 7.5,-0.90,5.50
+Vertex 7.5,-0.90,5.20
+
+Vertex 4.5,-0.90,5.50
+Vertex 7.5,-0.90,5.50
+Vertex 7.5,-1.10,5.50
+Vertex 4.5,-1.10,5.50
+Vertex 4.5,-1.10,5.80
+Vertex 7.5,-1.10,5.80
+Vertex 7.5,-1.10,5.50
+
+Vertex 4.5,-1.10,5.80
+Vertex 7.5,-1.10,5.80
+Vertex 7.5,-1.30,5.80
+Vertex 4.5,-1.30,5.80
+Vertex 4.5,-1.30,6.10
+Vertex 7.5,-1.30,6.10
+Vertex 7.5,-1.30,5.80
+
+Vertex 4.5,-1.30,6.10
+Vertex 7.5,-1.30,6.10
+Vertex 7.5,-1.50,6.10
+Vertex 4.5,-1.50,6.10
+Vertex 4.5,-1.50,6.40
+Vertex 7.5,-1.50,6.40
+Vertex 7.5,-1.50,6.10
+
+Vertex 4.5,-1.50,6.40
+Vertex 7.5,-1.50,6.40
+Vertex 7.5,-1.70,6.40
+Vertex 4.5,-1.70,6.40
+Vertex 4.5,-1.70,6.70
+Vertex 7.5,-1.70,6.70
+Vertex 7.5,-1.70,6.40
+
+Vertex 4.5,-1.70,6.70
+Vertex 7.5,-1.70,6.70
+Vertex 7.5,-1.90,6.70
+Vertex 4.5,-1.90,6.70
+Vertex 4.5,-1.90,7.00
+Vertex 7.5,-1.90,7.00
+Vertex 7.5,-1.90,6.70
+
+Vertex 4.5,-1.90,7.00
+Vertex 7.5,-1.90,7.00
+Vertex 7.5,-2.10,7.00
+Vertex 4.5,-2.10,7.00
+Vertex 4.5,-2.10,7.30
+Vertex 7.5,-2.10,7.30
+Vertex 7.5,-2.10,7.00
+
+Vertex 4.5,-2.10,7.30
+Vertex 7.5,-2.10,7.30
+Vertex 7.5,-2.30,7.30
+Vertex 4.5,-2.30,7.30
+Vertex 4.5,-2.30,7.60
+Vertex 7.5,-2.30,7.60
+Vertex 7.5,-2.30,7.30
+
+Vertex 4.5,-2.30,7.60
+Vertex 7.5,-2.30,7.60
+Vertex 7.5,-2.50,7.60
+Vertex 4.5,-2.50,7.60
+Vertex 4.5,-2.50,7.90
+Vertex 7.5,-2.50,7.90
+Vertex 7.5,-2.50,7.60
+
+Vertex 4.5,-2.50,7.90
+Vertex 7.5,-2.50,7.90
+Vertex 7.5,-2.70,7.90
+Vertex 4.5,-2.70,7.90
+Vertex 4.5,-2.70,8.20
+Vertex 7.5,-2.70,8.20
+Vertex 7.5,-2.70,7.90
+
+Vertex 4.5,-2.70,8.20
+Vertex 7.5,-2.70,8.20
+Vertex 7.5,-2.90,8.20
+Vertex 4.5,-2.90,8.20
+Vertex 4.5,-2.90,8.50
+Vertex 7.5,-2.90,8.50
+Vertex 7.5,-2.90,8.20
+
+Vertex 4.5,-2.90,8.50
+Vertex 7.5,-2.90,8.50
+Vertex 7.5,-3.10,8.50
+Vertex 4.5,-3.10,8.50
+Vertex 4.5,-3.10,8.80
+Vertex 7.5,-3.10,8.80
+Vertex 7.5,-3.10,8.50
+
+Vertex 4.5,-3.10,8.80
+Vertex 7.5,-3.10,8.80
+Vertex 7.5,-3.30,8.80
+Vertex 4.5,-3.30,8.80
+Vertex 4.5,-3.30,9.10
+Vertex 7.5,-3.30,9.10
+Vertex 7.5,-3.30,8.80
+
+Vertex 4.5,-3.30,9.10
+Vertex 7.5,-3.30,9.10
+Vertex 7.5,-3.50,9.10
+Vertex 4.5,-3.50,9.10
+Vertex 4.5,-3.50,9.40
+Vertex 7.5,-3.50,9.40
+Vertex 7.5,-3.50,9.10
+
+Vertex 4.5,-3.50,9.40
+Vertex 7.5,-3.50,9.40
+Vertex 7.5,-3.70,9.40
+Vertex 4.5,-3.70,9.40
+Vertex 4.5,-3.70,9.70
+Vertex 7.5,-3.70,9.70
+Vertex 7.5,-3.70,9.40
+
+Vertex 4.5,-3.70,9.70
+Vertex 7.5,-3.70,9.70
+Vertex 7.5,-3.90,9.70
+Vertex 4.5,-3.90,9.70
+Vertex 4.5,-3.90,10.00
+Vertex 7.5,-3.90,10.00
+Vertex 7.5,-3.90,9.70
+
+Face2 0,1,2,3
+Face2 3,4,5,6
+Face2 7,8,9,10
+Face2 10,11,12,13
+Face2 14,15,16,17
+Face2 17,18,19,20
+Face2 21,22,23,24
+Face2 24,25,26,27
+Face2 28,29,30,31
+Face2 31,32,33,34
+Face2 35,36,37,38
+Face2 38,39,40,41
+Face2 42,43,44,45
+Face2 45,46,47,48
+Face2 49,50,51,52
+Face2 52,53,54,55
+Face2 56,57,58,59
+Face2 59,60,61,62
+Face2 63,64,65,66
+Face2 66,67,68,69
+Face2 70,71,72,73
+Face2 73,74,75,76
+Face2 77,78,79,80
+Face2 80,81,82,83
+Face2 84,85,86,87
+Face2 87,88,89,90
+Face2 91,92,93,94
+Face2 94,95,96,97
+Face2 98,99,100,101
+Face2 101,102,103,104
+Face2 105,106,107,108
+Face2 108,109,110,111
+Face2 112,113,114,115
+Face2 115,116,117,118
+Face2 119,120,121,122
+Face2 122,123,124,125
+Face2 126,127,128,129
+Face2 129,130,131,132
+Face2 133,134,135,136
+Face2 136,137,138,139
+Face2 140,141,142,143
+Face2 143,144,145,146
+Face2 147,148,149,150
+Face2 150,151,152,153
+Face2 154,155,156,157
+Face2 157,158,159,160
+Face2 161,162,163,164
+Face2 164,165,166,167
+Face2 168,169,170,171
+Face2 171,172,173,174
+
+color 150,150,150
+
+[MeshBuilder]
+Vertex 4.5,1.10,22.50
+Vertex 7.5,1.10,22.50
+Vertex 7.5,0.90,22.50
+Vertex 4.5,0.90,22.50
+Vertex 4.5,0.90,22.20
+Vertex 7.5,0.90,22.20
+Vertex 7.5,0.90,22.50
+
+Vertex 4.5,0.90,22.20
+Vertex 7.5,0.90,22.20
+Vertex 7.5,0.70,22.20
+Vertex 4.5,0.70,22.20
+Vertex 4.5,0.70,21.90
+Vertex 7.5,0.70,21.90
+Vertex 7.5,0.70,22.20
+
+Vertex 4.5,0.70,21.90
+Vertex 7.5,0.70,21.90
+Vertex 7.5,0.50,21.90
+Vertex 4.5,0.50,21.90
+Vertex 4.5,0.50,21.60
+Vertex 7.5,0.50,21.60
+Vertex 7.5,0.50,21.90
+
+Vertex 4.5,0.50,21.60
+Vertex 7.5,0.50,21.60
+Vertex 7.5,0.30,21.60
+Vertex 4.5,0.30,21.60
+Vertex 4.5,0.30,21.30
+Vertex 7.5,0.30,21.30
+Vertex 7.5,0.30,21.60
+
+Vertex 4.5,0.30,21.30
+Vertex 7.5,0.30,21.30
+Vertex 7.5,0.10,21.30
+Vertex 4.5,0.10,21.30
+Vertex 4.5,0.10,21.00
+Vertex 7.5,0.10,21.00
+Vertex 7.5,0.10,21.30
+
+Vertex 4.5,0.10,21.00
+Vertex 7.5,0.10,21.00
+Vertex 7.5,-0.10,21.00
+Vertex 4.5,-0.10,21.00
+Vertex 4.5,-0.10,20.70
+Vertex 7.5,-0.10,20.70
+Vertex 7.5,-0.10,21.00
+
+Vertex 4.5,-0.10,20.70
+Vertex 7.5,-0.10,20.70
+Vertex 7.5,-0.30,20.70
+Vertex 4.5,-0.30,20.70
+Vertex 4.5,-0.30,20.40
+Vertex 7.5,-0.30,20.40
+Vertex 7.5,-0.30,20.70
+
+Vertex 4.5,-0.30,20.40
+Vertex 7.5,-0.30,20.40
+Vertex 7.5,-0.50,20.40
+Vertex 4.5,-0.50,20.40
+Vertex 4.5,-0.50,20.10
+Vertex 7.5,-0.50,20.10
+Vertex 7.5,-0.50,20.40
+
+Vertex 4.5,-0.50,20.10
+Vertex 7.5,-0.50,20.10
+Vertex 7.5,-0.70,20.10
+Vertex 4.5,-0.70,20.10
+Vertex 4.5,-0.70,19.80
+Vertex 7.5,-0.70,19.80
+Vertex 7.5,-0.70,20.10
+
+Vertex 4.5,-0.70,19.80
+Vertex 7.5,-0.70,19.80
+Vertex 7.5,-0.90,19.80
+Vertex 4.5,-0.90,19.80
+Vertex 4.5,-0.90,19.50
+Vertex 7.5,-0.90,19.50
+Vertex 7.5,-0.90,19.80
+
+Vertex 4.5,-0.90,19.50
+Vertex 7.5,-0.90,19.50
+Vertex 7.5,-1.10,19.50
+Vertex 4.5,-1.10,19.50
+Vertex 4.5,-1.10,19.20
+Vertex 7.5,-1.10,19.20
+Vertex 7.5,-1.10,19.50
+
+Vertex 4.5,-1.10,19.20
+Vertex 7.5,-1.10,19.20
+Vertex 7.5,-1.30,19.20
+Vertex 4.5,-1.30,19.20
+Vertex 4.5,-1.30,18.90
+Vertex 7.5,-1.30,18.90
+Vertex 7.5,-1.30,19.20
+
+Vertex 4.5,-1.30,18.90
+Vertex 7.5,-1.30,18.90
+Vertex 7.5,-1.50,18.90
+Vertex 4.5,-1.50,18.90
+Vertex 4.5,-1.50,18.60
+Vertex 7.5,-1.50,18.60
+Vertex 7.5,-1.50,18.90
+
+Vertex 4.5,-1.50,18.60
+Vertex 7.5,-1.50,18.60
+Vertex 7.5,-1.70,18.60
+Vertex 4.5,-1.70,18.60
+Vertex 4.5,-1.70,18.30
+Vertex 7.5,-1.70,18.30
+Vertex 7.5,-1.70,18.60
+
+Vertex 4.5,-1.70,18.30
+Vertex 7.5,-1.70,18.30
+Vertex 7.5,-1.90,18.30
+Vertex 4.5,-1.90,18.30
+Vertex 4.5,-1.90,18.00
+Vertex 7.5,-1.90,18.00
+Vertex 7.5,-1.90,18.30
+
+Vertex 4.5,-1.90,18.00
+Vertex 7.5,-1.90,18.00
+Vertex 7.5,-2.10,18.00
+Vertex 4.5,-2.10,18.00
+Vertex 4.5,-2.10,17.70
+Vertex 7.5,-2.10,17.70
+Vertex 7.5,-2.10,18.00
+
+Vertex 4.5,-2.10,17.70
+Vertex 7.5,-2.10,17.70
+Vertex 7.5,-2.30,17.70
+Vertex 4.5,-2.30,17.70
+Vertex 4.5,-2.30,17.40
+Vertex 7.5,-2.30,17.40
+Vertex 7.5,-2.30,17.70
+
+Vertex 4.5,-2.30,17.40
+Vertex 7.5,-2.30,17.40
+Vertex 7.5,-2.50,17.40
+Vertex 4.5,-2.50,17.40
+Vertex 4.5,-2.50,17.10
+Vertex 7.5,-2.50,17.10
+Vertex 7.5,-2.50,17.40
+
+Vertex 4.5,-2.50,17.10
+Vertex 7.5,-2.50,17.10
+Vertex 7.5,-2.70,17.10
+Vertex 4.5,-2.70,17.10
+Vertex 4.5,-2.70,16.80
+Vertex 7.5,-2.70,16.80
+Vertex 7.5,-2.70,17.10
+
+Vertex 4.5,-2.70,16.80
+Vertex 7.5,-2.70,16.80
+Vertex 7.5,-2.90,16.80
+Vertex 4.5,-2.90,16.80
+Vertex 4.5,-2.90,16.50
+Vertex 7.5,-2.90,16.50
+Vertex 7.5,-2.90,16.80
+
+Vertex 4.5,-2.90,16.50
+Vertex 7.5,-2.90,16.50
+Vertex 7.5,-3.10,16.50
+Vertex 4.5,-3.10,16.50
+Vertex 4.5,-3.10,16.20
+Vertex 7.5,-3.10,16.20
+Vertex 7.5,-3.10,16.50
+
+Vertex 4.5,-3.10,16.20
+Vertex 7.5,-3.10,16.20
+Vertex 7.5,-3.30,16.20
+Vertex 4.5,-3.30,16.20
+Vertex 4.5,-3.30,15.90
+Vertex 7.5,-3.30,15.90
+Vertex 7.5,-3.30,16.20
+
+Vertex 4.5,-3.30,15.90
+Vertex 7.5,-3.30,15.90
+Vertex 7.5,-3.50,15.90
+Vertex 4.5,-3.50,15.90
+Vertex 4.5,-3.50,15.60
+Vertex 7.5,-3.50,15.60
+Vertex 7.5,-3.50,15.90
+
+Vertex 4.5,-3.50,15.60
+Vertex 7.5,-3.50,15.60
+Vertex 7.5,-3.70,15.60
+Vertex 4.5,-3.70,15.60
+Vertex 4.5,-3.70,15.30
+Vertex 7.5,-3.70,15.30
+Vertex 7.5,-3.70,15.60
+
+Vertex 4.5,-3.70,15.30
+Vertex 7.5,-3.70,15.30
+Vertex 7.5,-3.90,15.30
+Vertex 4.5,-3.90,15.30
+Vertex 4.5,-3.90,15.00
+Vertex 7.5,-3.90,15.00
+Vertex 7.5,-3.90,15.30
+
+Face2 0,1,2,3
+Face2 3,4,5,6
+Face2 7,8,9,10
+Face2 10,11,12,13
+Face2 14,15,16,17
+Face2 17,18,19,20
+Face2 21,22,23,24
+Face2 24,25,26,27
+Face2 28,29,30,31
+Face2 31,32,33,34
+Face2 35,36,37,38
+Face2 38,39,40,41
+Face2 42,43,44,45
+Face2 45,46,47,48
+Face2 49,50,51,52
+Face2 52,53,54,55
+Face2 56,57,58,59
+Face2 59,60,61,62
+Face2 63,64,65,66
+Face2 66,67,68,69
+Face2 70,71,72,73
+Face2 73,74,75,76
+Face2 77,78,79,80
+Face2 80,81,82,83
+Face2 84,85,86,87
+Face2 87,88,89,90
+Face2 91,92,93,94
+Face2 94,95,96,97
+Face2 98,99,100,101
+Face2 101,102,103,104
+Face2 105,106,107,108
+Face2 108,109,110,111
+Face2 112,113,114,115
+Face2 115,116,117,118
+Face2 119,120,121,122
+Face2 122,123,124,125
+Face2 126,127,128,129
+Face2 129,130,131,132
+Face2 133,134,135,136
+Face2 136,137,138,139
+Face2 140,141,142,143
+Face2 143,144,145,146
+Face2 147,148,149,150
+Face2 150,151,152,153
+Face2 154,155,156,157
+Face2 157,158,159,160
+Face2 161,162,163,164
+Face2 164,165,166,167
+Face2 168,169,170,171
+Face2 171,172,173,174
+
+color 150,150,150
+
+;rest
+
+[MeshBuilder]
+Vertex 3, -0.3, 0
+Vertex 7.5, -0.3, 0
+Vertex 7.5, 1.1, 0
+Vertex 3, 1.1, 0
+Face 0,1,2,3
+
+[Texture]
+Load platform1tx2.bmp
+Coordinates 0, 2, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0
+Coordinates 3, 2, 0
+
+[MeshBuilder]
+Vertex 3, -0.3, 25.2
+Vertex 7.5, -0.3, 25.2
+Vertex 7.5, 1.1, 25.2
+Vertex 3, 1.1, 25.2
+Face 3,2,1,0
+
+[Texture]
+Load platform1tx2.bmp
+Coordinates 0, 2, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0
+Coordinates 3, 2, 0
+
+

@@ -1,0 +1,17 @@
+;author=Sanford Mace
+;description=Null Platform for non platform stops
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+;form=CL
+
+[MeshBuilder]
+Vertex -7.5, 1.1, 0
+Vertex -7.5, 1.1, 25.2
+Vertex -3.0, 1.1, 25.2
+Vertex -3.0, 1.1, 0
+Face 0,1,2,3
+Color 0,0,0,1
+
+
+
+
+

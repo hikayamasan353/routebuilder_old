@@ -1,0 +1,101 @@
+;author=mtrkwt,Simon Man,Darwin,Uwe Post
+;description=combined underground ground object (i.e. for stations)
+;copyright=open source, modified for RouteBuilder by Uwe Post
+
+
+
+
+[MeshBuilder]
+Vertex 7, 5, 25.5
+Vertex -3, 5, 25.5
+Vertex -3, -0.5, 25.5
+Vertex 7, 5, -0.5
+Vertex -3, 5, -0.5
+Vertex -3, -0.5, -0.5
+Face2 0, 1, 4, 3
+Face2 1, 2, 5, 4
+Color 30,30,30
+
+[MeshBuilder]
+Vertex 3, 0, 25.5
+Vertex 7, 0, 25.5
+Vertex 7, 5, 25.5
+Vertex 3, 0, -0.5
+Vertex 7, 0, -0.5
+Vertex 7, 5, -0.5
+Face2 0, 1, 4, 3
+Face2 1, 2, 5, 4
+Color 30,30,30
+[MeshBuilder]
+Vertex -2.9,3.2,25.2
+Vertex -2.9,3.2,-0.2
+Vertex -2.9,2.6,-0.2
+Vertex -2.9,2.6,25.2
+Face2 2,1,0,3
+[Texture]
+Load cable_3.bmp
+Coordinates 0, 6, 0
+Coordinates 1, 0, 0
+Coordinates 2, 0, 1
+Coordinates 3, 6, 1
+Transparent 0,0,0
+
+[MeshBuilder]
+Vertex -2.8,2.6,4.6
+Vertex -2.8,2.6,4
+Vertex -2.9,2.35,4
+Vertex -2.9,2.35,4.6
+Face2 2,1,0,3
+[Texture]
+Load light_tube_1.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 0, 0
+Coordinates 2, 0, 1
+Coordinates 3, 1, 1
+Transparent 49,49,49
+
+[MeshBuilder]
+Vertex -2.8,2.6,17
+Vertex -2.8,2.6,16.4
+Vertex -2.9,2.35,16.4
+Vertex -2.9,2.35,17
+Face2 2,1,0,3
+[Texture]
+Load light_tube_1.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 0, 0
+Coordinates 2, 0, 1
+Coordinates 3, 1, 1
+Transparent 49,49,49
+
+[MeshBuilder]
+Vertex -2.9,2.3,25.2
+Vertex -2.9,2.3,-0.2
+Vertex -2.9,1.7,-0.2
+Vertex -2.9,1.7,25.2
+Face2 2,1,0,3
+[Texture]
+Load cable_2.bmp
+Coordinates 0, 6, 0
+Coordinates 1, 0, 0
+Coordinates 2, 0, 1
+Coordinates 3, 6, 1
+Transparent 0,0,0
+
+;down floor
+[MeshBuilder]
+Vertex -5,-0.31,25
+Vertex  5,-0.31,25
+Vertex  5,-0.31, 0
+Vertex -5,-0.31, 0
+Face 0,1,2,3
+Color 0,0,0
+
+;endwall
+[MeshBuilder]
+Vertex -3.,0,0
+Vertex -6,0,0
+Vertex -6,4.8,0
+Vertex -3.,4.8,0
+Face2 3,2,1,0
+Color 0,0,0

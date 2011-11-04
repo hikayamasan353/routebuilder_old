@@ -1,0 +1,81 @@
+;author=Uwe Post
+;description=simple high rise house
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -8,0,-8
+Vertex -8,32,-8
+Vertex 8,32,-8
+Vertex 8,0,-8
+Face 0,1,2,3
+
+[Texture]
+Load house_mod1.bmp
+Coordinates 0,0,16
+Coordinates 1,0,0
+Coordinates 2,-16,0
+Coordinates 3,-16,16
+
+
+[MeshBuilder]
+Vertex -8,0,8
+Vertex -8,32,8
+Vertex 8,32,8
+Vertex 8,0,8
+Face 3,2,1,0
+
+[Texture]
+Load house_mod1.bmp
+Coordinates 0,0,16
+Coordinates 1,0,0
+Coordinates 2,-16,0
+Coordinates 3,-16,16
+
+
+[MeshBuilder]
+Vertex -8,0,8
+Vertex -8,32,8
+Vertex -8,32,-8
+Vertex -8,0,-8
+Face 0,1,2,3
+
+[Texture]
+Load house_mod1.bmp
+Coordinates 0,0,16
+Coordinates 1,0,0
+Coordinates 2,-16,0
+Coordinates 3,-16,16
+
+
+[MeshBuilder]
+Vertex 8,0,8
+Vertex 8,32,8
+Vertex 8,32,-8
+Vertex 8,0,-8
+Face 3,2,1,0
+
+[Texture]
+Load house_mod1.bmp
+Coordinates 0,0,16
+Coordinates 1,0,0
+Coordinates 2,-16,0
+Coordinates 3,-16,16
+
+; dach
+
+
+[MeshBuilder]
+Vertex -8,32,-8
+Vertex 8,32,-8
+Vertex 8,32,8
+Vertex -8,32,8
+Face 3,2,1,0
+
+[Texture]
+Load concrete.bmp
+Coordinates 0,0,4
+Coordinates 1,0,0
+Coordinates 2,2,0
+Coordinates 3,2,4
+
+

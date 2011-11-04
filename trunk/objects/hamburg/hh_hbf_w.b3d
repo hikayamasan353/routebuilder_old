@@ -1,0 +1,129 @@
+;author=Uwe Post
+;description=Hamburg Hbf Westseite
+;copyright=open source
+
+
+[MeshBuilder]
+Vertex -25,6,0
+Vertex -25,25,0
+Vertex 25,25,0
+Vertex 25,6,0
+Face 0,1,2,3
+
+[Texture]
+Load hh_h_innen_west.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+Transparent 0,0,255
+
+[MeshBuilder]
+Vertex -32,12,-0.1
+Vertex -32,25,-0.1
+Vertex 32,25,-0.1
+Vertex 32,12,-0.1
+Face 3,2,1,0
+
+[Texture]
+Load hh_h_aussen_west.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+Transparent 0,0,255
+
+;Dach
+[MeshBuilder]
+Vertex -32,12,-0.1
+Vertex -32,12,20
+Vertex 32,12,20
+Vertex 32,12,-0.1
+Face 0,1,2,3
+color 105,98,105
+
+;Fassade West
+[MeshBuilder]
+Vertex -40,6,20
+Vertex -40,40,20
+Vertex 40,40,20
+Vertex 40,6,20
+Face2 0,1,2,3
+
+[Texture]
+Load hh1.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+Transparent 0,0,255
+
+;Boden
+[MeshBuilder]
+Vertex -40,6,25
+Vertex -40,6,-10
+Vertex 40,6,-10
+Vertex 40,6,25
+Face2 0,1,2,3
+color 0,0,0
+
+;Brücke außen
+[MeshBuilder]
+Vertex -40,6.1,20
+Vertex -40,6.1,25
+Vertex 40,6.1,25
+Vertex 40,6.1,20
+Face 0,1,2,3
+
+[Texture]
+Load ..\grounds\concrete3.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+[MeshBuilder]
+Vertex -40,6.8,25
+Vertex -40,6.1,25
+Vertex 40,6.1,25
+Vertex 40,6.8,25
+Face2 0,1,2,3
+
+[Texture]
+Load ..\fences\ironfence1.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,60,0
+Coordinates 3,60,1
+transparent 0,0,255
+
+[MeshBuilder]
+Vertex -40,6.1,25
+Vertex -40,5,25
+Vertex 40,5,25
+Vertex 40,6.1,25
+Face 0,1,2,3
+
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+
+;Brücke innen
+[MeshBuilder]
+Vertex -40,6.1,-10
+Vertex -40,6.1,0
+Vertex 40,6.1,0
+Vertex 40,6.1,-10
+Face 0,1,2,3
+
+[Texture]
+Load ..\grounds\concrete3.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+

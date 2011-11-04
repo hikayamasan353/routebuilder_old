@@ -1,0 +1,23 @@
+[MeshBuilder]
+Vertex -25, -5, 5
+Vertex -15, 0, 0
+Vertex 15, 0, 0
+Vertex 25, -5, 5
+Vertex -25, 20, 30
+Vertex -15, 25, 25
+Vertex 15, 25, 25
+Vertex 25, 20, 30
+Face 1,0,4,5
+Face 2,1,5,6
+Face 3,2,6,7
+[Texture]
+Load Mt.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0.2, 1
+Coordinates 2, 0.8, 1
+Coordinates 3, 1, 1
+Coordinates 4, 0, 0
+Coordinates 5, 0.2, 0
+Coordinates 6, 0.8, 0
+Coordinates 7, 1, 0
+Transparent 0, 0, 255

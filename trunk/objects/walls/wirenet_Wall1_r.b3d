@@ -1,0 +1,81 @@
+;author=Lemontea(original),smace(modifier)
+;description=25 meter cylinder supporting wire net(as wall)
+;copyright=Open Source
+
+
+
+[MESHBUILDER]
+vertex 2.8,-.4,-.5
+Vertex 2.8,2,-.5
+Vertex 2.8,2,25.5
+Vertex 2.8,-.4,25.5
+Face2 0,1,2,3
+
+[TEXTURE]
+Load wirenet2.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,10,0
+Coordinates 3,10,1
+Transparent 255,255,255
+
+[MeshBuilder]
+Cylinder 4, 0.05, 0.05, 2.4
+Translate 2.8, .8, 0
+Color 125, 125, 125, 255
+
+[MeshBuilder]
+Cylinder 4, 0.05, 0.05, 2.4
+Translate 2.8, .8, 2.5
+Color 125, 125, 125, 255
+
+[MeshBuilder]
+Cylinder 4, 0.05, 0.05, 2.4
+Translate 2.8, .8, 5
+Color 125, 125, 125, 255
+
+[MeshBuilder]
+Cylinder 4, 0.05, 0.05, 2.4
+Translate 2.8, .8, 7.5
+Color 125, 125, 125, 255
+
+[MeshBuilder]
+Cylinder 4, 0.05, 0.05, 2.4
+Translate 2.8, .8, 10
+Color 125, 125, 125, 255
+
+[MeshBuilder]
+Cylinder 4, 0.05, 0.05, 2.4
+Translate 2.8, .8, 12.5
+Color 125, 125, 125, 255
+
+[MeshBuilder]
+Cylinder 4, 0.05, 0.05, 2.4
+Translate 2.8, .8, 15
+Color 125, 125, 125, 255
+
+[MeshBuilder]
+Cylinder 4, 0.05, 0.05, 2.4
+Translate 2.8, .8, 17.5
+Color 125, 125, 125, 255
+
+[MeshBuilder]
+Cylinder 4, 0.05, 0.05, 2.4
+Translate 2.8, .8, 20
+Color 125, 125, 125, 255
+
+[MeshBuilder]
+Cylinder 4, 0.05, 0.05, 2.4
+Translate 2.8, .8, 22.5
+Color 125, 125, 125, 255
+
+[MeshBuilder]
+Cylinder 4, 0.05, 0.05, 2.4
+Translate 2.8, .8, 25
+Color 125, 125, 125, 255
+
+[MeshBuilder]
+Cylinder 4, 0.05, 0.05, 25
+Rotate 1, 0, 0, 90
+Translate 2.8, 2, 12.5
+Color 125, 125, 125, 255

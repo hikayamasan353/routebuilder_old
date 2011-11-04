@@ -1,0 +1,239 @@
+;author=Uwe Post
+;description=Catenary Pole DB (Germany) "Turmmast" for 3 tracks, set at rightmost track
+;copyright=open source
+
+
+; Mast rechts
+[MeshBuilder]
+Vertex 2.1, 10,-0.2
+Vertex 2.1, 10,0.2
+Vertex 2.4, 10,0.2
+Vertex 2.4, 10,-0.2
+Face 0,1,2,3
+Color 88,120,79
+
+[MeshBuilder]
+Vertex 2.1, 10, -0.2
+Vertex 2.4, 10, -0.2
+Vertex 2.5,0,-0.4
+vertex 2,0,-0.4
+Face 0,1,2,3
+
+[Texture]
+Load pole3.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 2
+Coordinates 3, 0, 2
+Transparent 0, 0, 255
+
+[MeshBuilder]
+Vertex 2.1, 10,0.2 
+Vertex 2.1, 10,-0.2
+Vertex 2,0,-0.4
+vertex 2,0,0.4
+Face 0,1,2,3
+
+[Texture]
+Load pole3.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 2
+Coordinates 3, 0, 2
+Transparent 0, 0, 255
+
+[MeshBuilder]
+Vertex 2.1, 10, 0.2
+Vertex 2.4, 10, 0.2
+Vertex 2.5,0,0.4
+vertex 2,0,0.4
+Face 3,2,1,0
+
+[Texture]
+Load pole3.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 2
+Coordinates 3, 0, 2
+Transparent 0, 0, 255
+
+[MeshBuilder]
+Vertex 2.4, 10,0.2 
+Vertex 2.4, 10,-0.2
+Vertex 2.5,0,-0.4
+vertex 2.5,0,0.4
+Face 3,2,1,0
+
+[Texture]
+Load pole3.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 2
+Coordinates 3, 0, 2
+Transparent 0, 0, 255
+
+
+[MeshBuilder]
+cube 0.5,0.5,0.5
+translate 2.25	,0,0
+Color 160,160,160
+
+
+; Mast links
+[MeshBuilder]
+Vertex -10.1, 10,-0.2
+Vertex -10.1, 10,0.2
+Vertex -10.4, 10,0.2
+Vertex -10.4, 10,-0.2
+Face 3,2,1,0
+Color 88,120,79
+
+[MeshBuilder]
+Vertex -10.1, 10, -0.2
+Vertex -10.4, 10, -0.2
+Vertex -10.5,0,-0.4
+vertex -10,0,-0.4
+Face 3,2,1,0
+[Texture]
+Load pole3.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 2
+Coordinates 3, 0, 2
+Transparent 0, 0, 255
+
+[MeshBuilder]
+Vertex -10.1, 10,0.2 
+Vertex -10.1, 10,-0.2
+Vertex -10,0,-0.4
+vertex -10,0,0.4
+Face 3,2,1,0
+[Texture]
+Load pole3.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 2
+Coordinates 3, 0, 2
+Transparent 0, 0, 255
+
+[MeshBuilder]
+Vertex -10.1, 10, 0.2
+Vertex -10.4, 10, 0.2
+Vertex -10.5,0,0.4
+vertex -10,0,0.4
+Face 0,1,2,3
+[Texture]
+Load pole3.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 2
+Coordinates 3, 0, 2
+Transparent 0, 0, 255
+
+[MeshBuilder]
+Vertex -10.4, 10,0.2 
+Vertex -10.4, 10,-0.2
+Vertex -10.5,0,-0.4
+vertex -10.5,0,0.4
+Face 0,1,2,3
+[Texture]
+Load pole3.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 2
+Coordinates 3, 0, 2
+Transparent 0, 0, 255
+
+
+[MeshBuilder]
+cube 0.5,0.5,0.5
+translate -10.25	,0,0
+Color 160,160,160
+
+
+
+; Quertragwerk
+; horizontal, mitte
+[MeshBuilder]
+Cylinder 8,0.02,0.02,12
+rotate 0,0,1,90
+translate -4,7,0
+color 100,100,100
+
+; horizontal, unten
+[MeshBuilder]
+Cylinder 8,0.02,0.02,12
+rotate 0,0,1,90
+translate -4,6.1,0
+color 100,100,100
+
+
+
+; oben, rechts
+[MeshBuilder]
+Cylinder 8,0.02,0.02,2.5
+rotate 0,0,1,125
+translate 1,9.15,0
+color 100,100,100
+; vertikal, hauptgleis
+[MeshBuilder]
+Cylinder 8,0.02,0.02,2.4
+translate 0,7.25,0
+color 100,100,100
+
+;Hänger Hauptgleis
+[MeshBuilder]
+Cylinder 8,0.02,0.02,0.5
+rotate 0,0,1,95
+translate 0.25,6.05,0
+color 100,100,100
+
+;oben, mitte
+[MeshBuilder]
+Cylinder 8,0.02,0.02,4.15
+rotate 0,0,1,100
+translate -2,8.1,0
+color 100,100,100
+; vertikal, linkes gleis
+[MeshBuilder]
+Cylinder 8,0.02,0.02,1.7
+translate -4,6.95,0
+color 100,100,100
+
+;oben, mitte links
+[MeshBuilder]
+Cylinder 8,0.02,0.02,4.15
+rotate 0,0,1,80
+translate -6,8.1,0
+color 100,100,100
+
+
+;Hänger Nebengleis 1
+[MeshBuilder]
+Cylinder 8,0.02,0.02,0.5
+rotate 0,0,1,95
+translate -3.75,6.05,0
+color 100,100,100
+
+
+
+
+; oben, links
+[MeshBuilder]
+Cylinder 8,0.02,0.02,2.5
+rotate 0,0,1,55
+translate -9,9.15,0
+color 100,100,100
+; vertikal, hauptgleis
+[MeshBuilder]
+Cylinder 8,0.02,0.02,2.4
+translate -8,7.25,0
+color 100,100,100
+
+;Hänger nebengleis 3
+[MeshBuilder]
+Cylinder 8,0.02,0.02,0.5
+rotate 0,0,1,95
+translate -7.75,6.05,0
+color 100,100,100
+

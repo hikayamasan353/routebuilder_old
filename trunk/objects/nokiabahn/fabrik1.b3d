@@ -1,0 +1,97 @@
+;author=Uwe Post
+;description=Fabrik in Bochum
+;copyright=open source
+
+
+[MeshBuilder]
+Vertex 0, 7.8, 0
+Vertex 20, 7.8, 0
+Vertex 20, 0, 0
+Vertex 0, 0, 0
+Face 0,1,2,3
+
+
+[Texture]
+Load fabrikfassade2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+
+[MeshBuilder]
+Vertex 0, 7.8, 10
+Vertex 20, 7.8,10
+Vertex 20, 0, 10
+Vertex 0, 0, 10
+Face 3,2,1,0
+
+[Texture]
+Load fabrikfassade2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+
+
+[MeshBuilder]
+Vertex 20, 10, 0
+Vertex 20, 10, 10
+Vertex 20, 0, 10
+Vertex 20, 0, 0
+Face 0,1,2,3
+
+
+[Texture]
+Load fabrikfassade1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+transparent 4,2,252
+
+[MeshBuilder]
+Vertex 0, 10, 0
+Vertex 0, 10,10
+Vertex 0, 0, 10
+Vertex 0, 0, 0
+Face 3,2,1,0
+
+[Texture]
+Load fabrikfassade1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+transparent 4,2,252
+
+
+[MeshBuilder]
+Vertex 20.2,9.9,5
+Vertex -0.2,9.9,5
+Vertex -0.2,7.8,0
+Vertex 20.2,7.8,0
+Face 3,2,1,0
+
+[Texture]
+Load ..\buildings\dachziegel2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 20, 0
+Coordinates 2, 20, 10
+Coordinates 3, 0, 10
+
+[MeshBuilder]
+Vertex 20.2,9.9,5
+Vertex -0.2,9.9,5
+Vertex -0.2,7.8,10
+Vertex 20.2,7.8,10
+Face 0,1,2,3
+
+[Texture]
+Load ..\buildings\dachziegel2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 20, 0
+Coordinates 2, 20, 10
+Coordinates 3, 0, 10
+

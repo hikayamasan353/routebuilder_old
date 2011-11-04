@@ -1,0 +1,12 @@
+;author=Uwe Post
+;description=Platform right
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+;form=R
+
+[MeshBuilder]
+Vertex -1.8, 1.1, 0
+Vertex -1.8, 1.1, 25.2
+Vertex -3.0, 1.1, 25.2
+Vertex -3.0, 1.1, 0
+Face     3, 2, 1, 0
+color 0,0,0,1

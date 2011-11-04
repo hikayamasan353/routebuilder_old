@@ -1,0 +1,115 @@
+;author=Uwe Post
+;description=set of trees
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex 6, 24, 0
+Vertex 6, -0.1, 0
+Vertex -6, -0.1, 0
+Vertex -6, 24, 0
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load tree1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+
+
+
+[MeshBuilder]
+Vertex 8, 24, 14
+Vertex 8, -0.1, 14
+Vertex -4, -0.1, 14
+Vertex -4, 24, 14
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load tree2.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+
+
+
+
+[MeshBuilder]
+Vertex 9, 24, 25
+Vertex 9, -0.1, 25
+Vertex -3, -0.1, 25
+Vertex -3, 24, 25
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load tree2.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+
+
+
+[MeshBuilder]
+Vertex 4, 24, -10
+Vertex 4, -0.1, -10
+Vertex -8, -0.1, -10
+Vertex -8, 24, -10
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load tree1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+
+
+
+
+
+
+[MeshBuilder]
+Vertex -3, 6, -8
+Vertex -3, -0.1, -8
+Vertex -9, -0.1, -8
+Vertex -9, 6, -8
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load bush1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+

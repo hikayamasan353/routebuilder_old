@@ -1,0 +1,105 @@
+;author=Uwe Post
+;description=cows
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -1, 2,0
+Vertex 1, 2,0
+Vertex 1, 0,0
+Vertex -1, 0,0
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load kuh1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+transparent 0,255,0
+
+
+[MeshBuilder]
+Vertex 2, 2,2
+Vertex 4, 2,2.2
+Vertex 4, 0,2.2
+Vertex 2, 0,2
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load kuh1.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 0, 0
+Coordinates 2, 0, 1
+Coordinates 3, 1, 1
+transparent 0,255,0
+
+
+[MeshBuilder]
+Vertex -2, 2,5
+Vertex -3.5, 2,5.8
+Vertex -3.5, 0,5.8
+Vertex -2, 0,5
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load kuh1.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 0, 0
+Coordinates 2, 0, 1
+Coordinates 3, 1, 1
+transparent 0,255,0
+
+
+[MeshBuilder]
+Vertex 5, 2,9
+Vertex 6.5, 2,9.8
+Vertex 6.5, 0,9.8
+Vertex 5, 0,9
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load kuh1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+transparent 0,255,0
+
+
+[MeshBuilder]
+Vertex -8, 2,9
+Vertex -6, 2,9
+Vertex -6, 0,9
+Vertex -8, 0,9
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load kuh1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+transparent 0,255,0
+
+
+[MeshBuilder]
+Vertex -5, 2,2
+Vertex -3.5, 2,1.2
+Vertex -3.5, 0,1.2
+Vertex -5, 0,2
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load kuh1.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 0, 0
+Coordinates 2, 0, 1
+Coordinates 3, 1, 1
+transparent 0,255,0
+

@@ -1,0 +1,9 @@
+[General]
+Name=routeinstaller
+Project=1
+[Classes]
+Count=4
+Class0="TRouteinstaller_Main","TForm","ri_main","0","E:\Projekte\Develop\RouteBuilder\routeinstaller\ri_main.pas"
+Class1="TRouteInstaller_Install","TForm","ri_progress","0","E:\Projekte\Develop\RouteBuilder\routeinstaller\ri_progress.pas"
+Class2="TRouteinstaller_Wait","TForm","ri_wait","0","E:\Projekte\Develop\RouteBuilder\routeinstaller\ri_wait.pas"
+Class3="TRouteInstaller_BveFolder","TForm","ri_BveFolder","0","E:\Projekte\Develop\RouteBuilder\routeinstaller\ri_BveFolder.pas"

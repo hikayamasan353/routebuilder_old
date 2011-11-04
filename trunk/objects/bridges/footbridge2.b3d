@@ -1,0 +1,327 @@
+;author=Uwe Post
+;description=small bridge
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -10, 7.5, 4
+Vertex 10, 7.5, 4
+Vertex 10, 7.5, 0
+Vertex -10, 7.5, 0
+Vertex -10, 6.5, 4
+Vertex 10, 6.5, 4
+Vertex 10, 6.5, 0
+Vertex -10, 6.5, 0
+Face 0, 1, 2, 3
+Face 7,6,5,4
+Face 6,7,3,2
+Face 4,5,1,0
+Face 7,4,0,3
+Face 5,6,2,1
+
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 2
+Coordinates 0, 0, 2
+
+; Steigung links
+[MeshBuilder]
+Vertex -10,7.5,4
+Vertex -6,7.5,4
+Vertex -6,0,50
+Vertex -10,0,50
+Vertex -10,6.5,4
+Vertex -6,6.5,4
+Vertex -6,-1,50
+Vertex -10,-1,50
+Face 3,2,1,0
+Face 4,5,6,7
+Face 2,3,7,6
+Face 3,0,4,7
+Face 1,2,6,5
+
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 1, 1, 0
+Coordinates 2, 1, 2
+Coordinates 3, 0, 2
+Coordinates 0, 0, 0
+
+; Steigung links
+[MeshBuilder]
+Vertex 10,7.5,4
+Vertex 6,7.5,4
+Vertex 6,0,50
+Vertex 10,0,50
+Vertex 10,6.5,4
+Vertex 6,6.5,4
+Vertex 6,-1,50
+Vertex 10,-1,50
+Face 0,1,2,3
+Face 7,6,5,4
+Face 6,7,3,2
+Face 7,4,0,3
+Face 5,6,2,1
+
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 1, 1, 0
+Coordinates 2, 1, 2
+Coordinates 3, 0, 2
+Coordinates 0, 0, 0
+
+; Zaun
+[MeshBuilder]
+Vertex -10, 8.5, 0
+Vertex 10, 8.5, 0
+Vertex 10, 7.5, 0
+Vertex -10, 7.5, 0
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load ..\fences\ironfence1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 10, 0
+Coordinates 2, 10, 1
+Coordinates 3, 0, 1
+transparent 0,0,255
+
+; Zaun
+[MeshBuilder]
+Vertex -6, 8.5, 4
+Vertex 6, 8.5, 4
+Vertex 6, 7.5, 4
+Vertex -6, 7.5, 4
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load ..\fences\ironfence1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 6, 0
+Coordinates 2, 6, 1
+Coordinates 3, 0, 1
+transparent 0,0,255
+
+; Zaun
+[MeshBuilder]
+Vertex -10, 8.5, 4
+Vertex -10, 8.5, 0
+Vertex -10, 7.5, 0
+Vertex -10, 7.5, 4
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load ..\fences\ironfence1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 2, 0
+Coordinates 2, 2, 1
+Coordinates 3, 0, 1
+transparent 0,0,255
+
+; Zaun
+[MeshBuilder]
+Vertex 10, 8.5, 4
+Vertex 10, 8.5, 0
+Vertex 10, 7.5, 0
+Vertex 10, 7.5, 4
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load ..\fences\ironfence1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 2, 0
+Coordinates 2, 2, 1
+Coordinates 3, 0, 1
+transparent 0,0,255
+
+; Zaun
+[MeshBuilder]
+Vertex 10, 8.5, 4
+Vertex 10, 1, 50
+Vertex 10, 0, 50
+Vertex 10, 7.5, 4
+Face 0, 1, 2, 3
+Face 3,2,1,0´
+
+
+[Texture]
+Load ..\fences\ironfence1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 23, 0
+Coordinates 2, 23, 1
+Coordinates 3, 0, 1
+transparent 0,0,255
+
+[MeshBuilder]
+Vertex 6, 8.5, 4
+Vertex 6, 1, 50
+Vertex 6, 0, 50
+Vertex 6, 7.5, 4
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load ..\fences\ironfence1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 23, 0
+Coordinates 2, 23, 1
+Coordinates 3, 0, 1
+transparent 0,0,255
+
+
+; Zaun
+[MeshBuilder]
+Vertex -10, 8.5, 4
+Vertex -10, 1, 50
+Vertex -10, 0, 50
+Vertex -10, 7.5, 4
+Face 0, 1, 2, 3
+Face 3,2,1,0´
+
+
+[Texture]
+Load ..\fences\ironfence1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 23, 0
+Coordinates 2, 23, 1
+Coordinates 3, 0, 1
+transparent 0,0,255
+
+[MeshBuilder]
+Vertex -6, 8.5, 4
+Vertex -6, 1, 50
+Vertex -6, 0, 50
+Vertex -6, 7.5, 4
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load ..\fences\ironfence1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 23, 0
+Coordinates 2, 23, 1
+Coordinates 3, 0, 1
+transparent 0,0,255
+
+
+;Saeule1
+[MeshBuilder]
+Vertex -9, -10, 0.5
+Vertex -9, 6.5, 0.5
+Vertex -7, 6.5, 0.5
+Vertex -7, -10, 0.5
+Face 0,1,2,3
+
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex -9, -10, 3.5
+Vertex -9, 6.5, 3.5
+Vertex -7, 6.5, 3.5
+Vertex -7, -10, 3.5
+Face 3,2,1,0
+
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex -9, -10, 0.5
+Vertex -9, 6.5, 0.5
+Vertex -9, 6.5, 3.5
+Vertex -9, -10, 3.5
+Face 3,2,1,0
+
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex -7, -10, 0.5
+Vertex -7, 6.5, 0.5
+Vertex -7, 6.5, 3.5
+Vertex -7, -10, 3.5
+Face 0,1,2,3
+
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+;Saeule2
+[MeshBuilder]
+Vertex 9, -10, 0.5
+Vertex 9, 6.5, 0.5
+Vertex 7, 6.5, 0.5
+Vertex 7, -10, 0.5
+Face 3,2,1,0
+
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex 9, -10, 3.5
+Vertex 9, 6.5, 3.5
+Vertex 7, 6.5, 3.5
+Vertex 7, -10, 3.5
+Face 0,1,2,3
+
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex 9, -10, 0.5
+Vertex 9, 6.5, 0.5
+Vertex 9, 6.5, 3.5
+Vertex 9, -10, 3.5
+Face 0,1,2,3
+
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex 7, -10, 0.5
+Vertex 7, 6.5, 0.5
+Vertex 7, 6.5, 3.5
+Vertex 7, -10, 3.5
+Face 3,2,1,0
+
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+
+

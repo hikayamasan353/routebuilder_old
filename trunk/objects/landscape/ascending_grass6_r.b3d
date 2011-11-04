@@ -1,0 +1,18 @@
+;description=ascending ground (right side)
+;author=Uwe Post
+;copyright=the BVE RouteBuilder team 2004, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -3  , -12, -1
+Vertex 120, -12, -1
+Vertex 120, -0.401, 26
+Vertex -3  , -0.401, 26
+Face 3,2,1,0
+
+[Texture]
+Load ..\grounds\grass6.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+

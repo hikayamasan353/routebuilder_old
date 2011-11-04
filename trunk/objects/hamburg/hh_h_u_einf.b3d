@@ -1,0 +1,161 @@
+;author=Uwe Post
+;description=Ausfahrt City-S-Bahn-Tunnel Hbf
+;copyright=Uwe Post
+
+
+
+;Überwand
+[MeshBuilder]
+Vertex 2.5, 5, 0
+Vertex -2.5, 5, 0
+Vertex -2.5, 6, 0
+Vertex 2.5, 6, 0
+Face 0,1,2,3
+[Texture]
+Load hh_graffiti_wand1.bmp
+Coordinates 0, 1, 0.1
+Coordinates 1, 0, 0.1
+Coordinates 2, 0, 0
+Coordinates 3, 1, 0
+
+[MeshBuilder]
+Vertex 2.5, 7, 0.2
+Vertex -2.2, 7, 0.2
+Vertex -2.2, 6, 0.2
+Vertex 2.5, 6, 0.2
+Face2 0,1,2,3
+
+[Texture]
+Load ..\fences\ironfence1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 5, 0
+Coordinates 2, 5, 1
+Coordinates 3, 0, 1
+transparent 0,0,255
+
+
+
+[MeshBuilder]
+Vertex -2.5, 0, 0
+Vertex -2.2, 0, 0
+Vertex -2.2, 6, 0
+Vertex -2.5, 6, 0
+Face2 0,1,2,3
+[Texture]
+Load hh_graffiti_wand1.bmp
+Coordinates 0, 1, 0.5
+Coordinates 1, 0, 0.5
+Coordinates 2, 0, 0
+Coordinates 3, 1, 0
+
+
+[MeshBuilder]
+Vertex 2.5, 0, 0
+Vertex 2.2, 0, 0
+Vertex 2.2, 6, 0
+Vertex 2.5, 6, 0
+Face2 0,1,2,3
+[Texture]
+Load hh_graffiti_wand1.bmp
+Coordinates 0, 1, 0.5
+Coordinates 1, 0, 0.5
+Coordinates 2, 0, 0
+Coordinates 3, 1, 0
+
+
+[MeshBuilder]
+Vertex 2.2, -1, 0
+Vertex 2.2, -1, 25
+Vertex 2.2, 6, 25
+Vertex 2.2, 6, 0
+Face2 0,1,2,3
+[Texture]
+Load hh_graffiti_wand1.bmp
+Coordinates 0, 1, 0.5
+Coordinates 1, 0, 0.5
+Coordinates 2, 0, 0
+Coordinates 3, 1, 0
+
+[MeshBuilder]
+Vertex -2.2, -1, 0
+Vertex -2.2, -1, 25
+Vertex -2.2, 6, 25
+Vertex -2.2, 6, 0
+Face2 0,1,2,3
+[Texture]
+Load hh_graffiti_wand1.bmp
+Coordinates 0, 1, 0.5
+Coordinates 1, 0, 0.5
+Coordinates 2, 0, 0
+Coordinates 3, 1, 0
+
+[MeshBuilder]
+Vertex -2.2, 6, 0
+Vertex -2.2, 6, 25
+Vertex 2.2, 6, 25
+Vertex 2.2, 6, 0
+Face2 0,1,2,3
+[Texture]
+Load ..\grounds\grass6.bmp
+Coordinates 0, 1, 0.1
+Coordinates 1, 0, 0.1
+Coordinates 2, 0, 0
+Coordinates 3, 1, 0
+
+[MeshBuilder]
+Vertex 6.2, 5, 0
+Vertex 6.2, 5, 25
+Vertex 2.2, 6, 25
+Vertex 2.2, 6, 0
+Face2 0,1,2,3
+[Texture]
+Load ..\grounds\grass6.bmp
+Coordinates 0, 1, 0.5
+Coordinates 1, 0, 0.5
+Coordinates 2, 0, 0
+Coordinates 3, 1, 0
+
+
+[MeshBuilder]
+Vertex 6.2, -1, -20
+Vertex 2.2, -1, 1
+Vertex 2.2, 6, 1
+Vertex 6.2, 6, -20
+Face2 0,1,2,3
+rotate 1,0,0,-10
+[Texture]
+Load hh_graffiti_wand1.bmp
+Coordinates 0, 1, 0.5
+Coordinates 1, 0, 0.5
+Coordinates 2, 0, 0
+Coordinates 3, 1, 0
+
+
+[MeshBuilder]
+Vertex 6.2, 5, 0
+Vertex 6.2, 5, 25
+Vertex 2.2, 6, 25
+Vertex 2.2, 6, 0
+Face2 0,1,2,3
+[Texture]
+Load ..\grounds\grass6.bmp
+Coordinates 0, 1, 0.5
+Coordinates 1, 0, 0.5
+Coordinates 2, 0, 0
+Coordinates 3, 1, 0
+
+[MeshBuilder]
+Vertex 6.2, 5, 0
+Vertex 6.2, 1.5, -20
+Vertex 6.2, 1.5, -20
+Vertex 2.2, 6, 0
+Face2 0,1,2,3
+[Texture]
+Load ..\grounds\grass6.bmp
+Coordinates 0, 1, 0.1
+Coordinates 1, 0, 0.1
+Coordinates 2, 0, 0
+Coordinates 3, 1, 0
+
+
+

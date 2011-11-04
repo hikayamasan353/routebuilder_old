@@ -1,0 +1,33 @@
+;author=Uwe Post
+;description=simple grass3 dike low
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -2.5, -0.3, -1
+Vertex -2.5, -0.3, 26
+Vertex -3.7, -0.3, 26
+Vertex -3.7, -0.3, -1
+Face2 3,2,1,0
+
+[Texture]
+Load ..\grounds\grass3.bmp
+Coordinates 0, 0.5, 0
+Coordinates 1, 0.5, 1
+Coordinates 2, 0, 1
+Coordinates 3, 0, 0
+
+[MeshBuilder]
+Vertex -3.7, -0.3, -1
+Vertex -3.7, -0.3, 26
+Vertex -15  , -11  , 26
+Vertex -15  , -11  , -1
+Face2 3,2,1,0
+
+[Texture]
+Load ..\grounds\grass3.bmp
+Coordinates 0, 4, 0
+Coordinates 1, 4, 1
+Coordinates 2, 0, 1
+Coordinates 3, 0, 0
+
+

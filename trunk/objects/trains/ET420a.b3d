@@ -1,0 +1,212 @@
+;description=S-Bahn-Triebwagen der DB Br. 420
+;author=Rainer Hübner
+;copyright=RouteBuilder Object Library License
+
+[Meshbuilder]
+Vertex -0.5, 0, -1.5
+Vertex -0.5, 1.2, -1.5
+Vertex -0.5, 1.2, -4.5
+Vertex -0.5, 0, -4.5
+Face 0, 1, 2, 3
+[Texture]
+Load ET4201.bmp
+Coordinates 0, 0, 0.875
+Coordinates 1, 0, 0
+Coordinates 2, 0.539063, 0
+Coordinates 3, 0.539063, 0.875
+Transparent 0, 0, 0
+[Meshbuilder]
+Vertex 1.5, 0, -4.5
+Vertex 1.5, 1.2, -4.5
+Vertex 1.5, 1.2, -1.5
+Vertex 1.5, 0, -1.5
+Face 0, 1, 2, 3
+[Texture]
+Load ET4201.bmp
+Coordinates 0, 0, 0.875
+Coordinates 1, 0, 0
+Coordinates 2, 0.539063, 0
+Coordinates 3, 0.539063, 0.875
+Transparent 0, 0, 0
+[Meshbuilder]
+Vertex -0.5, 0, -4.5
+Vertex -0.5, 1.2, -4.5
+Vertex 1.5, 1.2, -4.5
+Vertex 1.5, 0, -4.5
+Face 0, 1, 2, 3
+[Texture]
+Load ET4201.bmp
+Coordinates 0, 0.101563, 0.4375
+Coordinates 1, 0.101563, 0
+Coordinates 2, 0.460938, 0
+Coordinates 3, 0.460938, 0.4375
+Transparent 0, 0, 0
+[Meshbuilder]
+Vertex 1.5, 0, -1.5
+Vertex 1.5, 1.2, -1.5
+Vertex -0.5, 1.2, -1.5
+Vertex -0.5, 0, -1.5
+Face 0, 1, 2, 3
+[Texture]
+Load ET4201.bmp
+Coordinates 0, 0.09375, 0.40625
+Coordinates 1, 0.09375, 0.03125
+Coordinates 2, 0.453125, 0.03125
+Coordinates 3, 0.453125, 0.40625
+Transparent 0, 0, 0
+[Meshbuilder]
+Vertex -0.5, 0, -18.5
+Vertex -0.5, 1.2, -18.5
+Vertex -0.5, 1.2, -21.5
+Vertex -0.5, 0, -21.5
+Face 0, 1, 2, 3
+[Texture]
+Load ET4202.bmp
+Coordinates 0, 0, 0.875
+Coordinates 1, 0, 0
+Coordinates 2, 0.539063, 0
+Coordinates 3, 0.539063, 0.875
+Transparent 0, 0, 0
+[Meshbuilder]
+Vertex 1.5, 0, -21.5
+Vertex 1.5, 1.2, -21.5
+Vertex 1.5, 1.2, -18.5
+Vertex 1.5, 0, -18.5
+Face 0, 1, 2, 3
+[Texture]
+Load ET4202.bmp
+Coordinates 0, 0, 0.875
+Coordinates 1, 0, 0
+Coordinates 2, 0.539063, 0
+Coordinates 3, 0.539063, 0.875
+Transparent 0, 0, 0
+[Meshbuilder]
+Vertex -0.5, 0, -21.5
+Vertex -0.5, 1.2, -21.5
+Vertex 1.5, 1.2, -21.5
+Vertex 1.5, 0, -21.5
+Face 0, 1, 2, 3
+[Texture]
+Load ET4202.bmp
+Coordinates 0, 0.101563, 0.4375
+Coordinates 1, 0.101563, 0
+Coordinates 2, 0.460938, 0
+Coordinates 3, 0.460938, 0.4375
+Transparent 0, 0, 0
+[Meshbuilder]
+Vertex 1.5, 0, -18.5
+Vertex 1.5, 1.2, -18.5
+Vertex -0.5, 1.2, -18.5
+Vertex -0.5, 0, -18.5
+Face 0, 1, 2, 3
+[Texture]
+Load ET4202.bmp
+Coordinates 0, 0.09375, 0.40625
+Coordinates 1, 0.09375, 0.03125
+Coordinates 2, 0.453125, 0.03125
+Coordinates 3, 0.453125, 0.40625
+Transparent 0, 0, 0
+[Meshbuilder]
+Vertex 2, 0.8, -23
+Vertex 2, 3.3, -23
+Vertex 1.999999, 3.3, 0
+Vertex 1.999999, 0.8, 0
+Face 0, 1, 2, 3
+[Texture]
+Load ET4203.bmp
+Coordinates 0, 0.082031, 0.300781
+Coordinates 1, 0.082031, 0.042969
+Coordinates 2, 0.539063, 0.042969
+Coordinates 3, 0.539063, 0.300781
+Transparent 0, 0, 0
+[Meshbuilder]
+Vertex -1.000001, 0.8, 0
+Vertex -1.000001, 3.3, 0
+Vertex -1, 3.3, -23
+Vertex -1, 0.8, -23
+Face 0, 1, 2, 3
+[Texture]
+Load ET4203.bmp
+Coordinates 0, 0.539063, 0.300781
+Coordinates 1, 0.539063, 0.042969
+Coordinates 2, 0.082031, 0.042969
+Coordinates 3, 0.082031, 0.300781
+Transparent 0, 0, 0
+[Meshbuilder]
+Vertex 1.999999, 3.4, 0
+Vertex -1.000001, 3.4, 0
+Vertex -1.000001, 0.8, 0
+Vertex 1.999999, 0.8, 0
+Face 0, 1, 2, 3
+[Texture]
+Load ET4203.bmp
+Coordinates 0, 0.005371, 0.3125
+Coordinates 1, 0.078613, 0.3125
+Coordinates 2, 0.078613, 0.595703
+Coordinates 3, 0.005371, 0.595703
+Transparent 0, 0, 0
+[Meshbuilder]
+Vertex 2, 3.3, -22.700001
+Vertex -1, 3.3, -22.700001
+Vertex -1.000001, 3.3, 0
+Vertex 1.999999, 3.3, 0
+Face 0, 1, 2, 3
+[Texture]
+Load ET4203.bmp
+Coordinates 0, 0.008789, 0.052734
+Coordinates 1, 0.010254, 0.037109
+Coordinates 2, 0.015625, 0.041016
+Coordinates 3, 0.015625, 0.058594
+Transparent 0, 0, 0
+[Meshbuilder]
+Vertex 2, 0.8, -23
+Vertex 1.999999, 0.8, 0
+Vertex 1.499999, -0.2, 0
+Vertex 1.5, -0.2, -23
+Face 0, 1, 2, 3
+[Texture]
+Load ET4203.bmp
+Coordinates 0, 0.083008, 0.320313
+Coordinates 1, 0.539551, 0.320313
+Coordinates 2, 0.539551, 0.423828
+Coordinates 3, 0.083008, 0.423828
+Transparent 0, 0, 0
+[Meshbuilder]
+Vertex -1.000001, 0.8, 0
+Vertex -1, 0.8, -23
+Vertex -0.5, -0.2, -23
+Vertex -0.500001, -0.2, 0
+Face 0, 1, 2, 3
+[Texture]
+Load ET4203.bmp
+Coordinates 0, 0.083008, 0.320313
+Coordinates 1, 0.539551, 0.320313
+Coordinates 2, 0.539551, 0.423828
+Coordinates 3, 0.083008, 0.423828
+Transparent 0, 0, 0
+[Meshbuilder]
+Vertex -1, 3.4, -22.700001
+Vertex 2, 3.4, -22.700001
+Vertex 2, 1.8, -23
+Vertex -1, 1.8, -23
+Face 0, 1, 2, 3
+[Texture]
+Load ET4203.bmp
+Coordinates 0, 0.004395, 0.023438
+Coordinates 1, 0.077637, 0.023438
+Coordinates 2, 0.077637, 0.197266
+Coordinates 3, 0.004395, 0.197266
+Transparent 0, 0, 0
+[Meshbuilder]
+Vertex -1, 1.8, -23
+Vertex 2, 1.8, -23
+Vertex 2, 0.8, -23
+Vertex -1, 0.8, -23
+Face 0, 1, 2, 3
+[Texture]
+Load ET4203.bmp
+Coordinates 0, 0.004395, 0.197266
+Coordinates 1, 0.077637, 0.197266
+Coordinates 2, 0.077637, 0.302734
+Coordinates 3, 0.004395, 0.302734
+Transparent 0, 0, 0

@@ -1,0 +1,325 @@
+;author=Uwe Post
+;description=highway with dikes and cars
+;copyright=the RouteBuilder team 2002, visit routebuilder.bve-routes.com for details
+
+[MeshBuilder]
+Vertex -10, 0.01, 0
+Vertex -10, 0, 26
+Vertex -0.5, 0, 26
+Vertex -0.5, 0.01, 0
+Face 0, 1, 2, 3
+
+[Texture]
+Load highway1.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 1, 2
+Coordinates 2, 0, 2
+Coordinates 3, 0, 0
+
+[MeshBuilder]
+Vertex 10, 0.01, 0
+Vertex 10, 0, 26
+Vertex 0.5, 0, 26
+Vertex 0.5, 0.01, 0
+Face 3,2,1,0
+
+[Texture]
+Load highway1.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 1, 2
+Coordinates 2, 0, 2
+Coordinates 3, 0, 0
+
+;mitte
+[MeshBuilder]
+Vertex 0.5, 0.01, 0
+Vertex 0.5, 0, 26
+Vertex -0.5, 0, 26
+Vertex -0.5, 0.01, 0
+Face 3,2,1,0
+
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+
+[MeshBuilder]
+Vertex 0.2, 0.5, 0
+Vertex 0.2, 0.5, 26
+Vertex 0.2, 0, 26
+Vertex 0.2, 0, 0
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load lplanke1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 5, 0
+Coordinates 2, 5, 1
+Coordinates 3, 0, 1
+transparent 0,0,0
+
+[MeshBuilder]
+Vertex -0.2, 0.5, 0
+Vertex -0.2, 0.5, 26
+Vertex -0.2, 0, 26
+Vertex -0.2, 0, 0
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load lplanke1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 5, 0
+Coordinates 2, 5, 1
+Coordinates 3, 0, 1
+transparent 0,0,0
+
+
+;seite
+[MeshBuilder]
+Vertex -10, 0.01, 0
+Vertex -10, 0, 26
+Vertex -13, 0, 26
+Vertex -13, 0.01, 0
+Face 3,2,1,0
+
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex -12.8, 0.5, 0
+Vertex -12.8, 0.5, 26
+Vertex -12.8, 0, 26
+Vertex -12.8, 0, 0
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load lplanke1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 5, 0
+Coordinates 2, 5, 1
+Coordinates 3, 0, 1
+transparent 0,0,0
+
+;dike
+[MeshBuilder]
+Vertex -13, 0.01, 0
+Vertex -13, 0, 26
+Vertex -18, 5, 26
+Vertex -18, 5.01, 0
+Vertex -50, 5, 26
+Vertex -50, 5.01, 0
+Face 3,2,1,0
+Face 2,3,5,4
+
+[Texture]
+Load ..\grounds\grass3.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0.4, 0
+Coordinates 2, 0.4, 0.2
+Coordinates 3, 0, 0.2
+
+;seite
+[MeshBuilder]
+Vertex 10, 0.01, 0
+Vertex 10, 0, 26
+Vertex 13, 0, 26
+Vertex 13, 0.01, 0
+Face 0,1,2,3
+
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex 12.8, 0.5, 0
+Vertex 12.8, 0.5, 26
+Vertex 12.8, 0, 26
+Vertex 12.8, 0, 0
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load lplanke1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 5, 0
+Coordinates 2, 5, 1
+Coordinates 3, 0, 1
+transparent 0,0,0
+
+;dike
+[MeshBuilder]
+Vertex 13, 0.01, 0
+Vertex 13, 0.01, 26
+Vertex 18, 5.01, 26
+Vertex 18, 5.01, 0
+Vertex 50, 5.01, 26
+Vertex 50, 5.01, 0
+Face 0,1,2,3
+Face 4,5,3,2
+
+[Texture]
+Load ..\grounds\grass3.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0.4, 0
+Coordinates 2, 0.4, 0.2
+Coordinates 3, 0, 0.2
+
+;cars
+;l
+[meshbuilder]
+Vertex -4.5,0,0
+Vertex -4.5,1.5,0
+Vertex -4.5,1.5,4
+Vertex -4.5,0,4
+face2 0,1,2,3
+
+[texture]
+Load ..\misc\car1.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+Transparent 0,0,0
+
+
+
+
+
+[meshbuilder]
+Vertex -7.5,0,3
+Vertex -7.5,1.5,3
+Vertex -7.5,1.5,7
+Vertex -7.5,0,7
+face2 0,1,2,3
+
+[texture]
+Load ..\misc\car2.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+Transparent 0,0,0
+
+
+
+[meshbuilder]
+Vertex -7.5,0,13
+Vertex -7.5,1.5,13
+Vertex -7.5,1.5,17
+Vertex -7.5,0,17
+face2 0,1,2,3
+
+[texture]
+Load ..\misc\car3.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+Transparent 0,0,0
+
+[meshbuilder]
+Vertex -4.5,0,12
+Vertex -4.5,1.5,12
+Vertex -4.5,1.5,16
+Vertex -4.5,0,16
+face2 0,1,2,3
+
+[texture]
+Load ..\misc\car2.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+Transparent 0,0,0
+
+
+[meshbuilder]
+Vertex -4.5,0,20
+Vertex -4.5,1.5,20
+Vertex -4.5,1.5,24
+Vertex -4.5,0,24
+face2 0,1,2,3
+
+[texture]
+Load ..\misc\car1.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+Transparent 0,0,0
+
+;r
+[meshbuilder]
+Vertex 4.5,0,24
+Vertex 4.5,1.5,24
+Vertex 4.5,1.5,20
+Vertex 4.5,0,20
+face2 0,1,2,3
+
+[texture]
+Load ..\misc\car1.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+Transparent 0,0,0
+
+[meshbuilder]
+Vertex 7.5,0,9
+Vertex 7.5,1.5,9
+Vertex 7.5,1.5,5
+Vertex 7.5,0,5
+face2 0,1,2,3
+
+[texture]
+Load ..\misc\car2.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+Transparent 0,0,0
+
+
+[meshbuilder]
+Vertex 7.5,0,19
+Vertex 7.5,1.5,19
+Vertex 7.5,1.5,15
+Vertex 7.5,0,15
+face2 0,1,2,3
+
+[texture]
+Load ..\misc\car3.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+Transparent 0,0,0
+
+
+[meshbuilder]
+Vertex 4.5,0,14
+Vertex 4.5,1.5,14
+Vertex 4.5,1.5,10
+Vertex 4.5,0,10
+face2 0,1,2,3
+
+[texture]
+Load ..\misc\car2.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+Transparent 0,0,0

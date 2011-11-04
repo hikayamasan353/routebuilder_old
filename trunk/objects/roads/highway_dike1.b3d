@@ -1,0 +1,182 @@
+;author=Uwe Post
+;description=highway
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+[MeshBuilder]
+Vertex -10, 0.01, 0
+Vertex -10, 0, 26
+Vertex -0.5, 0, 26
+Vertex -0.5, 0.01, 0
+Face 0, 1, 2, 3
+
+[Texture]
+Load highway1.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 1, 2
+Coordinates 2, 0, 2
+Coordinates 3, 0, 0
+
+[MeshBuilder]
+Vertex 10, 0.01, 0
+Vertex 10, 0, 26
+Vertex 0.5, 0, 26
+Vertex 0.5, 0.01, 0
+Face 3,2,1,0
+
+[Texture]
+Load highway1.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 1, 2
+Coordinates 2, 0, 2
+Coordinates 3, 0, 0
+
+;mitte
+[MeshBuilder]
+Vertex 0.5, 0.01, 0
+Vertex 0.5, 0, 26
+Vertex -0.5, 0, 26
+Vertex -0.5, 0.01, 0
+Face 3,2,1,0
+
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+
+[MeshBuilder]
+Vertex 0.2, 0.5, 0
+Vertex 0.2, 0.5, 26
+Vertex 0.2, 0, 26
+Vertex 0.2, 0, 0
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load lplanke1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 5, 0
+Coordinates 2, 5, 1
+Coordinates 3, 0, 1
+transparent 0,0,0
+
+[MeshBuilder]
+Vertex -0.2, 0.5, 0
+Vertex -0.2, 0.5, 26
+Vertex -0.2, 0, 26
+Vertex -0.2, 0, 0
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load lplanke1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 5, 0
+Coordinates 2, 5, 1
+Coordinates 3, 0, 1
+transparent 0,0,0
+
+
+;seite
+[MeshBuilder]
+Vertex -10, 0.01, 0
+Vertex -10, 0, 26
+Vertex -13, 0, 26
+Vertex -13, 0.01, 0
+Face 3,2,1,0
+
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex -12.8, 0.5, 0
+Vertex -12.8, 0.5, 26
+Vertex -12.8, 0, 26
+Vertex -12.8, 0, 0
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load lplanke1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 5, 0
+Coordinates 2, 5, 1
+Coordinates 3, 0, 1
+transparent 0,0,0
+
+;dike
+[MeshBuilder]
+Vertex -13, 0.01, 0
+Vertex -13, 0, 26
+Vertex -18, 5, 26
+Vertex -18, 5.01, 0
+Vertex -50, 5, 26
+Vertex -50, 5.01, 0
+Face 3,2,1,0
+Face 2,3,5,4
+
+[Texture]
+Load ..\grounds\grass3.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0.4, 0
+Coordinates 2, 0.4, 0.2
+Coordinates 3, 0, 0.2
+
+;seite
+[MeshBuilder]
+Vertex 10, 0.01, 0
+Vertex 10, 0, 26
+Vertex 13, 0, 26
+Vertex 13, 0.01, 0
+Face 0,1,2,3
+
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex 12.8, 0.5, 0
+Vertex 12.8, 0.5, 26
+Vertex 12.8, 0, 26
+Vertex 12.8, 0, 0
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load lplanke1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 5, 0
+Coordinates 2, 5, 1
+Coordinates 3, 0, 1
+transparent 0,0,0
+
+;dike
+[MeshBuilder]
+Vertex 13, 0.01, 0
+Vertex 13, 0.01, 26
+Vertex 18, 5.01, 26
+Vertex 18, 5.01, 0
+Vertex 50, 5.01, 26
+Vertex 50, 5.01, 0
+Face 0,1,2,3
+Face 4,5,3,2
+
+[Texture]
+Load ..\grounds\grass3.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0.4, 0
+Coordinates 2, 0.4, 0.2
+Coordinates 3, 0, 0.2
+
+
+
+
+

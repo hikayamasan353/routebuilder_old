@@ -1,0 +1,33 @@
+;author=Peter Everett
+;Description=Chester Station  centre left roof
+;Copyright=Peter Everett August 2003 (V 1.0)
+
+;roof beam inner side
+[Meshbuilder]
+Vertex 5.95,4.8,0
+Vertex 5.95,4.9,0
+Vertex 5.95,4.9,25.5
+Vertex 5.95,4.8,25.5
+Face 3,2,1,0
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;roof: track side
+[Meshbuilder]
+Vertex 6,4.9,0
+Vertex -3,6,0
+Vertex -3,6,25.5
+Vertex 6,4.9,25.5
+Face 3,2,1,0
+
+[Texture]
+Load chesterroofglass.bmp
+Coordinates 0,0,-1
+Coordinates 1,0,0
+Coordinates 2,30,0
+Coordinates 3,30,-1

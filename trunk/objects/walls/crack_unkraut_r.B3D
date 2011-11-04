@@ -1,0 +1,21 @@
+;author=Uwe Post
+;description=crack side
+;copyright=open source
+
+[MeshBuilder]
+Vertex 6.2,  -0.25, -0.2
+Vertex 6.2,  -0.25, 25.2
+Vertex 2  , -0.25  , 25.2
+Vertex 2  , -0.25  , -0.2
+Face2 3,2,1,0
+
+
+
+
+[Texture]
+Load ..\roads\road4a.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 1, 1
+Coordinates 2, 0, 1
+Coordinates 3, 0, 0
+

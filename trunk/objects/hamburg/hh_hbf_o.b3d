@@ -1,0 +1,105 @@
+;author=Uwe Post
+;description=Hamburg Hbf Ostseite
+;copyright=open source
+
+[MeshBuilder]
+Vertex -22,6,24
+Vertex -22,12,24
+Vertex 22,12,24
+Vertex 22,6,24
+Face 0,1,2,3
+
+[Texture]
+Load hh_h_aussen_ost.bmp
+Coordinates 0,0,2
+Coordinates 1,0,1.75
+Coordinates 2,1,1.75
+Coordinates 3,1,2
+Transparent 0,0,255
+
+[MeshBuilder]
+Vertex -22,12,24
+Vertex -22,25,24
+Vertex 22,25,24
+Vertex 22,12,24
+Face 0,1,2,3
+
+[Texture]
+Load hh_h_aussen_west.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+Transparent 0,0,255
+
+[MeshBuilder]
+Vertex -22,6,25
+Vertex -22,25,25
+Vertex 22,25,25
+Vertex 22,6,25
+Face 3,2,1,0
+
+[Texture]
+Load hh_h_innen_ost.bmp
+Coordinates 0,1,1
+Coordinates 1,1,0
+Coordinates 2,0,0
+Coordinates 3,0,1
+Transparent 0,0,255
+
+
+[MeshBuilder]
+Vertex 32,6,25
+Vertex 32,11,25
+Vertex 22,11,25
+Vertex 22,6,25
+Face 0,1,2,3
+
+[Texture]
+Load hh_h_innen_ost1.bmp
+Coordinates 0,1,1
+Coordinates 1,1,0
+Coordinates 2,0,0
+Coordinates 3,0,1
+
+
+
+[MeshBuilder]
+Vertex -32,6,25
+Vertex -32,6,0
+Vertex 32,6,0
+Vertex 32,6,25
+Face2 0,1,2,3
+color 0,0,0
+
+
+
+
+[MeshBuilder]
+Vertex -32,6.1,0
+Vertex -32,6.1,30
+Vertex 32,6.1,30
+Vertex 32,6.1,0
+Face 0,1,2,3
+
+[Texture]
+Load ..\grounds\concrete3.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+[MeshBuilder]
+Vertex -32,6.8,0
+Vertex -32,6.1,0
+Vertex 32,6.1,0
+Vertex 32,6.8,0
+Face2 0,1,2,3
+
+[Texture]
+Load ..\fences\ironfence1.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,60,0
+Coordinates 3,60,1
+transparent 0,0,255

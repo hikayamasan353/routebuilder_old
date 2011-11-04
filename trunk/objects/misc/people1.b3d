@@ -1,0 +1,73 @@
+;author=mtrkwt,Simon Man,Darwin
+;description=people
+;copyright=open source
+
+[MeshBuilder]
+Vertex -1.4,1,2.825
+Vertex -1.4,3,2.825
+Vertex -0.2,3,3.925
+Vertex -0.2,1,3.925
+Face2 3,2,1,0
+[Texture]
+Load People21.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+Transparent 0,0,255
+
+[MeshBuilder]
+Vertex -0.8,1,5.775
+Vertex -0.8,3,5.775
+Vertex -0,3,6.975
+Vertex -0,1,6.975
+Face2 3,2,1,0
+[Texture]
+Load People11.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+Transparent 0,0,255
+
+[MeshBuilder]
+Vertex -1.2,1,10.525
+Vertex -1.2,3,10.525
+Vertex -0,3,11.825
+Vertex -0,1,11.825
+Face2 3,2,1,0
+[Texture]
+Load People21.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+Transparent 0,0,255
+
+[MeshBuilder]
+Vertex -0.8,1,15.525
+Vertex -0.8,3,15.525
+Vertex -0,3,16.825
+Vertex -0,1,16.825
+Face2 3,2,1,0
+[Texture]
+Load People10.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+Transparent 0,0,255
+
+[MeshBuilder]
+Vertex -1.4,1,23.025
+Vertex -1.4,3,23.025
+Vertex -0.0,3,24.225
+Vertex -0.0,1,24.225
+Face2 3,2,1,0
+[Texture]
+Load People22.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+Transparent 0,0,255

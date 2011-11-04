@@ -1,0 +1,19 @@
+;author=Uwe Post
+;copyright=open source
+
+[MeshBuilder]
+Vertex -0.1,17,17
+Vertex -0.1,20,17
+Vertex -0.1,20,20
+Vertex -0.1,17,20
+Face 3,2,1,0
+
+[Texture]
+Load bo_parkhaus_p.bmp
+Coordinates 0,1,1
+Coordinates 1,1,0
+Coordinates 2,0,0
+Coordinates 3,0,1
+
+
+

@@ -1,0 +1,47 @@
+;description=concrete ground 2
+;author=Uwe Post
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -120, -0.40, 26
+Vertex 120, -0.40, 26
+Vertex 120, -0.401, -1
+Vertex -120, -0.401, -1
+Face 0, 1, 2, 3
+
+[Texture]
+Load concrete2.bmp
+Coordinates 0, 2, 0
+Coordinates 1, 2, 2
+Coordinates 2, 0, 2
+Coordinates 3, 0, 0
+
+[MeshBuilder]
+vertex -104, -0.4,-4
+vertex -104, -5,-9
+vertex  104, -5,-9
+vertex  104, -0.4,-4
+Face 3,2,1,0
+
+[Texture]
+Load concrete2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0.4, 0
+Coordinates 2, 0.4, 16
+Coordinates 3, 0, 16
+
+
+[MeshBuilder]
+vertex -104, -0.4,29
+vertex -104, -5,34
+vertex  104, -5,34
+vertex  104, -0.4,29
+Face 0,1,2,3
+
+[Texture]
+Load concrete2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0.4, 0
+Coordinates 2, 0.4, 16
+Coordinates 3, 0, 16
+

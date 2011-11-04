@@ -1,0 +1,63 @@
+;author=Peter Everett
+;Description=Chester Station - centre left platform
+;Copyright=Peter Everett July 2003 (V 1.0)
+
+;platform deck
+[Meshbuilder]
+Vertex 1.6,1.1,0
+Vertex 9.6,1.1,0
+Vertex 9.6,1.1,25.5
+Vertex 1.6,1.1,25.5
+Face 3,2,1,0
+
+[Texture]
+Load chesterplatform.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,25,0
+Coordinates 3,25,1
+
+;patform supports
+[Meshbuilder]
+Vertex 1.7,0,0
+Vertex 1.7,1.1,0
+Vertex 1.7,1.1,25.5
+Vertex 1.7,0,25.5
+Face 3,2,1,0
+
+[Texture]
+Load supports.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;brick wall
+[Meshbuilder]
+Vertex 6.5,1.1,3
+Vertex 6.5,6,3
+Vertex 6.5,6,20
+Vertex 6.5,1.1,20
+Face 3,2,1,0
+
+[Texture]
+Load chesterbricks.bmp
+Coordinates 0,0,8.5
+Coordinates 1,0,0
+Coordinates 2,26,0
+Coordinates 3,26,8.5
+
+;brick wall (end)
+[Meshbuilder]
+Vertex 7,1.1,3
+Vertex 7,6,3
+Vertex 6.5,6,3
+Vertex 6.5,1.1,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterbricks.bmp
+Coordinates 0,0,8.5
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,8.5

@@ -1,0 +1,77 @@
+;description=default track
+;author=Uwe Post
+;copyright=the BVE RouteBuilder team 2002, goto routebuilder.bve-routes.com - made with switch by Ruediger Huelsmann
+
+[meshbuilder]
+vertex -1.350, -0.170, -0.100
+vertex 1.350, -0.170, -0.100
+vertex -1.350, -0.170, 5.000
+vertex 1.350, -0.170, 5.000
+face 2,3,1,0
+[texture]
+load schwellen1.bmp
+coordinates 0, 1.02, 8
+coordinates 1, -0.02, 8
+coordinates 2, 1.02, 10
+coordinates 3, -0.02, 10
+
+[meshbuilder]
+vertex -0.800, 0, -0.100
+vertex -0.720, 0, -0.100
+vertex -0.800, 0, 5.000
+vertex -0.720, 0, 5.000
+face 2, 3, 1, 0
+color 180,190,200
+
+[meshbuilder]
+vertex 0.720, 0, -0.100
+vertex 0.800, 0, -0.100
+vertex 0.720, 0, 5.000
+vertex 0.800, 0, 5.000
+face 2, 3, 1, 0
+color 180,190,200
+
+[meshbuilder]
+vertex -0.760, 0, -0.100
+vertex -0.760, -0.170, -0.100
+vertex -0.760, 0, 5.000
+vertex -0.760, -0.170, 5.000
+face2 2, 3, 1, 0
+color 85,50,50
+
+[meshbuilder]
+vertex 0.760, 0, -0.100
+vertex 0.760, -0.170, -0.100
+vertex 0.760, 0, 5.000
+vertex 0.760, -0.170, 5.000
+face2 2, 3, 1, 0
+color 85,50,50
+
+
+
+[meshbuilder]
+vertex -2.800, -0.400, -0.100
+vertex -1.350, -0.170, -0.100
+vertex -2.800, -0.400, 5.000
+vertex -1.350, -0.170, 5.000
+face 2,3,1,0
+[texture]
+load schotter1.bmp
+coordinates 0, 1, 0
+coordinates 1, 0, 0
+coordinates 2, 1, 2
+coordinates 3, 0, 2
+
+[meshbuilder]
+vertex 1.350, -0.170, -0.100
+vertex 2.800, -0.400, -0.100
+vertex 1.350, -0.170, 5.000
+vertex 2.800, -0.400, 5.000
+face 2,3,1,0
+[texture]
+load schotter1.bmp
+coordinates 0, 0, 0
+coordinates 1, 1, 0
+coordinates 2, 0, 2
+coordinates 3, 1, 2
+

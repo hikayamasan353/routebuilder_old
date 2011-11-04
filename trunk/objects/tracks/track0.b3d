@@ -1,0 +1,11 @@
+; default null rail for RouteBuiler
+;author=Uwe Post
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex 0,0,0
+Vertex 1,0,0
+Vertex 1,0,0
+Vertex 0,0,0
+
+

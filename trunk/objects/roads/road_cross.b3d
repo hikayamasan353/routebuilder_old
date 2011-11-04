@@ -1,0 +1,47 @@
+;author=Uwe Post
+;description=road with crossing
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -20, 0.01, -4
+Vertex -20, 0.01, 4
+Vertex 20, 0.01, 4
+Vertex 20, 0.01, -4
+Face 0, 1, 2, 3
+
+[Texture]
+Load road2.bmp
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+Coordinates 0, 0, 1
+
+[MeshBuilder]
+vertex 5,1.1,-4.5
+vertex 5,1.1,4.5
+vertex 5,0.05,4.5
+vertex 5,0.05,-4.5
+face2 0,1,2,3
+
+[texture]
+load schranke1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 2, 0
+Coordinates 2, 2, 0.8
+Coordinates 3, 0, 0.8
+transparent 168,168,168
+
+[MeshBuilder]
+vertex -5,1.1,-4.5
+vertex -5,1.1,4.5
+vertex -5,0.05,4.5
+vertex -5,0.05,-4.5
+face2 0,1,2,3
+
+[texture]
+load schranke1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 2, 0
+Coordinates 2, 2, 0.8
+Coordinates 3, 0, 0.8
+transparent 168,168,168

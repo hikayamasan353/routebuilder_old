@@ -1,0 +1,184 @@
+;author=Uwe Post
+;description=platform roof Bochum Hbf
+;copyright=open source
+
+
+[MeshBuilder]
+Vertex 6.0, 4.99, 0
+Vertex 6.0, 4.99, 25.3
+Vertex 2.7, 4.99, 25.3
+Vertex 2.7, 4.99, 0
+Face 3,2,1,0
+Color 100,100,100
+
+[MeshBuilder]
+Vertex 4.2, 5, 0
+Vertex 4.2, 4.6, 0
+Vertex 2.7, 4.8, 0
+Vertex 2.7, 5, 0
+Face 0,1,2,3
+Color 116,132,147
+[MeshBuilder]
+Vertex 5.2, 5, 0
+Vertex 5.2, 4.4, 0
+Vertex 4.2, 4.6, 0
+Vertex 4.2, 5, 0
+Face 0,1,2,3
+Color 116,132,147
+[MeshBuilder]
+Vertex 5.7, 5, 0
+Vertex 5.7, 4.0, 0
+Vertex 5.2, 4.4, 0
+Vertex 5.2, 5, 0
+Face 0,1,2,3
+Color 116,132,147
+[MeshBuilder]
+Vertex 6.0, 5, 0
+Vertex 6.0, 4.0, 0
+Vertex 5.7, 4.0, 0
+Vertex 5.7, 5, 0
+Face 0,1,2,3
+Color 116,132,147
+
+[MeshBuilder]
+Vertex 4.2, 5, 25.3
+Vertex 4.2, 4.6, 25.3
+Vertex 2.7, 4.8, 25.3
+Vertex 2.7, 5, 25.3
+Face 3,2,1,0
+Color 116,132,147
+[MeshBuilder]
+Vertex 5.2, 5, 25.3
+Vertex 5.2, 4.4, 25.3
+Vertex 4.2, 4.6, 25.3
+Vertex 4.2, 5, 25.3
+Face 3,2,1,0
+Color 116,132,147
+[MeshBuilder]
+Vertex 5.7, 5, 25.3
+Vertex 5.7, 4.0, 25.3
+Vertex 5.2, 4.4, 25.3
+Vertex 5.2, 5, 25.3
+Face 3,2,1,0
+Color 116,132,147
+[MeshBuilder]
+Vertex 6.0, 5, 25.3
+Vertex 6.0, 4.0, 25.3
+Vertex 5.7, 4.0, 25.3
+Vertex 5.7, 5, 25.3
+Face 3,2,1,0
+Color 116,132,147
+
+
+
+
+
+[MeshBuilder]
+Vertex 4.2, 4.6, 25.3
+Vertex 4.2, 4.6, 0
+Vertex 2.7, 4.8, 0
+Vertex 2.7, 4.8, 25.3
+Face 3,2,1,0
+
+[Texture]
+Load RoofBoD.bmp
+Coordinates 0, 0, 4
+Coordinates 1, 0, 0
+Coordinates 2, 0.4, 0
+Coordinates 3, 0.4, 4
+
+[MeshBuilder]
+Vertex 5.2, 4.4, 25.3
+Vertex 5.2, 4.4, 0
+Vertex 4.2, 4.6, 0
+Vertex 4.2, 4.6, 25.3
+Face 3,2,1,0
+
+[Texture]
+Load RoofBoD.bmp
+Coordinates 0, 0.4, 4
+Coordinates 1, 0.4, 0
+Coordinates 2, 0.7, 0
+Coordinates 3, 0.7, 4
+
+[MeshBuilder]
+Vertex 5.7, 4, 25.3
+Vertex 5.7, 4, 0
+Vertex 5.2, 4.4, 0
+Vertex 5.2, 4.4, 25.3
+Face 3,2,1,0
+
+[Texture]
+Load RoofBoD.bmp
+Coordinates 0, 0.7, 4
+Coordinates 1, 0.7, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 4
+
+[MeshBuilder]
+Vertex 5.7, 4, 25.3
+Vertex 5.7, 4, 0
+Vertex 6.0, 4, 0
+Vertex 6.0, 4, 25.3
+Face 0,1,2,3
+color 200,200,200
+
+[MeshBuilder]
+Vertex 6.0,0,5.75
+Vertex 6.0,4,5.75
+Vertex 5.7,4,6.25
+Vertex 5.7,0,6.25
+Face 3,2,1,0
+
+[Texture]
+Load RoofBoS.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+
+[MeshBuilder]
+Vertex 6.0,0,6.75
+Vertex 6.0,4,6.75
+Vertex 5.7,4,6.25
+Vertex 5.7,0,6.25
+Face 0,1,2,3
+
+[Texture]
+Load RoofBoS.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+
+
+[MeshBuilder]
+Vertex 6.0,0,17.75
+Vertex 6.0,4,17.75
+Vertex 5.7,4,18.25
+Vertex 5.7,0,18.25
+Face 3,2,1,0
+
+[Texture]
+Load RoofBoS.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+
+[MeshBuilder]
+Vertex 6.0,0,18.75
+Vertex 6.0,4,18.75
+Vertex 5.7,4,18.25
+Vertex 5.7,0,18.25
+Face 0,1,2,3
+
+[Texture]
+Load RoofBoS.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+
+
+

@@ -1,0 +1,174 @@
+;description=ground with street and buildings
+;author=Uwe Post
+;copyright=open source
+
+[MeshBuilder]
+Vertex -120, -5, 26
+Vertex 120, -5, 26
+Vertex 120, -5.01, -1
+Vertex -120, -5.01, -1
+Face 0, 1, 2, 3
+
+[Texture]
+Load concrete3.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 1, 8
+Coordinates 2, 0, 8
+Coordinates 3, 0, 0
+
+
+
+[MeshBuilder]
+Vertex 4, -4.99, -1
+Vertex 4, -4.99, 26
+Vertex 12, -4.99, 26
+Vertex 12, -4.99, -1
+Face 0, 1, 2, 3
+
+[Texture]
+Load ..\nokiabahn\asphalt1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 5, 0
+Coordinates 2, 5, 2
+Coordinates 3, 0, 2
+
+[MeshBuilder]
+Vertex 12, -4.99, -1
+Vertex 12, -4.99, 26
+Vertex 14, -4.99, 26
+Vertex 14, -4.99, -1
+Face 0, 1, 2, 3
+
+[Texture]
+Load ..\platforms\platform5tx1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 10, 0
+Coordinates 2, 10, 0.3
+Coordinates 3, 0, 0.3
+
+
+
+[MeshBuilder]
+Vertex 14, 10, -1
+Vertex 14, 10, 12.5
+Vertex 14, -5, 12.5
+Vertex 14, -5, -1
+Face 3,2,1,0
+
+[Texture]
+Load ..\nokiabahn\hausfassade2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex 14, 10, 12.5
+Vertex 14, 10, 26
+Vertex 14, -5, 26
+Vertex 14, -5, 12.5
+Face 3,2,1,0
+
+[Texture]
+Load ..\nokiabahn\hausfassade3.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+
+[MeshBuilder]
+Vertex 14, 10, -1
+Vertex 24, 10, -1
+Vertex 24, -5, -1
+Vertex 14, -5, -1
+Face 0,1,2,3
+color 90,90,99
+
+[MeshBuilder]
+Vertex 14, 10, 26
+Vertex 24, 10, 26
+Vertex 24, -5, 26
+Vertex 14, -5, 26
+Face 3,2,1,0
+color 90,90,99
+
+
+
+
+
+[MeshBuilder]
+Vertex -4, -4.99, -1
+Vertex -4, -4.99, 26
+Vertex -12, -4.99, 26
+Vertex -12, -4.99, -1
+Face 3,2,1,0
+
+[Texture]
+Load ..\nokiabahn\asphalt1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 5, 0
+Coordinates 2, 5, 2
+Coordinates 3, 0, 2
+
+[MeshBuilder]
+Vertex -12, -4.99, -1
+Vertex -12, -4.99, 26
+Vertex -14, -4.99, 26
+Vertex -14, -4.99, -1
+Face 3,2,1,0
+
+[Texture]
+Load ..\platforms\platform5tx1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 10, 0
+Coordinates 2, 10, 0.3
+Coordinates 3, 0, 0.3
+
+
+
+
+[MeshBuilder]
+Vertex -14, 10, -1
+Vertex -14, 10, 12.5
+Vertex -14, -5, 12.5
+Vertex -14, -5, -1
+Face 0,1,2,3
+
+[Texture]
+Load ..\nokiabahn\hausfassade4.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex -14, 10, 12.5
+Vertex -14, 10, 26
+Vertex -14, -5, 26
+Vertex -14, -5, 12.5
+Face 0,1,2,3
+
+[Texture]
+Load ..\nokiabahn\hausfassade3.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+
+[MeshBuilder]
+Vertex -14, 10, -1
+Vertex -24, 10, -1
+Vertex -24, -5, -1
+Vertex -14, -5, -1
+Face 3,2,1,0
+color 90,90,99
+
+[MeshBuilder]
+Vertex -14, 10, 26
+Vertex -24, 10, 26
+Vertex -24, -5, 26
+Vertex -14, -5, 26
+Face 0,1,2,3
+color 90,90,99

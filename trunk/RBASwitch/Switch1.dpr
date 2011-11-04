@@ -1,0 +1,18 @@
+program Switch1;
+
+uses
+  Forms,
+  sysutils,
+  SwitchGUI in 'SwitchGUI.pas' {Form1};
+
+{$R *.res}
+
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFormSwitch, FormSwitch);
+  FormSwitch.objectlibpath := extractfilepath(application.exename);
+  FormSwitch.Caption := 'Switch for Windows 0.3';
+  FormSwitch.BorderStyle := bsSingle;
+  Application.Run;
+end.

@@ -1,0 +1,11 @@
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex 1.5, 4.9, 25.1
+Vertex 1.5, 4.9, 0
+Vertex 1.5, 5.1, 0
+Vertex 1.5, 5.1, 25.1
+Face 3,2,1,0
+color 100,100,100
+
+

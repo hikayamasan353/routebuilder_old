@@ -1,0 +1,172 @@
+;description=created for Route Builder
+;author=Thomas233
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[Meshbuilder]
+Vertex 0, 0, 0
+Vertex 2, 0, 0
+Vertex 2, 0, 2.5
+Vertex 0, 0, 2.5
+Face 0, 1, 2, 3
+[Texture]
+Load lampe3.bmp
+Coordinates 0, 0.40625, 0.65625
+Coordinates 1, 0.054688, 0.65625
+Coordinates 2, 0.078125, 0.25
+Coordinates 3, 0.34375, 0.1875
+[Meshbuilder]
+Vertex 0, 0, 0
+Vertex 2, 0, 0
+Vertex 2, 0, 2.5
+Vertex 0, 0, 2.5
+Face 3, 2, 1, 0
+[Texture]
+Load lampe3.bmp
+Coordinates 0, 0.40625, 0.65625
+Coordinates 1, 0.054688, 0.65625
+Coordinates 2, 0.078125, 0.25
+Coordinates 3, 0.34375, 0.1875
+[Meshbuilder]
+Vertex 1.5, 0, 0.25
+Vertex 0.5, 0, 0.25
+Vertex 0.5, 0, 2.25
+Vertex 1.5, 0, 2.25
+Face 0, 1, 2, 3
+[Texture]
+Load lampe3.bmp
+Coordinates 0, 0.882813, 0.65625
+Coordinates 1, 0.648438, 0.625
+Coordinates 2, 0.648438, 0.1875
+Coordinates 3, 0.875, 0.28125
+[Meshbuilder]
+Vertex 1.5, 0, 0.25
+Vertex 0.5, 0, 0.25
+Vertex 0.5, 0, 2.25
+Vertex 1.5, 0, 2.25
+Face 3, 2, 1, 0
+[Texture]
+Load lampe3.bmp
+Coordinates 0, 0.882813, 0.65625
+Coordinates 1, 0.648438, 0.625
+Coordinates 2, 0.648438, 0.1875
+Coordinates 3, 0.875, 0.28125
+[Meshbuilder]
+Vertex 0.5, -0.3, 0.25
+Vertex 1.5, -0.3, 0.25
+Vertex 1.5, -0.3, 2.25
+Vertex 0.5, -0.3, 2.25
+Face 0, 1, 2, 3
+[Texture]
+Load lampe3.bmp
+Coordinates 0, 0.890625, 0.53125
+Coordinates 1, 0.710938, 0.71875
+Coordinates 2, 0.632813, 0.125
+Coordinates 3, 0.929688, 0.1875
+[Meshbuilder]
+Vertex 0.5, -0.3, 0.25
+Vertex 1.5, -0.3, 0.25
+Vertex 1.5, -0.3, 2.25
+Vertex 0.5, -0.3, 2.25
+Face 3, 2, 1, 0
+[Texture]
+Load lampe3.bmp
+Coordinates 0, 0.890625, 0.53125
+Coordinates 1, 0.710938, 0.71875
+Coordinates 2, 0.632813, 0.125
+Coordinates 3, 0.929688, 0.1875
+[Meshbuilder]
+Vertex 0.5, -0.3, 2.25
+Vertex 0.5, 0, 2.25
+Vertex 0.5, 0, 0.25
+Vertex 0.5, -0.3, 0.25
+Face 0, 1, 2, 3
+[Texture]
+Load lampe3.bmp
+Coordinates 0, 0.84375, 0.59375
+Coordinates 1, 0.640625, 0.5625
+Coordinates 2, 0.648438, 0.125
+Coordinates 3, 0.914063, 0.15625
+[Meshbuilder]
+Vertex 0.5, -0.3, 2.25
+Vertex 0.5, 0, 2.25
+Vertex 0.5, 0, 0.25
+Vertex 0.5, -0.3, 0.25
+Face 3, 2, 1, 0
+[Texture]
+Load lampe3.bmp
+Coordinates 0, 0.84375, 0.59375
+Coordinates 1, 0.640625, 0.5625
+Coordinates 2, 0.648438, 0.125
+Coordinates 3, 0.914063, 0.15625
+[Meshbuilder]
+Vertex 1.5, 0, 0.25
+Vertex 1.5, -0.3, 0.25
+Vertex 1.5, -0.3, 2.25
+Vertex 1.5, 0, 2.25
+Face 0, 1, 2, 3
+[Texture]
+Load lampe3.bmp
+Coordinates 0, 0.867188, 0.5625
+Coordinates 1, 0.59375, 0.625
+Coordinates 2, 0.585938, 0.0625
+Coordinates 3, 0.882813, 0.125
+[Meshbuilder]
+Vertex 1.5, 0, 0.25
+Vertex 1.5, -0.3, 0.25
+Vertex 1.5, -0.3, 2.25
+Vertex 1.5, 0, 2.25
+Face 3, 2, 1, 0
+[Texture]
+Load lampe3.bmp
+Coordinates 0, 0.867188, 0.5625
+Coordinates 1, 0.59375, 0.625
+Coordinates 2, 0.585938, 0.0625
+Coordinates 3, 0.882813, 0.125
+[Meshbuilder]
+Vertex 0.5, -0.3, 2.25
+Vertex 0.5, 0, 2.25
+Vertex 1.5, 0, 2.25
+Vertex 1.5, -0.3, 2.25
+Face 0, 1, 2, 3
+[Texture]
+Load lampe3.bmp
+Coordinates 0, 0.664063, 0.75
+Coordinates 1, 0.648438, 0.15625
+Coordinates 2, 0.992188, 0.15625
+Coordinates 3, 1, 0.71875
+[Meshbuilder]
+Vertex 0.5, -0.3, 2.25
+Vertex 0.5, 0, 2.25
+Vertex 1.5, 0, 2.25
+Vertex 1.5, -0.3, 2.25
+Face 3, 2, 1, 0
+[Texture]
+Load lampe3.bmp
+Coordinates 0, 0.664063, 0.75
+Coordinates 1, 0.648438, 0.15625
+Coordinates 2, 0.992188, 0.15625
+Coordinates 3, 1, 0.71875
+[Meshbuilder]
+Vertex 0.5, -0.3, 0.25
+Vertex 0.5, 0, 0.25
+Vertex 1.5, 0, 0.25
+Vertex 1.5, -0.3, 0.25
+Face 0, 1, 2, 3
+[Texture]
+Load lampe3.bmp
+Coordinates 0, 0.90625, 0.65625
+Coordinates 1, 0.578125, 0.59375
+Coordinates 2, 0.570313, 0.09375
+Coordinates 3, 0.851563, 0.1875
+[Meshbuilder]
+Vertex 0.5, -0.3, 0.25
+Vertex 0.5, 0, 0.25
+Vertex 1.5, 0, 0.25
+Vertex 1.5, -0.3, 0.25
+Face 3, 2, 1, 0
+[Texture]
+Load lampe3.bmp
+Coordinates 0, 0.90625, 0.65625
+Coordinates 1, 0.578125, 0.59375
+Coordinates 2, 0.570313, 0.09375
+Coordinates 3, 0.851563, 0.1875

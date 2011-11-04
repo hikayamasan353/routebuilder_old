@@ -1,0 +1,112 @@
+;description=default track on bridge
+;author=Uwe Post
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -1.3, -0.144, 0
+Vertex -1.3, -0.144, 25.2
+Vertex 1.3, -0.144, 25.2
+Vertex 1.3, -0.144, 0
+Face 0, 1, 2, 3
+
+[Texture]
+Load bridgetrack.bmp
+Coordinates 0, 0, 10
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 10
+transparent 0,0,255
+
+;SOK
+[MeshBuilder]
+Vertex -0.8, 0, 0
+Vertex -0.8, 0, 25.5
+Vertex -0.72, 0, 25.5
+Vertex -0.72, 0, 0
+Face 0, 1, 2, 3
+Color 224, 224, 224
+
+[MeshBuilder]
+Vertex 0.72, 0, 0
+Vertex 0.72, 0, 25.5
+Vertex 0.8, 0, 25.5
+Vertex 0.8, 0, 0
+Face 0, 1, 2, 3
+Color 224, 224, 224
+
+
+[MeshBuilder]
+Vertex -0.6, 0, 0
+Vertex -0.6, 0, 25.5
+Vertex -0.52, 0, 25.5
+Vertex -0.52, 0, 0
+Face 0, 1, 2, 3
+Color 224, 224, 224
+
+[MeshBuilder]
+Vertex 0.52, 0, 0
+Vertex 0.52, 0, 25.5
+Vertex 0.6, 0, 25.5
+Vertex 0.6, 0, 0
+Face 0, 1, 2, 3
+Color 224, 224, 224
+;catenary
+
+[meshbuilder]
+vertex -0.02, 6.000, 0
+vertex 0.02, 6.000, 0
+vertex 0.020, 6.000, 25
+vertex -0.020, 6.000, 25
+face 0,1,2,3
+color 0,0,0
+
+[meshbuilder]
+vertex -0.01, 7.000, 0
+vertex 0.01, 7.000, 0
+vertex 0.010, 7.000, 25
+vertex -0.010, 7.000, 25
+face 0,1,2,3
+color 0,0,0
+
+[meshbuilder]
+vertex -0.010, 7.000, 0
+vertex 0.010, 7.000, 0
+vertex 0.010, 6.000, 0
+vertex -0.010, 6.000, 0
+face 0,1,2,3
+color 0,0,0
+[meshbuilder]
+vertex -0.010, 7.000, 5
+vertex 0.010, 7.000, 5
+vertex 0.010, 6.000, 5
+vertex -0.010, 6.000, 5
+face 0,1,2,3
+color 0,0,0
+[meshbuilder]
+vertex -0.010, 7.000, 10
+vertex 0.010, 7.000, 10
+vertex 0.010, 6.000, 10
+vertex -0.010, 6.000, 10
+face 0,1,2,3
+color 0,0,0
+[meshbuilder]
+vertex -0.010, 7.000, 15
+vertex 0.010, 7.000, 15
+vertex 0.010, 6.000, 15
+vertex -0.010, 6.000, 15
+face 0,1,2,3
+color 0,0,0
+[meshbuilder]
+vertex -0.010, 7.000, 20
+vertex 0.010, 7.000, 20
+vertex 0.010, 6.000, 20
+vertex -0.010, 6.000, 20
+face 0,1,2,3
+color 0,0,0
+[meshbuilder]
+vertex -0.010, 7.000, 25
+vertex 0.010, 7.000, 25
+vertex 0.010, 6.000, 25
+vertex -0.010, 6.000, 25
+face 0,1,2,3
+color 0,0,0

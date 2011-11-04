@@ -1,0 +1,19 @@
+;author=Uwe Post
+;description=simple brick wall, 7m away
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+;id=444
+
+[MeshBuilder]
+Vertex 7, -0.3, 0
+Vertex 7, -0.3, 26
+Vertex 7, 5, 26
+Vertex 7, 5, 0
+Face2 0,1,2,3
+
+[Texture]
+Load brickwall1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 3.5, 1
+Coordinates 2, 3.5, 0
+Coordinates 3, 0, 0
+

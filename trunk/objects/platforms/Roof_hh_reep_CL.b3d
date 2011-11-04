@@ -1,0 +1,61 @@
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -7.6, 4.9, 0
+Vertex -7.6, 4.9, 25.1
+Vertex -1.9, 4.9, 25.1
+Vertex -1.9, 4.9, 0
+Face 3,2,1,0
+
+[Texture]
+Load hh_s_stadth_decke.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 0, 5
+Coordinates 2, 1, 5
+Coordinates 3, 1, 0
+
+[MeshBuilder]
+Vertex -1.9, 4.9, 0
+Vertex -1.9, 4.9, 25.1
+Vertex -1.5, 4.9, 25.1
+Vertex -1.5, 4.9, 0
+Face 3,2,1,0
+
+[Texture]
+Load hh_s_stadth_decke.bmp
+Coordinates 0, 0.1, 0.3
+Coordinates 1, 0.1, 0.7
+Coordinates 2, 0.3, 0.7
+Coordinates 3, 0.3, 0.3
+
+
+
+
+;Zugzielanzeiger
+[MeshBuilder]
+Vertex -2, 4, 1
+Vertex -2, 5, 1
+Vertex -4, 5, 1
+Vertex -4, 4, 1
+Face 0,1,2,3
+[Texture]
+Load hh_s_zz2.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+transparent 0,0,255
+
+[MeshBuilder]
+Vertex -2, 4, 1.1
+Vertex -2, 5, 1.1
+Vertex -4, 5, 1.1
+Vertex -4, 4, 1.1
+Face 3,2,1,0
+[Texture]
+Load hh_s_zz1.bmp
+Coordinates 0, 1, 1
+Coordinates 1, 1, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 1
+transparent 0,0,255

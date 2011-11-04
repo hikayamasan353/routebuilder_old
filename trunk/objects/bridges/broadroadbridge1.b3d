@@ -1,0 +1,97 @@
+;author=Uwe Post
+;description=small bridge 2
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -58, 7.5, 10
+Vertex 52, 7.5, 10
+Vertex 52, 7.5, -10
+Vertex -58, 7.5, -10
+Face 0, 1, 2, 3
+
+[Texture]
+Load ..\roads\road2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 25, 0
+Coordinates 2, 25, 2
+Coordinates 3, 0, 2
+
+[MeshBuilder]
+Vertex -58, 6.5, 10
+Vertex 52, 6.5, 10
+Vertex 52, 6.5, -10
+Vertex -58, 6.5, -10
+Face 3,2,1,0
+
+[Texture]
+Load ..\grounds\concrete4.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 25
+Coordinates 3, 0, 25
+
+
+[MeshBuilder]
+Vertex -58, 6.5, -10
+Vertex -58, 7.5, -10
+Vertex 52, 7.5, -10
+Vertex 52, 6.5, -10
+Face 0, 1, 2, 3
+
+
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 25
+Coordinates 3, 0, 25
+
+
+[MeshBuilder]
+Vertex -58, 6.5, 10
+Vertex -58, 7.5, 10
+Vertex 52, 7.5, 10
+Vertex 52, 6.5, 10
+Face 3,2,1,0
+
+[Texture]
+Load ..\grounds\concrete1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 25
+Coordinates 3, 0, 25
+
+; Zaun
+[MeshBuilder]
+Vertex -58, 8.5, -10
+Vertex 52, 8.5, -10
+Vertex 52, 7.5, -10
+Vertex -58, 7.5, -10
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load ..\fences\ironfence1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 100, 0
+Coordinates 2, 100, 1
+Coordinates 3, 0, 1
+transparent 0,0,255
+
+[MeshBuilder]
+Vertex -58, 8.5, 10
+Vertex 52, 8.5, 10
+Vertex 52, 7.5, 10
+Vertex -58, 7.5, 10
+Face 0, 1, 2, 3
+Face 3,2,1,0
+
+[Texture]
+Load ..\fences\ironfence1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 100, 0
+Coordinates 2, 100, 1
+Coordinates 3, 0, 1
+transparent 0,0,255
+
+

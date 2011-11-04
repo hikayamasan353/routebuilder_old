@@ -1,0 +1,49 @@
+;author=Uwe Post
+;description=Güterhalle Wanne
+
+
+
+
+[MeshBuilder]
+Vertex -23,0,25
+Vertex -23,12,25
+Vertex -23,12,0
+Vertex -23,0,0
+Face2 0,1,2,3
+color 100,100,100
+
+
+
+[MeshBuilder]
+Vertex 3,0,25
+Vertex 3,12,25
+Vertex 3,12,0
+Vertex 3,0,0
+Face2 3,2,1,0
+
+[Texture]
+Load we-halle1.bmp
+Coordinates 0,1,1
+Coordinates 1,1,0
+Coordinates 2,0.5,0
+Coordinates 3,0.5,1
+
+; dach
+
+
+[MeshBuilder]
+Vertex -23.3,12,0
+Vertex 3.3,12,0
+Vertex 3.3,12,25
+Vertex -23.3,12,25
+Face 3,2,1,0
+Face 0,1,2,3
+
+[Texture]
+Load concrete2.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+

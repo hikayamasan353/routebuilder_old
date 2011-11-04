@@ -1,0 +1,66 @@
+;author=Uwe Post
+;description=Platform HH center left
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+;form=CL
+
+[MeshBuilder]
+Vertex -7.5, 1.1, 0
+Vertex -7.5, 1.1, 25.2
+Vertex -2.2, 1.1, 25.2
+Vertex -2.2, 1.1, 0
+Face 0,1,2,3
+
+[Texture]
+Load hh_s_hbf_platf.bmp
+Coordinates 0, 1, 5
+Coordinates 1, 1, 0
+Coordinates 2, 0.1, 0
+Coordinates 3, 0.1, 5
+
+
+
+[MeshBuilder]
+Vertex -3, -0.3, 0
+Vertex -7.5, -0.3, 0
+Vertex -7.5, 1.1, 0
+Vertex -3, 1.1, 0
+Face 0,1,2,3
+
+[Texture]
+Load platform1tx2.bmp
+Coordinates 0, 2, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0
+Coordinates 3, 2, 0
+
+[MeshBuilder]
+Vertex -3, -0.3, 25.2
+Vertex -7.5, -0.3, 25.2
+Vertex -7.5, 1.1, 25.2
+Vertex -3, 1.1, 25.2
+Face 3,2,1,0
+
+[Texture]
+Load platform1tx2.bmp
+Coordinates 0, 2, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0
+Coordinates 3, 2, 0
+
+
+
+
+[MeshBuilder]
+Vertex -7.5, -0.3, 0
+Vertex -7.5, -0.3, 25.2
+Vertex -7.5, 1.1, 25.2
+Vertex -7.5, 1.1, 0
+Face 0,1,2,3
+
+[Texture]
+Load platform1tx2.bmp
+Coordinates 0, 12, 1
+Coordinates 1, 0, 1
+Coordinates 2, 0, 0
+Coordinates 3, 12, 0
+

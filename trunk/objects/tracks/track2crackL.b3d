@@ -1,0 +1,17 @@
+;description=default track crack
+;author=Uwe Post
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -3.8, -0.3, 0
+Vertex -3.8, -0.3, 25.2
+Vertex -1.9, -0.3, 25.2
+Vertex -1.9, -0.3, 0
+Face 0,1,2,3
+
+[Texture]
+Load schotter2.bmp
+Coordinates 0, 2, 12
+Coordinates 1, 2, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 12

@@ -1,0 +1,105 @@
+;description=House in Ruhr Area Germany
+;author=Uwe Post
+;copyright=the BVE RouteBuilder team 2004, part of RB Base library, goto routebuilder.bve-routes.com
+
+[Meshbuilder]
+Vertex 0, 0, 0
+Vertex 0, 8, 0
+Vertex 5, 8, 0
+Vertex 10, 8, 0
+Vertex 10, 0, 0
+Face 0, 1, 2, 3, 4
+[Texture]
+Load haus_ge1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 0.25,0
+Coordinates 3, 0.52, 0
+Coordinates 4, 0.52, 1
+
+[Meshbuilder]
+Vertex 0, 8, 0
+Vertex 5, 12, 0
+Vertex 10, 8, 0
+Face 0, 1, 2
+[Texture]
+Load haus_ge1.bmp
+Coordinates 0, 0, 0.1
+Coordinates 1, 0, 0
+Coordinates 2, 0.1,0
+
+[Meshbuilder]
+Vertex 10, 0, 15
+Vertex 10, 8, 15
+Vertex 5, 8, 15
+Vertex 0, 8, 15
+Vertex 0, 0, 15
+Face 0, 1, 2, 3, 4
+[Texture]
+Load haus_ge1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 0.25,0
+Coordinates 3, 0.52, 0
+Coordinates 4, 0.52, 1
+
+
+[Meshbuilder]
+Vertex 0, 8, 15
+Vertex 5, 12, 15
+Vertex 10, 8, 15
+Face 2,1,0
+[Texture]
+Load haus_ge1.bmp
+Coordinates 0, 0, 0.1
+Coordinates 1, 0, 0
+Coordinates 2, 0.1,0
+
+[Meshbuilder]
+Vertex 10, 0, 0
+Vertex 10, 8, 0
+Vertex 10, 8, 15
+Vertex 10, 0, 15
+Face 0, 1, 2, 3
+[Texture]
+Load haus_ge1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+[Meshbuilder]
+Vertex 0, 0, 15
+Vertex 0, 8, 15
+Vertex 0, 8, 0
+Vertex 0, 0, 0
+Face 0, 1, 2, 3
+[Texture]
+Load haus_ge1.bmp
+Coordinates 0, 0, 1
+Coordinates 1, 0, 0
+Coordinates 2, 1, 0
+Coordinates 3, 1, 1
+[Meshbuilder]
+Vertex 10, 8, 0
+Vertex 5, 12, 0
+Vertex 5, 12, 15
+Vertex 10, 8, 15
+Face 0, 1, 2, 3
+[Texture]
+Load haus_ge1_dach.bmp
+Coordinates 0, 0,1
+Coordinates 1, 0,0
+Coordinates 2, 1,0
+Coordinates 3, 1,1
+[Meshbuilder]
+Vertex 0, 8, 15
+Vertex 5, 12, 15
+Vertex 5, 12, 0
+Vertex 0, 8, 0
+Face 0, 1, 2, 3
+[Texture]
+Load haus_ge1_dach.bmp
+Coordinates 0, 0,1
+Coordinates 1, 0,0
+Coordinates 2, 1,0
+Coordinates 3, 1,1

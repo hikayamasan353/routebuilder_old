@@ -1,0 +1,180 @@
+[Meshbuilder]
+Vertex -1.1,3.980,16.84
+Vertex -1.1,3.980,0.2
+Vertex -1.4,3.55,0.2
+Vertex -1.4,3.55,16.84
+Vertex -1.4,0,0.2
+Vertex -1.4,0,16.84
+Face 3,2,4,5
+Face 0,1,2,3
+Face 5,4,2,3
+Face 3,2,1,0
+
+[Texture]
+Load BR1431.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,0.025
+Coordinates 3,0,0.025
+Coordinates 4,1,1
+Coordinates 5,0,1
+transparent 70, 78, 78
+
+[Meshbuilder]
+Vertex 1.1,3.980,16.84
+Vertex 1.1,3.980,0.2
+Vertex 1.4,3.55,0.2
+Vertex 1.4,3.55,16.84
+Vertex 1.4,0,0.2
+Vertex 1.4,0,16.84
+Face 0,3,2,1
+Face 3,5,4,2
+Face 1,2,3,0
+Face 2,4,5,3
+
+[Texture]
+Load BR1431.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,0.025
+Coordinates 3,0,0.025
+Coordinates 4,1,1
+Coordinates 5,0,1
+transparent 70, 78, 78
+
+[Meshbuilder]
+Vertex  -1.4,3.980 , 0.2
+Vertex   1.4,3.980 , 0.2
+Vertex   1.4,0   , 0.2
+Vertex  -1.4,0   , 0.2
+Face 0,1,2,3
+
+[Texture]
+Load BR143F.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 242, 242, 242
+
+[Meshbuilder]
+Vertex  -1.4,3.980 , 16.84
+Vertex   1.4,3.980 , 16.84
+Vertex   1.4,0   , 16.84
+Vertex  -1.4,0   , 16.84
+Face 3,2,1,0
+
+[Texture]
+Load BR143F.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 242, 242, 242
+
+;Dach
+[MeshBuilder]
+Vertex -1.1,+3.960,+0.2
+Vertex +1.1,+3.960,+0.2
+Vertex +1.1,+3.960,+16.84
+Vertex -1.1,+3.960,+16.84
+Face 3,2,1,0
+
+[Texture]
+Load BR143D.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;Stromabnehmer1
+[Meshbuilder]
+Vertex  0.0,5.29, 4.2
+Vertex   0.0,5.29, 2.2
+Vertex   0.0,3.980   , 2.2
+Vertex  0.0,3.980   , 4.2
+Face 0,1,2,3
+Face 3,2,1,0
+[Texture]
+Load BR143SA.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 56,96,104
+
+;Stromabnehmer2
+[Meshbuilder]
+Vertex  0.0,4.7,15.5
+Vertex   0.0,4.7, 13.14
+Vertex   0.0,3.980   , 13.14
+Vertex  0.0,3.980   ,15.5
+Face 0,1,2,3
+Face 3,2,1,0
+[Texture]
+Load BR143SA2.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 0, 0, 255
+
+;Fahrgestell
+[Meshbuilder]
+Vertex -0.718,1.98,16.74
+Vertex -0.718,1.98,0.3
+Vertex -0.718,0.0,0.3
+Vertex -0.718,0.0,16.74
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load BR143FG.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 70,70,78
+
+[Meshbuilder]
+Vertex 0.718,1.98,16.74
+Vertex 0.718,1.98,0.3
+Vertex 0.718,0.0,0.3
+Vertex 0.718,0.0,16.74
+Face 1,0,3,2
+Face 2,3,0,1
+
+[Texture]
+Load BR143FG.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 70,70,78
+
+;Schürze
+[MeshBuilder]
+Vertex -1.4,+0.4,+16,74
+Vertex -1.4,+2.0,+16,74
+Vertex +1.4,+2.0,+16,74
+Vertex +1.4,+0.4,+16,74
+Face 0,1,2,3
+[Texture]
+Load b1b.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+[MeshBuilder]
+Vertex -1.4,+0.4,+0.3
+Vertex -1.4,+2.0,+0.3
+Vertex +1.4,+2.0,+0.3
+Vertex +1.4,+0.4,+0.3
+Face 3,2,1,0
+[Texture]
+Load b1b.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1

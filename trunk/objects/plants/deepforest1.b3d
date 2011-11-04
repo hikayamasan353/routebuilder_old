@@ -1,0 +1,346 @@
+;author=Uwe Post
+;description=deep forest
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex 6, 24, 0
+Vertex 6, -0.1, 0
+Vertex -6, -0.1, 0
+Vertex -6, 24, 0
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load tree1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+[MeshBuilder]
+Vertex 16, 24, 1
+Vertex 16, -0.1, 1
+Vertex 4, -0.1, 1
+Vertex 4, 24, 1
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load tree1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+[MeshBuilder]
+Vertex -4, 28, 5.5
+Vertex -4, -0.1, 5.5
+Vertex -16, -0.1, 5.5
+Vertex -16, 28, 5.5
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load tree1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+[MeshBuilder]
+Vertex 9, 24, 7.8
+Vertex 9, -0.1, 7.8
+Vertex -3, -0.1, 7.8
+Vertex -3, 24, 7.8
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load tree2.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+[MeshBuilder]
+Vertex -6, 20, 11
+Vertex -6, -0.1, 11
+Vertex -18, -0.1, 11
+Vertex -18, 20, 11
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load tree1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+[MeshBuilder]
+Vertex 8, 24, 14
+Vertex 8, -0.1, 14
+Vertex -4, -0.1, 14
+Vertex -4, 24, 14
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load tree2.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+
+[MeshBuilder]
+Vertex 4, 24, 18
+Vertex 4, -0.1, 18
+Vertex -8, -0.1, 18
+Vertex -8, 24, 18
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load tree1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+[MeshBuilder]
+Vertex 9, 24, 25
+Vertex 9, -0.1, 25
+Vertex -3, -0.1, 25
+Vertex -3, 24, 25
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load tree2.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+
+
+
+[MeshBuilder]
+Vertex 4, 24, -10
+Vertex 4, -0.1, -10
+Vertex -8, -0.1, -10
+Vertex -8, 24, -10
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load tree1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+
+
+[MeshBuilder]
+Vertex 8, 24, -4
+Vertex 8, -0.1, -4
+Vertex -4, -0.1, -4
+Vertex -4, 24, -4
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load tree2.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+
+
+[MeshBuilder]
+Vertex -3, 6, -8
+Vertex -3, -0.1, -8
+Vertex -9, -0.1, -8
+Vertex -9, 6, -8
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load bush1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+
+
+[MeshBuilder]
+Vertex 13, 9, -4
+Vertex 13, -0.1, -4
+Vertex 7, -0.1, -4
+Vertex 7, 9, -4
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load bush1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+[MeshBuilder]
+Vertex -13, 8, -4
+Vertex -13, -0.1, -4
+Vertex -7, -0.1, -4
+Vertex -7, 8, -4
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load bush1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+[MeshBuilder]
+Vertex -13, 8, 14
+Vertex -13, -0.1, 14
+Vertex -7, -0.1, 14
+Vertex -7, 8, 14
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load bush1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+[MeshBuilder]
+Vertex 13, 8, 15
+Vertex 13, -0.1, 15
+Vertex 7, -0.1, 15
+Vertex 7, 8, 15
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load bush1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+[MeshBuilder]
+Vertex -13, 12, 19
+Vertex -13, -0.1, 19
+Vertex -7, -0.1, 19
+Vertex -7, 12, 19
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load tree1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+
+[MeshBuilder]
+Vertex 14, 14, 21
+Vertex 14, -0.1, 21
+Vertex 7, -0.1, 21
+Vertex 7, 14, 21
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load tree1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+[MeshBuilder]
+Vertex -14, 17, 25
+Vertex -14, -0.1, 25
+Vertex -6, -0.1, 25
+Vertex -6, 17, 25
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load tree1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+

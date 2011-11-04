@@ -1,0 +1,18 @@
+;author=Uwe Post
+;copyright=open source
+
+[MeshBuilder]
+Vertex -0.1,35,0
+Vertex -0.1,0,0
+Vertex -0.1,0,20
+Vertex -0.1,35,20
+Face2 0,1,2,3
+
+[Texture]
+Load n_fassade1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+transparent 0,0,255
+

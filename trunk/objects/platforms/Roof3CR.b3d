@@ -1,0 +1,17 @@
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+
+[MeshBuilder]
+Vertex 7.2, 5.0, 0
+Vertex 7.2, 5.0, 25.3
+Vertex 2.7, 4.7, 25.3
+Vertex 2.7, 4.7, 0
+Face 0,1,2,3
+Face 3,2,1,0
+Color 192,192,192
+[Texture]
+Load Roof2.bmp
+Coordinates 0, 1, 0
+Coordinates 1, 1, 4
+Coordinates 2, 0, 4
+Coordinates 3, 0, 0

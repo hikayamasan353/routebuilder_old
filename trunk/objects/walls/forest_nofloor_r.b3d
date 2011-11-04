@@ -1,0 +1,113 @@
+;description=forest wall
+;author=Uwe Post
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+
+
+; forest right
+
+[MeshBuilder]
+Vertex 6, 24, 0
+Vertex 6, -0.1, 0
+Vertex 12, -0.1, 0
+Vertex 12, 24, 0
+Face2 0,1,2,3
+
+[Texture]
+Load ..\plants\tree1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+
+
+
+[MeshBuilder]
+Vertex 8, 24, 14
+Vertex 8, -0.1, 14
+Vertex 14, -0.1, 14
+Vertex 14, 24, 14
+Face2 0,1,2,3
+
+[Texture]
+Load ..\plants\tree2.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+
+
+
+
+[MeshBuilder]
+Vertex 12, 24, 22
+Vertex 12, -0.1, 22
+Vertex 6, -0.1, 22
+Vertex 6, 24, 22
+Face2 0,1,2,3
+
+[Texture]
+Load ..\plants\tree2.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+
+
+
+[MeshBuilder]
+Vertex 4, 24, 12
+Vertex 4, -0.1, 12
+Vertex 12, -0.1, 12
+Vertex 12, 24, 12
+Face2 0,1,2,3
+
+[Texture]
+Load ..\plants\tree1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+
+
+
+
+
+
+
+
+[MeshBuilder]
+Vertex 5, 6, 8
+Vertex 5, -0.1, 8
+Vertex 11, -0.1, 8
+Vertex 11, 6, 8
+Face2 0,1,2,3
+
+[Texture]
+Load ..\plants\bush1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 255
+
+
+

@@ -1,0 +1,64 @@
+;author=Uwe Post
+;description=Hbf Bochum
+;copyright=open source
+
+
+[MeshBuilder]
+Vertex 0, 10, 0
+Vertex 25, 10, 0
+Vertex 25, 0, 0
+Vertex 0, 0, 0
+Face 0,1,2,3
+
+
+[Texture]
+Load bo_hbf.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 2, 0
+Coordinates 2, 2, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex 0, 10, 25
+Vertex 25, 10,25
+Vertex 25, 0, 25
+Vertex 0, 0, 25
+Face 3,2,1,0
+
+[Texture]
+Load bo_hbf.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 2, 0
+Coordinates 2, 2, 1
+Coordinates 3, 0, 1
+
+
+[MeshBuilder]
+Vertex 0, 10, 0
+Vertex 0, 10,25
+Vertex 0, 0,25
+Vertex 0, 0, 0
+Face 3,2,1,0
+
+[Texture]
+Load bo_hbf.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 2, 0
+Coordinates 2, 2, 1
+Coordinates 3, 0, 1
+
+
+[MeshBuilder]
+Vertex 25, 10, 0
+Vertex 25, 10, 25
+Vertex 25, 0, 25
+Vertex 25, 0, 0
+Face 0,1,2,3
+
+[Texture]
+Load bo_hbf.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 2, 0
+Coordinates 2, 2, 1
+Coordinates 3, 0, 1
+

@@ -1,0 +1,18 @@
+;author=Jan de Jong,Fons de Jong
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+
+[MeshBuilder]
+
+Vertex -4, 0.01, 0
+Vertex -4, 0, 30
+Vertex 4, 0, 30
+Vertex 4, 0.01, 0
+Face 0, 1, 2, 3
+
+[Texture]
+Load road2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1

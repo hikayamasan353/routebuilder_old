@@ -1,0 +1,11 @@
+;author=Uwe Post
+;description=platform roof Herne
+;copyright=open source
+
+;empty
+[MeshBuilder]
+Vertex 0,0,0
+Vertex 1,0,0
+Vertex 1,0,0
+Vertex 0,0,0
+

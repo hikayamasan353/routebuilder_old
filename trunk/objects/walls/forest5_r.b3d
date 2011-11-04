@@ -1,0 +1,238 @@
+;description=forest wall
+;author=Uwe Post
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+
+
+; forest left
+
+[MeshBuilder]
+Vertex 6, 14, 0
+Vertex 6, -0.3, 0
+Vertex 12, -0.3, 0
+Vertex 12, 14, 0
+Face2 0,1,2,3
+
+[Texture]
+Load ..\plants\fir1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 0
+
+
+
+
+
+
+[MeshBuilder]
+Vertex 8, 16, 14
+Vertex 8, -0.3, 14
+Vertex 14, -0.3, 14
+Vertex 14, 16, 14
+Face2 0,1,2,3
+
+[Texture]
+Load ..\plants\fir1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 0
+
+
+
+
+
+
+
+
+[MeshBuilder]
+Vertex 12, 18, 22
+Vertex 12, -0.3, 22
+Vertex 6, -0.3, 22
+Vertex 6, 18, 22
+Face2 0,1,2,3
+
+[Texture]
+Load ..\plants\fir1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 0
+
+
+
+
+
+
+[MeshBuilder]
+Vertex 4, 24, 12
+Vertex 4, -0.3, 12
+Vertex 12, -0.3, 12
+Vertex 12, 24, 12
+Face2 0,1,2,3
+
+[Texture]
+Load ..\plants\fir1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 0
+
+
+
+
+
+
+
+
+
+
+[MeshBuilder]
+Vertex 5, 16, 8
+Vertex 5, -0.1, 8
+Vertex 11, -0.1, 8
+Vertex 11, 16, 8
+Face2 0,1,2,3
+
+[Texture]
+Load ..\plants\fir1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 0
+
+
+
+
+;
+
+[MeshBuilder]
+Vertex 13, 14, 12
+Vertex 13, -0.3, 12
+Vertex 19, -0.3, 12
+Vertex 19, 14, 12
+Face2 0,1,2,3
+
+[Texture]
+Load ..\plants\fir1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 0
+
+
+
+
+
+
+[MeshBuilder]
+Vertex 16, 16, 14
+Vertex 16, -0.3, 14
+Vertex 22, -0.3, 14
+Vertex 22, 16, 14
+Face2 0,1,2,3
+
+[Texture]
+Load ..\plants\fir1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 0
+
+
+
+
+
+
+
+
+[MeshBuilder]
+Vertex 19, 18, 22
+Vertex 19, -0.3, 22
+Vertex 13, -0.3, 22
+Vertex 13, 18, 22
+Face2 0,1,2,3
+
+[Texture]
+Load ..\plants\fir1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 0
+
+
+
+
+
+
+[MeshBuilder]
+Vertex 10, 24, 2
+Vertex 10, -0.3, 2
+Vertex 18, -0.3, 2
+Vertex 18, 24, 2
+Face2 0,1,2,3
+
+[Texture]
+Load ..\plants\fir1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 0
+
+
+
+
+
+
+
+
+
+
+[MeshBuilder]
+Vertex 25, 16, 4
+Vertex 25, -0.1, 4
+Vertex 31, -0.1, 4
+Vertex 31, 16, 4
+Face2 0,1,2,3
+
+[Texture]
+Load ..\plants\fir1.bmp
+Coordinates 0,0,0
+Coordinates 1,0,1
+Coordinates 2,1,1
+Coordinates 3,1,0
+Transparent 0, 0, 0
+
+
+
+
+
+;floor
+
+[MeshBuilder]
+Vertex 120,  -0.3, -1
+Vertex 120,  -0.3, 26
+Vertex 2.5  , -0.3  , 26
+Vertex 2.5  , -0.3  , -1
+Face2 3,2,1,0
+
+
+
+
+[Texture]
+Load ..\grounds\forestfloor1.bmp
+Coordinates 0, 16, 0
+Coordinates 1, 16, 4
+Coordinates 2, 0, 4
+Coordinates 3, 0, 0
+

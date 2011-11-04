@@ -1,0 +1,50 @@
+;author=Uwe Post
+;description=Stadthaus Bochum 4
+;copyright=open source
+
+
+[MeshBuilder]
+Vertex 0, 15, 0
+Vertex 15, 15, 0
+Vertex 15, 0, 0
+Vertex 0, 0, 0
+Face 0,1,2,3
+
+
+[Texture]
+Load hausfassade4.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+[MeshBuilder]
+Vertex 0, 15, 10
+Vertex 15, 15,10
+Vertex 15, 0, 10
+Vertex 0, 0, 10
+Face 3,2,1,0
+
+[Texture]
+Load hausfassade4.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+
+
+[MeshBuilder]
+Vertex 0, 15, 0
+Vertex 0, 15, 10
+Vertex 0, 0, 10
+Vertex 0, 0, 0
+Face 3,2,1,0
+color 148,141,156
+
+[MeshBuilder]
+Vertex 15, 15, 0
+Vertex 15, 15, 10
+Vertex 15, 0, 10
+Vertex 15, 0, 0
+Face 0,1,2,3
+color 148,141,156

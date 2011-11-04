@@ -1,0 +1,90 @@
+;author=Uwe Post
+;description=city house
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex -5,0,-5.1
+Vertex -5,10,-5.1
+Vertex 5,10,-5.1
+Vertex 5,0,-5.1
+Face 0,1,2,3
+
+[Texture]
+Load stadthaus1_a.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+[MeshBuilder]
+Vertex 5,0,5.1
+Vertex 5,15,5.1
+Vertex 5,15,-5.1
+Vertex 5,0,-5.1
+Face 3,2,1,0
+
+[Texture]
+Load stadthaus1_b.bmp
+Coordinates 0,1,1
+Coordinates 1,1,0
+Coordinates 2,0,0
+Coordinates 3,0,1
+transparent 0,0,255
+
+[MeshBuilder]
+Vertex -5,0,5.1
+Vertex -5,10,5.1
+Vertex 5,10,5.1
+Vertex 5,0,5.1
+Face 3,2,1,0
+
+[Texture]
+Load stadthaus1_a.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+[MeshBuilder]
+Vertex -5,0,5.1
+Vertex -5,15,5.1
+Vertex -5,15,-5.1
+Vertex -5,0,-5.1
+Face 0,1,2,3
+
+[Texture]
+Load stadthaus1_b.bmp
+Coordinates 0,1,1
+Coordinates 1,1,0
+Coordinates 2,0,0
+Coordinates 3,0,1
+transparent 0,0,255
+
+[MeshBuilder]
+Vertex -5.1,10,-5.1
+Vertex  5.1,10,-5.1
+Vertex  5.1,15,0
+Vertex -5.1,15,0
+Face 3,2,1,0
+
+[Texture]
+Load dachziegel1.bmp
+Coordinates 0,0,10
+Coordinates 1,10,10
+Coordinates 2,10,0
+Coordinates 3,0,0
+
+
+[MeshBuilder]
+Vertex -5.1,10,5.1
+Vertex  5.1,10,5.1
+Vertex  5.1,15,0
+Vertex -5.1,15,0
+Face 0,1,2,3
+
+[Texture]
+Load dachziegel1.bmp
+Coordinates 0,0,10
+Coordinates 1,10,10
+Coordinates 2,10,0
+Coordinates 3,0,0

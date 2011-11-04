@@ -1,0 +1,5 @@
+LIBRARY   RBAddon
+DESCRIPTION "Routebuilder Addon Sample in C/C++"
+EXPORTS
+   RBAddonInit   @1
+   RBAddonRun   @2

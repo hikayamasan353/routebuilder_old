@@ -1,0 +1,21 @@
+;author=Uwe Post
+;description=old brick wall2
+;copyright=open source
+
+
+[MeshBuilder]
+Vertex 0, 8, 25
+Vertex 0, 8, 0
+Vertex 0, 0, 0
+Vertex 0, 0, 25
+Face 0,1,2,3
+Face 1,0,3,2
+
+[Texture]
+Load altemauer1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 0.6
+Coordinates 3, 0, 0.6
+transparent 0,0,255
+

@@ -1,0 +1,33 @@
+;author=Uwe Post
+;description=tunnel wall object
+;copyright=open source
+
+[MeshBuilder]
+Vertex -3, 5.48, -0.5
+Vertex 2.5, 5.48, -0.5
+Vertex -3, 5.48, 25.5
+Vertex 2.5, 5.48, 25.5
+Face2 0, 1, 2, 3
+Color 30,30,30
+
+[MeshBuilder]
+Vertex 2.5,5.48,25.2
+Vertex 2.5,5.48,-0.2
+Vertex 2.5,-0.5,-0.2
+Vertex 2.5,-0.5,25.2
+Face2 0,1,2,3
+[Texture]
+Load ..\grounds\concrete2.bmp
+Coordinates 0, 1, 2
+Coordinates 1, 1, 0
+Coordinates 2, 0, 0
+Coordinates 3, 0, 2
+
+
+[MeshBuilder]
+Vertex 2.5,-0.4,-1
+Vertex 2.5,-0.4,26
+Vertex -2.5,-0.4,26
+Vertex -2.5,-0.4,-1
+Face 0,1,2,3
+color 0,0,0

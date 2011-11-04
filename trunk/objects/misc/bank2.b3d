@@ -1,0 +1,40 @@
+;author=Uwe Post
+;copyright=the BVE RouteBuilder team 2002, part of RB Base library, goto routebuilder.bve-routes.com
+
+[MeshBuilder]
+Vertex 0,1.5,3
+Vertex 0,1.5,0
+Vertex 0,0.0,0
+Vertex 0,0.0,3
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load bank2.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+transparent 0,0,255
+
+
+
+
+[MeshBuilder]
+Vertex -0.6,0.6,3
+Vertex -0.6,0.6,0
+Vertex 0.6,0.6,0
+Vertex 0.6,0.6,3
+Face 0,1,2,3
+Face 3,2,1,0
+
+
+
+[Texture]
+Load bank1.bmp
+Coordinates 0, 0, 0
+Coordinates 1, 1, 0
+Coordinates 2, 1, 1
+Coordinates 3, 0, 1
+transparent 0,0,255
+

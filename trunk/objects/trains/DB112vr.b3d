@@ -1,0 +1,299 @@
+;description=E-Lok Br. 112 der DB, verkehrsrot, Epoche Vb
+;author=Uwe Post
+;copyright=open source
+
+[Meshbuilder]
+Vertex -1.35,3.7,0
+Vertex -1.35,3.7,14.2
+Vertex -1.35,0.7,14.2
+Vertex -1.35,0.7,0
+Face 3,2,1,0
+
+[Texture]
+Load 112_vr_seite.bmp
+Coordinates 0,1,0
+Coordinates 1,0,0
+Coordinates 2,0,1
+Coordinates 3,1,1
+Transparent 0,0,255
+
+
+[Meshbuilder]
+Vertex -1.35,0.75,0.2
+Vertex -1.35,0.75,7.1
+Vertex -1.35,0  ,7.1
+Vertex -1.35,0  ,0.2
+Face 3,2,1,0
+
+[Texture]
+Load 112_fahrgest.bmp
+Coordinates 1,0,0
+Coordinates 0,1,0
+Coordinates 3,1,1
+Coordinates 2,0,1
+Transparent 0,0,255
+
+[Meshbuilder]
+Vertex -1.35,0.75,13.7
+Vertex -1.35,0.75,7.1
+Vertex -1.35,0  ,7.1
+Vertex -1.35,0  ,13.7
+Face 0,1,2,3
+
+[Texture]
+Load 112_fahrgest.bmp
+Coordinates 1,0,0
+Coordinates 0,1,0
+Coordinates 3,1,1
+Coordinates 2,0,1
+Transparent 0,0,255
+
+
+
+
+[Meshbuilder]
+Vertex 1.35,3.7,0
+Vertex 1.35,3.7,14.2
+Vertex 1.35,0.7,14.2
+Vertex 1.35,0.7,0
+Face 0,1,2,3
+
+[Texture]
+Load 112_vr_seite.bmp
+Coordinates 1,1,0
+Coordinates 0,0,0
+Coordinates 3,0,1
+Coordinates 2,1,1
+Transparent 0,0,255
+
+
+[Meshbuilder]
+Vertex 1.35,0.75,0.2
+Vertex 1.35,0.75,7.1
+Vertex 1.35,0  ,7.1
+Vertex 1.35,0  ,0.2
+Face 0,1,2,3
+
+[Texture]
+Load 112_fahrgest.bmp
+Coordinates 1,0,0
+Coordinates 0,1,0
+Coordinates 3,1,1
+Coordinates 2,0,1
+Transparent 0,0,255
+
+[Meshbuilder]
+Vertex 1.35,0.75,13.7
+Vertex 1.35,0.75,7.1
+Vertex 1.35,0  ,7.1
+Vertex 1.35,0  ,13.7
+Face 3,2,1,0
+
+[Texture]
+Load 112_fahrgest.bmp
+Coordinates 1,0,0
+Coordinates 0,1,0
+Coordinates 3,1,1
+Coordinates 2,0,1
+Transparent 0,0,255
+
+
+
+
+;
+
+
+[Meshbuilder]
+Vertex  -1.35,3.6, 0.2
+Vertex   1.35,3.6, 0.2
+Vertex   1.35,2   , 0
+Vertex  -1.35,2   , 0
+Face 0,1,2,3
+
+[Texture]
+Load 112_vr_front.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,0.59
+Coordinates 3,0,0.59
+transparent 0,0,255
+
+[Meshbuilder]
+Vertex  -1.35,2, 0
+Vertex   1.35,2, 0
+Vertex   1.35,0.9   , 0.1
+Vertex  -1.35,0.9   , 0.1
+Face 0,1,2,3
+
+[Texture]
+Load 112_vr_front.bmp
+Coordinates 0,0,0.59
+Coordinates 1,1,0.59
+Coordinates 2,1,1
+Coordinates 3,0,1
+
+[Meshbuilder]
+Vertex  -1.35,3.5, 0.2
+Vertex   1.35,3.5, 0.2
+Vertex   1.35,3.7   , 2.1
+Vertex  -1.35,3.7   , 2.1
+Face 3,2,1,0
+
+[Texture]
+Load 112_vr_front.bmp
+Coordinates 0,0,0.47
+Coordinates 1,1,0.47
+Coordinates 2,1,0.47
+Coordinates 3,0,0.47
+
+[Meshbuilder]
+Vertex  -1.35,0.95, 0.3
+Vertex   1.35,0.95, 0.3
+Vertex   1.35,0.0   , 0.3
+Vertex  -1.35,0.0   , 0.3
+Face 0,1,2,3
+
+[Texture]
+Load 112_front_fahrgest.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 0,0,255
+
+
+
+
+[Meshbuilder]
+Vertex  -1.35,3.6, 14
+Vertex   1.35,3.6, 14
+Vertex   1.35,2   , 14.2
+Vertex  -1.35,2   , 14.2
+Face 3,2,1,0
+
+[Texture]
+Load 112_vr_front.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,0.59
+Coordinates 3,0,0.59
+transparent 0,0,255
+
+[Meshbuilder]
+Vertex  -1.35,2, 14.2
+Vertex   1.35,2, 14.2
+Vertex   1.35,0.9   , 14.1
+Vertex  -1.35,0.9   , 14.1
+Face 3,2,1,0
+
+[Texture]
+Load 112_vr_front.bmp
+Coordinates 0,1,0.59
+Coordinates 1,0,0.59
+Coordinates 2,0,1
+Coordinates 3,1,1
+
+[Meshbuilder]
+Vertex  -1.35,3.5, 14
+Vertex   1.35,3.5, 14
+Vertex   1.35,3.7   , 11.9
+Vertex  -1.35,3.7   , 11.9
+Face 0,1,2,3
+
+[Texture]
+Load 112_vr_front.bmp
+Coordinates 0,0,0.47
+Coordinates 1,1,0.47
+Coordinates 2,1,0.47
+Coordinates 3,0,0.47
+
+[Meshbuilder]
+Vertex  -1.35,0.95, 14
+Vertex   1.35,0.95, 14
+Vertex   1.35,0   , 14
+Vertex  -1.35,0   , 14
+Face 3,2,1,0
+
+[Texture]
+Load 112_front_fahrgest.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 0,0,255
+
+
+
+[Meshbuilder]
+Vertex -1.35,3.7  ,2.1
+Vertex  1.35,3.7  ,2.1
+Vertex  1.35,3.7  ,12.3
+Vertex -1.35,3.7  ,12.3
+Face 3,2,1,0
+color 120,120,140
+
+
+;panto2
+
+[Meshbuilder]
+Vertex -1.0,6  ,11.6
+Vertex  1.0,6  ,11.6
+Vertex  1.0,4.8  ,12.9
+Vertex -1.0,4.8  ,12.9
+Face2 3,2,1,0
+
+[Texture]
+Load 120_pant1.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 0,0,255
+
+[Meshbuilder]
+Vertex -0.4,4.8  ,12.9
+Vertex  0.4,4.8  ,12.9
+Vertex  0.4,3.7  ,11.8
+Vertex -0.4,3.7  ,11.8
+Face2 3,2,1,0
+
+[Texture]
+Load 120_pant2.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 0,0,255
+
+;panto1
+
+[Meshbuilder]
+Vertex -1.0,4  ,2.9
+Vertex  1.0,4  ,2.9
+Vertex  1.0,3.8  ,1.3
+Vertex -1.0,3.8  ,1.3
+Face2 3,2,1,0
+
+[Texture]
+Load 120_pant1.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 0,0,255
+
+[Meshbuilder]
+Vertex -0.4,3.8  ,1.3
+Vertex  0.4,3.8  ,1.3
+Vertex  0.4,3.75  ,2.8
+Vertex -0.4,3.75  ,2.8
+Face2 3,2,1,0
+
+[Texture]
+Load 120_pant2.bmp
+Coordinates 0,0,0
+Coordinates 1,1,0
+Coordinates 2,1,1
+Coordinates 3,0,1
+transparent 0,0,255
+

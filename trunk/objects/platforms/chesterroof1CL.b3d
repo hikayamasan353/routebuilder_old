@@ -1,0 +1,511 @@
+;author=Peter Everett
+;Description=Chester Station  centre left roof
+;Copyright=Peter Everett August 2003 (V 1.0)
+
+;cross support stub
+[Meshbuilder]
+Vertex -4.5,1.1,6.25
+Vertex -4.5,2.1,6.25
+Vertex -4.8,2.1,6.25
+Vertex -4.8,1.1,6.25
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterstubgreen.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;long support (front) stub
+[Meshbuilder]
+Vertex -4.5,1.1,6.15
+Vertex -4.5,2.1,6.15
+Vertex -4.5,2.1,6.35
+Vertex -4.5,1.1,6.35
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterstubgreen.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;long support (back) stub
+[Meshbuilder]
+Vertex -4.8,1.1,6.15
+Vertex -4.8,2.1,6.15
+Vertex -4.8,2.1,6.35
+Vertex -4.8,1.1,6.35
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterstubgreen.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;cross support upright
+[Meshbuilder]
+Vertex -4.5,2.1,6.25
+Vertex -4.5,4.35,6.25
+Vertex -4.8,4.35,6.25
+Vertex -4.8,2.1,6.25
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;long support (front) upright
+[Meshbuilder]
+Vertex -4.5,2.1,6.15
+Vertex -4.5,4.1,6.15
+Vertex -4.5,4.1,6.35
+Vertex -4.5,2.1,6.35
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;long support (back) upright
+[Meshbuilder]
+Vertex -4.8,2.1,6.15
+Vertex -4.8,4.1,6.15
+Vertex -4.8,4.1,6.35
+Vertex -4.8,2.1,6.35
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;branch to centre (middle bit)
+[Meshbuilder]
+Vertex -4.8,4.1,6.25
+Vertex -4.8,4.35,6.25
+Vertex -6,4.8,6.25
+Vertex -6.1,4.65,6.25
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;branch to centre (top bit)
+[Meshbuilder]
+Vertex -4.8,4.35,6.15
+Vertex -6,4.8,6.15
+Vertex -6,4.8,6.35
+Vertex -4.8,4.35,6.35
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;branch to centre (bottom bit)
+[Meshbuilder]
+Vertex -4.8,4.1,6.15
+Vertex -6.1,4.65,6.15
+Vertex -6.1,4.65,6.35
+Vertex -4.8,4.1,6.35
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;branch to track (middle bit)
+[Meshbuilder]
+Vertex -4.5,4.1,6.25
+Vertex -4.5,4.35,6.25
+Vertex -1.6,5,6.25
+Vertex -1.6,4.9,6.25
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;branch to centre (top bit)
+[Meshbuilder]
+Vertex -4.5,4.35,6.15
+Vertex -1.6,5,6.15
+Vertex -1.6,5,6.35
+Vertex -4.5,4.35,6.35
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;branch to centre (bottom bit)
+[Meshbuilder]
+Vertex -4.5,4.1,6.15
+Vertex -1.6,4.9,6.15
+Vertex -1.6,4.9,6.35
+Vertex -4.5,4.1,6.35
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;top flange
+[Meshbuilder]
+Vertex -4.5, 4.35, 6.15
+Vertex -4.8, 4.35, 6.15
+Vertex -4.8, 4.35, 6.35
+Vertex -4.5, 4.35, 6.35
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;cross support stub
+[Meshbuilder]
+Vertex -4.5,1.1,18.75
+Vertex -4.5,2.1,18.75
+Vertex -4.8,2.1,18.75
+Vertex -4.8,1.1,18.75
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterstubgreen.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;long support (front) stub
+[Meshbuilder]
+Vertex -4.5,1.1,18.65
+Vertex -4.5,2.1,18.65
+Vertex -4.5,2.1,18.85
+Vertex -4.5,1.1,18.85
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterstubgreen.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;long support (back) stub
+[Meshbuilder]
+Vertex -4.8,1.1,18.65
+Vertex -4.8,2.1,18.65
+Vertex -4.8,2.1,18.85
+Vertex -4.8,1.1,18.85
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterstubgreen.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;cross support upright
+[Meshbuilder]
+Vertex -4.5,2.1,18.75
+Vertex -4.5,4.35,18.75
+Vertex -4.8,4.35,18.75
+Vertex -4.8,2.1,18.75
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;long support (front) upright
+[Meshbuilder]
+Vertex -4.5,2.1,18.65
+Vertex -4.5,4.1,18.65
+Vertex -4.5,4.1,18.85
+Vertex -4.5,2.1,18.85
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;long support (back) upright
+[Meshbuilder]
+Vertex -4.8,2.1,18.65
+Vertex -4.8,4.1,18.65
+Vertex -4.8,4.1,18.85
+Vertex -4.8,2.1,18.85
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;branch to centre (middle bit)
+[Meshbuilder]
+Vertex -4.8,4.1,18.75
+Vertex -4.8,4.35,18.75
+Vertex -6,4.8,18.75
+Vertex -6.1,4.65,18.75
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;branch to centre (top bit)
+[Meshbuilder]
+Vertex -4.8,4.35,18.65
+Vertex -6,4.8,18.65
+Vertex -6,4.8,18.85
+Vertex -4.8,4.35,18.85
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;branch to centre (bottom bit)
+[Meshbuilder]
+Vertex -4.8,4.1,18.65
+Vertex -6.1,4.65,18.65
+Vertex -6.1,4.65,18.85
+Vertex -4.8,4.1,18.85
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;branch to track (middle bit)
+[Meshbuilder]
+Vertex -4.5,4.1,18.75
+Vertex -4.5,4.35,18.75
+Vertex -1.6,5,18.75
+Vertex -1.6,4.9,18.75
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;branch to centre (top bit)
+[Meshbuilder]
+Vertex -4.5,4.35,18.65
+Vertex -1.6,5,18.65
+Vertex -1.6,5,18.85
+Vertex -4.5,4.35,18.85
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;branch to centre (bottom bit)
+[Meshbuilder]
+Vertex -4.5,4.1,18.65
+Vertex -1.6,4.9,18.65
+Vertex -1.6,4.9,18.85
+Vertex -4.5,4.1,18.85
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;top flange
+[Meshbuilder]
+Vertex -4.5, 4.35, 18.65
+Vertex -4.5, 4.35, 18.65
+Vertex -4.8, 4.35, 18.85
+Vertex -4.8, 4.35, 18.85
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;roof beam track side
+[Meshbuilder]
+Vertex -1.7,5,0
+Vertex -1.7,5.1,0
+Vertex -1.7,5.1,25.5
+Vertex -1.7,5,25.5
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;roof beam track side (just off centre)
+[Meshbuilder]
+Vertex -4.4,4.4,0
+Vertex -4.4,4.5,0
+Vertex -4.4,4.5,25.5
+Vertex -4.4,4.4,25.5
+Face 0,1,2,3
+Face 3,2,1,0
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;roof beam inner side
+[Meshbuilder]
+Vertex -5.95,4.8,0
+Vertex -5.95,4.9,0
+Vertex -5.95,4.9,25.5
+Vertex -5.95,4.8,25.5
+Face 0,1,2,3
+
+[Texture]
+Load chesterbeamcream.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,1,0
+Coordinates 3,1,1
+
+;roof: track side
+[Meshbuilder]
+Vertex -1.4,5.1,0
+Vertex -4.4,4.5,0
+Vertex -4.4,4.5,25.5
+Vertex -1.4,5.1,25.5
+Face 3,2,1,0
+
+[Texture]
+Load chesterroofglass.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,30,0
+Coordinates 3,30,1
+
+;roof: centre
+[Meshbuilder]
+Vertex -4.4,4.5,0
+Vertex -5.2,4.5,0
+Vertex -5.2,4.5,25.5
+Vertex -4.4,4.5,25.5
+Face 3,2,1,0
+
+[Texture]
+Load chesterroofcentre.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,16,0
+Coordinates 3,16,1
+
+;roof: to inner side
+[Meshbuilder]
+Vertex -5.2,4.5,0
+Vertex -6.1,4.9,0
+Vertex -6.1,4.9,25.5
+Vertex -5.2,4.5,25.5
+Face 3,2,1,0
+
+[Texture]
+Load chesterroofglass.bmp
+Coordinates 0,0,1
+Coordinates 1,0,0
+Coordinates 2,30,0
+Coordinates 3,30,1
