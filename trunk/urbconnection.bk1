@@ -1,0 +1,362 @@
+unit uRBConnection;
+
+interface
+
+uses sysutils, classes, types, contnrs,
+     uglobaldef,
+     uRBPoint, uTools;
+
+type
+     TRBConnection = class
+       private
+        FP1,FP2: TRBPoint;
+       public
+        id:         integer;
+        Texture:    integer; // Texturindex (interne, vordefinierte Liste!?)
+        Speedlimit: integer; // in km/h
+        Height:     double; // Höhe über y=0
+        Adhesion:   integer; // Adhäsion (Reibwert) 0..100..
+        Accuracy:   integer; // Oberbau-Qualität (1 gut ..4 schlecht)
+        Background: integer; // Hintergrundbild-Index
+        Ground:     integer; // Untergrundtextur-Index
+        Fog:        integer; // Nebel (0..100)
+        Poles:      integer; // Oberleitungsmasten, Position: 0 keine, -1 links, +1 rechts vom Gleis
+        PlatformType: integer;
+        PlatformPos:  integer;
+        RoofType,
+        TSOIDLeft,
+        TSOIDRight,
+        TSOOffsetLeft,
+        TSOOffsetRight,
+        WallIDLeft,
+        WallIDRight: integer;
+        special:     TConnectionSpecial; // Bezier-Kurve? Sonst geradeaus
+        Markerfilename: string;  // Dateiname eines Marker-Bitmaps, relativ zu object\
+        Markerduration: integer; // wie lange der Marker angezeigt wird (in m)
+        Wavefilename  : string;  // Dateiname eines Sounds, relativ zu object\
+        b_temp:         double; // temporär verwendeter Wert, wird nicht gespeichert/geladen
+        a_temp:         double; // temporär verwendeter Wert, wird nicht gespeichert/geladen
+        z_temp:         double; // temporär verwendeter Wert, wird nicht gespeichert/geladen
+        curve_temp:     double; 
+        switch_turned: integer;
+        improved:      boolean;
+       constructor Create(p1,p2: TRBPoint); overload;
+       constructor Create(const from: TRBConnection); overload;
+       constructor CreateFromString(const s: string; points: TObjectlist);
+       function GetAsString(): string;
+       function Distance(p: TDoublePoint): double;
+       function GetCurve(OtherTrack: TRBConnection): integer;
+       function YPosition: double;
+       function GetLength(): double;
+       function IsParallelTo(OtherTrack: TRBConnection): integer;
+       function SkalarProduct(OtherTrack: TRBConnection): double;
+       function GetAngle(OtherTrack: TRBConnection): double;
+       function ExportPreprocess: boolean;
+       function GetPointButNot(notp: TRBPoint): TRBPoint;
+       function GetPerpendicular1(l: double; f: double=0): TDoublePoint;
+       function GetPerpendicular2(l: double; f: double=0): TDoublePoint;
+       function GetPointBetween(p: double): TDoublePoint;
+       function Curved(): boolean;
+       procedure CopyProperties(const from: TRBConnection; propertiestopaste: TpropertiesToPaste=ptpAll);
+       procedure Turn();
+       property P1: TRBPoint read FP1 write FP1;
+       property P2: TRBPoint read FP2 write FP2;
+
+     end;
+
+implementation{>>GpProfile U} uses GpProf; {GpProfile U>>}
+
+constructor TRBConnection.Create(p1,p2: TRBPoint);
+begin{>>GpProfile} ProfilerEnterProc(216); try {GpProfile>>}
+  FP1 := p1;
+  FP2 := p2;
+  id := 0;
+  Texture    := 1;
+  Speedlimit := 0;
+  Height     := 0;
+  Adhesion   := 255;
+  Accuracy   := 1;
+  Background := 1;
+  Ground     := 1;
+  Fog        := 0;
+  Poles      := 0;
+  WallIDLeft := 0;
+  WallIDRight:= 0;
+  TSOIDLeft  := 0;
+  TSOIDRight := 0;
+  TSOOffsetLeft := 0;
+  TSOOffsetRight := 0;
+  roofType   := 0;
+  special    := csStraight;
+  switch_turned := 1;
+{>>GpProfile} finally ProfilerExitProc(216); end; {GpProfile>>}end;
+
+constructor TRBConnection.Create(const from: TRBConnection);
+begin{>>GpProfile} ProfilerEnterProc(217); try {GpProfile>>}
+  Create(from.P1,from.P2);
+  CopyProperties(from);
+{>>GpProfile} finally ProfilerExitProc(217); end; {GpProfile>>}end;
+
+procedure TRBConnection.CopyProperties(const from: TRBConnection; propertiestopaste: TpropertiesToPaste);
+begin{>>GpProfile} ProfilerEnterProc(218); try {GpProfile>>}
+  if (propertiestopaste=ptpAll)or(propertiestopaste=ptpEditor) then
+  begin
+    Texture := from.Texture;
+    Speedlimit := from.Speedlimit;
+    Height := from.Height;
+    Adhesion := from.Adhesion;
+    Accuracy := from.Accuracy;
+    Background := from.Background;
+    ground := from.Ground;
+    fog := from.fog;
+    poles := from.poles;
+    PlatformType := from.PlatformType;
+    PlatformPos := from.PlatformPos;
+    if propertiestopaste=ptpAll then special := from.special;
+    Markerfilename := from.Markerfilename;
+    Markerduration := from.Markerduration;
+    Wavefilename := from.Wavefilename;
+    WallIDLeft := from.WallIDLeft;
+    WallIDRight := from.WallIDRight;
+    TSOIDLeft := from.TSOIDLeft;
+    TSOIDRight := from.TSOIDRight;
+    TSOOffsetLeft := from.TSOOffsetLeft;
+    TSOOffsetRight := from.TSOOffsetRight;
+    RoofType := from.RoofType;
+  end
+  else
+  if propertiestopaste=ptpGround then
+    ground := from.Ground
+  else
+  if propertiestopaste=ptpBackGround then
+    background := from.Background
+  else
+  if propertiestopaste=ptpSpeedlimit then
+    Speedlimit := from.Speedlimit
+  else
+  if propertiestopaste=ptpPoles then
+    Poles := from.poles
+  else
+  if propertiestopaste=ptpTrack then
+    Texture := from.Texture
+  else
+  if propertiestopaste=ptpWalls then
+  begin
+    WallIDLeft := from.WallIDLeft;
+    WallIDRight := from.WallIDRight;
+    TSOIDLeft := from.TSOIDLeft;
+    TSOIDRight := from.TSOIDRight;
+    TSOOffsetLeft := from.TSOOffsetLeft;
+    TSOOffsetRight := from.TSOOffsetRight;
+  end;
+{>>GpProfile} finally ProfilerExitProc(218); end; {GpProfile>>}end;
+
+constructor TRBConnection.CreateFromString(const s: string; points: TObjectlist);
+var i,p1id,p2id: integer;
+begin{>>GpProfile} ProfilerEnterProc(219); try {GpProfile>>}
+  Create(nil,nil);
+  id := strtointdef(StrGetToken(s,',',1),0);
+  p1id := strtointdef(StrGetToken(s,',',2),0);
+  p2id := strtointdef(StrGetToken(s,',',3),0);
+  texture := strtointdef(StrGetToken(s,',',4),0);
+  speedlimit := strtointdef(StrGetToken(s,',',5),0);
+  Height := strtofloat1(StrGetToken(s,',',6));
+  adhesion := strtointdef(StrGetToken(s,',',7),0);
+  accuracy := strtointdef(StrGetToken(s,',',8),0);
+  background := strtointdef(StrGetToken(s,',',9),0);
+  ground := strtointdef(StrGetToken(s,',',10),0);
+  fog := strtointdef(StrGetToken(s,',',11),0);
+  markerfilename := StripQuotes(StrGetToken(s,',',12));
+  markerduration := strtointdef(StrGetToken(s,',',13),0);
+  wavefilename := StripQuotes(StrGetToken(s,',',14));
+  PlatformPos := strtointdef(StrGetToken(s,',',15),0);
+  PlatformType := strtointdef(StrGetToken(s,',',16),0);
+  Poles := strtointdef(StrGetToken(s,',',17),0);
+  special := TConnectionSpecial(strtointdef(StrGetToken(s,',',18),0));
+  WallIDLeft := strtointdef(StrGetToken(s,',',19),0);
+  WallIDRight := strtointdef(StrGetToken(s,',',20),0);
+  RoofType := strtointdef(StrGetToken(s,',',21),0);
+  TSOIDLeft := strtointdef(StrGetToken(s,',',22),0);
+  TSOOffsetLeft := strtointdef(StrGetToken(s,',',23),0);
+  TSOIDRight := strtointdef(StrGetToken(s,',',24),0);
+  TSOOffsetRight := strtointdef(StrGetToken(s,',',25),0);
+
+  // suche Punkte
+  for i:=0 to points.count-1 do
+  begin
+    if (points[i] as TRBPoint).id=p1id then FP1 := points[i] as TRBPoint;
+    if (points[i] as TRBPoint).id=p2id then FP2 := points[i] as TRBPoint;
+    if (FP1<>nil)and(FP2<>nil) then exit;
+  end;
+{>>GpProfile} finally ProfilerExitProc(219); end; {GpProfile>>}end;
+
+function TRBConnection.GetAsString: string;
+begin{>>GpProfile} ProfilerEnterProc(220); try {GpProfile>>}
+  result := format('%d,%d,%d,%d,%d,%s,%d,%d,%d,%d,%d,"%s",%d,"%s",%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d',
+    [id,fp1.id,fp2.id,texture,speedlimit,floattostrpoint(Height),adhesion,accuracy,background,ground,fog,
+     markerfilename,markerduration,wavefilename,platformpos,platformtype,poles,
+     ord(special),WallIDLeft,WallIDRight,RoofType,TSOIDLeft,TSOOffsetLeft,TSOIDRight,TSOOffsetRight]);
+{>>GpProfile} finally ProfilerExitProc(220); end; {GpProfile>>}end;
+
+// berechne Abstand zum Mittelpunkt der Strecke
+function TRBConnection.Distance(p: TdoublePoint): double;
+begin{>>GpProfile} ProfilerEnterProc(221); try {GpProfile>>}
+  result := uTools.Distance( p, doublepoint((FP2.point.x+FP1.point.x)/ 2,
+                                            (FP2.point.y+FP1.point.y)/ 2) );
+{>>GpProfile} finally ProfilerExitProc(221); end; {GpProfile>>}end;
+
+function TRBConnection.GetLength(): double;
+begin{>>GpProfile} ProfilerEnterProc(222); try {GpProfile>>}
+  result := uTools.Distance(p1.point,p2.point);
+{>>GpProfile} finally ProfilerExitProc(222); end; {GpProfile>>}end;
+
+function TRBConnection.GetCurve(OtherTrack: TRBConnection): integer;
+var a: integer;
+begin{>>GpProfile} ProfilerEnterProc(223); try {GpProfile>>}
+  a := round(GetAngle(OtherTrack));
+  if a=0 then
+    result := 0
+  else
+    result := round(GetLength()*180/pi/a);
+{>>GpProfile} finally ProfilerExitProc(223); end; {GpProfile>>}end;
+
+
+function TRBConnection.YPosition: double;
+begin{>>GpProfile} ProfilerEnterProc(224); try {GpProfile>>}
+  result := Height;
+{>>GpProfile} finally ProfilerExitProc(224); end; {GpProfile>>}end;
+
+// berechnet Winkel zwischen dieser Connection und einer anderen als °
+function TRBConnection.GetAngle(OtherTrack: TRBConnection): double;
+
+begin{>>GpProfile} ProfilerEnterProc(225); try {GpProfile>>}
+  if OtherTrack=nil then
+  begin
+    result := angle(p1.point,p2.point);
+    exit;
+  end;
+  result := -angle(OtherTrack.P1.point,OtherTrack.P2.point) + angle(p1.point,p2.point);
+{  a1 := p2.point.Y-p1.point.y;
+  b1 := p2.point.x-p1.point.x;
+  a2 := OtherTrack.p2.point.Y-OtherTrack.p1.point.y;
+  b2 := OtherTrack.p2.point.x-OtherTrack.p1.point.x;
+  if(p1=otherTrack.P2)or(p2=otherTrack.p1) then
+  begin
+    a2 := -a2;
+    b2 := -b2;
+  end;
+  try
+  result := round(180*arctan((a1*b2-a2*b1)/(a1*a2+b1*b2))/pi);
+  except
+  result := 0;
+  end;   }
+{>>GpProfile} finally ProfilerExitProc(225); end; {GpProfile>>}end;
+
+function TRBConnection.ExportPreprocess: boolean;
+begin{>>GpProfile} ProfilerEnterProc(226); try {GpProfile>>}
+  if speedlimit<=0 then speedlimit := 70;
+  result := true;
+{>>GpProfile} finally ProfilerExitProc(226); end; {GpProfile>>}end;
+
+function TRBConnection.GetPointButNot(notp: TRBPoint): TRBPoint;
+begin{>>GpProfile} ProfilerEnterProc(227); try {GpProfile>>}
+  result := nil;
+  if p1<>notp then
+    result:= p1
+  else
+    if p2<>notp then
+      result := p2;
+{>>GpProfile} finally ProfilerExitProc(227); end; {GpProfile>>}end;
+
+// Funktion: Turn
+// Autor   : up
+// Datum   : 7.12.02
+// Beschr. : dreht das Stück um. Dreht den Bahnsteig ebenfalls um, damit er auf der gleichen Seite bleibt
+procedure TRBConnection.Turn;
+var p: TRBPoint;
+    j: integer;
+begin{>>GpProfile} ProfilerEnterProc(228); try {GpProfile>>}
+  p := p1;
+  p1 := p2;
+  p2 := p;
+  poles := -Poles;
+  if PlatformPos>0 then
+  begin
+    PlatformPos := 3-PlatformPos; // aus 2 wird 1, aus 1 wird 2
+  end;
+  j := WallIDLeft;
+  WallIDLeft := WallIDRight;
+  WallIDRight := j;
+
+  j := TSOIDLeft;
+  TSOIDLeft := TSOIDRight;
+  TSOIDRight := j;
+
+  j := TSOOffsetLeft;
+  TSOOffsetLeft := TSOOffsetRight;
+  TSOOffsetRight := j;
+
+  switch_turned := - switch_turned;
+  // special
+{  if special=csSwitchLeftUpStraight then
+    special := csSwitchRightDownStraight
+  else if special=csSwitchLeftDownStraight then
+    special := csSwitchRightUpStraight
+  else if special=csSwitchLeftUpCurve then
+    special := csSwitchRightDownCurve
+  else if special=csSwitchLeftDownCurve then
+    special := csSwitchRightUpCurve
+  else if special=csSwitchRightUpStraight then
+    special := csSwitchLeftDownStraight
+  else if special=csSwitchRightDownStraight then
+    special := csSwitchLeftUpStraight
+  else if special=csSwitchRightUpCurve then
+    special := csSwitchLeftDownCurve
+  else if special=csSwitchRightDownCurve then
+    special := csSwitchLeftUpCurve;  }     
+{>>GpProfile} finally ProfilerExitProc(228); end; {GpProfile>>}end;
+
+function TRBConnection.GetPerpendicular1(l,f: double): TDoublePoint;
+var p,pp: TDoublePoint;
+begin{>>GpProfile} ProfilerEnterProc(229); try {GpProfile>>}
+  pp := GetPointBetween(f);
+  Perpendicular(pp,p2.point,l/GetLength(),p);
+  result := p;
+{>>GpProfile} finally ProfilerExitProc(229); end; {GpProfile>>}end;
+
+function TRBConnection.GetPerpendicular2(l,f: double): TDoublePoint;
+var p,pp: TDoublePoint;
+begin{>>GpProfile} ProfilerEnterProc(230); try {GpProfile>>}
+  pp := GetPointBetween(1-f);
+  Perpendicular(pp,p1.point,l/GetLength(),p);
+  result := p;
+{>>GpProfile} finally ProfilerExitProc(230); end; {GpProfile>>}end;
+
+
+
+function TRBConnection.IsParallelTo(OtherTrack: TRBConnection): integer;
+begin{>>GpProfile} ProfilerEnterProc(231); try {GpProfile>>}
+  raise Exception.create('function IsParallelTo not implemented');
+{>>GpProfile} finally ProfilerExitProc(231); end; {GpProfile>>}end;
+
+
+function TRBConnection.Skalarproduct(OtherTrack: TRBConnection): double;
+begin{>>GpProfile} ProfilerEnterProc(232); try {GpProfile>>}
+//
+  result := (FP2.point.x-FP1.point.x)*(OtherTrack.P2.point.x-OtherTrack.P1.point.x)
+          + (FP2.point.y-FP1.point.y)*(OtherTrack.P2.point.y-OtherTrack.P1.point.y);
+{>>GpProfile} finally ProfilerExitProc(232); end; {GpProfile>>}end;
+
+// ermittelt einen Punkt auf der Connection (p=0..1)
+function TRBConnection.GetPointBetween(p: double): TDoublePoint;
+begin{>>GpProfile} ProfilerEnterProc(233); try {GpProfile>>}
+  result.x := P1.point.x + (P2.point.x-P1.point.x)*p;
+  result.y := P1.point.y + (P2.point.y-P1.point.y)*p;
+{>>GpProfile} finally ProfilerExitProc(233); end; {GpProfile>>}end;
+
+function TRBConnection.Curved: boolean;
+begin{>>GpProfile} ProfilerEnterProc(234); try {GpProfile>>}
+  result := (special = csCurve);
+{>>GpProfile} finally ProfilerExitProc(234); end; {GpProfile>>}end;
+
+end.

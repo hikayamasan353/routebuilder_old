@@ -1,0 +1,37 @@
+projectname=L109Test
+author=Th. Grundmann
+authoremailaddress=Thorsten.Grundmann@gmx.de
+description=Testprojekt:[crlf]Linie 109 Steele-Frohnhausen[crlf]
+credits=Alles wird gut!
+homepageurl=Noch keine
+gauge=1435
+developerid=0
+nexttrackid=1
+Routefilessubdir=L109Test
+BackgroundMapfilename=L109Test Background.jpg
+BackgroundMapScale=250
+defaultobjects=stopsign=signs\ne5.b3d,stationmarkerstop=marker\stationmarker_stop.bmp,stationmarkerpass=marker\stationmarker_pass.bmp
+ParallelTrackDist=4.0000000000
+ParallelTrackDistPlatform=15.0000000000
+Objectlibrary=lib
+point1=2,3168.0000000000,152.0000000000
+point2=4,3168.0444420000,151.0002469000
+point3=5,994.0000000000,109.0000000000
+point4=6,3140.0738330000,140.8531653000
+point5=7,3179.0000000000,104.0000000000
+point6=8,3076.0000000000,155.0000000000
+point7=9,3034.0000000000,156.0000000000
+point8=10,2984.0000000000,115.0000000000
+point9=11,856.0000000000,45.0000000000
+point10=12,3078.0444420000,154.5002469000
+conn1=2,4,7,1,70,0.0000000000,255,1,1,1,0,"",0,"",1,1,0,2,0,0,0,0,0,0,0
+conn2=3,7,5,1,70,0.0000000000,255,1,1,1,0,"",0,"",0,0,0,7,0,0,0,0,0,0,0
+conn3=4,9,8,1,70,0.0000000000,255,1,1,1,0,"",0,"",1,3,0,2,0,0,3,0,0,0,0
+conn4=5,5,11,1,70,0.0000000000,255,1,1,1,0,"",0,"",0,0,0,2,0,0,0,0,0,0,0
+routedefinition1id=2
+routedefinition1name=Steele_Frohnhausen
+routedefinition1=4,2,3,5
+station1="Steele Pause",2=4
+station2="Steele Gleis1",2=2
+station3="Stadtgarten",2=5
+Timetable1="Testfahrplan","Gt6","Steele Pause","Stadtgarten","12:00:00","Steele Pause;30;Steele Gleis1;30;Stadtgarten;30",Steele_Frohnhausen

@@ -1,0 +1,699 @@
+unit tmain;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Menus, Inifiles, Shellapi,uRBProject, MsgINISupp,
+  LngINISupp, jpeg, ExtCtrls, ComCtrls, 
+  StdCtrls, Buttons, ImgList, ToolWin,  uGlobalDef, uRBRouteDefinition,
+  URBEditorFrame2, uEditorFrame,
+  utools;
+
+type
+  TFormMain = class(TForm)
+    MM1: TMainMenu;
+    Project: TMenuItem;
+    Projekt_Create: TMenuItem;
+    Project_Continue: TMenuItem;
+    MenuSaveAs: TMenuItem;
+    N1: TMenuItem;
+    RB_Exit: TMenuItem;
+    Help: TMenuItem;
+    Help2: TMenuItem;
+    AboutRB: TMenuItem;
+    N2: TMenuItem;
+    GoToHomepage: TMenuItem;
+    Extras: TMenuItem;
+    MenuProperties: TMenuItem;
+    AutoUpdate1: TMenuItem;
+    AddonManager: TMenuItem;
+    StatusBar: TStatusBar;
+    MenuExport: TMenuItem;
+    View: TMenuItem;
+    MenuTrackProperties: TMenuItem;
+    MenuTimetables: TMenuItem;
+    MenuRoutes: TMenuItem;
+    Trains: TMenuItem;
+    MenuObjects: TMenuItem;
+    Options: TMenuItem;
+    N3: TMenuItem;
+    menuSave: TMenuItem;
+    N4: TMenuItem;
+    SaveDialog1: TSaveDialog;
+    OpenDialog1: TOpenDialog;
+    ToolBar1: TToolBar;
+    ToolButton1: TToolButton;
+    ToolButton2: TToolButton;
+    tbSave: TToolButton;
+    ToolButton4: TToolButton;
+    ImageListToolbar: TImageList;
+    ToolButton5: TToolButton;
+    ToolButton6: TToolButton;
+    ToolButton7: TToolButton;
+    ToolButton8: TToolButton;
+    ToolButton9: TToolButton;
+    ToolButton10: TToolButton;
+    tbExport: TToolButton;
+    ToolButton11: TToolButton;
+    FrmEditor: TFrmEditor;
+    CoolBar1: TCoolBar;
+    RouteBuilderTechnicalInformation1: TMenuItem;
+    moveeverything1: TMenuItem;
+    RouteBuilderStreckenbauForumdeutsch1: TMenuItem;
+    Map1: TMenuItem;
+    RouteBuilderBugtrackingForum1: TMenuItem;
+    N5: TMenuItem;
+    MakePackage1: TMenuItem;
+    mTrackTypes1: TMenuItem;
+    LngINISupp1: TLngINISupp;
+    replace1: TMenuItem;
+    MenuGrids: TMenuItem;
+    MenuGridTracks: TMenuItem;
+    N6: TMenuItem;
+    l1: TMenuItem;
+    Changeproperty1: TMenuItem;
+    procedure Projekt_CreateClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure OptionenClick(Sender: TObject);
+    procedure AddonManagerClick(Sender: TObject);
+    procedure AutoUpdate1Click(Sender: TObject);
+    procedure AboutRBClick(Sender: TObject);
+    procedure GoToHomepageClick(Sender: TObject);
+    procedure OptionsClick(Sender: TObject);
+    procedure OpenClick(Sender: TObject);
+    procedure menuSaveClick(Sender: TObject);
+    procedure MenuSaveAsClick(Sender: TObject);
+    procedure Cut1Click(Sender: TObject);
+    procedure Copy1Click(Sender: TObject);
+    procedure Paste1Click(Sender: TObject);
+    procedure Undo1Click(Sender: TObject);
+    procedure FormKeyUp(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
+    procedure MenuTrackPropertiesClick(Sender: TObject);
+    procedure MenuTimetablesClick(Sender: TObject);
+    procedure MenuRoutesClick(Sender: TObject);
+    procedure TrainsClick(Sender: TObject);
+    procedure MenuObjectsClick(Sender: TObject);
+    procedure RB_ExitClick(Sender: TObject);
+    procedure MenuExportClick(Sender: TObject);
+    procedure tbExportClick(Sender: TObject);
+    procedure MenuPropertiesClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure FormDestroy(Sender: TObject);
+    procedure FrmEditorToolButton5Click(Sender: TObject);
+    procedure Help2Click(Sender: TObject);
+    procedure RouteBuilderTechnicalInformation1Click(Sender: TObject);
+    procedure moveeverything1Click(Sender: TObject);
+    procedure RouteBuilderStreckenbauForumdeutsch1Click(Sender: TObject);
+    procedure FrmEditortbMap1Click(Sender: TObject);
+    procedure FrmEditortbStraightClick(Sender: TObject);
+    procedure RouteBuilderBugtrackingForum1Click(Sender: TObject);
+    procedure MakePackage1Click(Sender: TObject);
+    procedure mTrackTypes1Click(Sender: TObject);
+    procedure replace1Click(Sender: TObject);
+    procedure FrmEditorcbTrackTypeChange(Sender: TObject);
+    procedure MenuGridsClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure MenuGridTracksClick(Sender: TObject);
+    procedure l1Click(Sender: TObject);
+    procedure FrmEditortb3DWorldClick(Sender: TObject);
+    procedure FrmEditorToolButton6Click(Sender: TObject);
+    procedure Changeproperty1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    LastRecentlyUsedFiles: TStringlist;
+    procedure SetProjectLoaded(aprojectloaded: boolean);
+    procedure SetStatus(const what: string);
+    procedure AddRecentlyUsed(f: string);
+  end;
+
+var
+  FormMain: TFormMain;
+  Definition_Unit: TRBRouteDefinition;
+  Project_Unit: TRBProject;
+implementation
+
+uses{>>GpProfile U} GpProf, {GpProfile U>>} tWizard_CreateProject, tBveFolder, toptions, taddons, tabout,
+  ttrain, uRouteDefinitionsForm, texport, uObjectsForm, uProjectProperties,
+  uwelcome, uMoveEverything, uStationsForm, tcreatepackage, uTrackTypes,
+  uReplaceForm, uRBGridsForm, uGridTracks, ttimetable, uRB3DPreviewForm,
+  uChangePropertyForm;
+
+{$R *.dfm}
+
+procedure TFormMain.Projekt_CreateClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(1); try {GpProfile>>}
+if FormMain.FrmEditor.CurrentProject<>nil then MessageDlg(lngmsg.GetMsg('tmain_ask_save'),mtConfirmation,[mbYes,mbNo],0);
+if(CreateProj_Wizard.Showmodal=mrOK) then
+      SetProjectLoaded(true);
+{>>GpProfile} finally ProfilerExitProc(1); end; {GpProfile>>}end;
+
+procedure TFormMain.FormShow(Sender: TObject);
+var i: integer;
+
+  procedure FinalizeLoad();
+  begin{>>GpProfile} ProfilerEnterProc(2); try {GpProfile>>}
+        if (FrmEditor.CurrentProject.Objectlibrary<>'')and(FrmEditor.CurrentProject.Objectlibrary<>FormOptions.edObjFolder.text) then
+        begin
+          if MessageDlg(lngmsg.GetMsg('tmain_different_lib'), mtConfirmation, [mbYes,mbNo], 0) = mrYes then
+            FormOptions.SetObjectFolder( FrmEditor.CurrentProject.Objectlibrary );
+          // da zu diesem Zeitpunkt der Schaden schon geschehen sein kann, müssen wir nochmal laden!
+          FrmEditor.CurrentProject.free;
+          FrmEditor.CurrentProject := nil;
+          FrmEditor.CurrentProject := TRBProject.Create();
+          FrmEditor.CurrentProject.SetStatusProc := SetStatus;
+          FrmEditor.LoadProject(FormWelcome.todo);
+        end;
+        SetProjectLoaded(true);
+        AddRecentlyUsed(FrmEditor.CurrentProject.Projectfilename);
+        SetStatus('ready');
+        FrmEditor.Show;
+  {>>GpProfile} finally ProfilerExitProc(2); end; {GpProfile>>}end;
+
+begin{>>GpProfile} ProfilerEnterProc(3); try {GpProfile>>}
+  FormMain.SetProjectLoaded(false);
+  FormMain.WindowState := wsMaximized;
+
+  // Sprachunterstützung
+  if DefaultLanguage='' then DefaultLanguage := 'english.lng';
+  LngINISupp1.FileName := DefaultLanguage;
+  LngINISupp1.Open;
+  LngMsg := TMsgINISupp.create(self);
+  LngMsg.LngINISupp := LngIniSupp1;
+  LngMsg.Open;
+
+
+
+  // welcome-Dialog
+  FormWelcome.ListView1.clear();
+  for i:=0 to LastRecentlyUsedFiles.count-1 do
+    if (LastRecentlyUsedFiles[i]<>'')and(fileexists(LastRecentlyUsedFiles[i])) then
+      with FormWelcome.ListView1.items.add do
+        caption := LastRecentlyUsedFiles[i];
+
+  // Fenstertitel und Statusbar setzen
+  Caption := ProgramName + ' '+VersionString;
+  StatusBar.Panels[0].Text := ProgramName;
+  StatusBar.Panels[1].Text := 'Version ' + VersionString;
+
+  // Öffnen per Doppelclick auf rbp-Datei
+  if (ParamCount=1) and (fileexists(paramstr(1))) then
+  begin
+    FrmEditor.CurrentProject := TRBProject.Create();
+    FrmEditor.CurrentProject.SetStatusProc := SetStatus;
+    SetStatus('loading...');
+    FrmEditor.LoadProject(paramstr(1));
+    FinalizeLoad();
+  end
+  else
+  begin
+    if FormWelcome.ShowModal()=mrOK then
+    begin
+      if FormWelcome.todo='new' then Projekt_CreateClick(self)
+      else
+      if FormWelcome.todo='open' then OpenClick(self)
+      else
+      if FormWelcome.todo<>'' then
+      begin
+        FrmEditor.CurrentProject := TRBProject.Create();
+        FrmEditor.CurrentProject.SetStatusProc := SetStatus;
+        SetStatus('loading...');
+        FrmEditor.LoadProject(FormWelcome.todo);
+        FinalizeLoad();
+      end;
+    end;
+
+  end;
+
+
+  FrmEditor.ArrowStepSize := FormOptions.ArrowStepSize;
+
+{>>GpProfile} finally ProfilerExitProc(3); end; {GpProfile>>}end;
+
+procedure TFormMain.OptionenClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(4); try {GpProfile>>}
+  FormOptions.ShowModal;  //Optionen
+  FrmEditor.ArrowStepSize := FormOptions.ArrowStepSize;
+  FrmEditor.UpdateView();
+{>>GpProfile} finally ProfilerExitProc(4); end; {GpProfile>>}end;
+
+procedure TFormMain.AddonManagerClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(5); try {GpProfile>>}
+FormAddons.Showmodal;   // Addonmodul
+{>>GpProfile} finally ProfilerExitProc(5); end; {GpProfile>>}end;
+
+procedure TFormMain.AutoUpdate1Click(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(6); try {GpProfile>>}
+ShellExecute(Application.Handle,Pchar('open'),PChar(FormOptions.AktVZ+'\update.exe'),nil,PChar(ExtractFilePath(FormOptions.AktVZ+'\autoupdate.exe')),sw_ShowNormal);  //Ruft update.exe normal auf
+
+{>>GpProfile} finally ProfilerExitProc(6); end; {GpProfile>>}end;
+
+procedure TFormMain.AboutRBClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(7); try {GpProfile>>}
+FormAbout.ShowModal;  //About Dialog
+{>>GpProfile} finally ProfilerExitProc(7); end; {GpProfile>>}end;
+
+procedure TFormMain.GoToHomepageClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(8); try {GpProfile>>}
+ShellExecute(Application.Handle,'open',PChar(HomepageURL),nil,PChar(HomepageURL),sw_ShowNormal);  //ruft Homepage mit Browser normal auf
+{>>GpProfile} finally ProfilerExitProc(8); end; {GpProfile>>}end;
+
+procedure TFormMain.OptionsClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(9); try {GpProfile>>}
+  FormOptions.ShowModal();
+  FrmEditor.UpdateView();
+{>>GpProfile} finally ProfilerExitProc(9); end; {GpProfile>>}end;
+
+procedure TFormMain.OpenClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(10); try {GpProfile>>}
+  if FrmEditor.CurrentProject<>nil then
+  begin
+    if MessageDlg(lngmsg.GetMsg('tmain_ask_save'),mtConfirmation,[mbYes,mbNo],0)=mrYes then
+      MenuSaveClick(self);
+
+    formgrids.close();
+    FormRouteDefinitions.close();
+    FormTimetables.Close();
+    formstations.close();
+
+    FrmEditor.CurrentProject.free;
+    FrmEditor.CurrentProject := nil;
+    FrmEditor.PanMap.Hide;
+
+    SetProjectLoaded(false);
+  end;
+  if OpenDialog1.Execute then
+  begin
+    FrmEditor.CurrentProject := TRBProject.Create();
+    FrmEditor.CurrentProject.SetStatusProc := SetStatus;
+    SetStatus('loading...');
+    try
+      FrmEditor.LoadProject(OpenDialog1.FileName);
+      SetProjectLoaded(true);
+      AddRecentlyUsed(FrmEditor.CurrentProject.Projectfilename);
+      // Objektverzeichnis setzen wenn nötig
+      if (FrmEditor.CurrentProject.Objectlibrary<>'')and(FrmEditor.CurrentProject.Objectlibrary<>FormOptions.edObjFolder.text) then
+      begin
+        if MessageDlg(lngmsg.GetMsg('tmain_different_lib'), mtConfirmation, [mbYes,mbNo], 0) = mrYes then
+          FormOptions.SetObjectFolder( FrmEditor.CurrentProject.Objectlibrary );
+        // da zu diesem Zeitpunkt der Schaden schon geschehen sein kann, müssen wir nochmal laden!
+        FrmEditor.CurrentProject.free;
+        FrmEditor.CurrentProject := nil;
+        FrmEditor.CurrentProject := TRBProject.Create();
+        FrmEditor.CurrentProject.SetStatusProc := SetStatus;
+        FrmEditor.LoadProject(OpenDialog1.FileName);
+      end;
+    except
+      on e: exception do
+      begin
+        MessageDlg(lngmsg.GetMsg('tmain_errorloading') +' ' + e.message,mtError,[mbAbort],0);
+        FrmEditor.CurrentProject.Free;
+        FrmEditor.CurrentProject := nil;
+      end;
+    end;
+    SetStatus('ready');
+  end;
+{>>GpProfile} finally ProfilerExitProc(10); end; {GpProfile>>}end;
+
+procedure TFormMain.menuSaveClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(11); try {GpProfile>>}
+  if FrmEditor.CurrentProject<>nil then
+  begin
+    if FrmEditor.CurrentProject.Projectfilename='' then
+      MenuSaveAsClick(self)
+    else
+    begin
+      SetStatus('saving...');
+      Screen.Cursor := crHourGlass;
+      FrmEditor.CurrentProject.Objectlibrary := FormOptions.ObjectFolder;
+      FrmEditor.CurrentProject.SaveToFile();
+      Screen.Cursor := crArrow;
+      SetStatus('ready');
+    end;
+    AddRecentlyUsed(FrmEditor.CurrentProject.Projectfilename);
+  end;
+
+{>>GpProfile} finally ProfilerExitProc(11); end; {GpProfile>>}end;
+
+procedure TFormMain.MenuSaveAsClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(12); try {GpProfile>>}
+  if FrmEditor.CurrentProject<>nil then
+  begin
+    SaveDialog1.InitialDir := extractfilepath(FrmEditor.CurrentProject.Projectfilename);
+    if SaveDialog1.Execute then
+    begin
+      FrmEditor.CurrentProject.Objectlibrary := FormOptions.ObjectFolder;
+      if pos('.rbp',lowercase(SaveDialog1.FileName))=0 then
+        SaveDialog1.FileName := SaveDialog1.FileName+'.rbp';
+      SetStatus('saving...');
+      FrmEditor.CurrentProject.SaveToFile(SaveDialog1.FileName);
+      SetStatus('ready');
+      FrmEditor.CurrentProject.projectfilename := SaveDialog1.FileName;
+    end;
+  end;
+
+{>>GpProfile} finally ProfilerExitProc(12); end; {GpProfile>>}end;
+
+procedure TFormMain.Cut1Click(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(13); try {GpProfile>>}
+//
+{>>GpProfile} finally ProfilerExitProc(13); end; {GpProfile>>}end;
+
+procedure TFormMain.Copy1Click(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(14); try {GpProfile>>}
+//
+{>>GpProfile} finally ProfilerExitProc(14); end; {GpProfile>>}end;
+
+procedure TFormMain.Paste1Click(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(15); try {GpProfile>>}
+//
+{>>GpProfile} finally ProfilerExitProc(15); end; {GpProfile>>}end;
+
+procedure TFormMain.Undo1Click(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(16); try {GpProfile>>}
+  FrmEditor.Undo();
+{>>GpProfile} finally ProfilerExitProc(16); end; {GpProfile>>}end;
+
+procedure TFormMain.SetProjectLoaded(aprojectloaded: boolean);
+begin{>>GpProfile} ProfilerEnterProc(17); try {GpProfile>>}
+  // enable Menüpunkt und Toolbuttons abhängig davon ob ein Projekt geladen ist (up)
+  MenuSave.Enabled   := aprojectloaded;
+  MenuSaveAs.Enabled := aprojectloaded;
+  MenuExport.Enabled := aprojectloaded;
+  tbExport.Enabled   := aprojectloaded;
+  tbSave.Enabled     := aprojectloaded;
+  MenuProperties.Enabled := aprojectloaded;
+  MenuTrackProperties.Enabled := aprojectloaded;
+  MenuTimetables.Enabled := aprojectloaded;
+  MenuRoutes.Enabled := aprojectloaded;
+  MenuObjects.Enabled:= aprojectloaded;
+  MenuGrids.Enabled  := aprojectloaded;
+  MenuGridTracks.Enabled := aprojectloaded;
+  FrmEditor.Visible  := aprojectloaded;
+  if aprojectloaded then
+    StatusBar.Panels[0].Text := FrmEditor.CurrentProject.Projectname
+  else
+    StatusBar.Panels[0].Text := '';
+{>>GpProfile} finally ProfilerExitProc(17); end; {GpProfile>>}end;
+
+procedure TFormMain.FormKeyUp(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin{>>GpProfile} ProfilerEnterProc(18); try {GpProfile>>}
+  if (key=ord('T')) and (ssCtrl in Shift) then
+  begin
+    FrmEditor.properties1Click(self);
+  end
+  else
+  if (key=ord('C')) and (ssCtrl in Shift) then
+  begin
+    FrmEditor.copyproperties1Click(self);
+  end
+  else
+  if (key=ord('Z')) and (ssCtrl in Shift) then
+  begin
+    FrmEditor.Undo();
+  end
+  else
+  if (key=ord('G')) and (ssCtrl in Shift) then
+  begin
+    FrmEditor.addtogrid1Click(self);
+  end
+  else
+  if (key=ord('D')) and (ssCtrl in Shift) then
+  begin
+    // delete
+    FrmEditor.deleteobject1Click(self);
+  end
+  else  if (key=ord('L')) and (ssCtrl in Shift) then
+  begin
+    FrmEditor.cloneobject1Click(self);
+  end
+  else  if (key=ord('M')) and (ssCtrl in Shift) then
+  begin
+    FrmEditor.objectproperties1Click(self);
+  end
+  else  if (key=ord('P')) and (ssCtrl in Shift) then
+  begin
+    FrmEditor.addnewpointandconnect1Click(self);
+  end;
+
+
+{>>GpProfile} finally ProfilerExitProc(18); end; {GpProfile>>}end;
+
+
+procedure TFormMain.MenuTrackPropertiesClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(19); try {GpProfile>>}
+  if FrmEditor.CurrentProject<>nil then
+    FrmEditor.properties1Click(self);
+{>>GpProfile} finally ProfilerExitProc(19); end; {GpProfile>>}end;
+
+procedure TFormMain.MenuTimetablesClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(20); try {GpProfile>>}
+    FrmEditor.ToolButton6Click(Sender); 
+{>>GpProfile} finally ProfilerExitProc(20); end; {GpProfile>>}end;
+
+procedure TFormMain.MenuRoutesClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(21); try {GpProfile>>}
+  FrmEditor.ToolButton1Click(Sender);
+{>>GpProfile} finally ProfilerExitProc(21); end; {GpProfile>>}end;
+
+procedure TFormMain.TrainsClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(22); try {GpProfile>>}
+  FormTrain.ShowModal;
+{>>GpProfile} finally ProfilerExitProc(22); end; {GpProfile>>}end;
+
+procedure TFormMain.MenuObjectsClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(23); try {GpProfile>>}
+  if FrmEditor.CurrentProject<>nil then
+    FormObjects.Show;
+{>>GpProfile} finally ProfilerExitProc(23); end; {GpProfile>>}end;
+
+procedure TFormMain.RB_ExitClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(24); try {GpProfile>>}
+  if FrmEditor.CurrentProject<>nil then
+   begin
+    if MessageDlg(lngmsg.GetMsg('tmain_ask_save') ,mtConfirmation,[mbYes,mbNo],0)=mrYes then MenuSaveClick(self);
+   end;
+  close;
+{>>GpProfile} finally ProfilerExitProc(24); end; {GpProfile>>}end;
+
+procedure TFormMain.MenuExportClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(25); try {GpProfile>>}
+  if FrmEditor.CurrentProject<>nil then
+  begin
+    if FrmEditor.CurrentProject.Routes.count=0 then
+    begin
+      MessageDlg(lngmsg.GetMsg('tmain_no_rd'),mtWarning,[mbOK],0);
+      // zeige RouteDefinition-Dialog
+      FrmEditor.ToolButton1Click(Sender);
+      exit;
+    end;
+
+    FormExport.ProjectToExport := FrmEditor.CurrentProject;
+    FormExport.ShowModal;
+  end
+  else
+  begin
+    MessageDlg(lngmsg.GetMsg('tmain_no_pr') ,mtWarning,[mbOK],0)
+  end;
+{>>GpProfile} finally ProfilerExitProc(25); end; {GpProfile>>}end;
+procedure TFormMain.tbExportClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(26); try {GpProfile>>}
+  SetStatus('exporting...');
+  MenuExportClick(sender);
+  SetStatus('ready');
+{>>GpProfile} finally ProfilerExitProc(26); end; {GpProfile>>}end;
+
+procedure TFormMain.MenuPropertiesClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(27); try {GpProfile>>}
+  FormProjectProperties.DoIt( FrmEditor.CurrentProject );
+{>>GpProfile} finally ProfilerExitProc(27); end; {GpProfile>>}end;
+
+procedure TFormMain.FormCreate(Sender: TObject);
+var s: string;
+begin{>>GpProfile} ProfilerEnterProc(28); try {GpProfile>>}
+  KeyPreview := true;
+  LastRecentlyUsedFiles := TStringlist.Create;
+  s := extractfilepath(application.exename)+'\default.lru'; // Auslieferungszustand
+  if fileexists(s) then LastRecentlyUsedFiles.loadfromfile(s);
+  s := extractfilepath(application.exename)+'\routebuilder.lru';
+  if fileexists(s) then LastRecentlyUsedFiles.loadfromfile(s);
+{>>GpProfile} finally ProfilerExitProc(28); end; {GpProfile>>}end;
+
+procedure TFormMain.FormDestroy(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(29); try {GpProfile>>}
+  LastRecentlyUsedFiles.free;
+{>>GpProfile} finally ProfilerExitProc(29); end; {GpProfile>>}end;
+
+// Funktion: AddRecentlyUsed
+// Autor   : up
+// Datum   : 5.12.02
+// Beschr. : fügt der Liste der zuletzt benutzten Projektdateien f hinzu (f mit Pfad)
+procedure TFormMain.AddRecentlyUsed(f: string);
+var s: string;
+begin{>>GpProfile} ProfilerEnterProc(30); try {GpProfile>>}
+  if LastRecentlyUsedFiles.IndexOf(f)>=0 then
+    LastRecentlyUsedFiles.Delete(LastRecentlyUsedFiles.IndexOf(f));
+  LastRecentlyUsedFiles.Insert(0,f);
+  s := extractfilepath(application.exename)+'\routebuilder.lru';
+  LastRecentlyUsedFiles.savetofile(s);
+{>>GpProfile} finally ProfilerExitProc(30); end; {GpProfile>>}end;
+
+procedure TFormMain.FrmEditorToolButton5Click(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(31); try {GpProfile>>}
+  FrmEditor.ToolButton1Click(Sender);
+
+{>>GpProfile} finally ProfilerExitProc(31); end; {GpProfile>>}end;
+
+procedure TFormMain.Help2Click(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(32); try {GpProfile>>}
+  //  open  RouteBuilder Manual.pdf
+  ShellExecute(0,'open',pchar(ExtractFilePath(Application.exename)+'\RouteBuilder Manual.pdf'),
+    pchar(''),pchar(ExtractFilePath(Application.exename)),sw_ShowNormal);
+{>>GpProfile} finally ProfilerExitProc(32); end; {GpProfile>>}end;
+
+procedure TFormMain.RouteBuilderTechnicalInformation1Click(
+  Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(33); try {GpProfile>>}
+ShellExecute(Application.Handle,'open',PChar(Homepage2URL),nil,PChar(Homepage2URL),sw_ShowNormal);  //ruft Homepage mit Browser normal auf
+{>>GpProfile} finally ProfilerExitProc(33); end; {GpProfile>>}end;
+
+procedure TFormMain.moveeverything1Click(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(34); try {GpProfile>>}
+  //
+  FormmoveEverything.project := FrmEditor.CurrentProject;
+  if FormmoveEverything.showModal()=mrOK then
+    FrmEditor.UpdateView();
+{>>GpProfile} finally ProfilerExitProc(34); end; {GpProfile>>}end;
+
+procedure TFormMain.RouteBuilderStreckenbauForumdeutsch1Click(
+  Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(35); try {GpProfile>>}
+ShellExecute(Application.Handle,'open',PChar(HomepageFURL),nil,PChar(HomepageFURL),sw_ShowNormal);  //ruft Homepage mit Browser normal auf
+
+{>>GpProfile} finally ProfilerExitProc(35); end; {GpProfile>>}end;
+
+procedure TFormMain.FrmEditortbMap1Click(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(36); try {GpProfile>>}
+  FrmEditor.tbMapClick(Sender);
+
+{>>GpProfile} finally ProfilerExitProc(36); end; {GpProfile>>}end;
+
+procedure TFormMain.FrmEditortbStraightClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(37); try {GpProfile>>}
+  FrmEditor.straight1Click(Sender);
+
+{>>GpProfile} finally ProfilerExitProc(37); end; {GpProfile>>}end;
+
+procedure TFormMain.RouteBuilderBugtrackingForum1Click(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(38); try {GpProfile>>}
+ShellExecute(Application.Handle,'open',PChar(Homepage3URL),nil,PChar(Homepage3URL),sw_ShowNormal);  //ruft Homepage mit Browser normal auf
+{>>GpProfile} finally ProfilerExitProc(38); end; {GpProfile>>}end;
+
+procedure TFormMain.MakePackage1Click(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(39); try {GpProfile>>}
+//
+  if FrmEditor.CurrentProject<>nil then
+  begin
+    FormCreatePackage.ObjDirEdit.Text :=  FrmEditor.CurrentProject.Routefilessubdir;
+    FormCreatePackage.RouteDirEdit.Text :=  FrmEditor.CurrentProject.Routefilessubdir;
+    FormCreatePackage.ProjectToExport :=  FrmEditor.CurrentProject;
+    FormCreatePackage.ShowModal();
+  end;
+
+{>>GpProfile} finally ProfilerExitProc(39); end; {GpProfile>>}end;
+
+procedure TFormMain.mTrackTypes1Click(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(40); try {GpProfile>>}
+  Formtracktypes.ShowModal();
+{>>GpProfile} finally ProfilerExitProc(40); end; {GpProfile>>}end;
+
+procedure TFormMain.replace1Click(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(41); try {GpProfile>>}
+  formReplace.CurrentProject := FrmEditor.CurrentProject;
+  formReplace.ShowModal();
+{>>GpProfile} finally ProfilerExitProc(41); end; {GpProfile>>}end;
+
+procedure TFormMain.FrmEditorcbTrackTypeChange(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(42); try {GpProfile>>}
+  FrmEditor.cbTrackTypeChange(Sender);
+  SetFocusedControl(FrmEditor.tbZoom);
+{>>GpProfile} finally ProfilerExitProc(42); end; {GpProfile>>}end;
+
+procedure TFormMain.SetStatus(const what: string);
+begin{>>GpProfile} ProfilerEnterProc(43); try {GpProfile>>}
+  statusbar.panels[1].text := what;
+  Application.ProcessMessages;
+{>>GpProfile} finally ProfilerExitProc(43); end; {GpProfile>>}end;
+
+procedure TFormMain.MenuGridsClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(44); try {GpProfile>>}
+  if FrmEditor.CurrentProject<>nil then
+    FrmEditor.tbGridsClick(self);
+{>>GpProfile} finally ProfilerExitProc(44); end; {GpProfile>>}end;
+
+procedure TFormMain.FormClose(Sender: TObject; var Action: TCloseAction);
+var sr,sr1: TSearchrec;
+    p,p1: string;
+begin{>>GpProfile} ProfilerEnterProc(45); try {GpProfile>>}
+  // cleanup bmp_swap cagal
+  p := extractfilepath(application.exename)+'\'+FormOptions.ObjectFolder+'\*.*';
+  if Findfirst(p,faDirectory,sr)=0 then
+  begin
+    repeat
+      if sr.Attr and faDirectory >0 then
+      begin
+        p1 := extractfilepath(application.exename)+'\'+FormOptions.ObjectFolder+'\' + sr.name + '\*.bmp_swap';
+        if Findfirst(p1,faAnyFile,sr1)=0 then
+        begin
+          repeat
+            if sr1.Attr and faAnyFile >0 then
+              DeleteFile(extractfilepath(application.exename)+'\'+FormOptions.ObjectFolder+'\' + sr.name + '\' + sr1.name );
+          until findnext(sr1)<>0;
+          Findclose(sr1);
+        end;
+      end;
+    until findnext(sr)<>0;
+    FindClose(sr);
+  end;
+
+{>>GpProfile} finally ProfilerExitProc(45); end; {GpProfile>>}end;
+
+procedure TFormMain.MenuGridTracksClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(46); try {GpProfile>>}
+  if FrmEditor.CurrentProject<>nil then
+  begin
+    FormGridTracks.CurrentProject := FrmEditor.CurrentProject;
+    FormGridTracks.Show;
+  end;
+{>>GpProfile} finally ProfilerExitProc(46); end; {GpProfile>>}end;
+
+procedure TFormMain.l1Click(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(47); try {GpProfile>>}
+  //
+  if FrmEditor.CurrentProject=nil then exit;
+  FrmEditor.tb3DWorldClick(Sender);
+{>>GpProfile} finally ProfilerExitProc(47); end; {GpProfile>>}end;
+
+procedure TFormMain.FrmEditortb3DWorldClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(48); try {GpProfile>>}
+  FrmEditor.tb3DWorldClick(Sender);
+
+{>>GpProfile} finally ProfilerExitProc(48); end; {GpProfile>>}end;
+
+procedure TFormMain.FrmEditorToolButton6Click(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(49); try {GpProfile>>}
+  FrmEditor.ToolButton6Click(Sender);
+
+{>>GpProfile} finally ProfilerExitProc(49); end; {GpProfile>>}end;
+
+procedure TFormMain.Changeproperty1Click(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(50); try {GpProfile>>}
+  //
+  formchangeproperty.project :=  FrmEditor.CurrentProject;
+  formchangeproperty.ShowModal();
+{>>GpProfile} finally ProfilerExitProc(50); end; {GpProfile>>}end;
+
+end.

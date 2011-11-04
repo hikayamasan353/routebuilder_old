@@ -1,0 +1,18 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+|   3dstate Engine Log File   |
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+------------------------------------------------------------
+    Time=22:13 and 49 seconds (mm:dd:yy = 3 . 7 . 2009)    
+------------------------------------------------------------
+
+
+-----------------------
+==== engine_close: ====
+-----------------------
+Memory usage summary
+---------------------
+    bitmaps table freed 0 bytes
+    modules list freed 237 bytes
+    dynamic objects freed 0 bytes
+    Maximum of memory that was needed=1733

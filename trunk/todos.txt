@@ -1,0 +1,11 @@
+Thomas:
+Addon-Interface, 
+Installer
+
+Uwe:
+Manual schreiben
+Benutzeroberfläche optimieren
+Tracktyp-Editor
+testen, 
+Testcode rauswerfen
+Basis-Bibliothek aufräumen

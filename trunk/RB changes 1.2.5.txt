@@ -1,0 +1,31 @@
+Changes for RB 1.2.5
+--------------------
+
+Global
+- Track Height
+  track height is now determined by point height.
+  this is experimental support.
+  if you used height in your routes make a backup.
+  if you save a route with heights and load it in older versions the heights will all be set to 0.
+  change point height using the new trackbar.
+  click the point height info to change it by hand
+  point height is saved in mm
+  height edit field in track properties deleted
+
+
+Editor
+- Ctrl+click activates connection even if object lies above
+- signal names are shown
+
+
+Track Properties
+- Bound objects: Add button to directly add an object and bind it
+
+
+Options
+- hyperbolic curve interpolation can be switched off again
+- multiple tracks per grid section allowed (for crossings, experimental)
+
+
+Export
+- secondary track pitch. RB now creates dynamically pitched track objects

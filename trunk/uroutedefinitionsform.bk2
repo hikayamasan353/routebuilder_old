@@ -1,0 +1,220 @@
+unit uRouteDefinitionsForm;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ImgList, Buttons, ExtCtrls, ComCtrls,
+  uRBRouteDefinition, uCurrentSituation, uRBproject, utools;
+
+resourcestring
+  cNewRouteDefinition = 'Route Definition';
+  cClonedRouteDefinition = 'Copy of ';
+
+type
+  TFormRouteDefinitions = class(TForm)
+    ListView1: TListView;
+    Panel1: TPanel;
+    bAddRoute: TSpeedButton;
+    bDeleteRoute: TSpeedButton;
+    bActivate: TSpeedButton;
+    ImageList1: TImageList;
+    bMerge: TSpeedButton;
+    bClone: TSpeedButton;
+    procedure FormShortCut(var Msg: TWMKey; var Handled: Boolean);
+    procedure bActivateClick(Sender: TObject);
+    procedure bAddRouteClick(Sender: TObject);
+    procedure bDeleteRouteClick(Sender: TObject);
+    procedure ListView1Click(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure ListView1Edited(Sender: TObject; Item: TListItem;
+      var S: String);
+    procedure ListView1Editing(Sender: TObject; Item: TListItem;
+      var AllowEdit: Boolean);
+    procedure bMergeClick(Sender: TObject);
+    procedure bCloneClick(Sender: TObject);
+  private
+    { Private declarations }
+    CopyFrom: TRBRouteDefinition;
+  public
+    { Public declarations }
+    CurrentProject : TRBProject;
+  end;
+
+var
+  FormRouteDefinitions: TFormRouteDefinitions;
+
+implementation{>>GpProfile U} uses GpProf; {GpProfile U>>}
+
+{$R *.dfm}
+
+procedure TFormRouteDefinitions.FormShortCut(var Msg: TWMKey;
+  var Handled: Boolean);
+begin{>>GpProfile} ProfilerEnterProc(206); try {GpProfile>>}
+  if Msg.CharCode=13 then bActivateClick(self);
+  
+{>>GpProfile} finally ProfilerExitProc(206); end; {GpProfile>>}end;
+
+procedure TFormRouteDefinitions.bActivateClick(Sender: TObject);
+var li: TListitem;
+    i: integer;
+begin{>>GpProfile} ProfilerEnterProc(207); try {GpProfile>>}
+  li := Listview1.Selected;
+  if li=nil then exit;
+  // alle Einträge deselektieren
+  for i:=0 to listview1.items.count-1 do
+    Listview1.items[i].ImageIndex := -1;
+  // gewählten Eintrag selektieren (ImageIndex 0)
+  li.ImageIndex := 0;
+  Currentsituation.CurrentRouteDefinition := TRBRouteDefinition(li.data);
+  // Editor bitten, sich neu zu zeichnen
+  CurrentSituation.PleaseUpdateView := true;
+{>>GpProfile} finally ProfilerExitProc(207); end; {GpProfile>>}end;
+
+procedure TFormRouteDefinitions.bAddRouteClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(208); try {GpProfile>>}
+  with Listview1.items.add do
+  begin
+    caption := cNewRouteDefinition;
+    EditCaption();
+  end;
+{>>GpProfile} finally ProfilerExitProc(208); end; {GpProfile>>}end;
+
+procedure TFormRouteDefinitions.bDeleteRouteClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(209); try {GpProfile>>}
+// todo: aus CurrentProject.Routes löschen und aus Listview löschen
+{>>GpProfile} finally ProfilerExitProc(209); end; {GpProfile>>}end;
+
+procedure TFormRouteDefinitions.ListView1Click(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(210); try {GpProfile>>}
+  bDeleteRoute.enabled := (Listview1.ItemIndex>=0);
+  bActivate.enabled    := (Listview1.ItemIndex>=0);
+  bClone.Enabled       := (Listview1.ItemIndex>=0);
+{>>GpProfile} finally ProfilerExitProc(210); end; {GpProfile>>}end;
+
+procedure TFormRouteDefinitions.FormShow(Sender: TObject);
+var i: integer;
+    RD: TRBRouteDefinition;
+begin{>>GpProfile} ProfilerEnterProc(211); try {GpProfile>>}
+  Listview1.items.clear;
+  for i :=0 to CurrentProject.Routes.count-1 do
+  begin
+    RD := CurrentProject.Routes[i] as TRBRouteDefinition;
+    with Listview1.items.Add do
+    begin
+      caption := RD.GetTitle();
+      Data := pointer(RD);
+      if RD.RouteDefinitionID=Currentsituation.CurrentRouteDefinitionID then
+        imageindex := 0
+      else
+        imageindex := -1;
+    end;
+  end;
+{>>GpProfile} finally ProfilerExitProc(211); end; {GpProfile>>}end;
+
+procedure TFormRouteDefinitions.ListView1Edited(Sender: TObject;
+  Item: TListItem; var S: String);
+var id,i: integer;
+    RD: TRBRouteDefinition;
+begin{>>GpProfile} ProfilerEnterProc(212); try {GpProfile>>}
+  if Item.caption = cNewRouteDefinition then
+  begin
+    // neue ID ermitteln
+    id := CurrentProject.GetMaxRouteDefinitionID+1;
+    RD := TRBRouteDefinition.Create;
+    RD.RouteDefinitionID   := id;
+    RD.RouteDefinitionname := S;
+    S:= RD.GetTitle();
+    CurrentProject.Routes.add(RD);
+    ListView1.Selected := Item;
+    Item.Data := pointer(RD);
+    bActivateClick(self);
+  end
+  else
+  if copy(Item.caption ,1,length(cClonedRouteDefinition))= cClonedRouteDefinition then
+  begin
+    // neue ID ermitteln
+    id := CurrentProject.GetMaxRouteDefinitionID+1;
+    RD := TRBRouteDefinition.Create;
+    RD.RouteDefinitionID   := id;
+    RD.RouteDefinitionname := S;
+    if CopyFrom<>nil then
+      RD.AddStrings(CopyFrom);
+    S:= RD.GetTitle();
+    CurrentProject.Routes.add(RD);
+    ListView1.Selected := Item;
+    Item.Data := pointer(RD);
+    bActivateClick(self);
+  end
+  else
+  begin
+    // rename
+    RD := CurrentProject.FindRouteDefinitionByID(TRBRouteDefinition(item.data).RouteDefinitionID );
+    RD.RouteDefinitionname := S;
+//    S := RD.GetTitle();
+  end;
+{>>GpProfile} finally ProfilerExitProc(212); end; {GpProfile>>}end;
+
+procedure TFormRouteDefinitions.ListView1Editing(Sender: TObject;
+  Item: TListItem; var AllowEdit: Boolean);
+begin{>>GpProfile} ProfilerEnterProc(213); try {GpProfile>>}
+  // todo: vorbereiten der Änderung des Namens
+  //AllowEdit := false;
+{>>GpProfile} finally ProfilerExitProc(213); end; {GpProfile>>}end;
+
+procedure TFormRouteDefinitions.bMergeClick(Sender: TObject);
+var id,i,sel1,sel2: integer;
+    RD,RD1: TRBRouteDefinition;
+    S : string;
+begin{>>GpProfile} ProfilerEnterProc(214); try {GpProfile>>}
+  sel1 := -1; sel2 := -1;
+  for i:=0 to listview1.items.count-1 do
+    if Listview1.items[i].ImageIndex = 0 then sel1 := i;
+  sel2 := Listview1.Selected.Index;
+
+  if (sel1=sel2)or(sel1=-1)or(sel2=-1) then
+  begin
+    MessageDlg(lngmsg.GetMsg('urdform_merge'), mtError, [mbCancel], 0);
+    exit;
+  end;
+  // neue ID ermitteln
+  id := CurrentProject.GetMaxRouteDefinitionID+1;
+  RD := TRBRouteDefinition.Create;
+  RD.RouteDefinitionID   := id;
+  RD.RouteDefinitionname := 'merged routes';
+  S:= RD.GetTitle();
+  CurrentProject.Routes.add(RD);
+
+  RD1 := CurrentProject.FindRouteDefinitionByID(TRBRouteDefinition(listview1.Items[sel1].data).RouteDefinitionID );
+
+  for i:=0 to RD1.count-1 do
+  begin
+    RD.AddTrack(RD1.GetConnIDAt(i));
+  end;
+
+  RD1 := CurrentProject.FindRouteDefinitionByID(TRBRouteDefinition(listview1.Items[sel2].data).RouteDefinitionID );
+
+  for i:=0 to RD1.count-1 do
+  begin
+    RD.AddTrack(RD1.GetConnIDAt(i));
+  end;
+
+  with Listview1.items.add do
+  begin
+    caption := S;
+    data := pointer(RD);
+    imageindex := -1;
+  end;
+{>>GpProfile} finally ProfilerExitProc(214); end; {GpProfile>>}end;
+
+procedure TFormRouteDefinitions.bCloneClick(Sender: TObject);
+begin{>>GpProfile} ProfilerEnterProc(215); try {GpProfile>>}
+  with Listview1.items.add do
+  begin
+    caption := cClonedRouteDefinition + Listview1.selected.caption;
+    copyfrom := Listview1.selected.data;
+    EditCaption();
+  end;
+{>>GpProfile} finally ProfilerExitProc(215); end; {GpProfile>>}end;
+
+end.

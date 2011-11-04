@@ -1,0 +1,58 @@
+projectname=GREENHILLS-WOODITCH VILLAGE (FICTIONAL ROUTE)
+author=Michael Pollock
+authoremailaddress=michaelpollock40@hotmail.com
+description=A fcional scenic route
+credits=Darwin[crlf]Fons de Jong[crlf]Jan de Jong[crlf]mtrkwt[crlf]Rainer Hübner[crlf]Simon Man[crlf]Thomas Tschofenig[crlf]Uwe Post[crlf][crlf](For The Objects in Route Builder)
+gauge=1435
+developerid=0
+nexttrackid=1
+BackgroundMapScale=0
+defaultobjects=stopsign=signs\ne5.b3d
+point1=1,3.00000,8.00000
+point2=2,5.00000,208.00000
+point3=3,-199.00000,203.00000
+point4=4,-220.00000,172.00000
+point5=5,-280.00000,137.00000
+point6=6,-405.00000,82.00000
+point7=8,-403.39000,78.33900
+point8=10,-183.00000,-163.00000
+point9=11,-45.00000,-208.00000
+point10=12,68.00000,-143.00000
+point11=13,130.00000,-161.00000
+point12=14,194.00000,-130.00000
+point13=15,226.00000,-66.00000
+point14=16,238.00000,12.00000
+point15=17,227.00000,238.00000
+point16=18,-17.00000,34.00000
+conn1=1,2,1,1,0,0.00000,255,1,1,1,0,"",0,"",0,0,0,1,0,0,0
+conn2=2,3,2,1,0,0.00000,255,1,1,1,0,"",0,"",0,0,0,1,0,0,0
+conn3=3,4,3,1,0,0.00000,255,1,1,1,0,"",0,"",0,0,0,2,0,0,0
+conn4=4,5,4,1,0,0.00000,255,1,1,1,0,"",0,"",0,0,0,2,0,0,0
+conn5=5,6,5,1,0,0.00000,255,1,1,1,0,"",0,"",0,0,0,2,0,0,0
+conn6=9,11,10,1,0,0.00000,255,1,1,1,0,"",0,"",0,0,0,1,0,0,0
+conn7=10,12,11,1,0,0.00000,255,1,1,1,0,"",0,"",0,0,0,1,0,0,0
+conn8=11,13,12,1,0,0.00000,255,1,1,1,0,"",0,"",0,0,0,1,0,0,0
+conn9=12,14,13,1,0,0.00000,255,1,1,1,0,"",0,"",0,0,0,2,0,0,0
+conn10=13,15,14,1,0,0.00000,255,1,1,1,0,"",0,"",0,0,0,1,0,0,0
+conn11=14,16,15,1,0,0.00000,255,1,1,1,0,"",0,"",0,0,0,2,0,0,0
+conn12=15,17,16,1,0,0.00000,255,1,1,1,0,"",0,"",0,0,0,2,0,0,0
+routedefinition1id=2
+routedefinition1name=ID2: Green Hills-Woditch Village
+routedefinition1=1,3,4,5,7,8,9,10,11,12,13,14,15,2
+station1="Greenhiils",1=1
+station2="Sonsdale",1=1
+station3="Hatton ",1=1
+station4="Lower Wooditch",1=1
+station5="Upper Wooditch",1=1
+freeobject1="platforms","platform1CL.b3d",9.00000,8.00000,0.00000,0.00000
+freeobject2="platforms","platform1CL.b3d",237.00000,13.00000,0.00000,0.00000
+freeobject3="platforms","platform1CL.b3d",-225.00000,169.00000,120.00000,15.00000
+freeobject4="platforms","platform1CL.b3d",227.00000,202.00000,0.00000,0.00000
+freeobject5="platforms","platform1CL.b3d",-389.00000,-36.00000,0.00000,0.00000
+freeobject6="buildings","House.b3d",-12.00000,11.00000,180.00000,0.00000
+freeobject7="buildings","House_mod2.b3d",-382.00000,11.00000,0.00000,0.00000
+freeobject8="buildings","House_mod2.b3d",-371.00000,-62.00000,0.00000,0.00000
+freeobject9="buildings","House_mod_long3.b3d",-377.00000,-30.00000,0.00000,0.00000
+freeobject10="buildings","House_mod_long3.b3d",-428.00000,11.00000,0.00000,0.00000
+freeobject11="buildings","shed.b3d",-421.00000,-14.00000,0.00000,0.00000
+freeobject12="bridges","footbridge.b3d",-408.00000,-54.00000,0.00000,0.00000

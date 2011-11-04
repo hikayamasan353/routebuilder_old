@@ -1,0 +1,33 @@
+Changes log for RouteBuilder
+
+1.01 (03-04-22)
+- no more Access violation when selecting "delete from route definition" when no rd active
+
+1.02 (03-04-24)
+- on click on station track: station name is shown in toolbar dropdown list
+- export dialog: reload train list (may have changed)
+- export dialog: changed time format for departure time to hh:mm independantly of localization (italien time format problem, it is hh.mm and caused critical error)
+- trains window: changed FormCreate to FormShow so train list is always up to date not only loaded once
+- about dialog: correct version number display
+
+1.03 (03-04-25)
+- BVE folder control changed to TEdit due to multilanguage support problem
+
+1.04 (03-04-27)
+- about dialog: changed "object library contributors" to "contributors", added language file contributor(s)
+- status bar now showing "loading", "saving", "ready" and current project name
+- project properties: parallel track distances can be set (default 4m)
+- on project load: object library path check and message dialog
+- multilanguage support added for edit frame (main context menu)
+
+....
+
+1.1.3 (03-11-01)
+- Change Properties: Form to change fog, speedlimit etc for the world or area
+- Track properties dialog non modal
+- move everything handles height and scale
+- overview map filename and scale can be set in project properties
+- bugfix in timetable
+- RBAStationsigns can do "hanging" signs
+- deleting grid root connection not possible anymore (messagebox, todo: language)
+- improved secondary curve export (curve radius = primary radius when parallel)
