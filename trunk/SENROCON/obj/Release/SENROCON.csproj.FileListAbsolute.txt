@@ -1,0 +1,5 @@
+D:\rbdev\RB2\RouteBuilder\SENROCON\bin\Release\SENROCON.exe
+D:\rbdev\RB2\RouteBuilder\SENROCON\bin\Release\SENROCON.pdb
+D:\rbdev\RB2\RouteBuilder\SENROCON\obj\Release\ResolveAssemblyReference.cache
+D:\rbdev\RB2\RouteBuilder\SENROCON\obj\Release\SENROCON.exe
+D:\rbdev\RB2\RouteBuilder\SENROCON\obj\Release\SENROCON.pdb
