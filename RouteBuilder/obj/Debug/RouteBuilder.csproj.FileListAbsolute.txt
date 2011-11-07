@@ -1,0 +1,17 @@
+D:\rbdev\RB2\RouteBuilder\RouteBuilder\obj\Debug\ResolveAssemblyReference.cache
+D:\rbdev\RB2\RouteBuilder\RouteBuilder\obj\Debug\RouteBuilder.AboutBox1.resources
+D:\rbdev\RB2\RouteBuilder\RouteBuilder\obj\Debug\RouteBuilder.Form1.resources
+D:\rbdev\RB2\RouteBuilder\RouteBuilder\obj\Debug\RouteBuilder.form_export.resources
+D:\rbdev\RB2\RouteBuilder\RouteBuilder\obj\Debug\RouteBuilder.Properties.Resources.resources
+D:\rbdev\RB2\RouteBuilder\RouteBuilder\obj\Debug\RouteBuilder.csproj.GenerateResource.Cache
+D:\rbdev\RB2\RouteBuilder\RouteBuilder\bin\Debug\RouteBuilder.exe.config
+D:\rbdev\RB2\RouteBuilder\RouteBuilder\bin\Debug\RouteBuilder.exe
+D:\rbdev\RB2\RouteBuilder\RouteBuilder\bin\Debug\RouteBuilder.pdb
+D:\rbdev\RB2\RouteBuilder\RouteBuilder\bin\Debug\Tao.OpenAl.dll
+D:\rbdev\RB2\RouteBuilder\RouteBuilder\bin\Debug\Tao.OpenGl.dll
+D:\rbdev\RB2\RouteBuilder\RouteBuilder\bin\Debug\Tao.Sdl.dll
+D:\rbdev\RB2\RouteBuilder\RouteBuilder\obj\Debug\RouteBuilder.exe
+D:\rbdev\RB2\RouteBuilder\RouteBuilder\obj\Debug\RouteBuilder.pdb
+D:\rbdev\RB2\RouteBuilder\RouteBuilder\obj\Debug\RouteBuilder.Options.resources
+D:\rbdev\RB2\RouteBuilder\RouteBuilder\obj\Debug\RouteBuilder.ProjectPropertiesForm.resources
+D:\rbdev\RB2\RouteBuilder\RouteBuilder\obj\Debug\RouteBuilder.Transponders_Form.resources
