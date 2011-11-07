@@ -3,12 +3,7 @@
 = Introduction =
 
 RouteBuilder is a visual route editor for BVE and openBVE. It was originally started in 2004 by Uwe Post, Germany and Thomas Tschofenig, Austria. Its development was stopped due to decreasing interest in RouteBuilder in February 2008, but now Oleg K from Ukraine has continued developing in November 2011 as RouteBuilder II.
+
 While almost all BVE Routes are made manually using any text editor, the total RouteBuilder II's mission is to replace months of coding into powerful, visual and fun editing. The bugs of the RouteBuilder pre-II versions are caused by native Win32 support of Delphi, so Oleg K has decided to write it under .NET in C#.
 
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+RouteBuilder II also features SENROCON(from Japanese 線路 _senro_ - railway and *CON*vertor) - a brand-new little console app, which allows you to decompile the ready .csv or .rw route and convert it to RouteBuilder II project.
