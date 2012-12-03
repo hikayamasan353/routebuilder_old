@@ -1,0 +1,7 @@
+D:\rbdev\new_rb\RouteBuilder\RBExport\obj\Debug\ResolveAssemblyReference.cache
+D:\rbdev\new_rb\RouteBuilder\RBExport\bin\Debug\RouteBuilderAPI.dll.config
+D:\rbdev\new_rb\RouteBuilder\RBExport\bin\Debug\RouteBuilderAPI.dll
+D:\rbdev\new_rb\RouteBuilder\RBExport\bin\Debug\RouteBuilderAPI.pdb
+D:\rbdev\new_rb\RouteBuilder\RBExport\obj\Debug\RouteBuilderAPI.dll
+D:\rbdev\new_rb\RouteBuilder\RBExport\obj\Debug\RouteBuilderAPI.pdb
+D:\rbdev\new_rb\RouteBuilder\RBExport\bin\Debug\OpenBveApi.dll
