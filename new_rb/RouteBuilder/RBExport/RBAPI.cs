@@ -9,6 +9,11 @@ using OpenBveApi.Math;
 namespace RouteBuilder
 {
 
+
+
+
+
+
     public class RBProject
     {
         /// <summary>
@@ -115,11 +120,60 @@ namespace RouteBuilder
 
     }
 
+    /// <summary>
+    /// RB in-editor point
+    /// </summary>
+    public class RBPoint
+    {
+
+        public DoublePoint p;
+
+        /// <summary>
+        /// Point height (Z-level)
+        /// </summary>
+        public double height;
+        /// <summary>
+        /// Point ID
+        /// </summary>
+        public long id;
+
+
+
+    }
+
+    /// <summary>
+    /// RB in-editor connection
+    /// </summary>
     public class RBConnection
     {
+        private RBPoint fp1;
+        private RBPoint fp2;
+        //=======================================================
+
+
+
+
+        /// <summary>
+        /// RB in-editor connection ID
+        /// </summary>
         public int id;
         public int texture;
+
+        /// <summary>
+        /// Track speed limit, 0 - unlimited.
+        /// </summary>
         public int speedlimit;
+        /// <summary>
+        /// RB in-editor height
+        /// </summary>
+        public double height;
+
+        /// <summary>
+        /// Track adhesion representing conditions. I.e. 135 for dry conditions, 85 - frosty, 50 - snowy, 0 - train can't move at all
+        /// </summary>
+        public uint adhesion;
+        public uint accuracy;
+        public int fog;
 
 
         public string polestype;
@@ -141,6 +195,53 @@ namespace RouteBuilder
         public double doppler_y;
 
         public bool buffer;
+        
+        /// <summary>
+        /// Exported or no?
+        /// </summary>
+        public bool exported;
+
+
+        public RBPoint p1
+        {
+            get
+            {
+                return fp1;
+            }
+            set
+            {
+                fp1 = p1;
+            }
+        }
+        public RBPoint p2
+        {
+            get
+            {
+                return fp2;
+            }
+            set
+            {
+                fp2 = p2;
+            }
+        }
+
+
+        public RBConnection(RBPoint p1, RBPoint p2)
+        {
+            this.p1 = fp1;
+            this.p2 = fp2;
+
+            this.id = 0;
+            this.speedlimit = 0; //unlimited speed
+            this.adhesion = 255; //perfect condition
+
+
+        }
+        public RBConnection(RBConnection from)
+        {
+            //this = new RBConnection(from.p1, from.p2);
+        }
+
 
 
     }
@@ -276,9 +377,37 @@ namespace RouteBuilder
     public class RBExport
     {
         protected bool fsmooth;
+
+        /// <summary>
+        /// List of ground textures (.b3d/.csv/.x file)
+        /// </summary>
         protected List<string> groundtexturelist;
+
+        /// <summary>
+        /// List of track texture (.b3D/.csv/.x file)
+        /// </summary>
         protected List<string> tracktexturelist;
-        protected List<string> walllist;
+
+        /// <summary>
+        /// List of left walls (.b3d/.csv/.x file)
+        /// </summary>
+        protected List<string> leftwalllist;
+
+        /// <summary>
+        /// List of right walls (.b3d/.csv/.x file)
+        /// </summary>
+        protected List<string> rightwalllist;
+
+        /// <summary>
+        /// List of left dikes (.b3d/.csv/.x file)
+        /// </summary>
+        protected List<string> leftdikelist;
+
+        /// <summary>
+        /// List of right dikes (.b3d/.csv/.x file)
+        /// </summary>
+        protected List<string> rightdikelist;
+
 
 
 
@@ -385,11 +514,29 @@ namespace RouteBuilder
             }
 
             //export walls and dikes
+            //Please note that left and right walls and dikes will be exported separately
 
-            for (i = 0; i < walllist.Count; i++)
+            //exporting left walls
+            for (i = 0; i < leftwalllist.Count; i++)
             {
-
+                exportinterface.Add(".wallL(" + leftwalllist.IndexOf(leftwalllist[i]) + ") " + tracktexturelist[i]);
             }
+            //exporting right walls
+            for (i = 0; i < rightwalllist.Count; i++)
+            {
+                exportinterface.Add(".wallR(" + rightwalllist.IndexOf(rightwalllist[i]) + ") " + tracktexturelist[i]);
+            }
+            //exporting left dikes
+            for (i = 0; i < leftdikelist.Count; i++)
+            {
+                exportinterface.Add(".dikeL(" + leftdikelist.IndexOf(leftdikelist[i]) + ") " + leftdikelist[i]);
+            }
+            //exporting right dikes
+            for (i = 0; i < rightdikelist.Count; i++)
+            {
+                exportinterface.Add(".dikeR(" + rightdikelist.IndexOf(rightdikelist[i]) + ") " + rightdikelist[i]);
+            }
+            
 
 
 
