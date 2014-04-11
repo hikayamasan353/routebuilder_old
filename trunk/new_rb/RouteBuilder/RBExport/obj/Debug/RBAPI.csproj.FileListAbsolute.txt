@@ -5,3 +5,10 @@ D:\rbdev\new_rb\RouteBuilder\RBExport\bin\Debug\RouteBuilderAPI.pdb
 D:\rbdev\new_rb\RouteBuilder\RBExport\obj\Debug\RouteBuilderAPI.dll
 D:\rbdev\new_rb\RouteBuilder\RBExport\obj\Debug\RouteBuilderAPI.pdb
 D:\rbdev\new_rb\RouteBuilder\RBExport\bin\Debug\OpenBveApi.dll
+C:\RB_DEV\new_rb\RouteBuilder\RBExport\bin\Debug\RouteBuilderAPI.dll.config
+C:\RB_DEV\new_rb\RouteBuilder\RBExport\bin\Debug\RouteBuilderAPI.dll
+C:\RB_DEV\new_rb\RouteBuilder\RBExport\bin\Debug\RouteBuilderAPI.pdb
+C:\RB_DEV\new_rb\RouteBuilder\RBExport\bin\Debug\OpenBveApi.dll
+C:\RB_DEV\new_rb\RouteBuilder\RBExport\obj\Debug\RBAPI.csprojResolveAssemblyReference.cache
+C:\RB_DEV\new_rb\RouteBuilder\RBExport\obj\Debug\RouteBuilderAPI.dll
+C:\RB_DEV\new_rb\RouteBuilder\RBExport\obj\Debug\RouteBuilderAPI.pdb
