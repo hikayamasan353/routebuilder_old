@@ -408,8 +408,14 @@ namespace RouteBuilder
         /// </summary>
         protected List<string> rightdikelist;
 
-
-
+        /// <summary>
+        /// List of left cracks (.b3d/.csv/.x)
+        /// </summary>
+        protected List<string> leftcracklist;
+        /// <summary>
+        /// List of right cracks (.b3d/.csv/.x)
+        /// </summary>
+        protected List<string> rightcracklist;
 
         protected List<string> usedtrackobjects;
         protected List<string> usedgrounds;
@@ -453,6 +459,9 @@ namespace RouteBuilder
             exportinterface.Add(".Change " + project.change.ToString());
             exportinterface.Add(".Gauge " + project.gauge.ToString());
 
+            //expert mode checking
+
+
         }
 
         /// <summary>
@@ -465,6 +474,10 @@ namespace RouteBuilder
             exportinterface.Add("Comment=" + project.description);
             exportinterface.Add("Change=" + project.change.ToString());
             exportinterface.Add("Gauge=" + project.gauge.ToString());
+            
+            //expert mode checking
+            
+
         }
 
         /// <summary>
@@ -488,6 +501,8 @@ namespace RouteBuilder
         {
             exportinterface.Add("[Train]");//start section
             exportinterface.Add("Folder=" + train);//add folder key
+
+            //TODO: BVETSS 1.0 compliance or non-compliance (for non-standard routes)
 
         }
 
@@ -537,7 +552,18 @@ namespace RouteBuilder
                 exportinterface.Add(".dikeR(" + rightdikelist.IndexOf(rightdikelist[i]) + ") " + rightdikelist[i]);
             }
             
-
+            //exporting cracks
+            //Please note that left and right cracks will be exported separately.
+            //exporting left cracks
+            for (i = 0; i < leftcracklist.Count; i++)
+            {
+                exportinterface.Add(".crackL(" + leftcracklist.IndexOf(leftcracklist[i]) + ") " + leftcracklist[i]);
+            }
+            //exporting right cracks
+            for (i = 0; i < rightcracklist.Count; i++)
+            {
+                exportinterface.Add(".crackR(" + rightcracklist.IndexOf(rightcracklist[i]) + ") " + rightcracklist[i]);
+            }
 
 
         }
@@ -545,7 +571,9 @@ namespace RouteBuilder
 
 
 
-
+        /// <summary>
+        /// Export stations in CSV format
+        /// </summary>
         public void ExportStationCSV()
         {
             RBStation station;
@@ -559,9 +587,11 @@ namespace RouteBuilder
                 {
 
                 }
-
+                //setting up whether to pass or to stop
                 pass = (passstations.IndexOf(station.stationname) >= 0);
+                //setting up whether to change ends or not
                 change_ends = station.change_ends;
+
 
 
             }
